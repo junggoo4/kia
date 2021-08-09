@@ -1,0 +1,275 @@
+<!-- 구매정보 - 시승 예약 -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KIA - 시승 예약</title>
+    <link rel="stylesheet" href="css/kia4.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css"/>
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/kia4.js"></script>
+</head>
+
+<body class="back">
+    <div class="header2"></div>
+
+    <div class="menu3_2_title">
+        <div>
+            <p>시승 예약</p>
+        </div>
+    </div>
+
+    <div class="menu3_2_bm">
+        <article class="at0 at01">
+            <div class="at01_title">
+                <p>1. 시승 모델</p>
+                <p>(필수 선택사항)</p>
+                <p class="at01_text"></p>
+            </div>
+            <div class="at01_bm">
+                <ul>
+                    <li class="at01_car at01_car1">
+                        <img src="img3/morning.webp">
+                        <p>모닝</p>
+                    </li>
+                    <li class="at01_car at01_car2">
+                        <img src="img3/k5.webp">
+                        <p>K5</p>
+                    </li>
+                    <li class="at01_car at01_car3">
+                        <img src="img3/niro.webp">
+                        <p>니로</p>
+                    </li>
+                    <li class="at01_car at01_car4">
+                        <img src="img3/sorento.webp">
+                        <p>쏘렌토 하이브리드</p>
+                    </li>
+                    <li class="at01_car at01_car5">
+                        <img src="img3/seltos.webp">
+                        <p>셀토스</p>
+                    </li>
+                    <li class="at01_car at01_car6">
+                        <img src="img3/mohave.webp">
+                        <p>모하비</p>
+                    </li>
+                </ul>
+            </div>
+        </article>
+
+        <article class="at0 at02">
+            <div class="at02_title">
+                <p>2. 시승 센터</p>
+                <p>(필수 선택사항)</p>
+                <p class="at02_text"></p>
+            </div>
+            <div class="at02_bm">
+                <div>
+                    <div>
+                        <select name="at02_bm_sel" id="at02_sel" onchange="at02_che(this)">
+                            <option>=== 시/도 선택 ===</option>
+                            <option value="0" class="sel sel1">서울특별시</option>
+                            <option value="1" class="sel sel2">강원도</option>
+                            <option value="2" class="sel sel3">경기도</option>
+                            <option value="3" class="sel sel4">경상남도</option>
+                            <option value="4" class="sel sel5">충청남도</option>
+                        </select>
+                    </div>
+                    <div class="at02_ifr">
+                        <ul>
+                            <li class="at02_ifr_1">
+                                <div>
+                                    <span><i class="fas fa-map-marker-alt"></i></span>
+                                    <span>남대문 지점</span><br><br>
+                                    <p>서울특별시 중구 칠패로 36</p>
+                                    <p>02-753-0301</p>
+                                </div>
+                                <div>
+                                    <span><i class="fas fa-map-marker-alt"></i></span>
+                                    <span>마포 지점</span><br><br>
+                                    <p>서울특별시 마포구 마포대로 49</p>
+                                    <p>02-719-9111</p>
+                                </div>
+                            </li>
+                            <li class="at02_ifr_2">
+                                <div>
+                                    <span><i class="fas fa-map-marker-alt"></i></span>
+                                    <span>연합 대리점</span><br><br>
+                                    <p>강원도 춘천시 김유정로</p>
+                                    <p>033-482-2304</p>
+                                </div>
+                                <div>
+                                    <span><i class="fas fa-map-marker-alt"></i></span>
+                                    <span>양록 대리점</span><br><br>
+                                    <p>강원도 양구군 양구읍 청춘로 23</p>
+                                    <p>02-719-9111</p>
+                                </div>
+                            </li>
+                            <li class="at02_ifr_3">
+                                <div>
+                                    <span><i class="fas fa-map-marker-alt"></i></span>
+                                    <span>남수원 지점</span><br><br>
+                                    <p>경기도 수원시 팔달구 경수대로 464</p>
+                                    <p>031-239-4001</p>
+                                </div>
+                                <div>
+                                    <span><i class="fas fa-map-marker-alt"></i></span>
+                                    <span>성남 지점</span><br><br>
+                                    <p>경기도 화성시 동탄지성로 116</p>
+                                    <p>031-8015-1288</p>
+                                </div>
+                                <div>
+                                    <span><i class="fas fa-map-marker-alt"></i></span>
+                                    <span>동탄 지점</span><br><br>
+                                    <p>경기도 성남시 수정구 산성대로 207</p>
+                                    <p>031-751-8100</p>
+                                </div>
+                            </li>
+                            <li class="at02_ifr_4">
+                                <div>
+                                    <span><i class="fas fa-map-marker-alt"></i></span>
+                                    <span>무학 대리점</span><br><br>
+                                    <p>경남 창원시 마산회원구 봉암북</p>
+                                    <p>055-253-8511</p>
+                                </div>
+                            </li>
+                            <li class="at02_ifr_5">
+                                <div>
+                                    <span><i class="fas fa-map-marker-alt"></i></span>
+                                    <span>천안남부 지점</span><br><br>
+                                    <p>충청남도 천안시 동남구 충무로 54</p>
+                                    <p>041-578-2600</p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="at02_bm_map">
+                    <ul class="at02_bm_map0 at02_bm_map1">
+                        <li><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3162.8146233788043!2d126.97055711519397!3d37.55943107979922!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357ca28a7e0f28a5%3A0x57b43b3bc437ab5f!2z6riw7JWE7J6Q64-Z7LCoIOuCqOuMgOusuOyngOygkA!5e0!3m2!1sko!2skr!4v1627975138503!5m2!1sko!2skr" width="649px" height="448px" style="border:0;" allowfullscreen="" loading="lazy"></iframe></li>
+                        <li><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d25308.8374057249!2d126.92938053955076!3d37.54081519999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357c98a589d034c3%3A0xef7a38acc67ab933!2z6riw7JWE7J6Q64-Z7LCoIOuniO2PrOyngOygkA!5e0!3m2!1sko!2skr!4v1627975204143!5m2!1sko!2skr" width="649px" height="448px" style="border:0;" allowfullscreen="" loading="lazy"></iframe></li>
+                    </ul>
+                    <ul class="at02_bm_map0 at02_bm_map2">
+                        <li><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d25204.83206211161!2d127.7284240713764!3d37.84615535788608!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x523481fe6a702cdd!2z6riw7JWE7J6Q64-Z7LCo7Jew7ZWp64yA66as7KCQ!5e0!3m2!1sko!2skr!4v1627975032159!5m2!1sko!2skr" width="649px" height="448px" style="border:0;" allowfullscreen="" loading="lazy"></iframe></li>
+                        <li><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3139.7159308083465!2d127.98624871521046!3d38.10027547970142!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x35627d5a9d97552b%3A0x13df84136ab31f40!2z6riw7JWE7J6Q64-Z7LCo7JaR66Gd64yA66as7KCQ!5e0!3m2!1sko!2skr!4v1627974952032!5m2!1sko!2skr" width="649px" height="448px" style="border:0;" allowfullscreen="" loading="lazy"></iframe></li>
+                    </ul>
+                    <ul class="at02_bm_map0 at02_bm_map3">
+                        <li><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3175.168612417181!2d127.02517661518522!3d37.26742857985506!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357b43448e202467%3A0xbceaeebdc4e8399c!2z6riw7JWE7J6Q64-Z7LCoIOuCqOyImOybkOyngOygkA!5e0!3m2!1sko!2skr!4v1627975245694!5m2!1sko!2skr" width="649px" height="448px" style="border:0;" allowfullscreen="" loading="lazy"></iframe></li>
+                        <li><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d50708.20680599295!2d127.10600835217026!3d37.407259885814135!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357ca896b43a2e3b%3A0x932b382235bba151!2z6riw7JWE7J6Q64-Z7LCoIOyEseuCqOyngOygkA!5e0!3m2!1sko!2skr!4v1627975313735!5m2!1sko!2skr" width="649px" height="448px" style="border:0;" allowfullscreen="" loading="lazy"></iframe></li>
+                        <li><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3177.6304547437912!2d127.06079931518354!3d37.20900597986645!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357b442f65653add%3A0xe71a0569d37f63bf!2z6riw7JWE7J6Q64-Z7LCoIOuPme2DhOyngOygkA!5e0!3m2!1sko!2skr!4v1627975358823!5m2!1sko!2skr" width="649px" height="448px" style="border:0;" allowfullscreen="" loading="lazy"></iframe></li>
+                    </ul>
+                    <ul class="at02_bm_map0 at02_bm_map4">
+                        <li><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3259.5431514514507!2d128.60349571512523!3d35.2178468803049!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x356f3264767286d3%3A0x89757de97cb8040c!2z6riw7JWE7J6Q64-Z7LCoIOustO2VmeuMgOumrOygkA!5e0!3m2!1sko!2skr!4v1627976234710!5m2!1sko!2skr" width="649px" height="448px" style="border:0;" allowfullscreen="" loading="lazy"></iframe></li>
+                    </ul>
+                    <ul class="at02_bm_map0 at02_bm_map5">
+                        <li><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3195.322111526058!2d127.11631671517081!3d36.78682667995133!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357ad81968da058f%3A0x58500f5ba0cca6af!2z6riw7JWE7J6Q64-Z7LCoIOyynOyViOuCqOu2gOyngOygkA!5e0!3m2!1sko!2skr!4v1627975462167!5m2!1sko!2skr" width="649px" height="448px" style="border:0;" allowfullscreen="" loading="lazy"></iframe></li>
+                    </ul>
+                </div>
+            </div>
+        </article>
+
+        <article class="at0 at03">
+            <div class="at03_title">
+                <p>3. 시승 방법</p>
+                <p>(필수 선택사항)</p>
+                <p class="at03_text"></p>
+            </div>
+            <div class="at03_bm">
+                <div>
+                    <input type="radio" name="category" id="radio1">
+                    <label for="radio1" class="at03_bm1">동승시승</label>
+                    <span>고객님이 직접 드라이빙센터 / 지점 방문하시어 카마스터와 동승 시승하는 서비스</span>
+                </div>
+                <div>
+                    <input type="radio" name="category" id="radio2">
+                    <label for="radio2" class="at03_bm1">셀프시승</label>
+                    <span>고객님이 직접 드라이빙센터 / 지점 방문하시어 셀프 시승하는 서비스 (동승직원 없음)</span>
+                </div>
+            </div>
+        </article>
+
+        <article class="at0 at04">
+            <div class="at04_title">
+                <p>4. 시승 일정</p>
+                <p>(필수 선택사항)</p>
+                <p class="at04_text1"></p>
+                <p class="at04_text2"></p>
+            </div>
+            <div class="at04_bm">
+                <p class="month">2021년 8월</p>
+                <div class="date">
+                    <ul class="week"></ul>
+                    <ul class="day">
+                        <li>
+                            <p>15</p>
+                            <div class="time time1">
+                                <p></p>
+                                <p></p>
+                                <p></p>
+                            </div>
+                        </li>
+                        <li>
+                            <p>16</p>
+                            <div class="time time2">
+                                <p></p>
+                                <p></p>
+                                <p></p>
+                            </div>
+                        </li>
+                        <li>
+                            <p>17</p>
+                            <div class="time time3">
+                                <p></p>
+                                <p></p>
+                                <p></p>
+                            </div>
+                        </li>
+                        <li>
+                            <p>18</p>
+                            <div class="time time4">
+                                <p></p>
+                                <p></p>
+                                <p></p>
+                            </div>
+                        </li>
+                        <li>
+                            <p>19</p>
+                            <div class="time time5">
+                                <p></p>
+                                <p></p>
+                                <p></p>
+                            </div>
+                        </li>
+                        <li>
+                            <p>20</p>
+                            <div class="time time6">
+                                <p></p>
+                                <p></p>
+                                <p></p>
+                            </div>
+                        </li>
+                        <li>
+                            <p>21</p>
+                            <div class="time time7">
+                                <p></p>
+                                <p></p>
+                                <p></p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </article>
+        <div class="finish_btn">예약 완료</div>
+        <div class="finish">
+            <div>
+                <p>축하합니다 고객님!<br>시승 예약이 정상적으로 완료 되었습니다.</p>
+                <p class="finish_close"><a href="index.html">확인</a></p>
+            </div>
+        </div>
+    </div>
+    <div class="footer"></div>
+</body>
+</html>

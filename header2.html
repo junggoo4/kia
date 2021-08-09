@@ -1,0 +1,201 @@
+<!-- 메인화면 외 페이지 헤더 -->
+
+<script>
+    // header 메뉴 클릭시 하부메뉴 노출 및 css설정
+    $(".header_btn1").on("click",function() {
+        $(".topdown").hide();
+        $(".top_bg").show();
+        $(".topdown1").show();
+        $(".head1 ul li").css("borderBottom","none")
+        $(this).css("borderBottom","2px solid #05141f");
+    });
+
+    $(".header_btn2").on("click",function() {
+        $(".topdown").hide();
+        $(".top_bg").show();
+        $(".topdown2").show();
+        $(".head1 ul li").css("borderBottom","none")
+        $(this).css("borderBottom","2px solid #05141f");
+    });
+
+    $(".header_btn3").on("click",function() {
+        $(".topdown").hide();
+        $(".top_bg").show();
+        $(".topdown3").show();
+        $(".head1 ul li").css("borderBottom","none")
+        $(this).css("borderBottom","2px solid #05141f");
+    });
+
+    $(".header_btn4").on("click",function() {
+        $(".topdown").hide();
+        $(".top_bg").show();
+        $(".topdown4").show();
+        $(".head1 ul li").css("borderBottom","none")
+        $(this).css("borderBottom","2px solid #05141f");
+    });
+
+    // header 하부메뉴 내려왔을 때 배경 클릭시 사라지는 것
+    $(".top_bg").on("click",function() {
+        $(this).hide();
+        $(".topdown").hide();
+        $(".header_btn").css("borderBottom","none");
+    });
+
+    // header 차량 클릭시 탑 다운메뉴 라디오버튼 클릭
+    $(function() {
+        $("#category1").on("click",function() {
+            $(".category0").hide();
+            $(".category1_menu").show();
+        });
+        $("#category2").on("click",function() {
+            $(".category0").hide();
+            $(".category2_menu").show();
+        });
+        $("#category3").on("click",function() {
+            $(".category0").hide();
+            $(".category3_menu").show();
+        });
+        $("#category4").on("click",function() {
+            $(".category0").hide();
+            $(".category4_menu").show();
+        });
+    });
+
+    // 차량 - 상세보기 클릭시 header css
+    $(".car_click").on("click",function() {
+        $(".header_btn1").css("borderBottom","2px solid #05141f");
+    });
+
+
+</script>
+
+<div class="login">
+    <ul>
+        <li>
+            <p><a href="login.html">로그인</a></p>
+            <p>ㅣ</p>
+        </li>
+        <li><a href="join.html">회원가입</a></li>
+    </ul>
+</div>
+
+<header>
+    <div class="check_h head1">
+        <ul>
+            <li class="logo">
+                <a href="index.html">
+                    <img src="img1/logo2.png" class="logo_w" style="display: block;">
+                    <img src="img1/logo1.png" class="logo_b">
+                </a>
+            </li>
+            <li class="header_btn header_btn1">차량</li>
+            <li class="header_btn header_btn2">구매정보</li>
+            <li class="header_btn header_btn3">체험센터</li>
+            <li class="header_btn header_btn4">기아소식</li>
+        </ul>
+    </div>
+
+    <div class="topdown topdown1">
+        <div class="top_bg"></div>
+        <ul class="car_category">
+            <li>
+                <input type="radio" name="category" id="category1" checked>
+                <label for="category1" class="car_menu1">승용</label> 
+            </li>
+            <li>
+                <input type="radio" name="category" id="category2">
+                <label for="category2" class="car_menu2">친환경</label>
+            </li>
+            <li>
+                <input type="radio" name="category" id="category3">
+                <label for="category3" class="car_menu3">RV</label>
+            </li>
+            <li>
+                <input type="radio" name="category" id="category4">
+                <label for="category4" class="car_menu4">상용/택시/버스</label>
+            </li>
+        </ul>
+        <ul class="category0 category1_menu">
+            <div class="car_click">
+                <a href="morning.html">
+                    <div><img src="img1/topdown_1.webp" alt="car_img"></div>
+                    <p>모닝</p>
+                </a>
+            </div>
+            <div class="car_click">
+                <a href="k5.html">
+                    <div><img src="img1/topdown_2.webp" alt="car_img"></div>
+                    <p>K5</p>
+                </a>
+            </div>
+        </ul>
+        <ul class="category0 category2_menu">
+            <div class="car_click">
+                <a href="sorento.html">
+                    <div><img src="img1/topdown_3.webp" alt="car_img"></div>
+                    <p>쏘렌토 하이브리드</p>
+                </a>
+            </div>
+            <div class="car_click">
+                <a href="niro.html">
+                    <div><img src="img1/topdown_4.webp" alt="car_img"></div>
+                    <p>니로</p>
+                </a>
+            </div>
+        </ul>
+        <ul class="category0 category3_menu">
+            <div class="car_click">
+                <a href="seltos.html">
+                    <div><img src="img1/topdown_5.webp" alt="car_img"></div>
+                    <p>셀토스</p>
+                </a>
+            </div>
+            <div class="car_click">
+                <a href="mohave.html">
+                    <div><img src="img1/topdown_6.webp" alt="car_img"></div>
+                    <p>모하비</p>
+                </a>
+            </div>
+        </ul>
+        <ul class="category0 category4_menu">
+            <div class="car_click">
+                <a href="bonggo3.html">
+                    <div><img src="img1/topdown_7.webp" alt="car_img"></div>
+                    <p>봉고Ⅲ트럭</p>
+                </a>
+            </div>
+            <div class="car_click">
+                <a href="k8_taxi.html">
+                    <div><img src="img1/topdown_8.webp" alt="car_img"></div>
+                    <p>K8 택시</p>
+                </a>
+            </div>
+        </ul>
+    </div>
+
+    <div class="topdown topdown2">
+        <div class="top_bg"></div>
+        <ul>
+            <li><a href="menu2_1.html">온라인 견적</a></li>
+            <li><a href="menu2_2.html">카탈로그 / 가격표</a></li>
+            <li><a href="menu2_3.html">영업망 안내</a></li>
+        </ul>
+    </div>
+
+    <div class="topdown topdown3">
+        <div class="top_bg"></div>
+        <ul>
+            <li><a href="menu3_1.html">국내 사업장 안내</a></li>
+            <li><a href="menu3_2.html">시승 예약</a></li>
+        </ul>
+    </div>
+
+    <div class="topdown topdown4">
+        <div class="top_bg"></div>
+        <ul>
+            <li><a href="menu4_1.html">NEWS</a></li>
+            <li><a href="menu4_2.html">공지사항</a></li>
+            <li><a href="menu4_3.html">이벤트</a></li>
+        </ul>
+    </div>
+</header>
