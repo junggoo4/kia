@@ -1,0 +1,147 @@
+/* 로그인, 회원가입 스타일시트 */
+
+* {margin: 0; padding: 0; list-style: none; box-sizing: border-box;}
+a {text-decoration: none; color: #000;}
+img {vertical-align: top;}
+
+/* login */
+header {
+    width: 100%; height: 100px;
+    border-top: 7px solid #05141f;
+    border-bottom: 1px solid #ccc;
+}
+header> div {
+    width: 100px;
+    position: relative; top: 30px; left: 50%;
+    transform: translateX(-50%); cursor: pointer;
+}
+header> div img {width: 100%;}
+
+.bigbox {
+    width: 100%; height: 260px;
+    border-bottom: 1px solid #ccc;
+}
+.bigbox> div {
+    width: 400px; height: 100%; padding: 15px;
+    margin-left: 50%; transform: translateX(-50%);
+}
+
+.bigbox> div> p {
+    font-size: 13px; font-weight: bold; color: #898989;
+}
+.bigbox> div> input {
+    width: 100%; height: 40px;
+    border: 1px solid #ccc; text-indent: 10px;
+    font-weight: bold;
+}
+.bigbox> div> .form-control {margin-top: 5px;}
+.bigbox> div> .btn-login {
+    width: 100%; height: 50px;
+    background: #05141f; color: white;
+    margin-top: 15px; border: none; 
+    font-size: 17px; font-weight: bold;
+    cursor: pointer;
+}
+.bigbox> div> .login_text {
+    width: 100%; height: 50px; font-weight: 500;
+    margin-top: 27px; text-align: center;
+}
+.bigbox> div> .login_text> span:nth-child(2) {
+    font-weight: bold; cursor: pointer; color: #05141f;
+}
+
+
+/* 회원가입 */
+.sm_box {
+    width: 100%; height: 100px;
+    border-bottom: 1px solid #ccc; 
+}
+.sm_box> p {text-align: center;}
+.sm_box> p:nth-child(1) {font-size: 18px; font-weight: bold; line-height: 60px;}
+.sm_box> p:nth-child(2) {font-size: 13px;}
+
+.join_box {
+    width: 100%; height: 360px;
+    border-bottom: 1px solid #ccc;
+}
+.join_box> div {
+    width: 40%; height: 100%; padding: 20px;
+    margin-left: 50%; transform: translateX(-50%);
+}
+.join_box> div> ul {
+    width: 100%; height: 140px;
+    border: 1px solid #ccc;
+}
+.join_box> div> ul:nth-child(2) {margin-top: 5px;}
+.join_box> div> ul> li {width: 100%;}
+.join_box> div> ul> li:nth-child(1) {
+    height: 40px; border-bottom: 1px solid #ccc;
+    text-indent: 10px; line-height: 40px;
+    font-size: 14px; font-weight: bold;
+}
+.join_box> div> ul:nth-child(1)> li:nth-child(1)> input {margin-left: 480px;}
+.join_box> div> ul:nth-child(2)> li:nth-child(1)> input {margin-left: 455px;}
+
+.join_box> div> ul> .member_terms1,
+.join_box> div> ul> .member_terms2 {
+    width: 100%; height: 98px;
+}
+
+.join_box> div> ul> .member_terms2 {
+    width: 100%; height: 98px; overflow-y: scroll; padding: 10px;
+}
+.join_box> div> ul> .member_terms2> p {
+    font-size: 13px; color: #898989;
+}
+
+.join_box> div> .allcheck {
+    width: 100%; height: 50px;
+    margin-top: 15px; font-weight: bold;
+    text-indent: 10px; font-size: 14px;
+}
+.join_box> div> .allcheck> #terms3 {
+    margin-left: 560px;
+}
+
+.join_textbox {
+    width: 100%; height: 390px; font-size: 14px; 
+}
+.join_textbox> div {
+    width: 40%; height: 100%; padding: 20px;
+    margin-left: 50%; transform: translateX(-50%);
+}
+.join_textbox> div> p {font-weight: bold;}
+.join_textbox> div> .join_textbox1 {
+    width: 100%; height: 40px;
+    margin-top: 10px;
+}
+.join_textbox> div> .join_textbox1> input {
+    width: 100%; height: 40px;
+    border: 1px solid #ccc;
+    margin-top: 5px; text-indent: 10px;
+}
+.join_textbox> div> .join_textbox2 {
+    width: 100%; height: 40px;
+    margin-top: 35px;
+}
+.join_textbox> div> .join_textbox2> input {
+    width: 100%; height: 40px;
+    border: 1px solid #ccc;
+    margin-top: 5px; text-indent: 10px;
+}
+.join_textbox> div> .join_textbox3 {
+    width: 100%; height: 40px;
+    margin-top: 35px;
+}
+.join_textbox> div> .join_textbox3> input {
+    width: 100%; height: 40px;
+    border: 1px solid #ccc;
+    margin-top: 5px; text-indent: 10px;
+}
+
+.join_textbox> div> .btn-join {
+    width: 100%; height: 50px;
+    background: #05141f; color: white;
+    border: none; cursor: pointer;
+    margin-top: 80px; font-size: 16px; font-weight: bold;
+}
