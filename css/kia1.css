@@ -299,7 +299,7 @@ nav> ul> li> a> p:last-child {margin-top: 10px;}
     width: 100%; height: 670px;
     position: relative;
     top: 70px; left: 0; margin: auto;
-    _overflow: hidden;
+    overflow: hidden;
 }
 .main_img_slide> div:nth-child(1) {
     width: 100%; height: 50px;
@@ -310,7 +310,7 @@ nav> ul> li> a> p:last-child {margin-top: 10px;}
     width: 1903px; height: 450px;
     border: 0px solid black;
     position: relative; top: 10px;
-    margin: 50px auto; _overflow: hidden;
+    margin: 50px auto; overflow: hidden;
 }
 .main_img_slide> .slide_img> ul {
     width: 3060px; height: 100%;
