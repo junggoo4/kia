@@ -14,6 +14,7 @@ $(function() {
 // 공통 변수 ==================================================================
 let time_count = 0;
 let timer = setInterval("abc()", 1000);
+let timer2 = setInterval("bestkia()", 5000); 
 
 //=========================== ((메인화면)) 시작 ================================
 // =============================================================================
@@ -27,6 +28,21 @@ function head() {
         }
     });
 };
+
+// 메인화면 애니메이션 타이머
+function abc() {
+    time_count++;
+    if(time_count%4==0) { 
+        slide1();
+    }
+    if(time_count%5==0) {  
+        slide3();
+    }
+};
+function bestkia() {
+    time_count++;
+    slide2();
+}
 
 
 $(function() {
@@ -55,10 +71,10 @@ $(function() {
     });
 
     // 메인화면 메인 이미지 - < > 클릭시 이벤트
-    $(".arrow").mouseenter(function() {
+    $(".arrow").on("mouseenter",function() {
         clearInterval(timer);
     });    
-    $(".arrow").mouseleave(function() {
+    $(".arrow").on("mouseleave",function() {
         timer = setInterval("abc()", 5000);
     });
 
@@ -83,35 +99,28 @@ $(function() {
 
     
     // 메인화면 BEST KIA - 이미지 < > 버튼 클릭시 슬라이드
-    $(".main_prev").on("click",function() {
-        $(".slide_img_6").stop().animate({"left":"+=500px"}, 300, function() {
+    $(".main_next").on("click",function() {
+        $(".slide_img_6").stop().animate({"left":"-=510px"}, 300, function() {
             $(".slide_img_6> li:first").appendTo(".slide_img_6");
-            $(".slide_img_6").css({"left":"-=500px"});
+            $(".slide_img_6").css({"left":"+=510px"});
         });
     });
-    $(".main_next").on("click",function() {
-        $(".slide_img_6").stop().animate({"left":"-=500px"}, 300, function() {
+    $(".main_prev").on("click",function() {
+        $(".slide_img_6").stop().animate({"left":"+=510px"}, 300, function() {
             $(".slide_img_6> li:last").prependTo(".slide_img_6");
-            $(".slide_img_6").css("left","+=500px");
+            $(".slide_img_6").css("left","-=510px");
         });
     });
 
 
     // 메인화면 BEST KIA - < > 버튼에 hover시 슬라이드 멈춤처리
     $(".main_arrow").mouseenter(function() {
-        clearInterval(timer);
+        clearInterval(timer2);
     });    
     $(".main_arrow").mouseleave(function() {
-        timer = setInterval("abc()", 5000);
+        timer2 = setInterval("bestkia()", 5000);
     });
 
-
-    $(".news_img_6").mouseenter(function() {
-        clearInterval(timer);
-    });    
-    $(".news_img_6").mouseleave(function() {
-        timer = setInterval("abc()", 5000);
-    });
 });
 
 
@@ -192,16 +201,6 @@ function src_white() {
 };
 
 
-// 메인화면 애니메이션 타이머
-function abc() {
-    time_count++;
-    if(time_count%4==0) { 
-        slide1();
-    }
-    if(time_count%2==0) {  
-        slide2(), slide3();
-    }
-};
 
 
 // 메인화면 메인 이미지 - 슬라이드
@@ -223,9 +222,9 @@ function slide1() {
 
 // 메인화면 BEST KIA - 이미지 슬라이드
 function slide2() { 
-    $(".slide_img_6").stop().animate({"left":"-=500px"}, 300, function() {
+    $(".slide_img_6").stop().animate({"left":"-=510px"}, 300, function() {
         $(".slide_img_6> li:first").appendTo(".slide_img_6");
-        $(".slide_img_6").css("left","+=500px");
+        $(".slide_img_6").css("left","+=510px");
     });
 };
 
