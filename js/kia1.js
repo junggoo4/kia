@@ -33,7 +33,7 @@ function head() {
 function abc() {
     time_count++;
     if(time_count%4==0) { 
-        slide1();
+        slide1(), slide4();
     }
     if(time_count%5==0) {  
         slide3();
@@ -249,3 +249,19 @@ function slide3() {
     });
 };
 
+
+// 모바일) 메인화면 메인 이미지 - 슬라이드
+let ani4 = 1;
+function slide4() {
+    if(ani4<=4)
+        ani4++;
+    else    
+        ani4=1;
+        $(".m_bigimg_btn li").css({"background":"white", "border":"1px solid #ccc", "width":"12px", "borderRadius":"50%"});
+        $(".m_bigimg_btn"+ani4).css({"background":"#05141f", "border":"1px solid white", "width":"50px", "borderRadius":"10px"});
+
+        $(".main_bigimg").stop().animate({"left":"-=100%"}, 500, function() {
+            $(".main_bigimg> li:first").appendTo(".main_bigimg");
+            $(".main_bigimg").css("left","+=100%");
+        });
+};
