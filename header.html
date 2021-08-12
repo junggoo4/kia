@@ -153,7 +153,39 @@
     $(".car_click").on("click",function() {
         $(".header_btn1").css("borderBottom","2px solid #05141f");
     });
+
+
+    // 모바일 햄버거 메뉴 노출
+    $(".ham").on("click",function() {
+        $(".back").show();
+        $(".side_m").css({"top":"0", "transition":"all 0.5s"});
+    });
+    $(".ham_close").on("click",function() {
+        $(".back").hide();
+        $(".side_m").css({"top":"-100%", "transition":"all 0.5s"});
+    });
+
+    // 모바일 햄버거 메뉴 - 메뉴 선택시 하부메뉴 노출
+    $(".bm").hide();
+    $(".title").on("click",function() {
+        $(".bm").slideUp();
+        $(".plus").css("opacity","1");
+        if($(this).next().css("display")=="none") {
+            $(this).next().slideDown();
+            $(this).find(".plus").css("opacity","0");
+            $(this).find(".minus").css("opacity","1");
+        } else {
+            $(".bm").slideUp();
+            $(this).find(".plus").css("opacity","1");
+            $(this).find(".minus").css("opacity","0");
+        }
+    });
+    
 </script>
+
+
+
+
 
 <div class="login">
     <ul>
@@ -179,6 +211,112 @@
             <li class="header_btn header_btn3">체험센터</li>
             <li class="header_btn header_btn4">기아소식</li>
         </ul>
+    </div>
+
+    <!-- 모바일 -->
+    <ul class="head1_m">
+        <li class="ham"><i class="fas fa-bars"></i></li>
+        <li class="logo_m"><a href="index.html"><img src="img1/logo2.png" alt="logo_m"></a></li>
+        <li><i class="far fa-arrow-alt-circle-up"></i></li>
+    </ul>
+
+    
+    <div class="back"></div>
+    <div class="side_m">
+        <div class="whi">
+            <ul>
+                <li><img src="img1/logo1.png" alt="logo_m"></li>
+                <li class="ham_close"><i class="fas fa-times"></i></li>
+            </ul>
+
+            <ul class="menu_m">
+                <li>
+                    <div class="title">
+                        <p>차량</p>
+                        <div>
+                            <p class="plus"><i class="fas fa-plus"></i></p>
+                            <p class="minus"><i class="fas fa-window-minimize"></i></p>
+                        </div>
+                    </div>
+                    <ul class="bm">
+                        <ul class="m_car_btn">
+                            <li><a href="morning.html">모닝</a></li>
+                            <li><a href="k5.html">K5</a></li>
+                            <li><a href="sorento.html">쏘렌토 하이브리드</a></li>
+                            <li><a href="niro.html">니로</a></li>
+                            <li><a href="seltos.html">셀토스</a></li>
+                            <li><a href="mohave.html">모하비</a></li>
+                            <li><a href="bonggo3.html">봉고Ⅲ트럭</a></li>
+                            <li><a href="k8_taxi.html">K8 택시</a></li>
+                        </ul>
+                    </ul>
+                </li>
+                <li>
+                    <div class="title">
+                        <p>구매정보</p>
+                        <div>
+                            <p class="plus"><i class="fas fa-plus"></i></p>
+                            <p class="minus"><i class="fas fa-window-minimize"></i></p>
+                        </div>
+                    </div>
+                    <ul class="bm">
+                        <ul>
+                            <li><a href="menu2_1.html">온라인 견적</a></li>
+                            <li><a href="menu2_2.html">카탈로그/가격표</a></li>
+                            <li><a href="menu2_3.html">영업망 안내</a></li>
+                            <li></li>
+                        </ul>
+                    </ul>
+                </li>
+                <li>
+                    <div class="title">
+                        <p>체험센터</p>
+                        <div>
+                            <p class="plus"><i class="fas fa-plus"></i></p>
+                            <p class="minus"><i class="fas fa-window-minimize"></i></p>
+                        </div>
+                    </div>
+                    <ul class="bm">
+                        <ul>
+                            <li><a href="menu3_1.html">국내 사업장 안내</a></li>
+                            <li><a href="menu3_2.html">시승 예약</a></li>
+                        </ul>
+                    </ul>
+                </li>
+                <li>
+                    <div class="title">
+                        <p>기아소식</p>
+                        <div>
+                            <p class="plus"><i class="fas fa-plus"></i></p>
+                            <p class="minus"><i class="fas fa-window-minimize"></i></p>
+                        </div>
+                    </div>
+                    <ul class="bm">
+                        <ul>
+                            <li><a href="menu4_1.html">NEWS</a></li>
+                            <li><a href="menu4_2.html">공지사항</a></li>
+                            <li><a href="menu4_3.html">이벤트</a></li>
+                            <li></li>
+                        </ul>
+                    </ul>
+                </li>
+
+                <ul class="login_m">
+                    <li>
+                        <a href="login.html">
+                            <p><i class="fas fa-chevron-right"></i></p>
+                            <p>로그인</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="join.html">
+                            <p><i class="fas fa-chevron-right"></i></p>
+                            <p>회원가입</p>
+                        </a>
+                    </li>
+                </ul>
+            </ul>
+        </div>
     </div>
 
     <div class="topdown topdown1">
