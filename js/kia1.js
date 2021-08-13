@@ -296,7 +296,7 @@ function slide5() {
         $(".m_slide_img_6 li:eq("+no+")").css({"transform":"scale(1.4)", "opacity":"1"});
         $(".m_slide_img_6> li> .name").css({"opacity":"0"});
         $(".m_slide_img_6> li> .text").css({"opacity":"0"});
-        $(".m_slide_img_6> li> .name:eq("+no+")").css({"opacity":"1"});
-        $(".m_slide_img_6> li> .text:eq("+no+")").css({"opacity":"1"});
+        $(".m_slide_img_6> li:eq("+no+")> .name").css({"opacity":"1"});
+        $(".m_slide_img_6> li:eq("+no+")> .text").css({"opacity":"1"});
     });
 };
