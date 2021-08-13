@@ -292,11 +292,11 @@ function slide5() {
         $(".m_slide_img_6> li:first").appendTo(".m_slide_img_6");
         $(".m_slide_img_6").css("left","+=100%");
 
-        $(".m_slide_img_6 li> .img").css({"transform":"none", "opacity":"0.3"});
-        $(".m_slide_img_6 li:eq("+no+")> .img").css({"transform":"scale(1.4)", "opacity":"1"});
-        $(".m_slide_img_6 li> .name").css({"opacity":"0"});
-        $(".m_slide_img_6 li> .text").css({"opacity":"0"});
-        $(".m_slide_img_6 li:eq("+no+")> .name").css({"opacity":"1"});
-        $(".m_slide_img_6 li:eq("+no+")> .text").css({"opacity":"1"});
+        $(".m_slide_img_6 li> a> .img").css({"transform":"none", "opacity":"0.3"});
+        $(".m_slide_img_6 li:eq("+no+")> a> .img").css({"transform":"scale(1.4)", "opacity":"1"});
+        $(".m_slide_img_6 li> a> .name").css({"opacity":"0"});
+        $(".m_slide_img_6 li> a> .text").css({"opacity":"0"});
+        $(".m_slide_img_6 li:eq("+no+")> a> .name").css({"opacity":"1"});
+        $(".m_slide_img_6 li:eq("+no+")> a> .text").css({"opacity":"1"});
     });
 };
