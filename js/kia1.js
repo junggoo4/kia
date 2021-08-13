@@ -41,7 +41,7 @@ function abc() {
 };
 function bestkia() {
     time_count++;
-    slide2();
+    slide2(), slide5();
 }
 
 
@@ -250,6 +250,24 @@ function slide3() {
 };
 
 
+// 메인화면 EVENT KIA - 클릭시 해당 게시물로 이동
+function re_menu1(idx){
+    location.href = "menu4_3.html?value="+idx;
+};
+
+// 메인화면 공지사항 - 클릭시 해당 게시물로 이동
+function re_menu(idx){
+    //sub.html?변수1=값&변수2=값&변수3=값;
+    location.href = "menu4_2.html?value="+idx;
+};
+
+// 메인화면 KIA NEWS - 클릭시 해당 게시물로 이동
+function re_menu2(idx){
+    location.href = "menu4_1.html?value="+idx;
+};
+
+
+
 // 모바일) 메인화면 메인 이미지 - 슬라이드
 let ani4 = 1;
 function slide4() {
@@ -264,4 +282,13 @@ function slide4() {
             $(".main_bigimg> li:first").appendTo(".main_bigimg");
             $(".main_bigimg").css("left","+=100%");
         });
+};
+
+
+// 모바일) 메인화면 BEST KIA - 이미지 슬라이드
+function slide5() { 
+    $(".m_slide_img_6").stop().animate({"left":"-=100%"}, 300, function() {
+        $(".m_slide_img_6> li:first").appendTo(".m_slide_img_6");
+        $(".m_slide_img_6").css("left","+=100%");
+    });
 };
