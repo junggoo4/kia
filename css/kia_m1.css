@@ -45,7 +45,7 @@ header> .back {
 header> .side_m {
     width: 100%; z-index: 200;
     background: white; display: block;
-    position: fixed; top: -100%; left: 0;
+    position: fixed; top: -120%; left: 0;
 }
 header> .side_m> .whi {
     width: 100%;
@@ -162,7 +162,7 @@ header> .topdown {display: none;}
 .main_big_slide {
     width: 100%; height: 74vh;
     position: relative; top: -60px; left: 0;
-    margin: auto;
+    margin: auto; overflow: hidden;
 }
 .main_big_slide> div:nth-child(1) {
     width: 100%; 
@@ -430,7 +430,7 @@ footer {
     width: 100%; height: 700px;
     background: #05141f;
     position: relative; top: 60px; left: 0;
-    padding: 30px;
+    padding: 30px; overflow: hidden;
 }
 footer> div {
     width: 100%; height: 100%;
