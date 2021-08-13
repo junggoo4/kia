@@ -288,6 +288,7 @@ function slide4() {
 // 모바일) 메인화면 BEST KIA - 이미지 슬라이드
 function slide5() { 
     no = $(this).index()+3;
+    $(".m_slide_img_6 li:eq("+no+")> a> .img").css({"transform":"scale(1.4)", "opacity":"1"});
     $(".m_slide_img_6").stop().animate({"left":"-=100%"}, 300, function() {
         $(".m_slide_img_6> li:first").appendTo(".m_slide_img_6");
         $(".m_slide_img_6").css("left","+=100%");
