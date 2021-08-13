@@ -267,7 +267,7 @@ nav> ul> li> a> p:last-child {font-size: 3vw; margin-top: 1vh;}
     font-size: 3.8vh; font-weight: bold;
 }
 .main_img_slide> .slide_img {
-    width: 100%; height: 240px;
+    width: 100%; height: 250px;
     position: relative; top: 10px;
     margin: 30px auto; overflow: hidden;
 }
@@ -284,7 +284,7 @@ nav> ul> li> a> p:last-child {font-size: 3vw; margin-top: 1vh;}
     float: left; width: 10%;
 }
 .main_img_slide> .slide_img> ul> li:nth-child(3)> a> .img {
-    transform: scale(1.4); transition: all 0.5s; 
+    transition: all 0.5s; 
 }
 .main_img_slide> .slide_img> ul> li:nth-child(1), 
 .main_img_slide> .slide_img> ul> li:nth-child(2), 
@@ -300,27 +300,27 @@ nav> ul> li> a> p:last-child {font-size: 3vw; margin-top: 1vh;}
 .main_img_slide> .slide_img> ul> li> a> .name {
     font-size: 17px; font-weight: bold; text-align: center;
     position: relative; top: 20px; left: 0; color: #05141f;
-    width: 100%; opacity: 0;
+    width: 100%; opacity: 1;
 }
-/* .main_img_slide> .slide_img> ul> li:nth-child(1)> a> .name, 
+.main_img_slide> .slide_img> ul> li:nth-child(1)> a> .name, 
 .main_img_slide> .slide_img> ul> li:nth-child(2)> a> .name, 
 .main_img_slide> .slide_img> ul> li:nth-child(4)> a> .name, 
 .main_img_slide> .slide_img> ul> li:nth-child(5)> a> .name,
 .main_img_slide> .slide_img> ul> li:nth-child(6)> a> .name {
     opacity: 0;
-} */
+}
 .main_img_slide> .slide_img> ul> li> a> .text {
     font-size: 11.5px; text-align: center;
     position: relative; top: 20px; left: -15%;
-    color: #292929; width: 130%; opacity: 0;
+    color: #292929; width: 130%; opacity: 1;
 }
-/* .main_img_slide> .slide_img> ul> li:nth-child(1)> a> .text, 
+.main_img_slide> .slide_img> ul> li:nth-child(1)> a> .text, 
 .main_img_slide> .slide_img> ul> li:nth-child(2)> a> .text, 
 .main_img_slide> .slide_img> ul> li:nth-child(4)> a> .text, 
 .main_img_slide> .slide_img> ul> li:nth-child(5)> a> .text,
 .main_img_slide> .slide_img> ul> li:nth-child(6)> a> .text {
     opacity: 0;
-} */
+}
 .main_img_slide> .main_arrow {display: none;}
 
 
