@@ -11,6 +11,21 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css"/>
     <script src="js/jquery-3.6.0.min.js"></script>
     <script src="js/kia5.js"></script>
+
+    <script>
+        $(function(){
+            var url = unescape(location.href);
+            var pm = url.split('?');
+            var params = pm[1].split('&');
+            
+            for(var i=0; i<params.length; i++){
+                var param = params[i].split('=');
+                // alert(param[0]+'의 값은' + param[1]+'입니다.');
+            }
+            var idx = param[1];
+            $(".menu4_2_bm>.rayout>ul").eq(idx).trigger('click');
+        });
+    </script>
 </head>
 
 <body class="back">

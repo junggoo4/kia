@@ -11,6 +11,20 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css"/>
     <script src="js/jquery-3.6.0.min.js"></script>
     <script src="js/kia5.js"></script>
+
+    <script>
+        $(function(){
+            var url = unescape(location.href);
+            var pm = url.split('?');
+            var params = pm[1].split('&');
+            
+            for(var i=0; i<params.length; i++){
+                var param = params[i].split('=');
+            }
+            var idx = param[1];
+            $(".menu4_3_bm>.rayout>.at").eq(idx).trigger('click');
+        });
+    </script>
 </head>
 
 <body class="back">
@@ -37,18 +51,6 @@
             </article>
 
             <article class="at at2">
-                <div class="txt">
-                    <i class="fa fa-arrow-right"></i>
-                    <p>8월 전용카드 구매혜택 이벤트</p>
-                    <p>
-                        <span>이벤트 기간</span>
-                        <span>ㅣ</span>
-                        <span>2021-08-01 ~ 2021-08-31</span>
-                    </p>
-                </div>
-            </article>
-
-            <article class="at at3">
                 <div class="txtt">
                     <i class="fa fa-arrow-right"></i>
                     <p>8월 이달의 구매혜택 이벤트</p>
@@ -60,31 +62,7 @@
                 </div>
             </article>
 
-            <article class="at at4">
-                <div class="txt">
-                    <i class="fa fa-arrow-right"></i>
-                    <p>8월 더드림 페스티벌 이벤트</p>
-                    <p>
-                        <span>이벤트 기간</span>
-                        <span>ㅣ</span>
-                        <span>2021-08-01 ~ 2021-08-31</span>
-                    </p>
-                </div>
-            </article>
-
-            <article class="at at5">
-                <div class="txtt">
-                    <i class="fa fa-arrow-right"></i>
-                    <p>기아 전시장 방문 이벤트</p>
-                    <p>
-                        <span>이벤트 기간</span>
-                        <span>ㅣ</span>
-                        <span>2021-08-01 ~ 2021-08-31</span>
-                    </p>
-                </div>
-            </article>
-
-            <article class="at at6">
+            <article class="at at3">
                 <div class="txt">
                     <i class="fa fa-arrow-right"></i>
                     <p>The new Kia K9, First Experience 3박 4일 시승 이벤트</p>
@@ -96,7 +74,7 @@
                 </div>
             </article>
 
-            <article class="at at7">
+            <article class="at at4">
                 <div class="txtt">
                     <i class="fa fa-arrow-right"></i>
                     <p>경쟁사와 차별화된 EV6만의<br>특화 보증연장상품 제공</p>
@@ -108,19 +86,7 @@
                 </div>
             </article>
 
-            <article class="at at8">
-                <div class="txt">
-                    <i class="fa fa-arrow-right"></i>
-                    <p>온디맨드 픽업충전 서비스 런칭</p>
-                    <p>
-                        <span>이벤트 기간</span>
-                        <span>ㅣ</span>
-                        <span>2021-08-05 ~ 2021-12-31</span>
-                    </p>
-                </div>
-            </article>
-
-            <article class="at at9">
+            <article class="at at5">
                 <div class="txtt">
                     <i class="fa fa-arrow-right"></i>
                     <p>2021 K스타일케어플러스</p>
@@ -128,6 +94,54 @@
                         <span>이벤트 기간</span>
                         <span>ㅣ</span>
                         <span>2021-06-01 ~ 2022-05-31</span>
+                    </p>
+                </div>
+            </article>
+
+            <article class="at at6">
+                <div class="txt">
+                    <i class="fa fa-arrow-right"></i>
+                    <p>8월 전용카드 구매혜택 이벤트</p>
+                    <p>
+                        <span>이벤트 기간</span>
+                        <span>ㅣ</span>
+                        <span>2021-08-01 ~ 2021-08-31</span>
+                    </p>
+                </div>
+            </article>            
+
+            <article class="at at7">
+                <div class="txt">
+                    <i class="fa fa-arrow-right"></i>
+                    <p>8월 더드림 페스티벌 이벤트</p>
+                    <p>
+                        <span>이벤트 기간</span>
+                        <span>ㅣ</span>
+                        <span>2021-08-01 ~ 2021-08-31</span>
+                    </p>
+                </div>
+            </article>
+
+            <article class="at at8">
+                <div class="txtt">
+                    <i class="fa fa-arrow-right"></i>
+                    <p>기아 전시장 방문 이벤트</p>
+                    <p>
+                        <span>이벤트 기간</span>
+                        <span>ㅣ</span>
+                        <span>2021-08-01 ~ 2021-08-31</span>
+                    </p>
+                </div>
+            </article>
+
+            <article class="at at9">
+                <div class="txt">
+                    <i class="fa fa-arrow-right"></i>
+                    <p>온디맨드 픽업충전 서비스 런칭</p>
+                    <p>
+                        <span>이벤트 기간</span>
+                        <span>ㅣ</span>
+                        <span>2021-08-05 ~ 2021-12-31</span>
                     </p>
                 </div>
             </article>
@@ -149,20 +163,6 @@
 
         <div class="rayout rayout3">
             <div class="event_bm_title">
-                <p>8월 전용카드 구매혜택 이벤트</p>
-                <p>
-                    <span>이벤트 기간</span>
-                    <span>ㅣ</span>
-                    <span>2021-08-01 ~ 2021-08-31</span>
-                </p>
-            </div>
-            <div class="event_bm">
-                <img src="img5/event_bm_2.webp" alt="event">
-            </div>
-        </div>
-
-        <div class="rayout rayout4">
-            <div class="event_bm_title">
                 <p>8월 이달의 구매혜택 이벤트</p>
                 <p>
                     <span>이벤트 기간</span>
@@ -175,35 +175,7 @@
             </div>
         </div>
 
-        <div class="rayout rayout5">
-            <div class="event_bm_title">
-                <p>8월 더드림 페스티벌 이벤트</p>
-                <p>
-                    <span>이벤트 기간</span>
-                    <span>ㅣ</span>
-                    <span>2021-08-01 ~ 2021-08-31</span>
-                </p>
-            </div>
-            <div class="event_bm">
-                <img src="img5/event_bm_4.webp" alt="event">
-            </div>
-        </div>
-
-        <div class="rayout rayout6">
-            <div class="event_bm_title">
-                <p>기아 전시장 방문 이벤트</p>
-                <p>
-                    <span>이벤트 기간</span>
-                    <span>ㅣ</span>
-                    <span>2021-08-01 ~ 2021-08-31</span>
-                </p>
-            </div>
-            <div class="event_bm">
-                <img src="img5/event_bm_5.webp" alt="event">
-            </div>
-        </div>
-
-        <div class="rayout rayout7">
+        <div class="rayout rayout4">
             <div class="event_bm_title">
                 <p>The new Kia K9, First Experience 3박 4일 시승 이벤트</p>
                 <p>
@@ -217,7 +189,7 @@
             </div>
         </div>
 
-        <div class="rayout rayout8">
+        <div class="rayout rayout5">
             <div class="event_bm_title">
                 <p>경쟁사와 차별화된 EV6만의 특화 보증연장상품 제공</p>
                 <p>
@@ -231,21 +203,7 @@
             </div>
         </div>
 
-        <div class="rayout rayout9">
-            <div class="event_bm_title">
-                <p>온디맨드 픽업충전 서비스 런칭</p>
-                <p>
-                    <span>이벤트 기간</span>
-                    <span>ㅣ</span>
-                    <span>2021-08-05 ~ 2021-12-31</span>
-                </p>
-            </div>
-            <div class="event_bm">
-                <img src="img5/event_bm_8.webp" alt="event">
-            </div>
-        </div>
-
-        <div class="rayout rayout10">
+        <div class="rayout rayout6">
             <div class="event_bm_title">
                 <p>2021 K스타일케어플러스</p>
                 <p>
@@ -256,6 +214,64 @@
             </div>
             <div class="event_bm">
                 <img src="img5/event_bm_9.jpg" alt="event">
+            </div>
+        </div>
+
+        <div class="rayout rayout7">
+            <div class="event_bm_title">
+                <p>8월 전용카드 구매혜택 이벤트</p>
+                <p>
+                    <span>이벤트 기간</span>
+                    <span>ㅣ</span>
+                    <span>2021-08-01 ~ 2021-08-31</span>
+                </p>
+            </div>
+            <div class="event_bm">
+                <img src="img5/event_bm_2.webp" alt="event">
+            </div>
+        </div>
+
+        
+
+        <div class="rayout rayout8">
+            <div class="event_bm_title">
+                <p>8월 더드림 페스티벌 이벤트</p>
+                <p>
+                    <span>이벤트 기간</span>
+                    <span>ㅣ</span>
+                    <span>2021-08-01 ~ 2021-08-31</span>
+                </p>
+            </div>
+            <div class="event_bm">
+                <img src="img5/event_bm_4.webp" alt="event">
+            </div>
+        </div>
+
+        <div class="rayout rayout9">
+            <div class="event_bm_title">
+                <p>기아 전시장 방문 이벤트</p>
+                <p>
+                    <span>이벤트 기간</span>
+                    <span>ㅣ</span>
+                    <span>2021-08-01 ~ 2021-08-31</span>
+                </p>
+            </div>
+            <div class="event_bm">
+                <img src="img5/event_bm_5.webp" alt="event">
+            </div>
+        </div>
+
+        <div class="rayout rayout10">
+            <div class="event_bm_title">
+                <p>온디맨드 픽업충전 서비스 런칭</p>
+                <p>
+                    <span>이벤트 기간</span>
+                    <span>ㅣ</span>
+                    <span>2021-08-05 ~ 2021-12-31</span>
+                </p>
+            </div>
+            <div class="event_bm">
+                <img src="img5/event_bm_8.webp" alt="event">
             </div>
         </div>
 
