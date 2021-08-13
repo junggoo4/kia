@@ -284,7 +284,7 @@ nav> ul> li> a> p:last-child {font-size: 3vw; margin-top: 1vh;}
     float: left; width: 10%;
 }
 .main_img_slide> .slide_img> ul> li:nth-child(3)> a> .img {
-    transition: all 0.5s; 
+    transition: all 0.5s; opacity: 1;
 }
 .main_img_slide> .slide_img> ul> li:nth-child(1), 
 .main_img_slide> .slide_img> ul> li:nth-child(2), 
