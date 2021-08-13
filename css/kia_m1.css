@@ -284,8 +284,13 @@ nav> ul> li> a> p:last-child {font-size: 3vw; margin-top: 1vh;}
     float: left; width: 10%;
 }
 .main_img_slide> .slide_img> ul> li> a> .img {
-    width: 95%; overflow: hidden; transition: all 0.5s; opacity: 1;;
+    width: 95%; overflow: hidden; transition: all 0.5s; opacity: 1;
 }
+.main_img_slide> .slide_img> ul> li:nth-child(1)> a> .img,
+.main_img_slide> .slide_img> ul> li:nth-child(2)> a> .img,
+.main_img_slide> .slide_img> ul> li:nth-child(4)> a> .img,
+.main_img_slide> .slide_img> ul> li:nth-child(5)> a> .img,
+.main_img_slide> .slide_img> ul> li:nth-child(6)> a> .img {opacity: 0.3;}
 .main_img_slide> .slide_img> ul> li> a> .img img {width: 100%;}
 .main_img_slide> .slide_img> ul> li> a> .name {
     font-size: 17px; font-weight: bold; text-align: center;
