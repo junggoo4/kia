@@ -249,7 +249,7 @@ nav> ul> li {
 }
 nav> ul> li:hover {background: #05141f; transition: all 0.5s;}
 nav> ul> li:hover a {color: white;}
-nav> ul> li> a> p:first-child {font-size: 6.5vw; margin-top: 3.5vh;}
+nav> ul> li> a> p:first-child {font-size: 6.5vw; margin-top: 3.8vh;}
 nav> ul> li> a> p:last-child {font-size: 3vw; margin-top: 1vh;}
 
 
@@ -271,7 +271,10 @@ nav> ul> li> a> p:last-child {font-size: 3vw; margin-top: 1vh;}
     position: relative; top: 10px;
     margin: 30px auto; overflow: hidden;
 }
-.main_img_slide> .slide_img> ul {
+
+.main_img_slide> .slide_img> .slide_img_6 {display: none;}
+.main_img_slide> .slide_img> .m_slide_img_6 {
+    display: block;
     width: 600%; height: 210px;
     position: relative; top: 0; left: 0;
     opacity: 1; transform: translate3d(-16.5%, 0px, 0px);
@@ -343,29 +346,35 @@ nav> ul> li> a> p:last-child {font-size: 3vw; margin-top: 1vh;}
     width: 100%; height: 320px;
     position: absolute; top: 5vh; left: 0; 
 }
-.notice> .notice_box> li {
+.notice> .notice_box> a> li {
     float: left;
     width: 100%; height: 80px;
     padding: 20px 10px; cursor: pointer;
+    border-top: 1px solid #ccc;
+    border-left: 1px solid #ccc;
+    border-right: 1px solid #ccc;
 }
-.notice> .notice_box> li:hover {
+
+.notice> .notice_box> a:nth-child(3)> li {border-bottom: none;}
+.notice> .notice_box> a:nth-child(4)> li {border-bottom: 1px solid #ccc;}
+.notice> .notice_box> a> li:hover {
     background: #05141f; color: white;
 }
-.notice> .notice_box> li> p:nth-child(1) {
+.notice> .notice_box> a> li> p:nth-child(1) {
     font-size: 12.5px; font-weight: bold; width: 70%;
 }
-.notice> .notice_box> li> p:nth-child(2) {
+.notice> .notice_box> a> li> p:nth-child(2) {
     margin-top: -10%; margin-left: 75%; float: left; 
     font-size: 11.5px; color: #898989; text-align: center;
     width: 25%;
 }
-.notice> .notice_box> li> p:nth-child(3) {display: none;}
+.notice> .notice_box> a> li> p:nth-child(3) {display: none;}
 
 
 /* 메인화면 KIA NEWS 뉴스 */
 .main_news {
     width: 90%; height: 45vh;
-    position: relative; top: 7vh; left: 0;
+    position: relative; top: 10vh; left: 0;
     margin: auto; overflow: hidden;
 }
 .main_news> p:nth-child(1) {
@@ -380,7 +389,7 @@ nav> ul> li> a> p:last-child {font-size: 3vw; margin-top: 1vh;}
     margin: auto;
 }
 .main_news> .news_box> .news_img_6 {
-    width: 600%; height: 118px;
+    width: 600%; height: 154px; overflow: hidden;
     position: absolute; top: 0; left: 0;
 }
 .main_news> .news_box> .news_img_6> li {
@@ -405,12 +414,13 @@ nav> ul> li> a> p:last-child {font-size: 3vw; margin-top: 1vh;}
     float: left; width: 400px; height: 100%; 
     cursor: pointer; margin-left: 15px;
 } 
+.main_news> .news_box2> .news_text_6> li:nth-child(2) {opacity: 0;}
 .main_news> .news_box2> .news_text_6> li> p:nth-child(1) {
     font-size: 1.7vh; color: #898989;
 }
 .main_news> .news_box2> .news_text_6> li> p:nth-child(2) {
     font-size: 2vh; font-weight: bold; 
-    margin-top: 5px;
+    margin-top: 5px; 
 }
 /* ============================ 메인화면 끝 =============================== */
 
@@ -419,7 +429,7 @@ nav> ul> li> a> p:last-child {font-size: 3vw; margin-top: 1vh;}
 footer {
     width: 100%; height: 700px;
     background: #05141f;
-    position: relative; top: 50px; left: 0;
+    position: relative; top: 60px; left: 0;
     padding: 30px;
 }
 footer> div {

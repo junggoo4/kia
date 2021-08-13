@@ -259,7 +259,7 @@ header> div> .top_bg {
 .main_big_slide> .bigimg_prev {
     position: absolute; z-index: 50;
     width: 50px; height: 50px;
-    top: 50%; left: 5%;
+    top: 50%; left: 5%; line-height: 50px;
     transform: translateY(-50%);
     font-size: 50px; color: lightslategrey;
     cursor: pointer;
@@ -267,7 +267,7 @@ header> div> .top_bg {
 .main_big_slide> .bigimg_next {
     position: absolute; z-index: 50;
     width: 50px; height: 50px;
-    top: 50%; left: 93%;
+    top: 50%; left: 93%; line-height: 50px;
     transform: translateY(-50%);
     font-size: 50px; color: lightslategrey;
     cursor: pointer;
@@ -318,11 +318,12 @@ nav> ul> li> a> p:last-child {margin-top: 10px;}
     position: relative; top: 10px;
     margin: 50px auto; overflow: hidden;
 }
-.main_img_slide> .slide_img> ul {
+.main_img_slide> .slide_img> .m_slide_img_6 {display: none;}
+.main_img_slide> .slide_img> .slide_img_6 {
+    display: block;
     width: 3060px; height: 100%;
     position: relative; top: 0; left: 0;
     opacity: 1; transform: translate3d(-300px, 0px, 0px);
-   
 }
 .main_img_slide> .slide_img> ul> li {
     float: left; width: 510px;
@@ -383,23 +384,23 @@ nav> ul> li> a> p:last-child {margin-top: 10px;}
     width: 650px; height: 520px;
     position: absolute; top: 75px; left: 0; 
 }
-.main_event> .event_kia> .event_img_5> .event_img {
+.main_event> .event_kia> .event_img_5> a> .event_img {
     width: 650px; height: 380px;
     position: absolute; top: 0; left: 0;
     float: left; display: none;
 }
-.main_event> .event_kia> .event_img_5> .event_img> div {
+.main_event> .event_kia> .event_img_5> a> .event_img> div {
     width: 100%; height: 380px;
     box-shadow: 15px 15px 10px #ccc; cursor: pointer;
 }
-.main_event> .event_kia> .event_img_5> .event_img> div img {width: 100%;}
+.main_event> .event_kia> .event_img_5> a> .event_img> div img {width: 100%;}
 
-.main_event> .event_kia> .event_img_5> .event_img1> p {display: block;}
-.main_event> .event_kia> .event_img_5> .event_img> p:nth-child(2) {
+.main_event> .event_kia> .event_img_5> a> .event_img1> p {display: block;}
+.main_event> .event_kia> .event_img_5> a> .event_img> p:nth-child(2) {
     margin-top: 50px; margin-left: 10px; cursor: pointer;
     font-size: 23px; font-weight: bold; 
 }
-.main_event> .event_kia> .event_img_5> .event_img> p:nth-child(3) {
+.main_event> .event_kia> .event_img_5> a> .event_img> p:nth-child(3) {
     margin-left: 10px;
     font-size: 14px; color: #898989; 
 }
@@ -431,22 +432,26 @@ nav> ul> li> a> p:last-child {margin-top: 10px;}
     width: 100%; height: 520px;
     position: absolute; top: 75px; left: 0; 
 }
-.notice> .notice_box> li {
+.notice> .notice_box> a> li {
     float: left;
     width: 50%; height: 220px;
-    border: 1px solid #ccc;
+    border-top: 1px solid #ccc;
+    border-left: 1px solid #ccc;
     padding: 30px; cursor: pointer;
 }
-.notice> .notice_box> li:hover {
-    background: #05141f; color: white;
-}
-.notice> .notice_box> li> p:nth-child(1) {
+.notice> .notice_box> a:nth-child(2)> li,
+.notice> .notice_box> a:nth-child(4)> li {border-right: 1px solid #ccc;}
+.notice> .notice_box> a:nth-child(3)> li,
+.notice> .notice_box> a:nth-child(4)> li {border-bottom: 1px solid #ccc;}
+.notice> .notice_box> a> li:hover {background: #05141f;}
+.notice> .notice_box> a> li:hover {color: white;}
+.notice> .notice_box> a> li> p:nth-child(1) {
     font-size: 18px; font-weight: bold;
 }
-.notice> .notice_box> li> p:nth-child(2) {
+.notice> .notice_box> a> li> p:nth-child(2) {
     margin-top: 90px; float: left;
 }
-.notice> .notice_box> li> p:nth-child(3) {
+.notice> .notice_box> a> li> p:nth-child(3) {
     font-size: 30px; color: white;
     margin-top: 78px; margin-left: 230px;
 }
@@ -482,7 +487,7 @@ nav> ul> li> a> p:last-child {margin-top: 10px;}
 }
 
 .main_news> .news_box {
-    width: 1400px; height: 217px;
+    width: 1400px; height: 218px;
     border: 0px solid red;
     position: relative; top: 20px; left: 0;
     margin: auto; overflow: hidden;
@@ -494,10 +499,9 @@ nav> ul> li> a> p:last-child {margin-top: 10px;}
 .main_news> .news_box> .news_img_6> li {
     float: left; cursor: pointer;
     width: 400px; height: 100%; margin-left: 15px;
-    border: 1px solid #ccc;
 }
 .main_news> .news_box> .news_img_6> li img {
-    width: 100%;
+    width: 100%; border: 1px solid #ccc;
 }
 
 .main_news> .news_box2 {
