@@ -1,0 +1,488 @@
+/* 메인화면 모바일 스타일시트 */
+
+* {margin: 0; padding: 0; list-style: none; box-sizing: border-box;}
+a {text-decoration: none; color: #000;}
+
+/* ============================ header 시작 =============================== */
+/* login */
+.login {display: none;}
+
+/* header */
+header {
+    width: 100%; height: 60px; 
+    border-bottom: 1px solid #f2f2f2;
+    position: relative; top: 0; z-index: 99;
+}
+header> .head1_m {
+    display: block;
+    width: 100%; height: 100%;
+    position: relative;
+}
+header> .head1_m> li {
+    float: left; height: 100%; color: white;
+    text-align: center; line-height: 60px;
+    position: absolute; cursor: pointer;
+}
+
+header> .head1_m> li:nth-child(1) {width: 50px; top: 0; left: 10px; font-size: 20px;}
+header> .head1_m> .logo_m {
+    width: 85px; height: 80%; 
+    top: 10%; left: 50%; transform: translateX(-50%);
+}
+header> .head1_m> .logo_m img {width: 100%;}
+header> .head1_m> li:nth-child(3) {
+    width: 50px; right: 10px;
+    font-weight: bold; font-size: 24px;
+}
+
+
+/* 햄버거 메뉴 */
+header> .back {
+    width: 100%; height: 100%;
+    position: fixed; background: rgba(5, 20, 31, 0.8);
+    top: 0; left: 0; display: none;
+}
+header> .side_m {
+    width: 100%; z-index: 200;
+    background: white; display: block;
+    position: fixed; top: -120%; left: 0;
+}
+header> .side_m> .whi {
+    width: 100%;
+}
+
+
+/* 상단 로고, x버튼 */
+header> .side_m> .whi> ul:nth-child(1) {
+    width: 100%; height: 60px;
+    border-bottom: 2px solid #ccc;
+}
+header> .side_m> .whi> ul:nth-child(1)> li {
+    float: left; text-align: center;
+}
+header> .side_m> .whi> ul:nth-child(1)> li:nth-child(1) {
+    width: 85px; height: 30px;
+    margin-top: 17px; margin-left: 20px;
+}
+header> .side_m> .whi> ul:nth-child(1)> li:nth-child(1) img {width: 100%;}
+header> .side_m> .whi> ul:nth-child(1)> li:nth-child(2) {
+    width: 30px; height: 60px; line-height: 60px;
+    position: absolute; top: 0; right: 20px;
+    font-size: 18px; cursor: pointer;
+}
+
+
+/* 트리메뉴 */
+header> .side_m> .whi> .menu_m {
+    width: 100%;
+    position: absolute; top: 60px; left: 0;
+}
+header> .side_m> .whi> .menu_m> li {
+    width: 100%;
+}
+header> .side_m> .whi> .menu_m> li> .title {
+    width: 100%; height: 50px; background: white;
+    border-bottom: 1px solid #ccc;
+    position: relative;
+}
+header> .side_m> .whi> .menu_m> li> .title:hover p {text-decoration: underline;}
+header> .side_m> .whi> .menu_m> li> .title> p:nth-child(1) {
+    height: 100%; color: #05141f;
+    text-indent: 20px; line-height: 50px;
+    font-size: 15px; font-weight: bold; cursor: pointer;
+}
+header> .side_m> .whi> .menu_m> li> .title> div {
+    width: 25px; height: 25px;
+    border-radius: 100%; cursor: pointer;
+    position: absolute; top: 11px; right: 20px;
+    background: #9ba1a5;
+}
+header> .side_m> .whi> .menu_m> li> .title> div> p {
+    position: absolute; top: 0; left: 0;
+    width: 25px; height: 25px; color: white;
+    text-align: center; line-height: 25px;
+    font-size: 13px;
+}
+header> .side_m> .whi> .menu_m> li> .title> div> p:nth-child(2) {
+    top: -3.5px; font-size: 9px; opacity: 0;
+}
+
+
+/* 트리메뉴 클릭시 상세메뉴 */
+header> .side_m> .whi> .menu_m> li> .bm {
+    width: 100%; height: 70px;
+    border-bottom: 1px solid #ccc;
+    background: white;
+}
+header> .side_m> .whi> .menu_m> li:nth-child(1)> .bm {height: 140px;}
+header> .side_m> .whi> .menu_m> li:nth-child(3)> .bm {height: 35px;}
+header> .side_m> .whi> .menu_m> li> .bm> ul {
+    width: 100%; 
+}
+header> .side_m> .whi> .menu_m> li> .bm> ul> li {
+    float: left; width: 50%; height: 35px; border-bottom: 1px solid #ccc;
+    text-align: center; line-height: 35px; color: #05141f;
+    font-size: 13px; font-weight: bold; cursor: pointer; 
+    background: #f7f8f8;
+}
+header> .side_m> .whi> .menu_m> li> .bm> ul> li:nth-child(1),
+header> .side_m> .whi> .menu_m> li> .bm> ul> li:nth-child(3),
+header> .side_m> .whi> .menu_m> li> .bm> ul> li:nth-child(5),
+header> .side_m> .whi> .menu_m> li> .bm> ul> li:nth-child(7) {
+    border-right: 1px solid #ccc;
+}
+
+
+/* 하단 로그인, 회원가입 */
+header> .side_m> .whi> .menu_m> .login_m {
+    width: 100%; height: 40px;
+    background: #9ba1a5;
+    border-bottom: 1px solid #ccc;
+}
+header> .side_m> .whi> .menu_m> .login_m> li {
+    float: left; width: 50%; height: 100%; cursor: pointer;
+}
+header> .side_m> .whi> .menu_m> .login_m> li:nth-child(1) {border-right: 1px solid #ccc;}
+header> .side_m> .whi> .menu_m> .login_m> li:hover p {text-decoration: underline;}
+header> .side_m> .whi> .menu_m> .login_m> li> a> p {
+    float: left; line-height: 40px;  color: white;
+    font-size: 13px; font-weight: bold;
+}
+header> .side_m> .whi> .menu_m> .login_m> li> a> p:nth-child(1) {text-indent: 10px;}
+header> .side_m> .whi> .menu_m> .login_m> li> a> p:nth-child(2) {margin-left: 5px;}
+
+
+/* pc버전 안 보이게 처리 */
+header> .head1 {display: none;}
+header> .topdown {display: none;}
+/* ============================ header 끝 =============================== */
+
+/* ============================ 메인화면 시작 =============================== */
+/* 메인 이미지 */
+.main_big_slide {
+    width: 100%; height: 74vh;
+    position: relative; top: -60px; left: 0;
+    margin: auto; overflow: hidden;
+}
+.main_big_slide> div:nth-child(1) {
+    width: 100%; 
+    position: absolute; top: 0; left: 0;
+}
+.main_big_slide> div> .main_bigimg {
+    width: 500%; height: 79vh; overflow: hidden;
+    position: absolute; top: 0; left: 0; 
+}
+.main_big_slide> div> .main_bigimg> li {
+    width: 20%; height: 100%;
+    float: left; position: relative;
+}
+
+.main_big_slide> div> .main_bigimg> li> .bigimg {display: none;}
+.main_big_slide> div> .main_bigimg> li> .bigimg_m {
+    display: block; width: 100%; margin-top: -50px;
+}
+.main_big_slide> div> .main_bigimg> li> .bigimg_m img {width: 100%;}
+
+
+.main_big_slide> div> .main_bigimg> li> .bigtext {display: none;}
+.main_big_slide> div> .main_bigimg> li> .bigtext_m {
+    width: 100%; display: block;
+    position: absolute; top: 15vh; left: 0; z-index: 50; 
+}
+.main_big_slide> div> .main_bigimg> li> .bigtext_m> p {
+    text-align: center; line-height: 3.5vh;
+    width: 100%; color: white; 
+    font-size: 4.8vw; text-shadow: 2px -2px 2px #05141f;
+}
+.main_big_slide> div> .main_bigimg> li:nth-child(3)> .bigtext_m> p,
+.main_big_slide> div> .main_bigimg> li:nth-child(4)> .bigtext_m> p,
+.main_big_slide> div> .main_bigimg> li:nth-child(5)> .bigtext_m> p {
+    color: #05141f; text-shadow: 2px -2px 2px #ccc;
+}
+
+.main_big_slide> .back_color {
+    width: 100%; height: 280px;
+    background: -webkit-linear-gradient(top, rgba(5, 20, 31, 0.8) 0%,rgba(255,255,255,0) 100%);
+    position: relative; top: 0; left: 0;
+}
+
+.main_big_slide> .bigimg_btn {display: none;}
+.main_big_slide> .m_bigimg_btn {
+    display: block;
+    position: absolute; top: 60vh; left: 50%;
+    transform: translateX(-50%);
+    width: 50%; height: 12px;
+    display: flex; justify-content: space-around;
+}
+.main_big_slide> .m_bigimg_btn> li  {
+    float: left; margin-top: 25%;
+    width: 12px; height: 12px; 
+    border: 1px solid #ccc;
+    border-radius: 50%; background: white;
+    cursor: pointer; transition: all 0.5s; transform-origin: center;
+}
+.main_big_slide> .m_bigimg_btn> li:nth-child(1) {
+    background: #05141f; width: 50px; 
+    border-radius: 10px; border: 1px solid white;
+}
+
+.main_big_slide> .bigimg_prev {display: none;}
+.main_big_slide> .bigimg_next {display: none;} 
+
+
+/* nav */
+nav {
+    width: 100%; height: 16vh;
+    position: relative;
+    top: -12vh; left: 0;
+}
+nav> ul {
+    width: 95%; height: 16vh;
+    position: relative; top: 0; left: 50%;
+}
+nav> ul> li {
+    float: left;
+    width: 33.33%; height: 16vh;
+    text-align: center; cursor: pointer;
+    background: white;
+    box-shadow: 0px 10px 8px #ccc;
+}
+nav> ul> li:hover {background: #05141f; transition: all 0.5s;}
+nav> ul> li:hover a {color: white;}
+nav> ul> li> a> p:first-child {font-size: 6.5vw; margin-top: 3.8vh;}
+nav> ul> li> a> p:last-child {font-size: 3vw; margin-top: 1vh;}
+
+
+
+/* 메인화면 BEST KIA 슬라이드 이미지 */
+.main_img_slide {
+    width: 100%; height: 300px;
+    position: relative;
+    top: -5vh; left: 0; margin: auto;
+    overflow: hidden;
+}
+.main_img_slide> div:nth-child(1) {
+    width: 100%; height: 50px;
+    text-align: center; line-height: 50px;
+    font-size: 3.8vh; font-weight: bold;
+}
+.main_img_slide> .slide_img {
+    width: 100%; height: 250px;
+    position: relative; top: 10px;
+    margin: 30px auto; overflow: hidden;
+}
+
+.main_img_slide> .slide_img> .slide_img_6 {display: none;}
+.main_img_slide> .slide_img> .m_slide_img_6 {
+    display: block;
+    width: 600%; height: 210px;
+    position: relative; top: 0; left: 0;
+    opacity: 1; transform: translate3d(-16.5%, 0px, 0px);
+   
+}
+.main_img_slide> .slide_img> .m_slide_img_6> li {
+    float: left; width: 10%;
+}
+.main_img_slide> .slide_img> .m_slide_img_6> li> a> .img {
+    width: 95%; overflow: hidden; transition: all 0.5s; opacity: 0.3;
+}
+.main_img_slide> .slide_img> .m_slide_img_6> li:nth-child(3)> a> .img {opacity: 1; transform: scale(1.4);}
+.main_img_slide> .slide_img> .m_slide_img_6> li> a> .img img {width: 100%;}
+.main_img_slide> .slide_img> .m_slide_img_6> li> a> .name {
+    font-size: 17px; font-weight: bold; text-align: center;
+    position: relative; top: 20px; left: 0; color: #05141f;
+    width: 100%; opacity: 0;
+}
+.main_img_slide> .slide_img> .m_slide_img_6> li:nth-child(3)> a> .name {
+    opacity: 1;
+}
+.main_img_slide> .slide_img> .m_slide_img_6> li> a> .text {
+    font-size: 11.5px; text-align: center;
+    position: relative; top: 20px; left: -15%;
+    color: #292929; width: 130%; opacity: 0;
+}
+.main_img_slide> .slide_img> .m_slide_img_6> li:nth-child(3)> a> .text {
+    opacity: 1;
+}
+.main_img_slide> .main_arrow {display: none;}
+
+
+/* 메인화면 event kia 배너 */
+.main_event {
+    width: 100%; height: 350px;
+    position: relative; top: 2vh; left: 0;
+    margin: auto;
+}
+.main_event> .event_kia {display: none;}
+
+
+/* 메인화면 notice 공지사항 */
+.notice {
+    width: 90%; height: 200px;
+    position: absolute; top: 0; left: 5%;
+}
+.notice> p:nth-child(1) {
+    width: 100%;
+    font-size: 3vh; font-weight: bold;
+}
+.notice> .notice_box {
+    width: 100%; height: 320px;
+    position: absolute; top: 5vh; left: 0; 
+}
+.notice> .notice_box> a> li {
+    float: left;
+    width: 100%; height: 80px;
+    padding: 20px 10px; cursor: pointer;
+    border-top: 1px solid #ccc;
+    border-left: 1px solid #ccc;
+    border-right: 1px solid #ccc;
+}
+
+.notice> .notice_box> a:nth-child(3)> li {border-bottom: none;}
+.notice> .notice_box> a:nth-child(4)> li {border-bottom: 1px solid #ccc;}
+.notice> .notice_box> a> li:hover {
+    background: #05141f; color: white;
+}
+.notice> .notice_box> a> li> p:nth-child(1) {
+    font-size: 12.5px; font-weight: bold; width: 70%;
+}
+.notice> .notice_box> a> li> p:nth-child(2) {
+    margin-top: -10%; margin-left: 75%; float: left; 
+    font-size: 11.5px; color: #898989; text-align: center;
+    width: 25%;
+}
+.notice> .notice_box> a> li> p:nth-child(3) {display: none;}
+
+
+/* 메인화면 KIA NEWS 뉴스 */
+.main_news {
+    width: 90%; height: 45vh;
+    position: relative; top: 10vh; left: 0;
+    margin: auto; overflow: hidden;
+}
+.main_news> p:nth-child(1) {
+    width: 100%; text-align: left;
+    font-size: 3vh; font-weight: bold; margin-left: 0;
+}
+.main_news> .news_btn {display: none;}
+
+.main_news> .news_box {
+    width: 104%; height: 24vh;
+    position: relative; top: 10px; left: -4%;
+    margin: auto;
+}
+.main_news> .news_box> .news_img_6 {
+    width: 600%; height: 154px; overflow: hidden;
+    position: absolute; top: 0; left: 0;
+}
+.main_news> .news_box> .news_img_6> li {
+    float: left; cursor: pointer;
+    width: 12%; height: 100%; margin-left: 15px;
+    border: none;
+}
+.main_news> .news_box> .news_img_6> li img {
+    width: 100%; border: 1px solid #ccc;
+}
+
+.main_news> .news_box2 {
+    width: 104%; height: 90px;
+    position: relative; top: 0; left: -4%;
+    margin: auto; overflow: hidden;
+}
+.main_news> .news_box2> .news_text_6 {
+    width: 600%; height: 100%;
+    position: absolute; top: 0; left: 0;
+}
+.main_news> .news_box2> .news_text_6> li {
+    float: left; width: 400px; height: 100%; 
+    cursor: pointer; margin-left: 15px;
+}
+.main_news> .news_box2> .news_text_6> li> p:nth-child(1) {
+    font-size: 1.7vh; color: #898989;
+}
+.main_news> .news_box2> .news_text_6> li> p:nth-child(2) {
+    font-size: 2vh; font-weight: bold; 
+    margin-top: 5px; 
+}
+/* ============================ 메인화면 끝 =============================== */
+
+
+/* ============================ footer 시작 =============================== */
+footer {
+    width: 100%; height: 700px;
+    background: #05141f;
+    position: relative; top: 60px; left: 0;
+    padding: 30px; overflow: hidden;
+}
+footer> div {
+    width: 100%; height: 100%;
+    position: relative; top: 0; left: 0;
+    margin: auto;
+}
+footer> div> .menu {
+    width: 100%; height: 420px;
+    border: 0px solid white;
+    position: absolute; top: 0; left: 0;
+}
+footer> div> .menu> li {
+    width: 100%; height: 40px;
+    font-size: 18px; font-weight: bold; 
+    text-align: left; line-height: 40px;
+    cursor: pointer;
+}
+footer> div> .menu> li> a {color: white;}
+footer> div> .menu> li:hover {text-decoration: underline;}
+footer> div> .menu> li:nth-child(1) {
+    text-decoration: none; cursor: default;
+    margin-left: -10px; height: 35px;
+}
+footer> div> .menu> li:nth-child(1) img {height: 100%;}
+footer> div> .menu> li:nth-child(2) {margin-top: 20px;}
+
+footer> div> .car {display: none;}
+
+footer> div> .award {display: none;}
+
+footer> div> .sns {
+    width: 170px; height: 50px;
+    position: absolute; top: 450px; left: 0;
+}
+footer> div> .sns> li {
+    float: left; cursor: pointer;
+    width: 50px; height: 100%;
+    text-align: center; line-height: 50px;
+    font-size: 28px;
+}
+footer> div> .sns> li> a {color: white;}
+footer> div> .sns> li:nth-child(2),
+footer> div> .sns> li:nth-child(3) {margin-left: 10px;}
+footer> div> .sns> li:hover {color: lightslategrey;}
+
+footer> div> .f_btn {
+    width: 100%; height: 30px;
+    position: absolute; top: 510px; left: 0;
+}
+footer> div> .f_btn> p {
+    height: 100%; float: left;
+    color: #ccc; font-size: 3.7vw;
+    line-height: 30px; margin-left: 5px;
+    cursor: pointer;
+}
+footer> div> .f_btn> p:nth-child(1) {margin-left: 0px;}
+footer> div> .f_btn> p:nth-child(3) {width: 40%;}
+footer> div> .f_btn> p:nth-child(4) {display: none;}
+footer> div> .f_btn> p:nth-child(5) {margin-left: -1px;}
+footer> div> .f_btn> p:hover {text-decoration: underline;}
+footer> div> .f_btn> p:nth-child(2):hover, 
+footer> div> .f_btn> p:nth-child(4):hover, 
+footer> div> .f_btn> p:nth-child(6):hover, 
+footer> div> .f_btn> p:nth-child(8):hover {text-decoration: none;}
+
+footer> div> .f_text {display: none;}
+
+footer> div> .f_corp {
+    height: 30px;
+    position: absolute; top: 600px; left: 0;
+    color: #ccc; font-size: 13px;
+}
+/* ============================ footer 끝 =============================== */
