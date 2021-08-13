@@ -269,7 +269,7 @@ nav> ul> li> a> p:last-child {font-size: 3vw; margin-top: 1vh;}
 .main_img_slide> .slide_img {
     width: 100%; height: 250px;
     position: relative; top: 10px;
-    margin: 30px auto; overflow: hidden;
+    margin: 30px auto;
 }
 
 .main_img_slide> .slide_img> .slide_img_6 {display: none;}
@@ -284,9 +284,11 @@ nav> ul> li> a> p:last-child {font-size: 3vw; margin-top: 1vh;}
     float: left; width: 10%;
 }
 .main_img_slide> .slide_img> .m_slide_img_6> li> a> .img {
-    width: 95%; overflow: hidden; transition: all 0.5s; opacity: 0.3;
+    width: 95%; transition: all 0.5s; opacity: 0.3;
 }
-.main_img_slide> .slide_img> .m_slide_img_6> li:nth-child(3)> a> .img {opacity: 1;}
+.main_img_slide> .slide_img> .m_slide_img_6> li:nth-child(3)> a> .img {
+    transform: scale(1.5); transition: all 0.5s; opacity: 1;
+}
 .main_img_slide> .slide_img> .m_slide_img_6> li> a> .img img {width: 100%;}
 .main_img_slide> .slide_img> .m_slide_img_6> li> a> .name {
     font-size: 17px; font-weight: bold; text-align: center;
@@ -396,8 +398,7 @@ nav> ul> li> a> p:last-child {font-size: 3vw; margin-top: 1vh;}
 .main_news> .news_box2> .news_text_6> li {
     float: left; width: 400px; height: 100%; 
     cursor: pointer; margin-left: 15px;
-} 
-.main_news> .news_box2> .news_text_6> li:nth-child(2) {opacity: 0;}
+}
 .main_news> .news_box2> .news_text_6> li> p:nth-child(1) {
     font-size: 1.7vh; color: #898989;
 }
