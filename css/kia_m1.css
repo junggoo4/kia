@@ -284,10 +284,7 @@ nav> ul> li> a> p:last-child {font-size: 3vw; margin-top: 1vh;}
     float: left; width: 10%;
 }
 .main_img_slide> .slide_img> ul> li> a> .img {
-    width: 95%; overflow: hidden; transition: all 0.5s; opacity: 0.3;
-}
-.main_img_slide> .slide_img> ul> li:nth-child(3) a> .img {
-    opacity: 1;
+    width: 95%; overflow: hidden; transition: all 0.5s; opacity: 1;;
 }
 .main_img_slide> .slide_img> ul> li> a> .img img {width: 100%;}
 .main_img_slide> .slide_img> ul> li> a> .name {
