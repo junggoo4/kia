@@ -41,17 +41,6 @@ $(function() {
             };
         };
     });
-    // $(window).scroll(function() {
-    //     var sc = $(window).scrollTop()+145;
-    //     var ct = $(".mob_menu>ul>li").length;
-    //     for(var i=1; i<ct; i++){
-    //         var pt = $("article").eq(i).position().top;
-    //         if(sc >= pt) {
-    //             $(".mob_menu ul li").css({"color":"black", "fontWeight":"500"});
-    //             $(".mob_menu ul li").eq(i).css({"color":"red", "fontWeight":"bold"});
-    //         };
-    //     };
-    // });
 });
 
 
@@ -172,16 +161,6 @@ $(function() {
         $(".pc_menu div").css("background","rgba(5, 20, 30, 0.6)");
         $(this).css("background","#05141f");
     });
-    // 모바일) 공통 - 특징 - 우측 버튼(nav) 클릭시 해당 아티클로 이동
-    // $(".mob_menu ul li").on("click",function() {
-    //     no=$(this).index();
-    //     var at_scr = $("article").eq(no).offset().top;
-
-    //     $("html, body").animate({"scrollTop":(at_scr-160)+"px"}, 500);
-    //     $(".mob_menu div").css("border","none");
-    //     $(this).css("border","5px solid #05141f");
-    // });
-
 
     // 모닝 - 타이틀 - 버튼 클릭시 해당 화면으로 이동
     $(".title_btn1").on("click",function() {
@@ -231,7 +210,6 @@ $(function() {
         $(".mor_at3_btn1").css("border","3px solid #ccc");
         $(this).css("border","3px solid #05141f");
     });
-
     // 모바일) 모닝 - 특징 - 외장(at3) - 이미지 < > 클릭시 이동
     let mor1_img_pos = 500;
     let mor1_img_count = 0;

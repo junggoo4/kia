@@ -226,7 +226,6 @@ header> div> .top_bg {
 .title> .center1> ul> li:nth-child(4) {margin-left: 20px;}
 
 /* 특징 - 메뉴 (공통) */
-.mob_menu {display: none;}
 .morning> .mor_pc_menu,
 .k5> .k5_pc_menu,
 .sorento> .sorento_pc_menu,
