@@ -692,6 +692,8 @@ header> div> .top_bg {
     text-align: center; line-height: 40px;
     font-size: 17px; font-weight:  bold;
 }
+.morning_1> .at6> div:nth-child(7) {display: none;}
+.morning_1> .at6> .mor_control6 {display: none;}
 
 /* 모닝 - at7 */
 .morning_1> .at7 {height: 1465px;}
@@ -758,6 +760,8 @@ header> div> .top_bg {
     text-align: center; line-height: 40px;
     font-size: 17px; font-weight:  bold;
 }
+.morning_1> .at7> div:nth-child(6) {display: none;}
+.morning_1> .at7> .mor_control7 {display: none;}
 
 /* 모닝 - at8 */
 .morning_1> .at8 {height: 700px;}
@@ -821,6 +825,8 @@ header> div> .top_bg {
     text-align: center; line-height: 40px;
     font-size: 17px; font-weight:  bold;
 }
+.morning_1> .at9> div:nth-child(5) {display: none;}
+.morning_1> .at9> .mor_control9 {display: none;}
 
 /* 모닝 - at10 */
 .morning_1> .at10 {height: 700px;}
@@ -874,7 +880,7 @@ header> div> .top_bg {
     position: absolute; top: 70px; left: 50%;
     transform: translateX(-50%);
 }
-
+.morning_1> .at10> div:nth-child(4)> .mor_at10_img_m {display: none;}
 
 /* ((((( 모닝 제원 ))))) */
 .morning_2> div {
