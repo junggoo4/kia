@@ -41,6 +41,17 @@ $(function() {
             };
         };
     });
+    // $(window).scroll(function() {
+    //     var sc = $(window).scrollTop()+145;
+    //     var ct = $(".mob_menu>ul>li").length;
+    //     for(var i=1; i<ct; i++){
+    //         var pt = $("article").eq(i).position().top;
+    //         if(sc >= pt) {
+    //             $(".mob_menu ul li").css({"color":"black", "fontWeight":"500"});
+    //             $(".mob_menu ul li").eq(i).css({"color":"red", "fontWeight":"bold"});
+    //         };
+    //     };
+    // });
 });
 
 
@@ -126,6 +137,7 @@ window.onload = function() {
 
     for(i=0; i<menuA.menu1.length; i++) {
         $(".mor_pc_menu div:eq("+i+")").html(menuA.menu1[(i)]);
+        $(".mor_mob_menu ul li:eq("+i+")").html(menuA.menu1[(i)]);
     }
     for(i=0; i<menuA.menu2.length; i++) {
         $(".k5_pc_menu div:eq("+i+")").html(menuA.menu2[(i)]);
@@ -160,6 +172,15 @@ $(function() {
         $(".pc_menu div").css("background","rgba(5, 20, 30, 0.6)");
         $(this).css("background","#05141f");
     });
+    // 모바일) 공통 - 특징 - 우측 버튼(nav) 클릭시 해당 아티클로 이동
+    // $(".mob_menu ul li").on("click",function() {
+    //     no=$(this).index();
+    //     var at_scr = $("article").eq(no).offset().top;
+
+    //     $("html, body").animate({"scrollTop":(at_scr-160)+"px"}, 500);
+    //     $(".mob_menu div").css("border","none");
+    //     $(this).css("border","5px solid #05141f");
+    // });
 
 
     // 모닝 - 타이틀 - 버튼 클릭시 해당 화면으로 이동
@@ -175,6 +196,21 @@ $(function() {
         $(".morning_2").show();
         $(".title_btn").css({"border":"none", "color":"#898989"});
         $(this).css({"color":"white", "borderBottom":"5px solid white"});
+        top_func();
+    });
+    // 모바일) 모닝 - 타이틀 - 버튼 클릭시 해당 화면으로 이동
+    $(".title_btn01").on("click",function() {
+        $(".morning").hide();
+        $(".morning_1").show();
+        $(".title_btn0").css("fontWeight","500");
+        $(this).css("fontWeight","bold");
+        top_func();
+    });
+    $(".title_btn02").on("click",function() {
+        $(".morning").hide();
+        $(".morning_2").show();
+        $(".title_btn0").css("fontWeight","500");
+        $(this).css("fontWeight","bold");
         top_func();
     });
 
@@ -196,6 +232,37 @@ $(function() {
         $(this).css("border","3px solid #05141f");
     });
 
+    // 모바일) 모닝 - 특징 - 외장(at3) - 이미지 < > 클릭시 이동
+    let mor1_img_pos = 500;
+    let mor1_img_count = 0;
+    let mor1_img_no = 0;
+    $(".mor_at3_right").on("click",function() {
+        if(mor1_img_count < 5)
+            mor1_img_count++;
+            mor1_img_no = mor1_img_count;
+            mor1_img_pos = 300 * mor1_img_count;
+        $(".mor_at3_imgbox").stop().animate({"left": -mor1_img_pos+"px"}, 100);
+        if(mor1_img_count == 1) {
+            $(".mor_at3_left").css("color","white");
+        }
+        if(mor1_img_count == 5) {
+            $(".mor_at3_right").css("color","#898989");
+        }
+    });
+    $(".mor_at3_left").on("click",function() {
+        if(mor1_img_count > 0)
+            mor1_img_count--;
+            mor1_img_no = mor1_img_count;
+            mor1_img_pos = 300 * mor1_img_count;
+        $(".mor_at3_imgbox").stop().animate({"left": -mor1_img_pos+"px"}, 100);
+        if(mor1_img_count == 0) {
+            $(".mor_at3_left").css("color","#898989");
+        }
+        if(mor1_img_count == 4) {
+            $(".mor_at3_right").css("color","white");
+        }
+    });
+
      // 모닝 - 특징 - 내장(at4)
      $(".mor_at4_btn1").on("click",function() {
         no=$(this).index()+1;
@@ -203,6 +270,130 @@ $(function() {
         $(".mor_at4_big"+no).show();
         $(".mor_at4_btn1").css("border","3px solid #ccc");
         $(this).css("border","3px solid #05141f");
+    });
+
+    // 모바일) 모닝 - 특징 - 도심형 주행기술(at5) - 이미지 < > 클릭시 이동
+    let mor2_img_pos = 500;
+    let mor2_img_count = 0;
+    let mor2_img_no = 0;
+    $(".mor_at5_right").on("click",function() {
+        if(mor2_img_count < 4)
+            mor2_img_count++;
+            mor2_img_no = mor2_img_count;
+            mor2_img_pos = 300 * mor2_img_count;
+        $(".mor_at5_imgbox").stop().animate({"left": -mor2_img_pos+"px"}, 100);
+        if(mor2_img_count == 1) {
+            $(".mor_at5_left").css("color","white");
+        }
+        if(mor2_img_count == 4) {
+            $(".mor_at5_right").css("color","#898989");
+        }
+    });
+    $(".mor_at5_left").on("click",function() {
+        if(mor2_img_count > 0)
+            mor2_img_count--;
+            mor2_img_no = mor2_img_count;
+            mor2_img_pos = 300 * mor2_img_count;
+        $(".mor_at5_imgbox").stop().animate({"left": -mor2_img_pos+"px"}, 100);
+        if(mor2_img_count == 0) {
+            $(".mor_at5_left").css("color","#898989");
+        }
+        if(mor2_img_count == 3) {
+            $(".mor_at5_right").css("color","white");
+        }
+    });
+
+    // 모바일) 모닝 - 특징 - 멀티미디어(at6) - 이미지 < > 클릭시 이동
+    let mor3_img_pos = 500;
+    let mor3_img_count = 0;
+    let mor3_img_no = 0;
+    $(".mor_at6_right").on("click",function() {
+        if(mor3_img_count < 6)
+            mor3_img_count++;
+            mor3_img_no = mor3_img_count;
+            mor3_img_pos = 300 * mor3_img_count;
+        $(".mor_at6_imgbox").stop().animate({"left": -mor3_img_pos+"px"}, 100);
+        if(mor3_img_count == 1) {
+            $(".mor_at6_left").css("color","white");
+        }
+        if(mor3_img_count == 6) {
+            $(".mor_at6_right").css("color","#898989");
+        }
+    });
+    $(".mor_at6_left").on("click",function() {
+        if(mor3_img_count > 0)
+            mor3_img_count--;
+            mor3_img_no = mor3_img_count;
+            mor3_img_pos = 300 * mor3_img_count;
+        $(".mor_at6_imgbox").stop().animate({"left": -mor3_img_pos+"px"}, 100);
+        if(mor3_img_count == 0) {
+            $(".mor_at6_left").css("color","#898989");
+        }
+        if(mor3_img_count == 5) {
+            $(".mor_at6_right").css("color","white");
+        }
+    });
+
+    // 모바일) 모닝 - 특징 - 공간(at7) - 이미지 < > 클릭시 이동
+    let mor4_img_pos = 500;
+    let mor4_img_count = 0;
+    let mor4_img_no = 0;
+    $(".mor_at7_right").on("click",function() {
+        if(mor4_img_count < 5)
+            mor4_img_count++;
+            mor4_img_no = mor4_img_count;
+            mor4_img_pos = 300 * mor4_img_count;
+        $(".mor_at7_imgbox").stop().animate({"left": -mor4_img_pos+"px"}, 100);
+        if(mor4_img_count == 1) {
+            $(".mor_at7_left").css("color","white");
+        }
+        if(mor4_img_count == 5) {
+            $(".mor_at7_right").css("color","#898989");
+        }
+    });
+    $(".mor_at7_left").on("click",function() {
+        if(mor4_img_count > 0)
+            mor4_img_count--;
+            mor4_img_no = mor4_img_count;
+            mor4_img_pos = 300 * mor4_img_count;
+        $(".mor_at7_imgbox").stop().animate({"left": -mor4_img_pos+"px"}, 100);
+        if(mor4_img_count == 0) {
+            $(".mor_at7_left").css("color","#898989");
+        }
+        if(mor4_img_count == 4) {
+            $(".mor_at7_right").css("color","white");
+        }
+    });
+
+    // 모바일) 모닝 - 특징 - 안전(at9) - 이미지 < > 클릭시 이동
+    let mor5_img_pos = 500;
+    let mor5_img_count = 0;
+    let mor5_img_no = 0;
+    $(".mor_at9_right").on("click",function() {
+        if(mor5_img_count < 2)
+            mor5_img_count++;
+            mor5_img_no = mor5_img_count;
+            mor5_img_pos = 300 * mor5_img_count;
+        $(".mor_at9_imgbox").stop().animate({"left": -mor5_img_pos+"px"}, 100);
+        if(mor5_img_count == 1) {
+            $(".mor_at9_left").css("color","white");
+        }
+        if(mor5_img_count == 2) {
+            $(".mor_at9_right").css("color","#898989");
+        }
+    });
+    $(".mor_at9_left").on("click",function() {
+        if(mor5_img_count > 0)
+            mor5_img_count--;
+            mor5_img_no = mor5_img_count;
+            mor5_img_pos = 300 * mor5_img_count;
+        $(".mor_at9_imgbox").stop().animate({"left": -mor5_img_pos+"px"}, 100);
+        if(mor5_img_count == 0) {
+            $(".mor_at9_left").css("color","#898989");
+        }
+        if(mor5_img_count == 1) {
+            $(".mor_at9_right").css("color","white");
+        }
     });
 
     // 모닝 - 제원 - (제원 / 휠) 버튼 클릭시 해당 화면 노출
