@@ -126,7 +126,6 @@ window.onload = function() {
 
     for(i=0; i<menuA.menu1.length; i++) {
         $(".mor_pc_menu div:eq("+i+")").html(menuA.menu1[(i)]);
-        $(".mor_mob_menu ul li:eq("+i+")").html(menuA.menu1[(i)]);
     }
     for(i=0; i<menuA.menu2.length; i++) {
         $(".k5_pc_menu div:eq("+i+")").html(menuA.menu2[(i)]);
@@ -497,6 +496,21 @@ $(function() {
         $(this).css({"color":"white", "borderBottom":"5px solid white"});
         top_func();
     });
+    // 모바일) k5 - 타이틀 - 버튼 클릭시 해당 화면으로 이동
+    $(".k5_title_btn01").on("click",function() {
+        $(".k5").hide();
+        $(".k5_1").show();
+        $(".k5_title_btn0").css("fontWeight","500");
+        $(this).css("fontWeight","bold");
+        top_func();
+    });
+    $(".k5_title_btn02").on("click",function() {
+        $(".k5").hide();
+        $(".k5_2").show();
+        $(".k5_title_btn0").css("fontWeight","500");
+        $(this).css("fontWeight","bold");
+        top_func();
+    });
 
     // k5 - 특징 - 색상(at2)
     $(".k50 li").on("click",function() {
@@ -515,6 +529,36 @@ $(function() {
         $(".k5_at3_btn1").css("border","3px solid #ccc");
         $(this).css("border","3px solid #05141f");
     });
+    // 모바일) k5 - 특징 - 외장(at3) - 이미지 < > 클릭시 이동
+    let k1_img_pos = 500;
+    let k1_img_count = 0;
+    let k1_img_no = 0;
+    $(".k5_at3_right").on("click",function() {
+        if(k1_img_count < 3)
+            k1_img_count++;
+            k1_img_no = k1_img_count;
+            k1_img_pos = 300 * k1_img_count;
+        $(".k5_at3_imgbox").stop().animate({"left": -k1_img_pos+"px"}, 100);
+        if(k1_img_count == 1) {
+            $(".k5_at3_left").css("color","white");
+        }
+        if(k1_img_count == 3) {
+            $(".k5_at3_right").css("color","#898989");
+        }
+    });
+    $(".k5_at3_left").on("click",function() {
+        if(k1_img_count > 0)
+            k1_img_count--;
+            k1_img_no = k1_img_count;
+            k1_img_pos = 300 * k1_img_count;
+        $(".k5_at3_imgbox").stop().animate({"left": -k1_img_pos+"px"}, 100);
+        if(k1_img_count == 0) {
+            $(".k5_at3_left").css("color","#898989");
+        }
+        if(k1_img_count == 2) {
+            $(".k5_at3_right").css("color","white");
+        }
+    });
 
     // k5 - 특징 - 내장(at4)
     $(".k5_at4_btn1").on("click",function() {
@@ -523,6 +567,36 @@ $(function() {
         $(".k5_at4_big"+no).show();
         $(".k5_at4_btn1").css("border","3px solid #ccc");
         $(this).css("border","3px solid #05141f");
+    });
+    // 모바일) k5 - 특징 - 내장(at4) - 이미지 < > 클릭시 이동
+    let k2_img_pos = 500;
+    let k2_img_count = 0;
+    let k2_img_no = 0;
+    $(".k5_at4_right").on("click",function() {
+        if(k2_img_count < 6)
+            k2_img_count++;
+            k2_img_no = k2_img_count;
+            k2_img_pos = 300 * k2_img_count;
+        $(".k5_at4_imgbox").stop().animate({"left": -k2_img_pos+"px"}, 100);
+        if(k2_img_count == 1) {
+            $(".k5_at4_left").css("color","white");
+        }
+        if(k2_img_count == 6) {
+            $(".k5_at4_right").css("color","#898989");
+        }
+    });
+    $(".k5_at4_left").on("click",function() {
+        if(k2_img_count > 0)
+            k2_img_count--;
+            k2_img_no = k2_img_count;
+            k2_img_pos = 300 * k2_img_count;
+        $(".k5_at4_imgbox").stop().animate({"left": -k2_img_pos+"px"}, 100);
+        if(k2_img_count == 0) {
+            $(".k5_at4_left").css("color","#898989");
+        }
+        if(k2_img_count == 5) {
+            $(".k5_at4_right").css("color","white");
+        }
     });
 
     // k5 - 특징 - 인터랙티브 기술(at5)
@@ -533,6 +607,68 @@ $(function() {
         $(".k5_at5_btn1").css("border","3px solid #ccc");
         $(this).css("border","3px solid #05141f");
     });
+    // 모바일) k5 - 특징 - 인터랙티브 기술(at5) - 이미지 < > 클릭시 이동
+    let k3_img_pos = 500;
+    let k3_img_count = 0;
+    let k3_img_no = 0;
+    $(".k5_at5_right").on("click",function() {
+        if(k3_img_count < 4)
+            k3_img_count++;
+            k3_img_no = k3_img_count;
+            k3_img_pos = 300 * k3_img_count;
+        $(".k5_at5_imgbox").stop().animate({"left": -k3_img_pos+"px"}, 100);
+        if(k3_img_count == 1) {
+            $(".k5_at5_left").css("color","white");
+        }
+        if(k3_img_count == 4) {
+            $(".k5_at5_right").css("color","#898989");
+        }
+    });
+    $(".k5_at5_left").on("click",function() {
+        if(k3_img_count > 0)
+            k3_img_count--;
+            k3_img_no = k3_img_count;
+            k3_img_pos = 300 * k3_img_count;
+        $(".k5_at5_imgbox").stop().animate({"left": -k3_img_pos+"px"}, 100);
+        if(k3_img_count == 0) {
+            $(".k5_at5_left").css("color","#898989");
+        }
+        if(k3_img_count == 3) {
+            $(".k5_at5_right").css("color","white");
+        }
+    });
+
+    // 모바일) k5 - 특징 - 주행 안전/편의(at6) - 이미지 < > 클릭시 이동
+    let k4_img_pos = 500;
+    let k4_img_count = 0;
+    let k4_img_no = 0;
+    $(".k5_at6_right").on("click",function() {
+        if(k4_img_count < 7)
+            k4_img_count++;
+            k4_img_no = k4_img_count;
+            k4_img_pos = 300 * k4_img_count;
+        $(".k5_at6_imgbox").stop().animate({"left": -k4_img_pos+"px"}, 100);
+        if(k4_img_count == 1) {
+            $(".k5_at6_left").css("color","white");
+        }
+        if(k4_img_count == 7) {
+            $(".k5_at6_right").css("color","#898989");
+        }
+    });
+    $(".k5_at6_left").on("click",function() {
+        if(k4_img_count > 0)
+            k4_img_count--;
+            k4_img_no = k4_img_count;
+            k4_img_pos = 300 * k4_img_count;
+        $(".k5_at6_imgbox").stop().animate({"left": -k4_img_pos+"px"}, 100);
+        if(k4_img_count == 0) {
+            $(".k5_at6_left").css("color","#898989");
+        }
+        if(k4_img_count == 6) {
+            $(".k5_at6_right").css("color","white");
+        }
+    });
+
 
     // k5 - 제원 - (제원 / 휠) 버튼 클릭시 해당 화면 노출
     $(".k5_2_spec_btn1").on("click",function() {
@@ -661,6 +797,21 @@ $(function() {
         $(this).css({"color":"white", "borderBottom":"5px solid white"});
         top_func();
     });
+    // 모바일) sorento - 타이틀 - 버튼 클릭시 해당 화면으로 이동
+    $(".sorento_title_btn01").on("click",function() {
+        $(".sorento").hide();
+        $(".sorento_1").show();
+        $(".sorento_title_btn0").css("fontWeight","500");
+        $(this).css("fontWeight","bold");
+        top_func();
+    });
+    $(".sorento_title_btn02").on("click",function() {
+        $(".sorento").hide();
+        $(".sorento_2").show();
+        $(".sorento_title_btn0").css("fontWeight","500");
+        $(this).css("fontWeight","bold");
+        top_func();
+    });
 
     // sorento - 특징 - 색상(at2)
     $(".sorento0 li").on("click",function() {
@@ -669,6 +820,99 @@ $(function() {
         $(".sorento_at2_name").hide();
         $(".sorento_at2_color"+no).show();
         $(".sorento_at2_name"+no).show();
+    });
+
+    // 모바일) sorento - 특징 - 외장(at3) - 이미지 < > 클릭시 이동
+    let sorento1_img_pos = 500;
+    let sorento1_img_count = 0;
+    let sorento1_img_no = 0;
+    $(".sorento_at3_right").on("click",function() {
+        if(sorento1_img_count < 3)
+            sorento1_img_count++;
+            sorento1_img_no = sorento1_img_count;
+            sorento1_img_pos = 300 * sorento1_img_count;
+        $(".sorento_at3_imgbox").stop().animate({"left": -sorento1_img_pos+"px"}, 100);
+        if(sorento1_img_count == 1) {
+            $(".sorento_at3_left").css("color","white");
+        }
+        if(sorento1_img_count == 3) {
+            $(".sorento_at3_right").css("color","#898989");
+        }
+    });
+    $(".sorento_at3_left").on("click",function() {
+        if(sorento1_img_count > 0)
+            sorento1_img_count--;
+            sorento1_img_no = sorento1_img_count;
+            sorento1_img_pos = 300 * sorento1_img_count;
+        $(".sorento_at3_imgbox").stop().animate({"left": -sorento1_img_pos+"px"}, 100);
+        if(sorento1_img_count == 0) {
+            $(".sorento_at3_left").css("color","#898989");
+        }
+        if(sorento1_img_count == 2) {
+            $(".sorento_at3_right").css("color","white");
+        }
+    });
+
+    // 모바일) sorento - 특징 - 내장(at4) - 이미지 < > 클릭시 이동
+    let sorento2_img_pos = 500;
+    let sorento2_img_count = 0;
+    let sorento2_img_no = 0;
+    $(".sorento_at4_right").on("click",function() {
+        if(sorento2_img_count < 6)
+            sorento2_img_count++;
+            sorento2_img_no = sorento2_img_count;
+            sorento2_img_pos = 300 * sorento2_img_count;
+        $(".sorento_at4_imgbox").stop().animate({"left": -sorento2_img_pos+"px"}, 100);
+        if(sorento2_img_count == 1) {
+            $(".sorento_at4_left").css("color","white");
+        }
+        if(sorento2_img_count == 6) {
+            $(".sorento_at4_right").css("color","#898989");
+        }
+    });
+    $(".sorento_at4_left").on("click",function() {
+        if(sorento2_img_count > 0)
+            sorento2_img_count--;
+            sorento2_img_no = sorento2_img_count;
+            sorento2_img_pos = 300 * sorento2_img_count;
+        $(".sorento_at4_imgbox").stop().animate({"left": -sorento2_img_pos+"px"}, 100);
+        if(sorento2_img_count == 0) {
+            $(".sorento_at4_left").css("color","#898989");
+        }
+        if(sorento2_img_count == 5) {
+            $(".sorento_at4_right").css("color","white");
+        }
+    });
+
+    // 모바일) sorento - 특징 - 성능/안전/편의(at5) - 이미지 < > 클릭시 이동
+    let sorento3_img_pos = 500;
+    let sorento3_img_count = 0;
+    let sorento3_img_no = 0;
+    $(".sorento_at5_right").on("click",function() {
+        if(sorento3_img_count < 5)
+            sorento3_img_count++;
+            sorento3_img_no = sorento3_img_count;
+            sorento3_img_pos = 300 * sorento3_img_count;
+        $(".sorento_at5_imgbox").stop().animate({"left": -sorento3_img_pos+"px"}, 100);
+        if(sorento3_img_count == 1) {
+            $(".sorento_at5_left").css("color","white");
+        }
+        if(sorento3_img_count == 5) {
+            $(".sorento_at5_right").css("color","#898989");
+        }
+    });
+    $(".sorento_at5_left").on("click",function() {
+        if(sorento3_img_count > 0)
+            sorento3_img_count--;
+            sorento3_img_no = sorento3_img_count;
+            sorento3_img_pos = 300 * sorento3_img_count;
+        $(".sorento_at5_imgbox").stop().animate({"left": -sorento3_img_pos+"px"}, 100);
+        if(sorento3_img_count == 0) {
+            $(".sorento_at5_left").css("color","#898989");
+        }
+        if(sorento3_img_count == 4) {
+            $(".sorento_at5_right").css("color","white");
+        }
     });
 
     // sorento - 제원 - (제원 / 휠) 버튼 클릭시 해당 화면 노출
@@ -790,6 +1034,21 @@ $(function() {
         $(this).css({"color":"white", "borderBottom":"5px solid white"});
         top_func();
     });
+    // 모바일) 니로 - 타이틀 - 버튼 클릭시 해당 화면으로 이동
+    $(".niro_title_btn01").on("click",function() {
+        $(".niro").hide();
+        $(".niro_1").show();
+        $(".niro_title_btn0").css("fontWeight","500");
+        $(this).css("fontWeight","bold");
+        top_func();
+    });
+    $(".niro_title_btn02").on("click",function() {
+        $(".niro").hide();
+        $(".niro_2").show();
+        $(".niro_title_btn0").css("fontWeight","500");
+        $(this).css("fontWeight","bold");
+        top_func();
+    });
 
     // 니로 - 특징 - 색상(at2)
     $(".niro0 li").on("click",function() {
@@ -799,6 +1058,193 @@ $(function() {
         $(".niro_at2_color"+no).show();
         $(".niro_at2_name"+no).show();
     });
+
+    // 모바일) 니로 - 특징 - 외장(at3) - 이미지 < > 클릭시 이동
+    let niro1_img_pos = 500;
+    let niro1_img_count = 0;
+    let niro1_img_no = 0;
+    $(".niro_at3_right").on("click",function() {
+        if(niro1_img_count < 2)
+            niro1_img_count++;
+            niro1_img_no = niro1_img_count;
+            niro1_img_pos = 300 * niro1_img_count;
+        $(".niro_at3_imgbox").stop().animate({"left": -niro1_img_pos+"px"}, 100);
+        if(niro1_img_count == 1) {
+            $(".niro_at3_left").css("color","white");
+        }
+        if(niro1_img_count == 2) {
+            $(".niro_at3_right").css("color","#898989");
+        }
+    });
+    $(".niro_at3_left").on("click",function() {
+        if(niro1_img_count > 0)
+            niro1_img_count--;
+            niro1_img_no = niro1_img_count;
+            niro1_img_pos = 300 * niro1_img_count;
+        $(".niro_at3_imgbox").stop().animate({"left": -niro1_img_pos+"px"}, 100);
+        if(niro1_img_count == 0) {
+            $(".niro_at3_left").css("color","#898989");
+        }
+        if(niro1_img_count == 1) {
+            $(".niro_at3_right").css("color","white");
+        }
+    });
+
+    // 모바일) 니로 - 특징 - 내장(at4) - 이미지 < > 클릭시 이동
+    let niro2_img_pos = 500;
+    let niro2_img_count = 0;
+    let niro2_img_no = 0;
+    $(".niro_at4_right").on("click",function() {
+        if(niro2_img_count < 5)
+            niro2_img_count++;
+            niro2_img_no = niro2_img_count;
+            niro2_img_pos = 300 * niro2_img_count;
+        $(".niro_at4_imgbox").stop().animate({"left": -niro2_img_pos+"px"}, 100);
+        if(niro2_img_count == 1) {
+            $(".niro_at4_left").css("color","white");
+        }
+        if(niro2_img_count == 5) {
+            $(".niro_at4_right").css("color","#898989");
+        }
+    });
+    $(".niro_at4_left").on("click",function() {
+        if(niro2_img_count > 0)
+            niro2_img_count--;
+            niro2_img_no = niro2_img_count;
+            niro2_img_pos = 300 * niro2_img_count;
+        $(".niro_at4_imgbox").stop().animate({"left": -niro2_img_pos+"px"}, 100);
+        if(niro2_img_count == 0) {
+            $(".niro_at4_left").css("color","#898989");
+        }
+        if(niro2_img_count == 4) {
+            $(".niro_at4_right").css("color","white");
+        }
+    });
+
+    // 모바일) 니로 - 특징 - 기술(at5) - 이미지 < > 클릭시 이동
+    let niro3_img_pos = 500;
+    let niro3_img_count = 0;
+    let niro3_img_no = 0;
+    $(".niro_at5_right").on("click",function() {
+        if(niro3_img_count < 5)
+            niro3_img_count++;
+            niro3_img_no = niro3_img_count;
+            niro3_img_pos = 300 * niro3_img_count;
+        $(".niro_at5_imgbox").stop().animate({"left": -niro3_img_pos+"px"}, 100);
+        if(niro3_img_count == 1) {
+            $(".niro_at5_left").css("color","white");
+        }
+        if(niro3_img_count == 5) {
+            $(".niro_at5_right").css("color","#898989");
+        }
+    });
+    $(".niro_at5_left").on("click",function() {
+        if(niro3_img_count > 0)
+            niro3_img_count--;
+            niro3_img_no = niro3_img_count;
+            niro3_img_pos = 300 * niro3_img_count;
+        $(".niro_at5_imgbox").stop().animate({"left": -niro3_img_pos+"px"}, 100);
+        if(niro3_img_count == 0) {
+            $(".niro_at5_left").css("color","#898989");
+        }
+        if(niro3_img_count == 4) {
+            $(".niro_at5_right").css("color","white");
+        }
+    });
+
+    // 모바일) 니로 - 특징 - 연비(at6) - 이미지 < > 클릭시 이동
+    let niro4_img_pos = 500;
+    let niro4_img_count = 0;
+    let niro4_img_no = 0;
+    $(".niro_at6_right").on("click",function() {
+        if(niro4_img_count < 1)
+            niro4_img_count++;
+            niro4_img_no = niro4_img_count;
+            niro4_img_pos = 300 * niro4_img_count;
+        $(".niro_at6_imgbox").stop().animate({"left": -niro4_img_pos+"px"}, 100);
+        if(niro4_img_count == 1) {
+            $(".niro_at6_left").css("color","white");
+        }
+        if(niro4_img_count == 1) {
+            $(".niro_at6_right").css("color","#898989");
+        }
+    });
+    $(".niro_at6_left").on("click",function() {
+        if(niro4_img_count > 0)
+            niro4_img_count--;
+            niro4_img_no = niro4_img_count;
+            niro4_img_pos = 300 * niro4_img_count;
+        $(".niro_at6_imgbox").stop().animate({"left": -niro4_img_pos+"px"}, 100);
+        if(niro4_img_count == 0) {
+            $(".niro_at6_left").css("color","#898989");
+        }
+        if(niro4_img_count == 0) {
+            $(".niro_at6_right").css("color","white");
+        }
+    });
+
+    // 모바일) 니로 - 특징 - 성능(at8) - 이미지 < > 클릭시 이동
+    let niro5_img_pos = 500;
+    let niro5_img_count = 0;
+    let niro5_img_no = 0;
+    $(".niro_at8_right").on("click",function() {
+        if(niro5_img_count < 2)
+            niro5_img_count++;
+            niro5_img_no = niro5_img_count;
+            niro5_img_pos = 300 * niro5_img_count;
+        $(".niro_at8_imgbox").stop().animate({"left": -niro5_img_pos+"px"}, 100);
+        if(niro5_img_count == 1) {
+            $(".niro_at8_left").css("color","white");
+        }
+        if(niro5_img_count == 2) {
+            $(".niro_at8_right").css("color","#898989");
+        }
+    });
+    $(".niro_at8_left").on("click",function() {
+        if(niro5_img_count > 0)
+            niro5_img_count--;
+            niro5_img_no = niro5_img_count;
+            niro5_img_pos = 300 * niro5_img_count;
+        $(".niro_at8_imgbox").stop().animate({"left": -niro5_img_pos+"px"}, 100);
+        if(niro5_img_count == 0) {
+            $(".niro_at8_left").css("color","#898989");
+        }
+        if(niro5_img_count == 1) {
+            $(".niro_at8_right").css("color","white");
+        }
+    });
+
+    // 모바일) 니로 - 특징 - 편의(at9) - 이미지 < > 클릭시 이동
+    let niro6_img_pos = 500;
+    let niro6_img_count = 0;
+    let niro6_img_no = 0;
+    $(".niro_at9_right").on("click",function() {
+        if(niro6_img_count < 3)
+            niro6_img_count++;
+            niro6_img_no = niro6_img_count;
+            niro6_img_pos = 300 * niro6_img_count;
+        $(".niro_at9_imgbox").stop().animate({"left": -niro6_img_pos+"px"}, 100);
+        if(niro6_img_count == 1) {
+            $(".niro_at9_left").css("color","white");
+        }
+        if(niro6_img_count == 3) {
+            $(".niro_at9_right").css("color","#898989");
+        }
+    });
+    $(".niro_at9_left").on("click",function() {
+        if(niro6_img_count > 0)
+            niro6_img_count--;
+            niro6_img_no = niro6_img_count;
+            niro6_img_pos = 300 * niro6_img_count;
+        $(".niro_at9_imgbox").stop().animate({"left": -niro6_img_pos+"px"}, 100);
+        if(niro6_img_count == 0) {
+            $(".niro_at9_left").css("color","#898989");
+        }
+        if(niro6_img_count == 2) {
+            $(".niro_at9_right").css("color","white");
+        }
+    });
+
 
     // 니로 - 제원 - (제원 / 휠) 버튼 클릭시 해당 화면 노출
     $(".niro_2_spec_btn1").on("click",function() {
