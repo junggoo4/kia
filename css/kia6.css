@@ -3,6 +3,7 @@
 * {margin: 0; padding: 0; list-style: none; box-sizing: border-box;}
 a {text-decoration: none; color: #000;}
 img {vertical-align: top;}
+body {font-family: 'Roboto', sans-serif;}
 
 /* login */
 header {

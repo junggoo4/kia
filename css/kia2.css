@@ -3,6 +3,7 @@
 * {margin: 0; padding: 0; list-style: none; box-sizing: border-box;}
 a {text-decoration: none; color: #000;}
 img {vertical-align: top;}
+body {font-family: 'Roboto', sans-serif;}
 
 
 /* ============================ header 시작 =============================== */
@@ -840,10 +841,11 @@ header> div> .top_bg {
     position: absolute; top: 150px; left: 50%;
     transform: translateX(-50%);
     border-radius: 20px; cursor: pointer;
-    background: #05141f; color: white;
+    background: #05141f; 
     text-align: center; line-height: 30px;
     font-size: 15px; font-weight: bold;
 }
+.morning_1> .at10> div:nth-child(2)> a {color: white;}
 
 .morning_1> .at10> ul:nth-child(3) {
     width: 480px;
@@ -917,6 +919,7 @@ header> div> .top_bg {
     background: #ccc; color: black;
 }
 
+.morning_2> div> .mor2_spec_1> .mor2_img1_m {display: none;}
 .morning_2> div> .mor2_spec_1 {
     width: 900px; height: 700px;
     position: absolute; top: 0; left: 50%;
@@ -1169,7 +1172,8 @@ header> div> .top_bg {
     text-align: center; line-height: 40px;
     font-size: 17px; font-weight:  bold;
 }
-
+.k5_1> .at3> div:nth-child(9),
+.k5_1> .at3> .k5_control3 {display: none;}
 
 /* k5 - at4 */
 .k5_1> .at4 {height: 2225px;}
@@ -1299,6 +1303,8 @@ header> div> .top_bg {
     text-align: center; line-height: 40px;
     font-size: 17px; font-weight:  bold;
 }
+.k5_1> .at4> div:nth-child(11),
+.k5_1> .at4> .k5_control4 {display: none;}
 
 
 /* k5 - at5 */
@@ -1408,6 +1414,8 @@ header> div> .top_bg {
     text-align: center; line-height: 40px;
     font-size: 17px; font-weight:  bold;
 }
+.k5_1> .at5> div:nth-child(10),
+.k5_1> .at5> .k5_control5 {display: none;}
 
 
 /* k5 - at6 */
@@ -1488,6 +1496,8 @@ header> div> .top_bg {
     text-align: center; line-height: 40px;
     font-size: 17px; font-weight:  bold;
 }
+.k5_1> .at6> div:nth-child(7),
+.k5_1> .at6> .k5_control6 {display: none;}
 
 /* k5 - at7 */
 .k5_1> .at7 {height: 700px;}
@@ -1502,10 +1512,11 @@ header> div> .top_bg {
     position: absolute; top: 150px; left: 50%;
     transform: translateX(-50%);
     border-radius: 20px; cursor: pointer;
-    background: #05141f; color: white;
+    background: #05141f;
     text-align: center; line-height: 30px;
     font-size: 15px; font-weight: bold;
 }
+.k5_1> .at7> div:nth-child(2)> a {color: white;}
 
 .k5_1> .at7> ul:nth-child(3) {
     width: 480px;
@@ -1541,7 +1552,7 @@ header> div> .top_bg {
     position: absolute; top: 70px; left: 50%;
     transform: translateX(-50%);
 }
-
+.k5_1> .at7> div:nth-child(4)> .k5_at7_img_m {display: none;}
 
 /* ((((( k5 제원 ))))) */
 .k5_2> div {
@@ -1800,6 +1811,8 @@ header> div> .top_bg {
     text-align: center; line-height: 40px;
     font-size: 17px; font-weight:  bold;
 }
+.sorento_1> .at3> div:nth-child(6),
+.sorento_1> .at3> .sorento_control3 {display: none;}
 
 
 /* sorento - at4 */
@@ -1893,6 +1906,8 @@ header> div> .top_bg {
     text-align: center; line-height: 40px;
     font-size: 17px; font-weight:  bold;
 }
+.sorento_1> .at4> div:nth-child(11),
+.sorento_1> .at4> .sorento_control4 {display: none;}
 
 
 /* sorento - at5 */
@@ -1969,6 +1984,8 @@ header> div> .top_bg {
     text-align: center; line-height: 40px;
     font-size: 17px; font-weight:  bold;
 }
+.sorento_1> .at5> div:nth-child(7),
+.sorento_1> .at5> .sorento_control5 {display: none;}
 
 
 /* sorento - at6 */
@@ -2010,10 +2027,11 @@ header> div> .top_bg {
     position: absolute; top: 150px; left: 50%;
     transform: translateX(-50%);
     border-radius: 20px; cursor: pointer;
-    background: #05141f; color: white;
+    background: #05141f; 
     text-align: center; line-height: 30px;
     font-size: 15px; font-weight: bold;
 }
+.sorento_1> .at7> div:nth-child(2)> a {color: white;}
 
 .sorento_1> .at7> ul:nth-child(3) {
     width: 480px;
@@ -2049,6 +2067,7 @@ header> div> .top_bg {
     position: absolute; top: 70px; left: 50%;
     transform: translateX(-50%);
 }
+.sorento_1> .at7> div:nth-child(4)> .sorento_at7_img_m {display: none;}
 
 
 /* ((((( sorento 제원 ))))) */
@@ -2295,6 +2314,9 @@ header> div> .top_bg {
     text-align: center; line-height: 40px;
     font-size: 17px; font-weight:  bold;
 }
+.niro_1> .at3> div:nth-child(5),
+.niro_1> .at3> .niro_control3 {display: none;}
+
 
 /* 니로 - at4 */
 .niro_1> .at4 {height: 1468px;}
@@ -2361,6 +2383,9 @@ header> div> .top_bg {
     text-align: center; line-height: 40px;
     font-size: 17px; font-weight:  bold;
 }
+.niro_1> .at4> div:nth-child(6),
+.niro_1> .at4> .niro_control4 {display: none;}
+
 
 /* 니로 - at5 */
 .niro_1> .at5 {height: 1468px;}
@@ -2427,6 +2452,9 @@ header> div> .top_bg {
     text-align: center; line-height: 40px;
     font-size: 17px; font-weight:  bold;
 }
+.niro_1> .at5> div:nth-child(6),
+.niro_1> .at5> .niro_control5 {display: none;}
+
 
 /* 니로 - at6 */
 .niro_1> .at6 {height: 1277px;}
@@ -2475,6 +2503,9 @@ header> div> .top_bg {
     text-align: center; line-height: 40px;
     font-size: 17px; font-weight:  bold;
 }
+.niro_1> .at6> div:nth-child(6),
+.niro_1> .at6> .niro_control6 {display: none;}
+
 
 /* 니로 - at7 */
 .niro_1> .at7 {height: 700px;}
@@ -2538,6 +2569,9 @@ header> div> .top_bg {
     text-align: center; line-height: 40px;
     font-size: 17px; font-weight:  bold;
 }
+.niro_1> .at8> div:nth-child(5),
+.niro_1> .at8> .niro_control8 {display: none;}
+
 
 /* 니로 - at9 */
 .niro_1> .at9 {height: 1846px;}
@@ -2608,6 +2642,9 @@ header> div> .top_bg {
     text-align: center; line-height: 40px;
     font-size: 17px; font-weight:  bold;
 }
+.niro_1> .at9> div:nth-child(7),
+.niro_1> .at9> .niro_control9 {display: none;}
+
 
 /* 니로 - at10 */
 .niro_1> .at10 {height: 700px;}
@@ -2622,10 +2659,11 @@ header> div> .top_bg {
     position: absolute; top: 150px; left: 50%;
     transform: translateX(-50%);
     border-radius: 20px; cursor: pointer;
-    background: #05141f; color: white;
+    background: #05141f; 
     text-align: center; line-height: 30px;
     font-size: 15px; font-weight: bold;
 }
+.niro_1> .at10> div:nth-child(2)> a {color: white;}
 
 .niro_1> .at10> ul:nth-child(3) {
     width: 480px;
@@ -2662,6 +2700,7 @@ header> div> .top_bg {
     position: absolute; top: 70px; left: 50%;
     transform: translateX(-50%);
 }
+.niro_1> .at10> div:nth-child(4)> .niro_at10_img_m {display: none;}
 
 
 /* ((((( 니로 제원 ))))) */
