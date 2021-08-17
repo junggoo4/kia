@@ -2000,7 +2000,6 @@ header> .topdown {display: none;}
     width: 100%; margin: 0 auto;
 }
 .niro_2 {display: none;}
-
 .niro_1> .at1 {height: 720px;}
 .niro_1> .at1> div {
     width: 100%; height: 370px;
@@ -2012,7 +2011,6 @@ header> .topdown {display: none;}
     font-size: 3vh; font-weight: bold;
     color: white; text-shadow: 2px -2px 8px #05141f;
 }
-
 .niro_1> .at1> ul {
     width: 100%; height: 350px;
     background: #f2f2f2;
@@ -2111,7 +2109,6 @@ header> .topdown {display: none;}
     position: absolute; top: 0; left: 0;
     background: url(../img2/niro/03_01.webp) no-repeat center center/cover;
 }
-
 .niro_1> .at3> p:nth-child(2) {
     position: absolute; top: 20px; left: 20px;
     font-size: 2.5vh; font-weight: bold;
@@ -2173,7 +2170,6 @@ header> .topdown {display: none;}
     position: absolute; top: 0; left: 0;
     background: url(../img2/niro/04_01.webp) no-repeat center center/cover;
 }
-
 .niro_1> .at4> p:nth-child(2) {
     position: absolute; top: 20px; left: 20px;
     font-size: 2.5vh; font-weight: bold;
@@ -2185,7 +2181,6 @@ header> .topdown {display: none;}
     font-size: 2.3vh; font-weight: bold; color: black;
     text-shadow: none;
 }
-
 .niro_1> .at4> div:nth-child(4),
 .niro_1> .at4> div:nth-child(5) {display: none;}
 
@@ -2240,7 +2235,6 @@ header> .topdown {display: none;}
     position: absolute; top: 0; left: 0;
     background: url(../img2/niro/05_01.webp) no-repeat center center/cover;
 }
-
 .niro_1> .at5> p:nth-child(2) {
     position: absolute; top: 20px; left: 20px;
     font-size: 2.5vh; font-weight: bold;
@@ -2252,7 +2246,6 @@ header> .topdown {display: none;}
     font-size: 2.3vh; font-weight: bold; color: black;
     text-shadow: none;
 }
-
 .niro_1> .at5> div:nth-child(4),
 .niro_1> .at5> div:nth-child(5) {display: none;}
 
@@ -2304,7 +2297,6 @@ header> .topdown {display: none;}
     position: absolute; top: 0; left: 0;
     background: url(../img2/niro/06_01.webp) no-repeat center center/cover;
 }
-
 .niro_1> .at6> p:nth-child(2) {
     position: absolute; top: 20px; left: 20px;
     font-size: 2.5vh; font-weight: bold;
@@ -2322,7 +2314,6 @@ header> .topdown {display: none;}
     font-size: 2.3vh; font-weight: bold; color: black;
     text-shadow: none;
 }
-
 .niro_1> .at6> div:nth-child(5) {display: none;}
 
 /* mobile 이미지 */
@@ -2367,13 +2358,12 @@ header> .topdown {display: none;}
 .niro_1> .at6> .niro_control6> li:nth-child(1) {color: #898989;}
 
 /* 니로 - at7 */
-.niro_1> .at7 {height: 325px;}
+.niro_1> .at7 {height: 605px;}
 .niro_1> .at7> .niro_at7_big {
     width: 100%; height: 220px;
     position: absolute; top: 0; left: 0;
     background: url(../img2/niro/07.webp) no-repeat center center/cover;
 }
-
 .niro_1> .at7> p:nth-child(2) {
     position: absolute; top: 20px; left: 20px;
     font-size: 2.5vh; font-weight: bold;
@@ -2393,7 +2383,6 @@ header> .topdown {display: none;}
     position: absolute; top: 0; left: 0;
     background: url(../img2/niro/08_01.webp) no-repeat center center/cover;
 }
-
 .niro_1> .at8> p:nth-child(2) {
     position: absolute; top: 20px; left: 20px;
     font-size: 2.5vh; font-weight: bold;
@@ -2455,7 +2444,6 @@ header> .topdown {display: none;}
     position: absolute; top: 0; left: 0;
     background: url(../img2/niro/09_01.webp) no-repeat center center/cover;
 }
-
 .niro_1> .at9> p:nth-child(2) {
     position: absolute; top: 20px; left: 20px;
     font-size: 2.5vh; font-weight: bold;
@@ -2473,7 +2461,6 @@ header> .topdown {display: none;}
     font-size: 2.3vh; font-weight: bold; color: black;
     text-shadow: none;
 }
-
 .niro_1> .at9> div:nth-child(5),
 .niro_1> .at9> div:nth-child(6) {display: none;}
 
@@ -2662,76 +2649,77 @@ header> .topdown {display: none;}
 /* ((((( 셀토스 특징 ))))) */ 
 /* 셀토스 - at1 =======================================*/
 .seltos> .at {
-    position: relative; top: 160px; left: 0;
-    width: 1903px; margin: 0 auto;
+    position: relative; top: 110px; left: 0;
+    width: 100%; margin: 0 auto;
 }
-.seltos_2, .seltos_3 {display: none;}
-
-.seltos_1> .at1 {height: 830px;}
+.seltos_2 {display: none;}
+.seltos_1> .at1 {height: 720px;}
 .seltos_1> .at1> div {
-    width: 100%; height: 680px;
+    width: 100%; height: 370px;
     background: url(../img2/seltos/01.webp) no-repeat center center/cover;
 }
 .seltos_1> .at1> div> p:nth-child(1) {
-    position: absolute; top: 50px; left: 490px;
-    height: 50px; line-height: 50px;
-    font-size: 42px; font-weight: bold;
-    color: white; text-shadow: 2px -2px 10px #05141f;
+    position: absolute; top: 50px; left: 2.5%; width: 95%;
+    line-height: 3.5vh; text-align: center;
+    font-size: 5vw; font-weight: bold;
+    color: white; text-shadow: 2px -2px 8px #05141f;
 }
-
 .seltos_1> .at1> ul {
-    width: 100%; height: 150px;
+    width: 100%; height: 350px;
     background: #f2f2f2;
 }
 .seltos_1> .at1> ul> li {
-    float: left;
-    width: 180px; height: 100%;
+    width: 100%; height: 70px; border-bottom: 1px solid #ccc;
 }
-.seltos_1> .at1> ul> li:first-child {margin-left: 510px;}
-.seltos_1> .at1> ul> li> p {width: 100%;}
-.seltos_1> .at1> ul> li> p:nth-child(1) {text-align: center; margin-top: 25px;}
+.seltos_1> .at1> ul> li:first-child {margin-left: 0;}
+.seltos_1> .at1> ul> li> p {float: left; width: 50%;}
+.seltos_1> .at1> ul> li> p:nth-child(1) {
+    text-align: center; width: 20%;
+    margin-top: 15px; margin-left: 20px;
+}
 .seltos_1> .at1> ul> li> p:nth-child(2) {
-    margin-top: 5px; font-size: 14px;
-    text-align: center;
+    margin-top: 10px; margin-left: 20px; height: 20px;
+    font-size: 1.8vh; text-align: left; line-height: 20px;
 }
 .seltos_1> .at1> ul> li> p:nth-child(3) {
-    text-align: center; 
-    font-size: 22px; font-weight: bold;
+    text-align: left; margin-left: 20px; height: 30px;
+    font-size: 2.7vh; font-weight: bold; line-height: 30px;
 }
 
 /* 셀토스 - at2 */
-.seltos_1> .at2 {height: 800px;}
+.seltos_1> .at2 {height: 370px; overflow: hidden;}
 .seltos_1> .at2> p {
-    position: absolute; top: 40px; left: 490px;
-    font-size: 28px; font-weight: bold;
+    position: absolute; top: 20px; left: 20px;
+    font-size: 2.5vh; font-weight: bold;
 }
 .seltos_1> .at2> div {
     width: 100%; height: 400px;
     position: absolute; top: 100px; left: 0;
 }
 .seltos_1> .at2> div> .seltos_at2_color {
-    position: absolute; top: 0; left: 50%;
+    width: 100%;
+    position: absolute; top: -30px; left: 50%;
     transform: translateX(-50%); display: none;
 }
 .seltos_1> .at2> div> .seltos_at2_color img {width: 100%;}
 
 .seltos_1> .at2> .seltos0 {
-    width: 500px; height: 50px;
-    position: absolute; top: 570px; left: 50%;
+    width: 78%; height: 7vw;
+    position: absolute; top: 260px; left: 50%;
     transform: translateX(-50%);
 }
 .seltos_1> .at2> .seltos0> li {
     float: left; cursor: pointer;
-    width: 50px; height: 100%;
+    width: 7vw; height: 100%;
     border: 1px solid #ccc;
-    border-radius: 100%; 
+    border-radius: 100%;
 }
 .seltos_1> .at2> .seltos0> li:first-child {
-    text-align: center; line-height: 50px; 
-    font-weight: bold; font-size: 18px; border: none;
+    text-align: center; line-height: 7vw; width: 50px;
+    font-weight: bold; font-size: 13.5px; border: none;
 }
 .seltos_1> .at2> .seltos0> li:nth-child(2) {
-    margin-left: 70px;
+    margin-left: 2vw;
     background: url(../img2/seltos/color_1.png)no-repeat center center/cover;
 }
 .seltos_1> .at2> .seltos0> li:nth-child(3) {
@@ -2768,96 +2756,107 @@ header> .topdown {display: none;}
 }
 
 /* 셀토스 - at3 */
-.seltos_1> .at3 {height: 1086px;}
+.seltos_1> .at3 {height: 565px;}
 .seltos_1> .at3> .seltos_at3_big {
-    width: 100%; height: 700px;
+    width: 100%; height: 220px;
     position: absolute; top: 0; left: 0;
-    background: url(../img2/seltos/03_01.webp) no-repeat center -220px/cover;
+    background: url(../img2/seltos/03_01.webp) no-repeat center center/cover;
 }
-
 .seltos_1> .at3> p:nth-child(2) {
-    position: absolute; top: 40px; left: 490px;
-    font-size: 28px; font-weight: bold;
-    text-shadow: 2px -2px 10px #05141f; color: white;
+    position: absolute; top: 20px; left: 20px;
+    font-size: 2.5vh; font-weight: bold;
+    text-shadow: 2px -2px 3px white; color: black;
 }
 .seltos_1> .at3> p:nth-child(3) {
-    position: absolute; top: 90px; left: 490px;
-    height: 50px; line-height: 50px;
-    font-size: 42px; font-weight: bold;
-    text-shadow: 2px -2px 10px #05141f; color: white;
+    position: absolute; top: 230px; left: 5%; width: 90%;
+    height: 50px; line-height: 3.5vh;
+    font-size: 2.3vh; font-weight: bold; color: black;
+    text-shadow: none;
 }
+.seltos_1> .at3> div:nth-child(4) {display: none;}
 
-.seltos_1> .at3> div:nth-child(4) {
-    width: 100%; height: 376px;
-    position: absolute; top: 705px; left: 50%;
-    transform: translateX(-50%);
+/* mobile 이미지 */
+.seltos_1> .at3> div:nth-child(5) {
+    width: 300px; height: 250px; display: block;
+    position: absolute; top: 300px; left: 50%;
+    transform: translateX(-50%); overflow: hidden;
 }
-.seltos_1> .at3> div:nth-child(4)> .seltos_at3_hov {
-    float: left; width: 470px; height: 100%;
-    margin-left: 5px; overflow: hidden;
+.seltos_1> .at3> div:nth-child(5)> ul {
+    width: 1200px; height: 100%;
+    position: absolute; top: 0; left: 0; 
 }
-.seltos_1> .at3> div:nth-child(4)> .seltos_at3_hov> li:hover img {transform: scale(1.1); transition: all 0.5s;}
-.seltos_1> .at3> div:nth-child(4)> .seltos_at3_hov1:hover .seltos_at3_hov1_on{margin-top: 41px; transition: all 0.5s;}
-.seltos_1> .at3> div:nth-child(4)> .seltos_at3_hov2:hover .seltos_at3_hov2_on{margin-top: 41px; transition: all 0.5s;}
-.seltos_1> .at3> div:nth-child(4)> .seltos_at3_hov3:hover .seltos_at3_hov3_on{margin-top: 41px; transition: all 0.5s;}
-.seltos_1> .at3> div:nth-child(4)> .seltos_at3_hov4:hover .seltos_at3_hov4_on{margin-top: 41px; transition: all 0.5s;}
-.seltos_1> .at3> div:nth-child(4)> .seltos_at3_hov> li:nth-child(1) {
+.seltos_1> .at3> div:nth-child(5)> ul> .seltos_at3_hov {
+    float: left; width: 300px; height: 100%;
+}
+.seltos_1> .at3> div:nth-child(5)> ul> .seltos_at3_hov> div {
     width: 100%; height: 100%;
 }
-.seltos_1> .at3> div:nth-child(4)> .seltos_at3_hov> li:nth-child(1) img {width: 100%; height: 100%;}
-.seltos_1> .at3> div:nth-child(4)> .seltos_at3_hov> li:nth-child(2) {
-    position: relative; top: -417px; left: 0;
-    width: 100%; height: 40px; color: white;
-    background: rgba(5, 20, 31, 0.8);
-    text-align: center; line-height: 40px;
-    font-size: 17px; font-weight:  bold;
+.seltos_1> .at3> div:nth-child(5)> ul> .seltos_at3_hov> div img {
+    width: 100%;
 }
+.seltos_1> .at3> div:nth-child(5)> ul> .seltos_at3_hov> .seltos_at3_hov_on {
+    position: relative; top: -250px; left: 0;
+    width: 100%; height: 30px; color: white;
+    text-shadow: 2px -2px 10px #05141f;
+    text-align: left; line-height: 15px;
+    font-size: 3.2vw; font-weight: bold; padding: 15px 10px;
+}
+.seltos_1> .at3> .seltos_control3 {
+    display: block;
+    position: absolute; top: 400px; left: 50%;
+    transform: translateX(-50%);
+    width: 300px; height: 30px;
+    display: flex; justify-content: space-between;
+}
+.seltos_1> .at3> .seltos_control3> li {
+    width: 30px; height: 100%; float: left;
+    text-align: center; line-height: 30px;
+    font-weight: bold; font-size: 5vh;
+    cursor: pointer; color: white;
+}
+.seltos_1> .at3> .seltos_control3> li:nth-child(1) {color: #898989;}
 
 /* 셀토스 - at4 */
-.seltos_1> .at4 {height: 1468px;}
+.seltos_1> .at4 {height: 587px;}
 .seltos_1> .at4> .seltos_at4_big {
-    width: 100%; height: 680px;
+    width: 100%;
     position: absolute; top: 0; left: 0;
 }
 .seltos_1> .at4> .seltos_at4_big1 {
-    width: 100%; height: 700px;
+    width: 100%; height: 220px;
     background: url(../img2/seltos/04_01.webp) no-repeat center center/cover;
 }
 .seltos_1> .at4> .seltos_at4_big2 {
-    width: 100%; height: 700px; display: none;
+    width: 100%; height: 220px; display: none;
     background: url(../img2/seltos/04_02.webp) no-repeat center center/cover;
 }
 .seltos_1> .at4> .seltos_at4_big3 {
-    width: 100%; height: 700px; display: none;
+    width: 100%; height: 220px; display: none;
     background: url(../img2/seltos/04_03.webp) no-repeat center center/cover;
 }
-
 .seltos_1> .at4> p:nth-child(4) {
-    position: absolute; top: 40px; left: 490px;
-    font-size: 28px; font-weight: bold;
+    position: absolute; top: 20px; left: 20px;
+    font-size: 2.5vh; font-weight: bold;
     text-shadow: 2px -2px 8px white;
 }
 .seltos_1> .at4> p:nth-child(5) {
-    position: absolute; top: 90px; left: 490px;
-    height: 50px; line-height: 50px;
-    font-size: 42px; font-weight: bold;
-    text-shadow: 2px -2px 8px white;
+    position: absolute; top: 230px; left: 5%; width: 90%;
+    height: 50px; line-height: 3.5vh; color: black;
+    font-size: 2.3vh; font-weight: bold; text-shadow: none;
 }
-
 .seltos_1> .at4> .seltos_at4_btn1_box {
-    width: 350px; height: 100px;
-    position: absolute; top: 570px; left: 50%;
+    width: 45%; height: 40px;
+    position: absolute; top: 170px; left: 50%;
     transform: translateX(-50%);
     display: flex;
     justify-content: space-evenly;
 }
 .seltos_1> .at4> .seltos_at4_btn1_box> li {
     float: left; cursor: pointer;
-    width: 100px; height: 100%;
+    width: 40px; height: 100%;
     border: 3px solid #ccc;
     border-radius: 100%;
 }
-.seltos_1> .at4> .seltos_at4_btn1_box> li:hover {transform: scale(1.1); transition: all 0.5s;}
 .seltos_1> .at4> .seltos_at4_btn1_box> .seltos_at4_btn1_1 {
     background: url(../img2/seltos/04_01.webp) no-repeat center center/cover;
     border: 3px solid #05141f;
@@ -2868,425 +2867,403 @@ header> .topdown {display: none;}
 .seltos_1> .at4> .seltos_at4_btn1_box> .seltos_at4_btn1_3 {
     background: url(../img2/seltos/04_03.webp) no-repeat center center/cover;
 }
+.seltos_1> .at4> div:nth-child(7),
+.seltos_1> .at4> div:nth-child(8) {display: none;}
 
-.seltos_1> .at4> div:nth-child(7) {
-    width: 100%; height: 376px;
-    position: absolute; top: 705px; left: 50%;
-    transform: translateX(-50%);
+/* mobile 이미지 */
+.seltos_1> .at4> div:nth-child(9) {
+    width: 300px; height: 250px; display: block;
+    position: absolute; top: 320px; left: 50%;
+    transform: translateX(-50%); overflow: hidden;
 }
-.seltos_1> .at4> div:nth-child(7)> .seltos_at4_hov {
-    float: left; width: 470px; height: 100%;
-    margin-left: 5px; overflow: hidden;
+.seltos_1> .at4> div:nth-child(9)> ul {
+    width: 2400px; height: 100%;
+    position: absolute; top: 0; left: 0; 
 }
-.seltos_1> .at4> div:nth-child(7)> .seltos_at4_hov> li:hover img {transform: scale(1.1); transition: all 0.5s;}
-.seltos_1> .at4> div:nth-child(7)> .seltos_at4_hov1:hover .seltos_at4_hov1_on{margin-top: 41px; transition: all 0.5s;}
-.seltos_1> .at4> div:nth-child(7)> .seltos_at4_hov2:hover .seltos_at4_hov2_on{margin-top: 41px; transition: all 0.5s;}
-.seltos_1> .at4> div:nth-child(7)> .seltos_at4_hov3:hover .seltos_at4_hov3_on{margin-top: 41px; transition: all 0.5s;}
-.seltos_1> .at4> div:nth-child(7)> .seltos_at4_hov4:hover .seltos_at4_hov4_on{margin-top: 41px; transition: all 0.5s;}
-.seltos_1> .at4> div:nth-child(7)> .seltos_at4_hov> li:nth-child(1) {
+.seltos_1> .at4> div:nth-child(9)> ul> .seltos_at4_hov {
+    float: left; width: 300px; height: 100%;
+}
+.seltos_1> .at4> div:nth-child(9)> ul> .seltos_at4_hov> div {
     width: 100%; height: 100%;
 }
-.seltos_1> .at4> div:nth-child(7)> .seltos_at4_hov> li:nth-child(1) img {width: 100%; height: 100%;}
-.seltos_1> .at4> div:nth-child(7)> .seltos_at4_hov> li:nth-child(2) {
-    position: relative; top: -417px; left: 0;
-    width: 100%; height: 40px; color: white;
-    background: rgba(5, 20, 31, 0.8);
-    text-align: center; line-height: 40px;
-    font-size: 17px; font-weight:  bold;
+.seltos_1> .at4> div:nth-child(9)> ul> .seltos_at4_hov> div img {
+    width: 100%;
 }
-
-.seltos_1> .at4> div:nth-child(8) {
-    width: 100%; height: 376px;
-    position: absolute; top: 1086px; left: 50%;
+.seltos_1> .at4> div:nth-child(9)> ul> .seltos_at4_hov> .seltos_at4_hov_on {
+    position: relative; top: -250px; left: 0;
+    width: 100%; height: 30px; color: white;
+    text-shadow: 2px -2px 10px #05141f;
+    text-align: left; line-height: 15px;
+    font-size: 3.2vw; font-weight: bold; padding: 15px 10px;
+}
+.seltos_1> .at4> .seltos_control4 {
+    display: block;
+    position: absolute; top: 420px; left: 50%;
     transform: translateX(-50%);
+    width: 300px; height: 30px;
+    display: flex; justify-content: space-between;
 }
-.seltos_1> .at4> div:nth-child(8)> .seltos_at4_hov {
-    float: left; width: 470px; height: 100%;
-    margin-left: 5px; overflow: hidden;
+.seltos_1> .at4> .seltos_control4> li {
+    width: 30px; height: 100%; float: left;
+    text-align: center; line-height: 30px;
+    font-weight: bold; font-size: 5vh;
+    cursor: pointer; color: white;
 }
-.seltos_1> .at4> div:nth-child(8)> .seltos_at4_hov> li:hover img {transform: scale(1.1); transition: all 0.5s;}
-.seltos_1> .at4> div:nth-child(8)> .seltos_at4_hov5:hover .seltos_at4_hov5_on{margin-top: 41px; transition: all 0.5s;}
-.seltos_1> .at4> div:nth-child(8)> .seltos_at4_hov6:hover .seltos_at4_hov6_on{margin-top: 41px; transition: all 0.5s;}
-.seltos_1> .at4> div:nth-child(8)> .seltos_at4_hov7:hover .seltos_at4_hov7_on{margin-top: 41px; transition: all 0.5s;}
-.seltos_1> .at4> div:nth-child(8)> .seltos_at4_hov8:hover .seltos_at4_hov8_on{margin-top: 41px; transition: all 0.5s;}
-.seltos_1> .at4> div:nth-child(8)> .seltos_at4_hov> li:nth-child(1) {
-    width: 100%; height: 100%;
-}
-.seltos_1> .at4> div:nth-child(8)> .seltos_at4_hov> li:nth-child(1) img {width: 100%; height: 100%;}
-.seltos_1> .at4> div:nth-child(8)> .seltos_at4_hov> li:nth-child(2) {
-    position: relative; top: -417px; left: 0;
-    width: 100%; height: 40px; color: white;
-    background: rgba(5, 20, 31, 0.8);
-    text-align: center; line-height: 40px;
-    font-size: 17px; font-weight:  bold;
-}
+.seltos_1> .at4> .seltos_control4> li:nth-child(1) {color: #898989;}
 
 /* 셀토스 - at5 */
-.seltos_1> .at5 {height: 1468px;}
+.seltos_1> .at5 {height: 587px;}
 .seltos_1> .at5> .seltos_at5_big {
-    width: 100%; height: 700px;
+    width: 100%; height: 220px;
     position: absolute; top: 0; left: 0;
-    background: url(../img2/seltos/05_01.webp) no-repeat center -220px/cover;
+    background: url(../img2/seltos/05_01.webp) no-repeat center center/cover;
 }
-
 .seltos_1> .at5> p:nth-child(2) {
-    position: absolute; top: 40px; left: 490px;
-    font-size: 28px; font-weight: bold;
-    text-shadow: 2px -2px 10px #05141f; color: white;
+    position: absolute; top: 20px; left: 20px;
+    font-size: 2.5vh; font-weight: bold;
+    text-shadow: 2px -2px 3px #05141f; color: white;
 }
 .seltos_1> .at5> p:nth-child(3) {
-    position: absolute; top: 90px; left: 490px;
-    height: 50px; line-height: 50px;
-    font-size: 42px; font-weight: bold;
-    text-shadow: 2px -2px 10px #05141f; color: white;
+    position: absolute; top: 230px; left: 5%; width: 90%;
+    height: 50px; line-height: 3.5vh;
+    font-size: 2.3vh; font-weight: bold; color: black;
+    text-shadow: none;
 }
+.seltos_1> .at5> div:nth-child(4),
+.seltos_1> .at5> div:nth-child(5) {display: none;}
 
-.seltos_1> .at5> div:nth-child(4) {
-    width: 100%; height: 376px;
-    position: absolute; top: 705px; left: 50%;
-    transform: translateX(-50%);
+/* mobile 이미지 */
+.seltos_1> .at5> div:nth-child(6) {
+    width: 300px; height: 250px; display: block;
+    position: absolute; top: 320px; left: 50%;
+    transform: translateX(-50%); overflow: hidden;
 }
-.seltos_1> .at5> div:nth-child(4)> .seltos_at5_hov {
-    float: left; width: 470px; height: 100%;
-    margin-left: 5px; overflow: hidden;
+.seltos_1> .at5> div:nth-child(6)> ul {
+    width: 2400px; height: 100%;
+    position: absolute; top: 0; left: 0; 
 }
-.seltos_1> .at5> div:nth-child(4)> .seltos_at5_hov> li:hover img {transform: scale(1.1); transition: all 0.5s;}
-.seltos_1> .at5> div:nth-child(4)> .seltos_at5_hov1:hover .seltos_at5_hov1_on{margin-top: 41px; transition: all 0.5s;}
-.seltos_1> .at5> div:nth-child(4)> .seltos_at5_hov2:hover .seltos_at5_hov2_on{margin-top: 41px; transition: all 0.5s;}
-.seltos_1> .at5> div:nth-child(4)> .seltos_at5_hov3:hover .seltos_at5_hov3_on{margin-top: 41px; transition: all 0.5s;}
-.seltos_1> .at5> div:nth-child(4)> .seltos_at5_hov4:hover .seltos_at5_hov4_on{margin-top: 41px; transition: all 0.5s;}
-.seltos_1> .at5> div:nth-child(4)> .seltos_at5_hov> li:nth-child(1) {
+.seltos_1> .at5> div:nth-child(6)> ul> .seltos_at5_hov {
+    float: left; width: 300px; height: 100%;
+}
+.seltos_1> .at5> div:nth-child(6)> ul> .seltos_at5_hov> div {
     width: 100%; height: 100%;
 }
-.seltos_1> .at5> div:nth-child(4)> .seltos_at5_hov> li:nth-child(1) img {width: 100%; height: 100%;}
-.seltos_1> .at5> div:nth-child(4)> .seltos_at5_hov> li:nth-child(2) {
-    position: relative; top: -417px; left: 0;
-    width: 100%; height: 40px; color: white;
-    background: rgba(5, 20, 31, 0.8);
-    text-align: center; line-height: 40px;
-    font-size: 17px; font-weight:  bold;
+.seltos_1> .at5> div:nth-child(6)> ul> .seltos_at5_hov> div img {
+    width: 100%;
 }
-
-.seltos_1> .at5> div:nth-child(5) {
-    width: 100%; height: 376px;
-    position: absolute; top: 1086px; left: 50%;
+.seltos_1> .at5> div:nth-child(6)> ul> .seltos_at5_hov> .seltos_at5_hov_on {
+    position: relative; top: -250px; left: 0;
+    width: 100%; height: 30px; color: white;
+    text-shadow: 2px -2px 10px #05141f;
+    text-align: left; line-height: 15px;
+    font-size: 3.2vw; font-weight: bold; padding: 15px 10px;
+}
+.seltos_1> .at5> .seltos_control5 {
+    display: block;
+    position: absolute; top: 420px; left: 50%;
     transform: translateX(-50%);
+    width: 300px; height: 30px;
+    display: flex; justify-content: space-between;
 }
-.seltos_1> .at5> div:nth-child(5)> .seltos_at5_hov {
-    float: left; width: 470px; height: 100%;
-    margin-left: 5px; overflow: hidden;
+.seltos_1> .at5> .seltos_control5> li {
+    width: 30px; height: 100%; float: left;
+    text-align: center; line-height: 30px;
+    font-weight: bold; font-size: 5vh;
+    cursor: pointer; color: white;
 }
-.seltos_1> .at5> div:nth-child(5)> .seltos_at5_hov> li:hover img {transform: scale(1.1); transition: all 0.5s;}
-.seltos_1> .at5> div:nth-child(5)> .seltos_at5_hov5:hover .seltos_at5_hov5_on{margin-top: 41px; transition: all 0.5s;}
-.seltos_1> .at5> div:nth-child(5)> .seltos_at5_hov6:hover .seltos_at5_hov6_on{margin-top: 41px; transition: all 0.5s;}
-.seltos_1> .at5> div:nth-child(5)> .seltos_at5_hov7:hover .seltos_at5_hov7_on{margin-top: 41px; transition: all 0.5s;}
-.seltos_1> .at5> div:nth-child(5)> .seltos_at5_hov8:hover .seltos_at5_hov8_on{margin-top: 41px; transition: all 0.5s;}
-.seltos_1> .at5> div:nth-child(5)> .seltos_at5_hov> li:nth-child(1) {
-    width: 100%; height: 100%;
-}
-.seltos_1> .at5> div:nth-child(5)> .seltos_at5_hov> li:nth-child(1) img {width: 100%; height: 100%;}
-.seltos_1> .at5> div:nth-child(5)> .seltos_at5_hov> li:nth-child(2) {
-    position: relative; top: -417px; left: 0;
-    width: 100%; height: 40px; color: white;
-    background: rgba(5, 20, 31, 0.8);
-    text-align: center; line-height: 40px;
-    font-size: 17px; font-weight:  bold;
-}
+.seltos_1> .at5> .seltos_control5> li:nth-child(1) {color: #898989;}
 
 /* 셀토스 - at6 */
-.seltos_1> .at6 {height: 1468px;}
+.seltos_1> .at6 {height: 587px;}
 .seltos_1> .at6> .seltos_at6_big {
-    width: 100%; height: 700px;
+    width: 100%; height: 220px;
     position: absolute; top: 0; left: 0;
-    background: url(../img2/seltos/06_01.webp) no-repeat center -170px/cover;
+    background: url(../img2/seltos/06_01.webp) no-repeat center center/cover;
 }
-
 .seltos_1> .at6> p:nth-child(2) {
-    position: absolute; top: 40px; left: 490px;
-    font-size: 28px; font-weight: bold;
-    text-shadow: 2px -2px 10px #05141f; color: white;
+    position: absolute; top: 20px; left: 20px;
+    font-size: 2.5vh; font-weight: bold;
+    text-shadow: 2px -2px 3px white; color: black;
 }
 .seltos_1> .at6> p:nth-child(3) {
-    position: absolute; top: 90px; left: 490px;
-    height: 50px; line-height: 50px;
-    font-size: 42px; font-weight: bold;
-    text-shadow: 2px -2px 10px #05141f; color: white;
+    position: absolute; top: 230px; left: 5%; width: 90%;
+    height: 50px; line-height: 3.5vh;
+    font-size: 2.3vh; font-weight: bold; color: black;
+    text-shadow: none;
 }
+.seltos_1> .at6> div:nth-child(4),
+.seltos_1> .at6> div:nth-child(5) {display: none;}
 
-.seltos_1> .at6> div:nth-child(4) {
-    width: 1520px; height: 376px;
-    position: absolute; top: 705px; left: 50%;
+/* mobile 이미지 */
+.seltos_1> .at6> div:nth-child(6) {
+    width: 300px; height: 250px; display: block;
+    position: absolute; top: 320px; left: 50%;
+    transform: translateX(-50%); overflow: hidden;
+}
+.seltos_1> .at6> div:nth-child(6)> ul {
+    width: 1800px; height: 100%;
+    position: absolute; top: 0; left: 0; 
+}
+.seltos_1> .at6> div:nth-child(6)> ul> .seltos_at6_hov {
+    float: left; width: 300px; height: 100%;
+}
+.seltos_1> .at6> div:nth-child(6)> ul> .seltos_at6_hov> div {
+    width: 100%; height: 100%;
+}
+.seltos_1> .at6> div:nth-child(6)> ul> .seltos_at6_hov> div img {
+    width: 100%;
+}
+.seltos_1> .at6> div:nth-child(6)> ul> .seltos_at6_hov> .seltos_at6_hov_on {
+    position: relative; top: -250px; left: 0;
+    width: 100%; height: 30px; color: white;
+    text-shadow: 2px -2px 10px #05141f;
+    text-align: left; line-height: 15px;
+    font-size: 3.2vw; font-weight: bold; padding: 15px 10px;
+}
+.seltos_1> .at6> .seltos_control6 {
+    display: block;
+    position: absolute; top: 420px; left: 50%;
     transform: translateX(-50%);
+    width: 300px; height: 30px;
+    display: flex; justify-content: space-between;
 }
-.seltos_1> .at6> div:nth-child(4)> .seltos_at6_hov {
-    float: left; width: 500px; height: 100%;
-    margin-left: 5px; overflow: hidden;
+.seltos_1> .at6> .seltos_control6> li {
+    width: 30px; height: 100%; float: left;
+    text-align: center; line-height: 30px;
+    font-weight: bold; font-size: 5vh;
+    cursor: pointer; color: white;
 }
-.seltos_1> .at6> div:nth-child(4)> .seltos_at6_hov> li:hover img {transform: scale(1.1); transition: all 0.5s;}
-.seltos_1> .at6> div:nth-child(4)> .seltos_at6_hov1:hover .seltos_at6_hov1_on{margin-top: 41px; transition: all 0.5s;}
-.seltos_1> .at6> div:nth-child(4)> .seltos_at6_hov2:hover .seltos_at6_hov2_on{margin-top: 41px; transition: all 0.5s;}
-.seltos_1> .at6> div:nth-child(4)> .seltos_at6_hov3:hover .seltos_at6_hov3_on{margin-top: 41px; transition: all 0.5s;}
-.seltos_1> .at6> div:nth-child(4)> .seltos_at6_hov> li:nth-child(1) {width: 100%; height: 100%;}
-.seltos_1> .at6> div:nth-child(4)> .seltos_at6_hov> li:nth-child(1) img {width: 100%; height: 100%;}
-.seltos_1> .at6> div:nth-child(4)> .seltos_at6_hov> li:nth-child(2) {
-    position: relative; top: -417px; left: 0;
-    width: 100%; height: 40px; color: white;
-    background: rgba(5, 20, 31, 0.8);
-    text-align: center; line-height: 40px;
-    font-size: 17px; font-weight:  bold;
-}
-
-.seltos_1> .at6> div:nth-child(5) {
-    width: 1520px; height: 376px;
-    position: absolute; top: 1086px; left: 50%;
-    transform: translateX(-50%);
-}
-.seltos_1> .at6> div:nth-child(5)> .seltos_at6_hov {
-    float: left; width: 500px; height: 100%;
-    margin-left: 5px; overflow: hidden;
-}
-.seltos_1> .at6> div:nth-child(5)> .seltos_at6_hov> li:hover img {transform: scale(1.1); transition: all 0.5s;}
-.seltos_1> .at6> div:nth-child(5)> .seltos_at6_hov4:hover .seltos_at6_hov4_on{margin-top: 41px; transition: all 0.5s;}
-.seltos_1> .at6> div:nth-child(5)> .seltos_at6_hov5:hover .seltos_at6_hov5_on{margin-top: 41px; transition: all 0.5s;}
-.seltos_1> .at6> div:nth-child(5)> .seltos_at6_hov6:hover .seltos_at6_hov6_on{margin-top: 41px; transition: all 0.5s;}
-.seltos_1> .at6> div:nth-child(5)> .seltos_at6_hov> li:nth-child(1) {width: 100%; height: 100%;}
-.seltos_1> .at6> div:nth-child(5)> .seltos_at6_hov> li:nth-child(1) img {width: 100%; height: 100%;}
-.seltos_1> .at6> div:nth-child(5)> .seltos_at6_hov> li:nth-child(2) {
-    position: relative; top: -417px; left: 0;
-    width: 100%; height: 40px; color: white;
-    background: rgba(5, 20, 31, 0.8);
-    text-align: center; line-height: 40px;
-    font-size: 17px; font-weight:  bold;
-}
+.seltos_1> .at6> .seltos_control6> li:nth-child(1) {color: #898989;}
 
 /* 셀토스 - at7 */
-.seltos_1> .at7 {height: 1086px;}
+.seltos_1> .at7 {height: 565px;}
 .seltos_1> .at7> .seltos_at7_big {
-    width: 100%; height: 700px;
+    width: 100%; height: 220px;
     position: absolute; top: 0; left: 0;
-    background: url(../img2/seltos/07_01.webp) no-repeat center -170px/cover;
+    background: url(../img2/seltos/07_01.webp) no-repeat center center/cover;
 }
-
 .seltos_1> .at7> p:nth-child(2) {
-    position: absolute; top: 40px; left: 490px;
-    font-size: 28px; font-weight: bold;
-    text-shadow: 2px -2px 10px #05141f; color: white;
+    position: absolute; top: 20px; left: 20px;
+    font-size: 2.5vh; font-weight: bold;
+    text-shadow: 2px -2px 3px #05141f; color: white;
 }
 .seltos_1> .at7> p:nth-child(3) {
-    position: absolute; top: 90px; left: 490px;
-    height: 50px; line-height: 50px;
-    font-size: 42px; font-weight: bold;
-    text-shadow: 2px -2px 10px #05141f; color: white;
+    position: absolute; top: 230px; left: 5%; width: 90%;
+    height: 50px; line-height: 3.5vh;
+    font-size: 2.3vh; font-weight: bold; color: black;
+    text-shadow: none;
 }
+.seltos_1> .at7> div:nth-child(4) {display: none;}
 
-.seltos_1> .at7> div:nth-child(4) {
-    width: 1520px; height: 376px;
-    position: absolute; top: 705px; left: 50%;
+/* mobile 이미지 */
+.seltos_1> .at7> div:nth-child(5) {
+    width: 300px; height: 250px; display: block;
+    position: absolute; top: 300px; left: 50%;
+    transform: translateX(-50%); overflow: hidden;
+}
+.seltos_1> .at7> div:nth-child(5)> ul {
+    width: 900px; height: 100%;
+    position: absolute; top: 0; left: 0; 
+}
+.seltos_1> .at7> div:nth-child(5)> ul> .seltos_at7_hov {
+    float: left; width: 300px; height: 100%;
+}
+.seltos_1> .at7> div:nth-child(5)> ul> .seltos_at7_hov> div {
+    width: 100%; height: 100%;
+}
+.seltos_1> .at7> div:nth-child(5)> ul> .seltos_at7_hov> div img {
+    width: 100%;
+}
+.seltos_1> .at7> div:nth-child(5)> ul> .seltos_at7_hov> .seltos_at7_hov_on {
+    position: relative; top: -250px; left: 0;
+    width: 100%; height: 30px; color: white;
+    text-shadow: 2px -2px 10px #05141f;
+    text-align: left; line-height: 15px;
+    font-size: 3.2vw; font-weight: bold; padding: 15px 10px;
+}
+.seltos_1> .at7> .seltos_control7 {
+    display: block;
+    position: absolute; top: 400px; left: 50%;
     transform: translateX(-50%);
+    width: 300px; height: 30px;
+    display: flex; justify-content: space-between;
 }
-.seltos_1> .at7> div:nth-child(4)> .seltos_at7_hov {
-    float: left; width: 500px; height: 100%;
-    margin-left: 5px; overflow: hidden;
+.seltos_1> .at7> .seltos_control7> li {
+    width: 30px; height: 100%; float: left;
+    text-align: center; line-height: 30px;
+    font-weight: bold; font-size: 5vh;
+    cursor: pointer; color: white;
 }
-.seltos_1> .at7> div:nth-child(4)> .seltos_at7_hov> li:hover img {transform: scale(1.1); transition: all 0.5s;}
-.seltos_1> .at7> div:nth-child(4)> .seltos_at7_hov1:hover .seltos_at7_hov1_on{margin-top: 41px; transition: all 0.5s;}
-.seltos_1> .at7> div:nth-child(4)> .seltos_at7_hov2:hover .seltos_at7_hov2_on{margin-top: 41px; transition: all 0.5s;}
-.seltos_1> .at7> div:nth-child(4)> .seltos_at7_hov3:hover .seltos_at7_hov3_on{margin-top: 41px; transition: all 0.5s;}
-.seltos_1> .at7> div:nth-child(4)> .seltos_at7_hov> li:nth-child(1) {width: 100%; height: 100%;}
-.seltos_1> .at7> div:nth-child(4)> .seltos_at7_hov> li:nth-child(1) img {width: 100%; height: 100%;}
-.seltos_1> .at7> div:nth-child(4)> .seltos_at7_hov> li:nth-child(2) {
-    position: relative; top: -417px; left: 0;
-    width: 100%; height: 40px; color: white;
-    background: rgba(5, 20, 31, 0.8);
-    text-align: center; line-height: 40px;
-    font-size: 17px; font-weight:  bold;
-}
+.seltos_1> .at7> .seltos_control7> li:nth-child(1) {color: #898989;}
 
 /* 셀토스 - at8 */
-.seltos_1> .at8 {height: 1086px;}
+.seltos_1> .at8 {height: 605px;}
 .seltos_1> .at8> .seltos_at8_big {
-    width: 100%; height: 700px;
+    width: 100%; height: 220px;
     position: absolute; top: 0; left: 0;
-    background: url(../img2/seltos/08_01.webp) no-repeat center -210px/cover;
+    background: url(../img2/seltos/08_01.webp) no-repeat center center/cover;
 }
-
 .seltos_1> .at8> p:nth-child(2) {
-    position: absolute; top: 40px; left: 490px;
-    font-size: 28px; font-weight: bold;
-    text-shadow: 2px -2px 10px #ccc;
+    position: absolute; top: 20px; left: 20px;
+    font-size: 2.5vh; font-weight: bold;
+    text-shadow: 2px -2px 3px white; color: black;
 }
 .seltos_1> .at8> p:nth-child(3) {
-    position: absolute; top: 90px; left: 490px;
-    height: 50px; line-height: 50px;
-    font-size: 42px; font-weight: bold;
-    text-shadow: 2px -2px 10px #ccc;
+    position: absolute; top: 230px; left: 5%; width: 90%;
+    height: 50px; line-height: 3.5vh;
+    font-size: 2.3vh; font-weight: bold; color: black;
+    text-shadow: none;
 }
 .seltos_1> .at8> p:nth-child(4) {
-    position: absolute; top: 140px; left: 490px;
-    height: 50px; line-height: 50px;
-    font-size: 24px; font-weight: bold;
-    text-shadow: 2px -2px 10px white;
+    position: absolute; top: 255px; left: 5%; width: 90%;
+    height: 50px; line-height: 3.5vh;
+    font-size: 2.3vh; font-weight: bold; color: black;
+    text-shadow: none;
 }
+.seltos_1> .at8> div:nth-child(5) {display: none;}
 
-.seltos_1> .at8> div:nth-child(5) {
-    width: 100%; height: 376px;
-    position: absolute; top: 705px; left: 50%;
-    transform: translateX(-50%);
+/* mobile 이미지 */
+.seltos_1> .at8> div:nth-child(6) {
+    width: 300px; height: 250px; display: block;
+    position: absolute; top: 340px; left: 50%;
+    transform: translateX(-50%); overflow: hidden;
 }
-.seltos_1> .at8> div:nth-child(5)> .seltos_at8_hov {
-    float: left; width: 470px; height: 100%;
-    margin-left: 5px; overflow: hidden;
+.seltos_1> .at8> div:nth-child(6)> ul {
+    width: 1200px; height: 100%;
+    position: absolute; top: 0; left: 0; 
 }
-.seltos_1> .at8> div:nth-child(5)> .seltos_at8_hov> li:hover img {transform: scale(1.1); transition: all 0.5s;}
-.seltos_1> .at8> div:nth-child(5)> .seltos_at8_hov1:hover .seltos_at8_hov1_on{margin-top: 41px; transition: all 0.5s;}
-.seltos_1> .at8> div:nth-child(5)> .seltos_at8_hov2:hover .seltos_at8_hov2_on{margin-top: 41px; transition: all 0.5s;}
-.seltos_1> .at8> div:nth-child(5)> .seltos_at8_hov3:hover .seltos_at8_hov3_on{margin-top: 41px; transition: all 0.5s;}
-.seltos_1> .at8> div:nth-child(5)> .seltos_at8_hov4:hover .seltos_at8_hov4_on{margin-top: 41px; transition: all 0.5s;}
-.seltos_1> .at8> div:nth-child(5)> .seltos_at8_hov> li:nth-child(1) {
+.seltos_1> .at8> div:nth-child(6)> ul> .seltos_at8_hov {
+    float: left; width: 300px; height: 100%;
+}
+.seltos_1> .at8> div:nth-child(6)> ul> .seltos_at8_hov> div {
     width: 100%; height: 100%;
 }
-.seltos_1> .at8> div:nth-child(5)> .seltos_at8_hov> li:nth-child(1) img {width: 100%; height: 100%;}
-.seltos_1> .at8> div:nth-child(5)> .seltos_at8_hov> li:nth-child(2) {
-    position: relative; top: -417px; left: 0;
-    width: 100%; height: 40px; color: white;
-    background: rgba(5, 20, 31, 0.8);
-    text-align: center; line-height: 40px;
-    font-size: 17px; font-weight:  bold;
+.seltos_1> .at8> div:nth-child(6)> ul> .seltos_at8_hov> div img {
+    width: 100%;
 }
+.seltos_1> .at8> div:nth-child(6)> ul> .seltos_at8_hov> .seltos_at8_hov_on {
+    position: relative; top: -250px; left: 0;
+    width: 100%; height: 30px; color: white;
+    text-shadow: 2px -2px 10px #05141f;
+    text-align: left; line-height: 15px;
+    font-size: 3.2vw; font-weight: bold; padding: 15px 10px;
+}
+.seltos_1> .at8> .seltos_control8 {
+    display: block;
+    position: absolute; top: 440px; left: 50%;
+    transform: translateX(-50%);
+    width: 300px; height: 30px;
+    display: flex; justify-content: space-between;
+}
+.seltos_1> .at8> .seltos_control8> li {
+    width: 30px; height: 100%; float: left;
+    text-align: center; line-height: 30px;
+    font-weight: bold; font-size: 5vh;
+    cursor: pointer; color: white;
+}
+.seltos_1> .at8> .seltos_control8> li:nth-child(1) {color: #898989;}
 
 /* 셀토스 - at9 */
-.seltos_1> .at9 {height: 2174px;}
+.seltos_1> .at9 {height: 565px;}
 .seltos_1> .at9> .seltos_at9_big {
-    width: 100%; height: 700px;
+    width: 100%; height: 220px;
     position: absolute; top: 0; left: 0;
-    background: url(../img2/seltos/09_01.webp) no-repeat center -215px/cover;
+    background: url(../img2/seltos/09_01.webp) no-repeat center center/cover;
 }
-
 .seltos_1> .at9> p:nth-child(2) {
-    position: absolute; top: 40px; left: 490px;
-    font-size: 28px; font-weight: bold;
-    text-shadow: 2px -2px 5px #ccc;
+    position: absolute; top: 20px; left: 20px;
+    font-size: 2.5vh; font-weight: bold;
+    text-shadow: 2px -2px 3px white; color: black;
 }
 .seltos_1> .at9> p:nth-child(3) {
-    position: absolute; top: 90px; left: 490px;
-    height: 50px; line-height: 50px;
-    font-size: 42px; font-weight: bold;
-    text-shadow: 2px -2px 5px #ccc;
+    position: absolute; top: 230px; left: 5%; width: 90%;
+    height: 50px; line-height: 3.5vh;
+    font-size: 2.3vh; font-weight: bold; color: black;
+    text-shadow: none;
 }
+.seltos_1> .at9> div:nth-child(4),
+.seltos_1> .at9> .seltos_at9_big2,
+.seltos_1> .at9> p:nth-child(7),
+.seltos_1> .at9> div:nth-child(8) {display: none;}
 
-.seltos_1> .at9> div:nth-child(4) {
-    width: 1520px; height: 376px;
-    position: absolute; top: 705px; left: 50%;
-    transform: translateX(-50%);
+/* mobile 이미지 */
+.seltos_1> .at9> div:nth-child(9) {
+    width: 300px; height: 250px; display: block;
+    position: absolute; top: 300px; left: 50%;
+    transform: translateX(-50%); overflow: hidden;
 }
-.seltos_1> .at9> div:nth-child(4)> .seltos_at9_hov {
-    float: left; width: 500px; height: 100%;
-    margin-left: 5px; overflow: hidden;
+.seltos_1> .at9> div:nth-child(9)> ul {
+    width: 2100px; height: 100%;
+    position: absolute; top: 0; left: 0; 
 }
-.seltos_1> .at9> div:nth-child(4)> .seltos_at9_hov> li:hover img {transform: scale(1.1); transition: all 0.5s;}
-.seltos_1> .at9> div:nth-child(4)> .seltos_at9_hov1:hover .seltos_at9_hov1_on{margin-top: 41px; transition: all 0.5s;}
-.seltos_1> .at9> div:nth-child(4)> .seltos_at9_hov2:hover .seltos_at9_hov2_on{margin-top: 41px; transition: all 0.5s;}
-.seltos_1> .at9> div:nth-child(4)> .seltos_at9_hov3:hover .seltos_at9_hov3_on{margin-top: 41px; transition: all 0.5s;}
-.seltos_1> .at9> div:nth-child(4)> .seltos_at9_hov> li:nth-child(1) {width: 100%; height: 100%;}
-.seltos_1> .at9> div:nth-child(4)> .seltos_at9_hov> li:nth-child(1) img {width: 100%; height: 100%;}
-.seltos_1> .at9> div:nth-child(4)> .seltos_at9_hov> li:nth-child(2) {
-    position: relative; top: -417px; left: 0;
-    width: 100%; height: 40px; color: white;
-    background: rgba(5, 20, 31, 0.8);
-    text-align: center; line-height: 40px;
-    font-size: 17px; font-weight:  bold;
+.seltos_1> .at9> div:nth-child(9)> ul> .seltos_at9_hov {
+    float: left; width: 300px; height: 100%;
 }
-
-.seltos_1> .at9> .seltos_at9_big2 {
-    width: 100%; height: 700px;
-    position: absolute; top: 1086px; left: 0;
-    background: url(../img2/seltos/09_05.webp) no-repeat center -215px/cover;
-}
-.seltos_1> .at9> p:nth-child(7) {
-    position: absolute; top: 1176px; left: 490px;
-    height: 50px; line-height: 50px;
-    font-size: 42px; font-weight: bold;
-    text-shadow: 2px -2px 10px #05141f; color: white;
-}
-
-.seltos_1> .at9> div:nth-child(8) {
-    width: 100%; height: 376px;
-    position: absolute; top: 1791px; left: 50%;
-    transform: translateX(-50%);
-}
-.seltos_1> .at9> div:nth-child(8)> .seltos_at9_hov {
-    float: left; width: 470px; height: 100%;
-    margin-left: 5px; overflow: hidden;
-}
-.seltos_1> .at9> div:nth-child(8)> .seltos_at9_hov> li:hover img {transform: scale(1.1); transition: all 0.5s;}
-.seltos_1> .at9> div:nth-child(8)> .seltos_at9_hov4:hover .seltos_at9_hov4_on{margin-top: 41px; transition: all 0.5s;}
-.seltos_1> .at9> div:nth-child(8)> .seltos_at9_hov5:hover .seltos_at9_hov5_on{margin-top: 41px; transition: all 0.5s;}
-.seltos_1> .at9> div:nth-child(8)> .seltos_at9_hov6:hover .seltos_at9_hov6_on{margin-top: 41px; transition: all 0.5s;}
-.seltos_1> .at9> div:nth-child(8)> .seltos_at9_hov7:hover .seltos_at9_hov7_on{margin-top: 41px; transition: all 0.5s;}
-.seltos_1> .at9> div:nth-child(8)> .seltos_at9_hov> li:nth-child(1) {
+.seltos_1> .at9> div:nth-child(9)> ul> .seltos_at9_hov> div {
     width: 100%; height: 100%;
 }
-.seltos_1> .at9> div:nth-child(8)> .seltos_at9_hov> li:nth-child(1) img {width: 100%; height: 100%;}
-.seltos_1> .at9> div:nth-child(8)> .seltos_at9_hov> li:nth-child(2) {
-    position: relative; top: -417px; left: 0;
-    width: 100%; height: 40px; color: white;
-    background: rgba(5, 20, 31, 0.8);
-    text-align: center; line-height: 40px;
-    font-size: 17px; font-weight:  bold;
+.seltos_1> .at9> div:nth-child(9)> ul> .seltos_at9_hov> div img {
+    width: 100%;
 }
+.seltos_1> .at9> div:nth-child(9)> ul> .seltos_at9_hov> .seltos_at9_hov_on {
+    position: relative; top: -250px; left: 0;
+    width: 100%; height: 30px; color: white;
+    text-shadow: 2px -2px 10px #05141f;
+    text-align: left; line-height: 15px;
+    font-size: 3.2vw; font-weight: bold; padding: 15px 10px;
+}
+.seltos_1> .at9> .seltos_control9 {
+    display: block;
+    position: absolute; top: 400px; left: 50%;
+    transform: translateX(-50%);
+    width: 300px; height: 30px;
+    display: flex; justify-content: space-between;
+}
+.seltos_1> .at9> .seltos_control9> li {
+    width: 30px; height: 100%; float: left;
+    text-align: center; line-height: 30px;
+    font-weight: bold; font-size: 5vh;
+    cursor: pointer; color: white;
+}
+.seltos_1> .at9> .seltos_control9> li:nth-child(1) {color: #898989;}
 
 /* 셀토스 - at10 */
-.seltos_1> .at10 {height: 700px;}
+.seltos_1> .at10 {height: 300px;}
 .seltos_1> .at10> p:first-child {
-    width: 100%; height: 70px;
-    position: absolute; top: 70px; left: 0;
-    text-align: center; line-height: 70px;
-    font-size: 38px; font-weight: bold;
+    width: 100%; height: 30px;
+    position: absolute; top: 20px; left: 0;
+    text-align: center; line-height: 30px;
+    font-size: 2.5vh; font-weight: bold;
 }
 .seltos_1> .at10> div:nth-child(2) {
     width: 120px; height: 30px;
-    position: absolute; top: 150px; left: 50%;
+    position: absolute; top: 55px; left: 50%;
     transform: translateX(-50%);
     border-radius: 20px; cursor: pointer;
-    background: #05141f; color: white;
+    background: #05141f; 
     text-align: center; line-height: 30px;
     font-size: 15px; font-weight: bold;
 }
-
-.seltos_1> .at10> ul:nth-child(3) {
-    width: 480px;
-    position: absolute; top: 200px; left: 50%;
-    transform: translateX(-50%);
-} 
-.seltos_1> .at10> ul:nth-child(3)> li {float: left; width: 55%; padding: 10px;}
-.seltos_1> .at10> ul:nth-child(3)> li:nth-child(2) {width: 45%;}
-.seltos_1> .at10> ul:nth-child(3)> li> p {
-    width: 210px; margin-left: 70px;
-}
-.seltos_1> .at10> ul:nth-child(3)> li:nth-child(2) > p {width: 130px; margin-left: 80px;}
-.seltos_1> .at10> ul:nth-child(3)> li> p:nth-child(2) {
-    color: #898989; font-size: 14px;
-    margin-top: -42px;
-}
-.seltos_1> .at10> ul:nth-child(3)> li> p:nth-child(3) {
-    color: #898989; font-weight: bold;
-    font-size: 28px; color: black; margin-top: -5px;
-}
+.seltos_1> .at10> div:nth-child(2)> a {color: white;}
+.seltos_1> .at10> ul:nth-child(3) {display: none;}
 
 .seltos_1> .at10> div:nth-child(4) {
-    width: 100%; height: 500px;
-    position: absolute; bottom: -40px; left: 0;
+    width: 100%; height: 200px;
+    position: absolute; bottom: 0; left: 0;
     overflow: hidden;
 }
 .seltos_1> .at10> div:nth-child(4)> div:nth-child(1) {
-    width: 100%; height: 180px;
+    width: 100%; height: 80px;
     position: absolute; bottom: 0; left: 0;
     background: #ccc;
 }
-.seltos_1> .at10> div:nth-child(4)> div:nth-child(2) {
-    position: absolute; top: 70px; left: 50%;
+.seltos_1> .at10> div:nth-child(4)> div:nth-child(3) {
+    position: absolute; top: 40px; left: 50%;
+    width: 350px; display: block;
     transform: translateX(-50%);
 }
+.seltos_1> .at10> div:nth-child(4)> div:nth-child(3) img {width: 100%;}
+.seltos_1> .at10> div:nth-child(4)> .seltos_at10_img {display: none;}
 
 
 /* ((((( 셀토스 제원 ))))) */

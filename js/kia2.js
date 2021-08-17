@@ -1369,6 +1369,21 @@ $(function() {
         $(this).css({"color":"white", "borderBottom":"5px solid white"});
         top_func();
     });
+    // 모바일) 셀토스 - 타이틀 - 버튼 클릭시 해당 화면으로 이동
+    $(".seltos_title_btn01").on("click",function() {
+        $(".seltos").hide();
+        $(".seltos_1").show();
+        $(".seltos_title_btn0").css("fontWeight","500");
+        $(this).css("fontWeight","bold");
+        top_func();
+    });
+    $(".seltos_title_btn02").on("click",function() {
+        $(".seltos").hide();
+        $(".seltos_2").show();
+        $(".seltos_title_btn0").css("fontWeight","500");
+        $(this).css("fontWeight","bold");
+        top_func();
+    });
 
     // 셀토스 - 특징 - 색상(at2)
     $(".seltos0 li").on("click",function() {
@@ -1379,6 +1394,37 @@ $(function() {
         $(".seltos_at2_name"+no).show();
     });
 
+    // 모바일) 셀토스 - 특징 - 그래비티(at3) - 이미지 < > 클릭시 이동
+    let seltos1_img_pos = 500;
+    let seltos1_img_count = 0;
+    let seltos1_img_no = 0;
+    $(".seltos_at3_right").on("click",function() {
+        if(seltos1_img_count < 3)
+            seltos1_img_count++;
+            seltos1_img_no = seltos1_img_count;
+            seltos1_img_pos = 300 * seltos1_img_count;
+        $(".seltos_at3_imgbox").stop().animate({"left": -seltos1_img_pos+"px"}, 100);
+        if(seltos1_img_count == 1) {
+            $(".seltos_at3_left").css("color","white");
+        }
+        if(seltos1_img_count == 3) {
+            $(".seltos_at3_right").css("color","#898989");
+        }
+    });
+    $(".seltos_at3_left").on("click",function() {
+        if(seltos1_img_count > 0)
+            seltos1_img_count--;
+            seltos1_img_no = seltos1_img_count;
+            seltos1_img_pos = 300 * seltos1_img_count;
+        $(".seltos_at3_imgbox").stop().animate({"left": -seltos1_img_pos+"px"}, 100);
+        if(seltos1_img_count == 0) {
+            $(".seltos_at3_left").css("color","#898989");
+        }
+        if(seltos1_img_count == 2) {
+            $(".seltos_at3_right").css("color","white");
+        }
+    });
+
     // 셀토스 - 특징 - 외장(at4)
     $(".seltos_at4_btn1").on("click",function() {
         no=$(this).index()+1;
@@ -1386,6 +1432,191 @@ $(function() {
         $(".seltos_at4_big"+no).show();
         $(".seltos_at4_btn1").css("border","3px solid #ccc");
         $(this).css("border","3px solid #05141f");
+    });
+    // 모바일) 셀토스 - 특징 - 외장(at4) - 이미지 < > 클릭시 이동
+    let seltos2_img_pos = 500;
+    let seltos2_img_count = 0;
+    let seltos2_img_no = 0;
+    $(".seltos_at4_right").on("click",function() {
+        if(seltos2_img_count < 7)
+            seltos2_img_count++;
+            seltos2_img_no = seltos2_img_count;
+            seltos2_img_pos = 300 * seltos2_img_count;
+        $(".seltos_at4_imgbox").stop().animate({"left": -seltos2_img_pos+"px"}, 100);
+        if(seltos2_img_count == 1) {
+            $(".seltos_at4_left").css("color","white");
+        }
+        if(seltos2_img_count == 7) {
+            $(".seltos_at4_right").css("color","#898989");
+        }
+    });
+    $(".seltos_at4_left").on("click",function() {
+        if(seltos2_img_count > 0)
+            seltos2_img_count--;
+            seltos2_img_no = seltos2_img_count;
+            seltos2_img_pos = 300 * seltos2_img_count;
+        $(".seltos_at4_imgbox").stop().animate({"left": -seltos2_img_pos+"px"}, 100);
+        if(seltos2_img_count == 0) {
+            $(".seltos_at4_left").css("color","#898989");
+        }
+        if(seltos2_img_count == 6) {
+            $(".seltos_at4_right").css("color","white");
+        }
+    });
+
+    // 모바일) 셀토스 - 특징 - 내장(at5) - 이미지 < > 클릭시 이동
+    let seltos3_img_pos = 500;
+    let seltos3_img_count = 0;
+    let seltos3_img_no = 0;
+    $(".seltos_at5_right").on("click",function() {
+        if(seltos3_img_count < 7)
+            seltos3_img_count++;
+            seltos3_img_no = seltos3_img_count;
+            seltos3_img_pos = 300 * seltos3_img_count;
+        $(".seltos_at5_imgbox").stop().animate({"left": -seltos3_img_pos+"px"}, 100);
+        if(seltos3_img_count == 1) {
+            $(".seltos_at5_left").css("color","white");
+        }
+        if(seltos3_img_count == 7) {
+            $(".seltos_at5_right").css("color","#898989");
+        }
+    });
+    $(".seltos_at5_left").on("click",function() {
+        if(seltos3_img_count > 0)
+            seltos3_img_count--;
+            seltos3_img_no = seltos3_img_count;
+            seltos3_img_pos = 300 * seltos3_img_count;
+        $(".seltos_at5_imgbox").stop().animate({"left": -seltos3_img_pos+"px"}, 100);
+        if(seltos3_img_count == 0) {
+            $(".seltos_at5_left").css("color","#898989");
+        }
+        if(seltos3_img_count == 6) {
+            $(".seltos_at5_right").css("color","white");
+        }
+    });
+
+    // 모바일) 셀토스 - 특징 - 편의(at6) - 이미지 < > 클릭시 이동
+    let seltos4_img_pos = 500;
+    let seltos4_img_count = 0;
+    let seltos4_img_no = 0;
+    $(".seltos_at6_right").on("click",function() {
+        if(seltos4_img_count < 5)
+            seltos4_img_count++;
+            seltos4_img_no = seltos4_img_count;
+            seltos4_img_pos = 300 * seltos4_img_count;
+        $(".seltos_at6_imgbox").stop().animate({"left": -seltos4_img_pos+"px"}, 100);
+        if(seltos4_img_count == 1) {
+            $(".seltos_at6_left").css("color","white");
+        }
+        if(seltos4_img_count == 5) {
+            $(".seltos_at6_right").css("color","#898989");
+        }
+    });
+    $(".seltos_at6_left").on("click",function() {
+        if(seltos4_img_count > 0)
+            seltos4_img_count--;
+            seltos4_img_no = seltos4_img_count;
+            seltos4_img_pos = 300 * seltos4_img_count;
+        $(".seltos_at6_imgbox").stop().animate({"left": -seltos4_img_pos+"px"}, 100);
+        if(seltos4_img_count == 0) {
+            $(".seltos_at6_left").css("color","#898989");
+        }
+        if(seltos4_img_count == 4) {
+            $(".seltos_at6_right").css("color","white");
+        }
+    });
+
+    // 모바일) 셀토스 - 특징 - 공간(at7) - 이미지 < > 클릭시 이동
+    let seltos5_img_pos = 500;
+    let seltos5_img_count = 0;
+    let seltos5_img_no = 0;
+    $(".seltos_at7_right").on("click",function() {
+        if(seltos5_img_count < 2)
+            seltos5_img_count++;
+            seltos5_img_no = seltos5_img_count;
+            seltos5_img_pos = 300 * seltos5_img_count;
+        $(".seltos_at7_imgbox").stop().animate({"left": -seltos5_img_pos+"px"}, 100);
+        if(seltos5_img_count == 1) {
+            $(".seltos_at7_left").css("color","white");
+        }
+        if(seltos5_img_count == 2) {
+            $(".seltos_at7_right").css("color","#898989");
+        }
+    });
+    $(".seltos_at7_left").on("click",function() {
+        if(seltos5_img_count > 0)
+            seltos5_img_count--;
+            seltos5_img_no = seltos5_img_count;
+            seltos5_img_pos = 300 * seltos5_img_count;
+        $(".seltos_at7_imgbox").stop().animate({"left": -seltos5_img_pos+"px"}, 100);
+        if(seltos5_img_count == 0) {
+            $(".seltos_at7_left").css("color","#898989");
+        }
+        if(seltos5_img_count == 1) {
+            $(".seltos_at7_right").css("color","white");
+        }
+    });
+
+    // 모바일) 셀토스 - 특징 - 성능(at8) - 이미지 < > 클릭시 이동
+    let seltos6_img_pos = 500;
+    let seltos6_img_count = 0;
+    let seltos6_img_no = 0;
+    $(".seltos_at8_right").on("click",function() {
+        if(seltos6_img_count < 3)
+            seltos6_img_count++;
+            seltos6_img_no = seltos6_img_count;
+            seltos6_img_pos = 300 * seltos6_img_count;
+        $(".seltos_at8_imgbox").stop().animate({"left": -seltos6_img_pos+"px"}, 100);
+        if(seltos6_img_count == 1) {
+            $(".seltos_at8_left").css("color","white");
+        }
+        if(seltos6_img_count == 3) {
+            $(".seltos_at8_right").css("color","#898989");
+        }
+    });
+    $(".seltos_at8_left").on("click",function() {
+        if(seltos6_img_count > 0)
+            seltos6_img_count--;
+            seltos6_img_no = seltos6_img_count;
+            seltos6_img_pos = 300 * seltos6_img_count;
+        $(".seltos_at8_imgbox").stop().animate({"left": -seltos6_img_pos+"px"}, 100);
+        if(seltos6_img_count == 0) {
+            $(".seltos_at8_left").css("color","#898989");
+        }
+        if(seltos6_img_count == 2) {
+            $(".seltos_at8_right").css("color","white");
+        }
+    });
+
+    // 모바일) 셀토스 - 특징 - 안전(at9) - 이미지 < > 클릭시 이동
+    let seltos7_img_pos = 500;
+    let seltos7_img_count = 0;
+    let seltos7_img_no = 0;
+    $(".seltos_at9_right").on("click",function() {
+        if(seltos7_img_count < 6)
+            seltos7_img_count++;
+            seltos7_img_no = seltos7_img_count;
+            seltos7_img_pos = 300 * seltos7_img_count;
+        $(".seltos_at9_imgbox").stop().animate({"left": -seltos7_img_pos+"px"}, 100);
+        if(seltos7_img_count == 1) {
+            $(".seltos_at9_left").css("color","white");
+        }
+        if(seltos7_img_count == 6) {
+            $(".seltos_at9_right").css("color","#898989");
+        }
+    });
+    $(".seltos_at9_left").on("click",function() {
+        if(seltos7_img_count > 0)
+            seltos7_img_count--;
+            seltos7_img_no = seltos7_img_count;
+            seltos7_img_pos = 300 * seltos7_img_count;
+        $(".seltos_at9_imgbox").stop().animate({"left": -seltos7_img_pos+"px"}, 100);
+        if(seltos7_img_count == 0) {
+            $(".seltos_at9_left").css("color","#898989");
+        }
+        if(seltos7_img_count == 5) {
+            $(".seltos_at9_right").css("color","white");
+        }
     });
 
     // 셀토스 - 제원 - (제원 / 휠) 버튼 클릭시 해당 화면 노출
