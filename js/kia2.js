@@ -1742,6 +1742,21 @@ $(function() {
         $(this).css({"color":"white", "borderBottom":"5px solid white"});
         top_func();
     });
+    // 모바일) 모하비 - 타이틀 - 버튼 클릭시 해당 화면으로 이동
+    $(".mohave_title_btn01").on("click",function() {
+        $(".mohave").hide();
+        $(".mohave_1").show();
+        $(".mohave_title_btn0").css("fontWeight","500");
+        $(this).css("fontWeight","bold");
+        top_func();
+    });
+    $(".mohave_title_btn02").on("click",function() {
+        $(".mohave").hide();
+        $(".mohave_2").show();
+        $(".mohave_title_btn0").css("fontWeight","500");
+        $(this).css("fontWeight","bold");
+        top_func();
+    });
 
     // 모하비 - 특징 - 색상(at2)
     $(".mohave0 li").on("click",function() {
@@ -1752,6 +1767,37 @@ $(function() {
         $(".mohave_at2_name"+no).show();
     });
 
+    // 모바일) 모하비 - 특징 - 그래비티(at3) - 이미지 < > 클릭시 이동
+    let mohave1_img_pos = 500;
+    let mohave1_img_count = 0;
+    let mohave1_img_no = 0;
+    $(".mohave_at3_right").on("click",function() {
+        if(mohave1_img_count < 3)
+            mohave1_img_count++;
+            mohave1_img_no = mohave1_img_count;
+            mohave1_img_pos = 300 * mohave1_img_count;
+        $(".mohave_at3_imgbox").stop().animate({"left": -mohave1_img_pos+"px"}, 100);
+        if(mohave1_img_count == 1) {
+            $(".mohave_at3_left").css("color","white");
+        }
+        if(mohave1_img_count == 3) {
+            $(".mohave_at3_right").css("color","#898989");
+        }
+    });
+    $(".mohave_at3_left").on("click",function() {
+        if(mohave1_img_count > 0)
+            mohave1_img_count--;
+            mohave1_img_no = mohave1_img_count;
+            mohave1_img_pos = 300 * mohave1_img_count;
+        $(".mohave_at3_imgbox").stop().animate({"left": -mohave1_img_pos+"px"}, 100);
+        if(mohave1_img_count == 0) {
+            $(".mohave_at3_left").css("color","#898989");
+        }
+        if(mohave1_img_count == 2) {
+            $(".mohave_at3_right").css("color","white");
+        }
+    });
+
     // 모하비 - 특징 - 외장(at4)
     $(".mohave_at4_btn1").on("click",function() {
         no=$(this).index()+1;
@@ -1759,6 +1805,191 @@ $(function() {
         $(".mohave_at4_big"+no).show();
         $(".mohave_at4_btn1").css("border","3px solid #ccc");
         $(this).css("border","3px solid #05141f");
+    });
+    // 모바일) 모하비 - 특징 - 외장(at4) - 이미지 < > 클릭시 이동
+    let mohave2_img_pos = 500;
+    let mohave2_img_count = 0;
+    let mohave2_img_no = 0;
+    $(".mohave_at4_right").on("click",function() {
+        if(mohave2_img_count < 5)
+            mohave2_img_count++;
+            mohave2_img_no = mohave2_img_count;
+            mohave2_img_pos = 300 * mohave2_img_count;
+        $(".mohave_at4_imgbox").stop().animate({"left": -mohave2_img_pos+"px"}, 100);
+        if(mohave2_img_count == 1) {
+            $(".mohave_at4_left").css("color","white");
+        }
+        if(mohave2_img_count == 5) {
+            $(".mohave_at4_right").css("color","#898989");
+        }
+    });
+    $(".mohave_at4_left").on("click",function() {
+        if(mohave2_img_count > 0)
+            mohave2_img_count--;
+            mohave2_img_no = mohave2_img_count;
+            mohave2_img_pos = 300 * mohave2_img_count;
+        $(".mohave_at4_imgbox").stop().animate({"left": -mohave2_img_pos+"px"}, 100);
+        if(mohave2_img_count == 0) {
+            $(".mohave_at4_left").css("color","#898989");
+        }
+        if(mohave2_img_count == 4) {
+            $(".mohave_at4_right").css("color","white");
+        }
+    });
+
+    // 모바일) 모하비 - 특징 - 내장(at5) - 이미지 < > 클릭시 이동
+    let mohave3_img_pos = 500;
+    let mohave3_img_count = 0;
+    let mohave3_img_no = 0;
+    $(".mohave_at5_right").on("click",function() {
+        if(mohave3_img_count < 5)
+            mohave3_img_count++;
+            mohave3_img_no = mohave3_img_count;
+            mohave3_img_pos = 300 * mohave3_img_count;
+        $(".mohave_at5_imgbox").stop().animate({"left": -mohave3_img_pos+"px"}, 100);
+        if(mohave3_img_count == 1) {
+            $(".mohave_at5_left").css("color","white");
+        }
+        if(mohave3_img_count == 5) {
+            $(".mohave_at5_right").css("color","#898989");
+        }
+    });
+    $(".mohave_at5_left").on("click",function() {
+        if(mohave3_img_count > 0)
+            mohave3_img_count--;
+            mohave3_img_no = mohave3_img_count;
+            mohave3_img_pos = 300 * mohave3_img_count;
+        $(".mohave_at5_imgbox").stop().animate({"left": -mohave3_img_pos+"px"}, 100);
+        if(mohave3_img_count == 0) {
+            $(".mohave_at5_left").css("color","#898989");
+        }
+        if(mohave3_img_count == 4) {
+            $(".mohave_at5_right").css("color","white");
+        }
+    });
+
+    // 모바일) 모하비 - 특징 - 성능(at6) - 이미지 < > 클릭시 이동
+    let mohave4_img_pos = 500;
+    let mohave4_img_count = 0;
+    let mohave4_img_no = 0;
+    $(".mohave_at6_right").on("click",function() {
+        if(mohave4_img_count < 3)
+            mohave4_img_count++;
+            mohave4_img_no = mohave4_img_count;
+            mohave4_img_pos = 300 * mohave4_img_count;
+        $(".mohave_at6_imgbox").stop().animate({"left": -mohave4_img_pos+"px"}, 100);
+        if(mohave4_img_count == 1) {
+            $(".mohave_at6_left").css("color","white");
+        }
+        if(mohave4_img_count == 3) {
+            $(".mohave_at6_right").css("color","#898989");
+        }
+    });
+    $(".mohave_at6_left").on("click",function() {
+        if(mohave4_img_count > 0)
+            mohave4_img_count--;
+            mohave4_img_no = mohave4_img_count;
+            mohave4_img_pos = 300 * mohave4_img_count;
+        $(".mohave_at6_imgbox").stop().animate({"left": -mohave4_img_pos+"px"}, 100);
+        if(mohave4_img_count == 0) {
+            $(".mohave_at6_left").css("color","#898989");
+        }
+        if(mohave4_img_count == 2) {
+            $(".mohave_at6_right").css("color","white");
+        }
+    });
+
+    // 모바일) 모하비 - 특징 - 편의(at7) - 이미지 < > 클릭시 이동
+    let mohave5_img_pos = 500;
+    let mohave5_img_count = 0;
+    let mohave5_img_no = 0;
+    $(".mohave_at7_right").on("click",function() {
+        if(mohave5_img_count < 8)
+            mohave5_img_count++;
+            mohave5_img_no = mohave5_img_count;
+            mohave5_img_pos = 300 * mohave5_img_count;
+        $(".mohave_at7_imgbox").stop().animate({"left": -mohave5_img_pos+"px"}, 100);
+        if(mohave5_img_count == 1) {
+            $(".mohave_at7_left").css("color","white");
+        }
+        if(mohave5_img_count == 8) {
+            $(".mohave_at7_right").css("color","#898989");
+        }
+    });
+    $(".mohave_at7_left").on("click",function() {
+        if(mohave5_img_count > 0)
+            mohave5_img_count--;
+            mohave5_img_no = mohave5_img_count;
+            mohave5_img_pos = 300 * mohave5_img_count;
+        $(".mohave_at7_imgbox").stop().animate({"left": -mohave5_img_pos+"px"}, 100);
+        if(mohave5_img_count == 0) {
+            $(".mohave_at7_left").css("color","#898989");
+        }
+        if(mohave5_img_count == 7) {
+            $(".mohave_at7_right").css("color","white");
+        }
+    });
+
+    // 모바일) 모하비 - 특징 - 공간(at8) - 이미지 < > 클릭시 이동
+    let mohave6_img_pos = 500;
+    let mohave6_img_count = 0;
+    let mohave6_img_no = 0;
+    $(".mohave_at8_right").on("click",function() {
+        if(mohave6_img_count < 1)
+            mohave6_img_count++;
+            mohave6_img_no = mohave6_img_count;
+            mohave6_img_pos = 300 * mohave6_img_count;
+        $(".mohave_at8_imgbox").stop().animate({"left": -mohave6_img_pos+"px"}, 100);
+        if(mohave6_img_count == 1) {
+            $(".mohave_at8_left").css("color","white");
+        }
+        if(mohave6_img_count == 1) {
+            $(".mohave_at8_right").css("color","#898989");
+        }
+    });
+    $(".mohave_at8_left").on("click",function() {
+        if(mohave6_img_count > 0)
+            mohave6_img_count--;
+            mohave6_img_no = mohave6_img_count;
+            mohave6_img_pos = 300 * mohave6_img_count;
+        $(".mohave_at8_imgbox").stop().animate({"left": -mohave6_img_pos+"px"}, 100);
+        if(mohave6_img_count == 0) {
+            $(".mohave_at8_left").css("color","#898989");
+        }
+        if(mohave6_img_count == 0) {
+            $(".mohave_at8_right").css("color","white");
+        }
+    });
+
+    // 모바일) 모하비 - 특징 - 안전(at9) - 이미지 < > 클릭시 이동
+    let mohave7_img_pos = 500;
+    let mohave7_img_count = 0;
+    let mohave7_img_no = 0;
+    $(".mohave_at9_right").on("click",function() {
+        if(mohave7_img_count < 2)
+            mohave7_img_count++;
+            mohave7_img_no = mohave7_img_count;
+            mohave7_img_pos = 300 * mohave7_img_count;
+        $(".mohave_at9_imgbox").stop().animate({"left": -mohave7_img_pos+"px"}, 100);
+        if(mohave7_img_count == 1) {
+            $(".mohave_at9_left").css("color","white");
+        }
+        if(mohave7_img_count == 2) {
+            $(".mohave_at9_right").css("color","#898989");
+        }
+    });
+    $(".mohave_at9_left").on("click",function() {
+        if(mohave7_img_count > 0)
+            mohave7_img_count--;
+            mohave7_img_no = mohave7_img_count;
+            mohave7_img_pos = 300 * mohave7_img_count;
+        $(".mohave_at9_imgbox").stop().animate({"left": -mohave7_img_pos+"px"}, 100);
+        if(mohave7_img_count == 0) {
+            $(".mohave_at9_left").css("color","#898989");
+        }
+        if(mohave7_img_count == 1) {
+            $(".mohave_at9_right").css("color","white");
+        }
     });
 
 
@@ -1881,6 +2112,115 @@ $(function() {
         $(this).css({"color":"white", "borderBottom":"5px solid white"});
         top_func();
     });
+    // 모바일) 봉고3 트럭 - 타이틀 - 버튼 클릭시 해당 화면으로 이동
+    $(".bonggo3_title_btn01").on("click",function() {
+        $(".bonggo3").hide();
+        $(".bonggo3_1").show();
+        $(".bonggo3_title_btn0").css("fontWeight","500");
+        $(this).css("fontWeight","bold");
+        top_func();
+    });
+    $(".bonggo3_title_btn02").on("click",function() {
+        $(".bonggo3").hide();
+        $(".bonggo3_2").show();
+        $(".bonggo3_title_btn0").css("fontWeight","500");
+        $(this).css("fontWeight","bold");
+        top_func();
+    });
+
+    // 모바일) 봉고3 트럭 - 특징 - 내장(at3) - 이미지 < > 클릭시 이동
+    let bonggo1_img_pos = 500;
+    let bonggo1_img_count = 0;
+    let bonggo1_img_no = 0;
+    $(".bonggo3_at3_right").on("click",function() {
+        if(bonggo1_img_count < 3)
+            bonggo1_img_count++;
+            bonggo1_img_no = bonggo1_img_count;
+            bonggo1_img_pos = 300 * bonggo1_img_count;
+        $(".bonggo3_at3_imgbox").stop().animate({"left": -bonggo1_img_pos+"px"}, 100);
+        if(bonggo1_img_count == 1) {
+            $(".bonggo3_at3_left").css("color","white");
+        }
+        if(bonggo1_img_count == 3) {
+            $(".bonggo3_at3_right").css("color","#898989");
+        }
+    });
+    $(".bonggo3_at3_left").on("click",function() {
+        if(bonggo1_img_count > 0)
+            bonggo1_img_count--;
+            bonggo1_img_no = bonggo1_img_count;
+            bonggo1_img_pos = 300 * bonggo1_img_count;
+        $(".bonggo3_at3_imgbox").stop().animate({"left": -bonggo1_img_pos+"px"}, 100);
+        if(bonggo1_img_count == 0) {
+            $(".bonggo3_at3_left").css("color","#898989");
+        }
+        if(bonggo1_img_count == 2) {
+            $(".bonggo3_at3_right").css("color","white");
+        }
+    });
+
+    // 모바일) 봉고3 트럭 - 특징 - 안전/사양(at4) - 이미지 < > 클릭시 이동
+    let bonggo2_img_pos = 500;
+    let bonggo2_img_count = 0;
+    let bonggo2_img_no = 0;
+    $(".bonggo3_at4_right").on("click",function() {
+        if(bonggo2_img_count < 5)
+            bonggo2_img_count++;
+            bonggo2_img_no = bonggo2_img_count;
+            bonggo2_img_pos = 300 * bonggo2_img_count;
+        $(".bonggo3_at4_imgbox").stop().animate({"left": -bonggo2_img_pos+"px"}, 100);
+        if(bonggo2_img_count == 1) {
+            $(".bonggo3_at4_left").css("color","white");
+        }
+        if(bonggo2_img_count == 5) {
+            $(".bonggo3_at4_right").css("color","#898989");
+        }
+    });
+    $(".bonggo3_at4_left").on("click",function() {
+        if(bonggo2_img_count > 0)
+            bonggo2_img_count--;
+            bonggo2_img_no = bonggo2_img_count;
+            bonggo2_img_pos = 300 * bonggo2_img_count;
+        $(".bonggo3_at4_imgbox").stop().animate({"left": -bonggo2_img_pos+"px"}, 100);
+        if(bonggo2_img_count == 0) {
+            $(".bonggo3_at4_left").css("color","#898989");
+        }
+        if(bonggo2_img_count == 4) {
+            $(".bonggo3_at4_right").css("color","white");
+        }
+    });
+
+    // 모바일) 봉고3 트럭 - 특징 - 편의사양(at5) - 이미지 < > 클릭시 이동
+    let bonggo3_img_pos = 500;
+    let bonggo3_img_count = 0;
+    let bonggo3_img_no = 0;
+    $(".bonggo3_at5_right").on("click",function() {
+        if(bonggo3_img_count < 5)
+            bonggo3_img_count++;
+            bonggo3_img_no = bonggo3_img_count;
+            bonggo3_img_pos = 300 * bonggo3_img_count;
+        $(".bonggo3_at5_imgbox").stop().animate({"left": -bonggo3_img_pos+"px"}, 100);
+        if(bonggo3_img_count == 1) {
+            $(".bonggo3_at5_left").css("color","white");
+        }
+        if(bonggo3_img_count == 5) {
+            $(".bonggo3_at5_right").css("color","#898989");
+        }
+    });
+    $(".bonggo3_at5_left").on("click",function() {
+        if(bonggo3_img_count > 0)
+            bonggo3_img_count--;
+            bonggo3_img_no = bonggo3_img_count;
+            bonggo3_img_pos = 300 * bonggo3_img_count;
+        $(".bonggo3_at5_imgbox").stop().animate({"left": -bonggo3_img_pos+"px"}, 100);
+        if(bonggo3_img_count == 0) {
+            $(".bonggo3_at5_left").css("color","#898989");
+        }
+        if(bonggo3_img_count == 4) {
+            $(".bonggo3_at5_right").css("color","white");
+        }
+    });
+
 
     // 봉고3 트럭 - 제원 - (제원 / 휠) 버튼 클릭시 해당 화면 노출
     $(".bonggo3_2_spec_btn1").on("click",function() {
@@ -1959,6 +2299,115 @@ $(function() {
         $(this).css({"color":"white", "borderBottom":"5px solid white"});
         top_func();
     });
+    // 모바일) k8택시 - 타이틀 - 버튼 클릭시 해당 화면으로 이동
+    $(".k8_taxi_title_btn01").on("click",function() {
+        $(".k8_taxi").hide();
+        $(".k8_taxi_1").show();
+        $(".k8_taxi_title_btn0").css("fontWeight","500");
+        $(this).css("fontWeight","bold");
+        top_func();
+    });
+    $(".k8_taxi_title_btn02").on("click",function() {
+        $(".k8_taxi").hide();
+        $(".k8_taxi_2").show();
+        $(".k8_taxi_title_btn0").css("fontWeight","500");
+        $(this).css("fontWeight","bold");
+        top_func();
+    });
+
+    // 모바일) k8택시 - 특징 - 내장/시트(at3) - 이미지 < > 클릭시 이동
+    let k8_taxi1_img_pos = 500;
+    let k8_taxi1_img_count = 0;
+    let k8_taxi1_img_no = 0;
+    $(".k8_taxi_at3_right").on("click",function() {
+        if(k8_taxi1_img_count < 2)
+            k8_taxi1_img_count++;
+            k8_taxi1_img_no = k8_taxi1_img_count;
+            k8_taxi1_img_pos = 300 * k8_taxi1_img_count;
+        $(".k8_taxi_at3_imgbox").stop().animate({"left": -k8_taxi1_img_pos+"px"}, 100);
+        if(k8_taxi1_img_count == 1) {
+            $(".k8_taxi_at3_left").css("color","white");
+        }
+        if(k8_taxi1_img_count == 2) {
+            $(".k8_taxi_at3_right").css("color","#898989");
+        }
+    });
+    $(".k8_taxi_at3_left").on("click",function() {
+        if(k8_taxi1_img_count > 0)
+            k8_taxi1_img_count--;
+            k8_taxi1_img_no = k8_taxi1_img_count;
+            k8_taxi1_img_pos = 300 * k8_taxi1_img_count;
+        $(".k8_taxi_at3_imgbox").stop().animate({"left": -k8_taxi1_img_pos+"px"}, 100);
+        if(k8_taxi1_img_count == 0) {
+            $(".k8_taxi_at3_left").css("color","#898989");
+        }
+        if(k8_taxi1_img_count == 1) {
+            $(".k8_taxi_at3_right").css("color","white");
+        }
+    });
+
+    // 모바일) k8택시 - 특징 - 편의(at4) - 이미지 < > 클릭시 이동
+    let k8_taxi2_img_pos = 500;
+    let k8_taxi2_img_count = 0;
+    let k8_taxi2_img_no = 0;
+    $(".k8_taxi_at4_right").on("click",function() {
+        if(k8_taxi2_img_count < 2)
+            k8_taxi2_img_count++;
+            k8_taxi2_img_no = k8_taxi2_img_count;
+            k8_taxi2_img_pos = 300 * k8_taxi2_img_count;
+        $(".k8_taxi_at4_imgbox").stop().animate({"left": -k8_taxi2_img_pos+"px"}, 100);
+        if(k8_taxi2_img_count == 1) {
+            $(".k8_taxi_at4_left").css("color","white");
+        }
+        if(k8_taxi2_img_count == 2) {
+            $(".k8_taxi_at4_right").css("color","#898989");
+        }
+    });
+    $(".k8_taxi_at4_left").on("click",function() {
+        if(k8_taxi2_img_count > 0)
+            k8_taxi2_img_count--;
+            k8_taxi2_img_no = k8_taxi2_img_count;
+            k8_taxi2_img_pos = 300 * k8_taxi2_img_count;
+        $(".k8_taxi_at4_imgbox").stop().animate({"left": -k8_taxi2_img_pos+"px"}, 100);
+        if(k8_taxi2_img_count == 0) {
+            $(".k8_taxi_at4_left").css("color","#898989");
+        }
+        if(k8_taxi2_img_count == 1) {
+            $(".k8_taxi_at4_right").css("color","white");
+        }
+    });
+
+    // 모바일) k8택시 - 특징 - 파워트레인/안전(at5) - 이미지 < > 클릭시 이동
+    let k8_taxi3_img_pos = 500;
+    let k8_taxi3_img_count = 0;
+    let k8_taxi3_img_no = 0;
+    $(".k8_taxi_at5_right").on("click",function() {
+        if(k8_taxi3_img_count < 2)
+            k8_taxi3_img_count++;
+            k8_taxi3_img_no = k8_taxi3_img_count;
+            k8_taxi3_img_pos = 300 * k8_taxi3_img_count;
+        $(".k8_taxi_at5_imgbox").stop().animate({"left": -k8_taxi3_img_pos+"px"}, 100);
+        if(k8_taxi3_img_count == 1) {
+            $(".k8_taxi_at5_left").css("color","white");
+        }
+        if(k8_taxi3_img_count == 2) {
+            $(".k8_taxi_at5_right").css("color","#898989");
+        }
+    });
+    $(".k8_taxi_at5_left").on("click",function() {
+        if(k8_taxi3_img_count > 0)
+            k8_taxi3_img_count--;
+            k8_taxi3_img_no = k8_taxi3_img_count;
+            k8_taxi3_img_pos = 300 * k8_taxi3_img_count;
+        $(".k8_taxi_at5_imgbox").stop().animate({"left": -k8_taxi3_img_pos+"px"}, 100);
+        if(k8_taxi3_img_count == 0) {
+            $(".k8_taxi_at5_left").css("color","#898989");
+        }
+        if(k8_taxi3_img_count == 1) {
+            $(".k8_taxi_at5_right").css("color","white");
+        }
+    });
+
 
     // k8택시 - 제원 - 제원 < > 클릭시 이미지 이동
     let k8_taxi_2_spec_pos = 500;
@@ -1992,24 +2441,6 @@ $(function() {
             $(".k8_taxi_2_next").show();
         }
     });
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     
 
 });
