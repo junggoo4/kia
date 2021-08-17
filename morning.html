@@ -7,10 +7,13 @@
     <title>KIA 차량 - 모닝</title>
     <link rel="stylesheet" href="css/kia2.css">
     <link media="screen and (max-width:767px)" rel="stylesheet" href="css/kia_m2.css">
+    <link rel="stylesheet" href="css/swiper.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css"/>
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
     <script src="js/jquery-3.6.0.min.js"></script>
     <script src="js/kia2.js"></script>
+    <!-- Swiper JS -->
+    <script src="../dist/js/swiper.min.js"></script>
 </head>
 <body>
     <div class="header2"></div>
@@ -487,7 +490,7 @@
 
 
     <div class="morning morning_2">
-        <div>
+        <!-- <div>
             <ul class="mor2_title">
                 <li>제원</li>
                 <li>휠</li>
@@ -501,11 +504,6 @@
                     <li><img src="img2/morning/11_01.webp" alt="morning_spec"></li>
                     <li><img src="img2/morning/11_02.webp" alt="morning_spec"></li>
                     <li><img src="img2/morning/11_03.webp" alt="morning_spec"></li>
-                </ul>
-                <ul class="mor2_img1_m">
-                    <li><img src="img1_m/mor_01.jpg" alt="morning_spec"></li>
-                    <li><img src="img1_m/mor_02.jpg" alt="morning_spec"></li>
-                    <li><img src="img1_m/mor_03.jpg" alt="morning_spec"></li>
                 </ul>
             </div>
             <div class="mor2_spec_2">
@@ -528,8 +526,28 @@
             <div class="mor2_next"><i class="fas fa-chevron-right"></i></div>
             <div class="mor2_prev2"><i class="fas fa-chevron-left"></i></div>
             <div class="mor2_next2"><i class="fas fa-chevron-right"></i></div>
-        </div>
+        </div> -->
+
+
+
+        <!-- <div class="swiper-container">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide"><img src="img1_m/mor_01.jpg" alt="morning_spec"></div>
+              <div class="swiper-slide"><img src="img1_m/mor_03.jpg" alt="morning_spec"></div>
+              <div class="swiper-slide"><img src="img1_m/mor_02.jpg" alt="morning_spec"></div>
+            </div>
+            <div class="swiper-pagination"></div>
+        </div> -->
     </div>
+
+    <!-- Initialize Swiper -->
+    <!-- <script>
+    var swiper = new Swiper('.swiper-container', {
+        pagination: {
+        el: '.swiper-pagination',
+            },
+        });
+    </script> -->
 
     <div class="footer"></div>
 </body>
