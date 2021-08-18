@@ -374,9 +374,11 @@ $(function() {
     });
 
     // 모닝 - 제원 - (제원 / 휠) 버튼 클릭시 해당 화면 노출
-    $(".mor2_pc> .mor2_spec_btn> .mor2_spec_btn1").on("click",function() {
+    $(".mor2_spec_btn1").on("click",function() {
         $(".mor2_spec_2").hide();
         $(".mor2_spec_1").show();
+        $(".mor2_title> li:eq(1)").hide();
+        $(".mor2_title> li:eq(0)").show();
         $(this).css({"background":"#05141f", "color":"white"});
         $(".mor2_spec_btn2").css({"background":"#ccc", "color":"black"});
         $(".mor2_prev2, .mor2_next2").hide();
@@ -393,9 +395,11 @@ $(function() {
             $(".mor2_next").hide();
         }
     });
-    $(".mor2_pc> .mor2_spec_btn>  .mor2_spec_btn2").on("click",function() {
+    $(".mor2_spec_btn2").on("click",function() {
         $(".mor2_spec_1").hide();
         $(".mor2_spec_2").show();
+        $(".mor2_title> li:eq(0)").hide();
+        $(".mor2_title> li:eq(1)").show();
         $(this).css({"background":"#05141f", "color":"white"});
         $(".mor2_spec_btn1").css({"background":"#ccc", "color":"black"});
         $(".mor2_prev, .mor2_next").hide();

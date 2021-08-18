@@ -1556,29 +1556,30 @@ header> div> .top_bg {
 .k5_1> .at7> div:nth-child(4)> .k5_at7_img_m {display: none;}
 
 /* ((((( k5 제원 ))))) */
-.k5_2> div {
+.k5_2> .k5_2_mob {display: none;}
+.k5_2> .k5_2_pc {
     width: 100%; height: 700px;
     position: relative; top: 160px;
     background: url(../img2/icon/bg_spec.jpg);
     background-size: 100% 100%;
     overflow: hidden;
 }
-.k5_2> div> .k5_2_title {
+.k5_2> .k5_2_pc> .k5_2_title {
     width: 120px; height: 70px;
     position: absolute; top: 40px; left: 490px;
 }
-.k5_2> div> .k5_2_title> li {
+.k5_2> .k5_2_pc> .k5_2_title> li {
     position: absolute; top: 0; left: 0;
     font-size: 50px; font-weight: bold;
     color: #05141f;
 }
-.k5_2> div> .k5_2_title> li:nth-child(2) {display: none;}
+.k5_2> .k5_2_pc> .k5_2_title> li:nth-child(2) {display: none;}
 
-.k5_2> div> .k5_2_spec_btn {
+.k5_2> .k5_2_pc> .k5_2_spec_btn {
     position: absolute; top: 60px; left: 630px;
     width: 190px; height: 40px; z-index: 50;
 }
-.k5_2> div> .k5_2_spec_btn> li {
+.k5_2> .k5_2_pc> .k5_2_spec_btn> li {
     float: left; cursor: pointer;
     width: 90px; height: 100%;
     background: #05141f; color: white;
@@ -1586,69 +1587,69 @@ header> div> .top_bg {
     text-align: center; line-height: 40px;
     font-size: 16px; font-weight: bold;
 }
-.k5_2> div> .k5_2_spec_btn> li:nth-child(2) {
+.k5_2> .k5_2_pc> .k5_2_spec_btn> li:nth-child(2) {
     margin-left: 10px; 
     background: #ccc; color: black;
 }
 
 
-.k5_2> div> .k5_2_spec_1 {
+.k5_2> .k5_2_pc> .k5_2_spec_1 {
     width: 900px; height: 700px;
     position: absolute; top: -20px; left: 50%;
     transform: translateX(-50%);
 }
-.k5_2> div> .k5_2_spec_1> ul {
+.k5_2> .k5_2_pc> .k5_2_spec_1> ul {
     width: 2700px; height: 100%;
     position: absolute; top: 0; left: 0;
 }
-.k5_2> div> .k5_2_spec_1> ul> li {
+.k5_2> .k5_2_pc> .k5_2_spec_1> ul> li {
     float: left;
     width: 900px; height: 100%;
 } 
-.k5_2> div> .k5_2_spec_1> ul> li img {width: 100%;}
+.k5_2> .k5_2_pc> .k5_2_spec_1> ul> li img {width: 100%;}
 
 .k5_2> div> .k5_2_spec_2 {
     width: 600px; height: 330px; overflow: hidden;
     position: absolute; top: 230px; left: 50%;
     transform: translateX(-50%); display: none;
 }
-.k5_2> div> .k5_2_spec_2> ul {
+.k5_2> .k5_2_pc> .k5_2_spec_2> ul {
     width: 2450px; height: 100%;
     position: absolute; top: 0; left: 0;
 }
-.k5_2> div> .k5_2_spec_2> ul> li {
+.k5_2> .k5_2_pc> .k5_2_spec_2> ul> li {
     float: left;
     width: 300px; height: 100%;
 }
-.k5_2> div> .k5_2_spec_2> ul> li:nth-child(2),
-.k5_2> div> .k5_2_spec_2> ul> li:nth-child(3),
-.k5_2> div> .k5_2_spec_2> ul> li:nth-child(4) {
+.k5_2> .k5_2_pc> .k5_2_spec_2> ul> li:nth-child(2),
+.k5_2> .k5_2_pc> .k5_2_spec_2> ul> li:nth-child(3),
+.k5_2> .k5_2_pc> .k5_2_spec_2> ul> li:nth-child(4) {
     margin-left: 300px;
 }
-.k5_2> div> .k5_2_spec_2> ul> li img {width: 100%;}
-.k5_2> div> .k5_2_spec_2> ul> li> p {
+.k5_2> .k5_2_pc> .k5_2_spec_2> ul> li img {width: 100%;}
+.k5_2> .k5_2_pc> .k5_2_spec_2> ul> li> p {
     position: relative; top: -240px; left: 320px;
     font-size: 28px; font-weight: bold;
 }
-.k5_2> div> .k5_2_spec_2> ul> li:nth-child(4)> p {font-size: 27px;}
+.k5_2> .k5_2_pc> .k5_2_spec_2> ul> li:nth-child(4)> p {font-size: 27px;}
 
-.k5_2> div> .k5_2_prev {
+.k5_2> .k5_2_pc> .k5_2_prev {
     position: absolute; top: 50%; left: 480px;
     transform: translateY(-50%); font-size: 50px;
     cursor: pointer; display: none;
 }
-.k5_2> div> .k5_2_next {
+.k5_2> .k5_2_pc> .k5_2_next {
     position: absolute; top: 50%; left: 1400px;
     transform: translateY(-50%); font-size: 50px;
     cursor: pointer;
 }
 
-.k5_2> div> .k5_2_prev2 {
+.k5_2> .k5_2_pc> .k5_2_prev2 {
     position: absolute; top: 50%; left: 480px;
     transform: translateY(-50%); font-size: 50px;
     cursor: pointer; display: none;
 }
-.k5_2> div> .k5_2_next2 {
+.k5_2> .k5_2_pc> .k5_2_next2 {
     position: absolute; top: 50%; left: 1400px;
     transform: translateY(-50%); font-size: 50px;
     cursor: pointer; display: none;
@@ -2072,29 +2073,30 @@ header> div> .top_bg {
 
 
 /* ((((( sorento 제원 ))))) */
-.sorento_2> div {
+.sorento_2> .sorento_2_mob {display: none;}
+.sorento_2> .sorento_2_pc {
     width: 100%; height: 700px;
     position: relative; top: 160px;
     background: url(../img2/icon/bg_spec.jpg);
     background-size: 100% 100%;
     overflow: hidden;
 }
-.sorento_2> div> .sorento_2_title {
+.sorento_2> .sorento_2_pc> .sorento_2_title {
     width: 120px; height: 70px;
     position: absolute; top: 40px; left: 490px;
 }
-.sorento_2> div> .sorento_2_title> li {
+.sorento_2> .sorento_2_pc> .sorento_2_title> li {
     position: absolute; top: 0; left: 0;
     font-size: 50px; font-weight: bold;
     color: #05141f;
 }
-.sorento_2> div> .sorento_2_title> li:nth-child(2) {display: none;}
+.sorento_2> .sorento_2_pc> .sorento_2_title> li:nth-child(2) {display: none;}
 
-.sorento_2> div> .sorento_2_spec_btn {
+.sorento_2> .sorento_2_pc> .sorento_2_spec_btn {
     position: absolute; top: 60px; left: 630px;
     width: 190px; height: 40px; z-index: 50;
 }
-.sorento_2> div> .sorento_2_spec_btn> li {
+.sorento_2> .sorento_2_pc> .sorento_2_spec_btn> li {
     float: left; cursor: pointer;
     width: 90px; height: 100%;
     background: #05141f; color: white;
@@ -2102,62 +2104,62 @@ header> div> .top_bg {
     text-align: center; line-height: 40px;
     font-size: 16px; font-weight: bold;
 }
-.sorento_2> div> .sorento_2_spec_btn> li:nth-child(2) {
+.sorento_2> .sorento_2_pc> .sorento_2_spec_btn> li:nth-child(2) {
     margin-left: 10px; 
     background: #ccc; color: black;
 }
 
-.sorento_2> div> .sorento_2_spec_1 {
+.sorento_2> .sorento_2_pc> .sorento_2_spec_1 {
     width: 900px; height: 700px;
     position: absolute; top: -30px; left: 50%;
     transform: translateX(-50%);
 }
-.sorento_2> div> .sorento_2_spec_1> ul {
+.sorento_2> .sorento_2_pc> .sorento_2_spec_1> ul {
     width: 2700px; height: 100%;
     position: absolute; top: 0; left: 0;
 }
-.sorento_2> div> .sorento_2_spec_1> ul> li {
+.sorento_2> .sorento_2_pc> .sorento_2_spec_1> ul> li {
     float: left;
     width: 900px; height: 100%;
 } 
-.sorento_2> div> .sorento_2_spec_1> ul> li img {width: 100%;}
+.sorento_2> .sorento_2_pc> .sorento_2_spec_1> ul> li img {width: 100%;}
 
-.sorento_2> div> .sorento_2_spec_2 {
+.sorento_2> .sorento_2_pc> .sorento_2_spec_2 {
     width: 800px; height: 500px; overflow: hidden;
     position: absolute; bottom: 0; left: 50%;
     transform: translateX(-50%); display: none;
 }
-.sorento_2> div> .sorento_2_spec_2> ul {
+.sorento_2> .sorento_2_pc> .sorento_2_spec_2> ul {
     width: 2400px; height: 100%;
     position: absolute; top: 0; left: 0;
 }
-.sorento_2> div> .sorento_2_spec_2> ul> li {
+.sorento_2> .sorento_2_pc> .sorento_2_spec_2> ul> li {
     float: left;
     width: 800px; height: 100%;
 }
-.sorento_2> div> .sorento_2_spec_2> ul> li img {width: 100%;}
-.sorento_2> div> .sorento_2_spec_2> ul> li> p {
+.sorento_2> .sorento_2_pc> .sorento_2_spec_2> ul> li img {width: 100%;}
+.sorento_2> .sorento_2_pc> .sorento_2_spec_2> ul> li> p {
     position: relative; top: -340px; left: 550px;
     font-size: 28px; font-weight: bold;
 }
 
-.sorento_2> div> .sorento_2_prev {
+.sorento_2> .sorento_2_pc> .sorento_2_prev {
     position: absolute; top: 50%; left: 480px;
     transform: translateY(-50%); font-size: 50px;
     cursor: pointer; display: none;
 }
-.sorento_2> div> .sorento_2_next {
+.sorento_2> .sorento_2_pc> .sorento_2_next {
     position: absolute; top: 50%; left: 1400px;
     transform: translateY(-50%); font-size: 50px;
     cursor: pointer;
 }
 
-.sorento_2> div> .sorento_2_prev2 {
+.sorento_2> .sorento_2_pc> .sorento_2_prev2 {
     position: absolute; top: 50%; left: 480px;
     transform: translateY(-50%); font-size: 50px;
     cursor: pointer; display: none;
 }
-.sorento_2> div> .sorento_2_next2 {
+.sorento_2> .sorento_2_pc> .sorento_2_next2 {
     position: absolute; top: 50%; left: 1400px;
     transform: translateY(-50%); font-size: 50px;
     cursor: pointer; display: none;
@@ -2705,29 +2707,30 @@ header> div> .top_bg {
 
 
 /* ((((( 니로 제원 ))))) */
-.niro_2> div {
+.niro_2> .niro_2_mob {display: none;}
+.niro_2> .niro_2_pc {
     width: 100%; height: 700px;
     position: relative; top: 160px;
     background: url(../img2/icon/bg_spec.jpg);
     background-size: 100% 100%;
     overflow: hidden;
 }
-.niro_2> div> .niro_2_title {
+.niro_2> .niro_2_pc> .niro_2_title {
     width: 120px; height: 70px;
     position: absolute; top: 40px; left: 490px;
 }
-.niro_2> div> .niro_2_title> li {
+.niro_2> .niro_2_pc> .niro_2_title> li {
     position: absolute; top: 0; left: 0;
     font-size: 50px; font-weight: bold;
     color: #05141f;
 }
-.niro_2> div> .niro_2_title> li:nth-child(2) {display: none;}
+.niro_2> .niro_2_pc> .niro_2_title> li:nth-child(2) {display: none;}
 
-.niro_2> div> .niro_2_spec_btn {
+.niro_2> .niro_2_pc> .niro_2_spec_btn {
     position: absolute; top: 60px; left: 630px;
     width: 190px; height: 40px; z-index: 50;
 }
-.niro_2> div> .niro_2_spec_btn> li {
+.niro_2> .niro_2_pc> .niro_2_spec_btn> li {
     float: left; cursor: pointer;
     width: 90px; height: 100%;
     background: #05141f; color: white;
@@ -2735,70 +2738,70 @@ header> div> .top_bg {
     text-align: center; line-height: 40px;
     font-size: 16px; font-weight: bold;
 }
-.niro_2> div> .niro_2_spec_btn> li:nth-child(2) {
+.niro_2> .niro_2_pc> .niro_2_spec_btn> li:nth-child(2) {
     margin-left: 10px; 
     background: #ccc; color: black;
 }
 
 
-.niro_2> div> .niro_2_spec_1 {
+.niro_2> .niro_2_pc> .niro_2_spec_1 {
     width: 900px; height: 700px;
     position: absolute; top: -20px; left: 50%;
     transform: translateX(-50%);
 }
-.niro_2> div> .niro_2_spec_1> ul {
+.niro_2> .niro_2_pc> .niro_2_spec_1> ul {
     width: 2700px; height: 100%;
     position: absolute; top: 0; left: 0;
 }
-.niro_2> div> .niro_2_spec_1> ul> li {
+.niro_2> .niro_2_pc> .niro_2_spec_1> ul> li {
     float: left;
     width: 900px; height: 100%;
 } 
-.niro_2> div> .niro_2_spec_1> ul> li img {width: 100%;}
+.niro_2> .niro_2_pc> .niro_2_spec_1> ul> li img {width: 100%;}
 
-.niro_2> div> .niro_2_spec_2 {
+.niro_2> .niro_2_pc> .niro_2_spec_2 {
     width: 600px; height: 330px; overflow: hidden;
     position: absolute; top: 230px; left: 50%;
     transform: translateX(-50%); display: none;
 }
-.niro_2> div> .niro_2_spec_2> ul {
+.niro_2> .niro_2_pc> .niro_2_spec_2> ul {
     width: 1800px; height: 100%;
     position: absolute; top: 0; left: 0;
 }
-.niro_2> div> .niro_2_spec_2> ul> li {
+.niro_2> .niro_2_pc> .niro_2_spec_2> ul> li {
     float: left;
     width: 300px; height: 100%;
 }
-.niro_2> div> .niro_2_spec_2> ul> li:nth-child(2),
-.niro_2> div> .niro_2_spec_2> ul> li:nth-child(3),
-.niro_2> div> .niro_2_spec_2> ul> li:nth-child(4) {
+.niro_2> .niro_2_pc> .niro_2_spec_2> ul> li:nth-child(2),
+.niro_2> .niro_2_pc> .niro_2_spec_2> ul> li:nth-child(3),
+.niro_2> .niro_2_pc> .niro_2_spec_2> ul> li:nth-child(4) {
     margin-left: 300px;
 }
-.niro_2> div> .niro_2_spec_2> ul> li img {width: 100%;}
-.niro_2> div> .niro_2_spec_2> ul> li> p {
+.niro_2> .niro_2_pc> .niro_2_spec_2> ul> li img {width: 100%;}
+.niro_2> .niro_2_pc> .niro_2_spec_2> ul> li> p {
     position: relative; top: -240px; left: 320px;
     font-size: 28px; font-weight: bold;
 }
-.niro_2> div> .niro_2_spec_2> ul> li:nth-child(4)> p {font-size: 27px;}
+.niro_2> .niro_2_pc> .niro_2_spec_2> ul> li:nth-child(4)> p {font-size: 27px;}
 
 
-.niro_2> div> .niro_2_prev {
+.niro_2> .niro_2_pc> .niro_2_prev {
     position: absolute; top: 50%; left: 480px;
     transform: translateY(-50%); font-size: 50px;
     cursor: pointer; display: none;
 }
-.niro_2> div> .niro_2_next {
+.niro_2> .niro_2_pc> .niro_2_next {
     position: absolute; top: 50%; left: 1400px;
     transform: translateY(-50%); font-size: 50px;
     cursor: pointer;
 }
 
-.niro_2> div> .niro_2_prev2 {
+.niro_2> .niro_2_pc> .niro_2_prev2 {
     position: absolute; top: 50%; left: 480px;
     transform: translateY(-50%); font-size: 50px;
     cursor: pointer; display: none;
 }
-.niro_2> div> .niro_2_next2 {
+.niro_2> .niro_2_pc> .niro_2_next2 {
     position: absolute; top: 50%; left: 1400px;
     transform: translateY(-50%); font-size: 50px;
     cursor: pointer; display: none;
@@ -3452,29 +3455,30 @@ header> div> .top_bg {
 .seltos_1> .at10> div:nth-child(4)> .seltos_at10_img_m {display: none;}
 
 /* ((((( 셀토스 제원 ))))) */
-.seltos_2> div {
+.seltos_2> .seltos2_mob {display: none;}
+.seltos_2> .seltos2_pc {
     width: 100%; height: 700px;
     position: relative; top: 160px;
     background: url(../img2/icon/bg_spec.jpg);
     background-size: 100% 100%;
     overflow: hidden;
 }
-.seltos_2> div> .seltos2_title {
+.seltos_2> .seltos2_pc> .seltos2_title {
     width: 120px; height: 70px;
     position: absolute; top: 40px; left: 490px;
 }
-.seltos_2> div> .seltos2_title> li {
+.seltos_2> .seltos2_pc> .seltos2_title> li {
     position: absolute; top: 0; left: 0;
     font-size: 50px; font-weight: bold;
     color: #05141f;
 }
-.seltos_2> div> .seltos2_title> li:nth-child(2) {display: none;}
+.seltos_2> .seltos2_pc> .seltos2_title> li:nth-child(2) {display: none;}
 
-.seltos_2> div> .seltos2_spec_btn {
+.seltos_2> .seltos2_pc> .seltos2_spec_btn {
     position: absolute; top: 60px; left: 630px;
     width: 190px; height: 40px; z-index: 50;
 }
-.seltos_2> div> .seltos2_spec_btn> li {
+.seltos_2> .seltos2_pc> .seltos2_spec_btn> li {
     float: left; cursor: pointer;
     width: 90px; height: 100%;
     background: #05141f; color: white;
@@ -3482,63 +3486,63 @@ header> div> .top_bg {
     text-align: center; line-height: 40px;
     font-size: 16px; font-weight: bold;
 }
-.seltos_2> div> .seltos2_spec_btn> li:nth-child(2) {
+.seltos_2> .seltos2_pc> .seltos2_spec_btn> li:nth-child(2) {
     margin-left: 10px; 
     background: #ccc; color: black;
 }
 
-.seltos_2> div> .seltos2_spec_1 {
+.seltos_2> .seltos2_pc> .seltos2_spec_1 {
     width: 900px; height: 700px;
     position: absolute; top: 0; left: 50%;
     transform: translateX(-50%);
 }
-.seltos_2> div> .seltos2_spec_1> ul {
+.seltos_2> .seltos2_pc> .seltos2_spec_1> ul {
     width: 2700px; height: 100%;
     position: absolute; top: 0; left: 0;
 }
-.seltos_2> div> .seltos2_spec_1> ul> li {
+.seltos_2> .seltos2_pc> .seltos2_spec_1> ul> li {
     float: left;
     width: 900px; height: 100%;
 } 
-.seltos_2> div> .seltos2_spec_1> ul> li img {width: 100%;}
+.seltos_2> .seltos2_pc> .seltos2_spec_1> ul> li img {width: 100%;}
 
-.seltos_2> div> .seltos2_spec_2 {
+.seltos_2> .seltos2_pc> .seltos2_spec_2 {
     width: 800px; height: 500px; overflow: hidden;
     position: absolute; bottom: 0; left: 50%;
     transform: translateX(-50%); display: none;
 }
-.seltos_2> div> .seltos2_spec_2> ul {
+.seltos_2> .seltos2_pc> .seltos2_spec_2> ul {
     width: 2400px; height: 100%;
     position: absolute; top: 0; left: 0;
 }
-.seltos_2> div> .seltos2_spec_2> ul> li {
+.seltos_2> .seltos2_pc> .seltos2_spec_2> ul> li {
     float: left;
     width: 800px; height: 100%;
 }
-.seltos_2> div> .seltos2_spec_2> ul> li img {width: 100%;}
-.seltos_2> div> .seltos2_spec_2> ul> li> p {
+.seltos_2> .seltos2_pc> .seltos2_spec_2> ul> li img {width: 100%;}
+.seltos_2> .seltos2_pc> .seltos2_spec_2> ul> li> p {
     position: relative; top: -340px; left: 550px;
     font-size: 28px; font-weight: bold;
 }
 
 
-.seltos_2> div> .seltos2_prev {
+.seltos_2> .seltos2_pc> .seltos2_prev {
     position: absolute; top: 50%; left: 480px;
     transform: translateY(-50%); font-size: 50px;
     cursor: pointer; display: none;
 }
-.seltos_2> div> .seltos2_next {
+.seltos_2> .seltos2_pc> .seltos2_next {
     position: absolute; top: 50%; left: 1400px;
     transform: translateY(-50%); font-size: 50px;
     cursor: pointer;
 }
 
-.seltos_2> div> .seltos2_prev2 {
+.seltos_2> .seltos2_pc> .seltos2_prev2 {
     position: absolute; top: 50%; left: 480px;
     transform: translateY(-50%); font-size: 50px;
     cursor: pointer; display: none;
 }
-.seltos_2> div> .seltos2_next2 {
+.seltos_2> .seltos2_pc> .seltos2_next2 {
     position: absolute; top: 50%; left: 1400px;
     transform: translateY(-50%); font-size: 50px;
     cursor: pointer; display: none;
@@ -4186,29 +4190,30 @@ header> div> .top_bg {
 
 
 /* ((((( mohave 제원 ))))) */
-.mohave_2> div {
+.mohave_2> .mohave_2_mob {display: none;}
+.mohave_2> .mohave_2_pc {
     width: 100%; height: 700px;
     position: relative; top: 160px;
     background: url(../img2/icon/bg_spec.jpg);
     background-size: 100% 100%;
     overflow: hidden;
 }
-.mohave_2> div> .mohave_2_title {
+.mohave_2> .mohave_2_pc> .mohave_2_title {
     width: 120px; height: 70px;
     position: absolute; top: 40px; left: 490px;
 }
-.mohave_2> div> .mohave_2_title> li {
+.mohave_2> .mohave_2_pc> .mohave_2_title> li {
     position: absolute; top: 0; left: 0;
     font-size: 50px; font-weight: bold;
     color: #05141f;
 }
-.mohave_2> div> .mohave_2_title> li:nth-child(2) {display: none;}
+.mohave_2> .mohave_2_pc> .mohave_2_title> li:nth-child(2) {display: none;}
 
-.mohave_2> div> .mohave_2_spec_btn {
+.mohave_2> .mohave_2_pc> .mohave_2_spec_btn {
     position: absolute; top: 60px; left: 630px;
     width: 190px; height: 40px; z-index: 50;
 }
-.mohave_2> div> .mohave_2_spec_btn> li {
+.mohave_2> .mohave_2_pc> .mohave_2_spec_btn> li {
     float: left; cursor: pointer;
     width: 90px; height: 100%;
     background: #05141f; color: white;
@@ -4216,62 +4221,62 @@ header> div> .top_bg {
     text-align: center; line-height: 40px;
     font-size: 16px; font-weight: bold;
 }
-.mohave_2> div> .mohave_2_spec_btn> li:nth-child(2) {
+.mohave_2> .mohave_2_pc> .mohave_2_spec_btn> li:nth-child(2) {
     margin-left: 10px; 
     background: #ccc; color: black;
 }
 
-.mohave_2> div> .mohave_2_spec_1 {
+.mohave_2> .mohave_2_pc> .mohave_2_spec_1 {
     width: 900px; height: 700px;
     position: absolute; top: -30px; left: 50%;
     transform: translateX(-50%);
 }
-.mohave_2> div> .mohave_2_spec_1> ul {
+.mohave_2> .mohave_2_pc> .mohave_2_spec_1> ul {
     width: 2700px; height: 100%;
     position: absolute; top: 0; left: 0;
 }
-.mohave_2> div> .mohave_2_spec_1> ul> li {
+.mohave_2> .mohave_2_pc> .mohave_2_spec_1> ul> li {
     float: left;
     width: 900px; height: 100%;
 } 
-.mohave_2> div> .mohave_2_spec_1> ul> li img {width: 100%;}
+.mohave_2> .mohave_2_pc> .mohave_2_spec_1> ul> li img {width: 100%;}
 
-.mohave_2> div> .mohave_2_spec_2 {
+.mohave_2> .mohave_2_pc> .mohave_2_spec_2 {
     width: 800px; height: 500px; overflow: hidden;
     position: absolute; bottom: 0; left: 50%;
     transform: translateX(-50%); display: none;
 }
-.mohave_2> div> .mohave_2_spec_2> ul {
+.mohave_2> .mohave_2_pc> .mohave_2_spec_2> ul {
     width: 2400px; height: 100%;
     position: absolute; top: 0; left: 0;
 }
-.mohave_2> div> .mohave_2_spec_2> ul> li {
+.mohave_2> .mohave_2_pc> .mohave_2_spec_2> ul> li {
     float: left;
     width: 800px; height: 100%;
 }
-.mohave_2> div> .mohave_2_spec_2> ul> li img {width: 100%;}
-.mohave_2> div> .mohave_2_spec_2> ul> li> p {
+.mohave_2> .mohave_2_pc> .mohave_2_spec_2> ul> li img {width: 100%;}
+.mohave_2> .mohave_2_pc> .mohave_2_spec_2> ul> li> p {
     position: relative; top: -340px; left: 550px;
     font-size: 28px; font-weight: bold;
 }
 
-.mohave_2> div> .mohave_2_prev {
+.mohave_2> .mohave_2_pc> .mohave_2_prev {
     position: absolute; top: 50%; left: 480px;
     transform: translateY(-50%); font-size: 50px;
     cursor: pointer; display: none;
 }
-.mohave_2> div> .mohave_2_next {
+.mohave_2> .mohave_2_pc> .mohave_2_next {
     position: absolute; top: 50%; left: 1400px;
     transform: translateY(-50%); font-size: 50px;
     cursor: pointer;
 }
 
-.mohave_2> div> .mohave_2_prev2 {
+.mohave_2> .mohave_2_pc> .mohave_2_prev2 {
     position: absolute; top: 50%; left: 480px;
     transform: translateY(-50%); font-size: 50px;
     cursor: pointer; display: none;
 }
-.mohave_2> div> .mohave_2_next2 {
+.mohave_2> .mohave_2_pc> .mohave_2_next2 {
     position: absolute; top: 50%; left: 1400px;
     transform: translateY(-50%); font-size: 50px;
     cursor: pointer; display: none;
@@ -4590,29 +4595,30 @@ header> div> .top_bg {
 
 
 /* ((((( bonggo3 제원 ))))) */
-.bonggo3_2> div {
+.bonggo3_2> .bonggo3_mob {display: none;}
+.bonggo3_2> .bonggo3_pc {
     width: 100%; height: 700px;
     position: relative; top: 160px;
     background: url(../img2/icon/bg_spec.jpg);
     background-size: 100% 100%;
     overflow: hidden;
 }
-.bonggo3_2> div> .bonggo3_2_title {
+.bonggo3_2> .bonggo3_pc> .bonggo3_2_title {
     width: 120px; height: 70px;
     position: absolute; top: 40px; left: 490px;
 }
-.bonggo3_2> div> .bonggo3_2_title> li {
+.bonggo3_2> .bonggo3_pc> .bonggo3_2_title> li {
     position: absolute; top: 0; left: 0;
     font-size: 50px; font-weight: bold;
     color: #05141f;
 }
-.bonggo3_2> div> .bonggo3_2_title> li:nth-child(2) {display: none;}
+.bonggo3_2> .bonggo3_pc> .bonggo3_2_title> li:nth-child(2) {display: none;}
 
-.bonggo3_2> div> .bonggo3_2_spec_btn {
+.bonggo3_2> .bonggo3_pc> .bonggo3_2_spec_btn {
     position: absolute; top: 60px; left: 630px;
     width: 190px; height: 40px; z-index: 50;
 }
-.bonggo3_2> div> .bonggo3_2_spec_btn> li {
+.bonggo3_2> .bonggo3_pc> .bonggo3_2_spec_btn> li {
     float: left; cursor: pointer;
     width: 90px; height: 100%;
     background: #05141f; color: white;
@@ -4620,51 +4626,51 @@ header> div> .top_bg {
     text-align: center; line-height: 40px;
     font-size: 16px; font-weight: bold;
 }
-.bonggo3_2> div> .bonggo3_2_spec_btn> li:nth-child(2) {
+.bonggo3_2> .bonggo3_pc> .bonggo3_2_spec_btn> li:nth-child(2) {
     margin-left: 10px; 
     background: #ccc; color: black;
 }
 
-.bonggo3_2> div> .bonggo3_2_spec_1 {
+.bonggo3_2> .bonggo3_pc> .bonggo3_2_spec_1 {
     width: 900px; height: 700px;
     position: absolute; top: -30px; left: 50%;
     transform: translateX(-50%);
 }
-.bonggo3_2> div> .bonggo3_2_spec_1> ul {
+.bonggo3_2> .bonggo3_pc> .bonggo3_2_spec_1> ul {
     width: 2700px; height: 100%;
     position: absolute; top: 0; left: 0;
 }
-.bonggo3_2> div> .bonggo3_2_spec_1> ul> li {
+.bonggo3_2> .bonggo3_pc> .bonggo3_2_spec_1> ul> li {
     float: left;
     width: 900px; height: 100%;
 } 
-.bonggo3_2> div> .bonggo3_2_spec_1> ul> li img {width: 100%;}
+.bonggo3_2> .bonggo3_pc> .bonggo3_2_spec_1> ul> li img {width: 100%;}
 
-.bonggo3_2> div> .bonggo3_2_spec_2 {
+.bonggo3_2> .bonggo3_pc> .bonggo3_2_spec_2 {
     width: 800px; height: 500px; overflow: hidden;
     position: absolute; bottom: 0; left: 50%;
     transform: translateX(-50%); display: none;
 }
-.bonggo3_2> div> .bonggo3_2_spec_2> ul {
+.bonggo3_2> .bonggo3_pc> .bonggo3_2_spec_2> ul {
     width: 2400px; height: 100%;
     position: absolute; top: 0; left: 0;
 }
-.bonggo3_2> div> .bonggo3_2_spec_2> ul> li {
+.bonggo3_2> .bonggo3_pc> .bonggo3_2_spec_2> ul> li {
     float: left;
     width: 800px; height: 100%;
 }
-.bonggo3_2> div> .bonggo3_2_spec_2> ul> li img {width: 100%;}
-.bonggo3_2> div> .bonggo3_2_spec_2> ul> li> p {
+.bonggo3_2> .bonggo3_pc> .bonggo3_2_spec_2> ul> li img {width: 100%;}
+.bonggo3_2> .bonggo3_pc> .bonggo3_2_spec_2> ul> li> p {
     position: relative; top: -340px; left: 550px;
     font-size: 28px; font-weight: bold;
 }
 
-.bonggo3_2> div> .bonggo3_2_prev {
+.bonggo3_2> .bonggo3_pc> .bonggo3_2_prev {
     position: absolute; top: 50%; left: 480px;
     transform: translateY(-50%); font-size: 50px;
     cursor: pointer; display: none;
 }
-.bonggo3_2> div> .bonggo3_2_next {
+.bonggo3_2> .bonggo3_pc> .bonggo3_2_next {
     position: absolute; top: 50%; left: 1400px;
     transform: translateY(-50%); font-size: 50px;
     cursor: pointer;
@@ -4924,45 +4930,46 @@ header> div> .top_bg {
 
 
 /* ((((( k8_taxi 제원 ))))) */
-.k8_taxi_2> div {
+.k8_taxi_2> .k8_taxi_2_mob {display: none;}
+.k8_taxi_2> .k8_taxi_2_pc {
     width: 100%; height: 700px;
     position: relative; top: 160px;
     background: url(../img2/icon/bg_spec.jpg);
     background-size: 100% 100%;
     overflow: hidden;
 }
-.k8_taxi_2> div> .k8_taxi_2_title {
+.k8_taxi_2> .k8_taxi_2_pc> .k8_taxi_2_title {
     width: 120px; height: 70px;
     position: absolute; top: 40px; left: 490px;
 }
-.k8_taxi_2> div> .k8_taxi_2_title> li {
+.k8_taxi_2> .k8_taxi_2_pc> .k8_taxi_2_title> li {
     position: absolute; top: 0; left: 0;
     font-size: 50px; font-weight: bold;
     color: #05141f;
 }
-.k8_taxi_2> div> .k8_taxi_2_title> li:nth-child(2) {display: none;}
+.k8_taxi_2> .k8_taxi_2_pc> .k8_taxi_2_title> li:nth-child(2) {display: none;}
 
-.k8_taxi_2> div> .k8_taxi_2_spec_1 {
+.k8_taxi_2> .k8_taxi_2_pc> .k8_taxi_2_spec_1 {
     width: 900px; height: 700px;
     position: absolute; top: -30px; left: 50%;
     transform: translateX(-50%);
 }
-.k8_taxi_2> div> .k8_taxi_2_spec_1> ul {
+.k8_taxi_2> .k8_taxi_2_pc> .k8_taxi_2_spec_1> ul {
     width: 2700px; height: 100%;
     position: absolute; top: 0; left: 0;
 }
-.k8_taxi_2> div> .k8_taxi_2_spec_1> ul> li {
+.k8_taxi_2> .k8_taxi_2_pc> .k8_taxi_2_spec_1> ul> li {
     float: left;
     width: 900px; height: 100%;
 } 
-.k8_taxi_2> div> .k8_taxi_2_spec_1> ul> li img {width: 100%;}
+.k8_taxi_2> .k8_taxi_2_pc> .k8_taxi_2_spec_1> ul> li img {width: 100%;}
 
-.k8_taxi_2> div> .k8_taxi_2_prev {
+.k8_taxi_2> .k8_taxi_2_pc> .k8_taxi_2_prev {
     position: absolute; top: 50%; left: 480px;
     transform: translateY(-50%); font-size: 50px;
     cursor: pointer; display: none;
 }
-.k8_taxi_2> div> .k8_taxi_2_next {
+.k8_taxi_2> .k8_taxi_2_pc> .k8_taxi_2_next {
     position: absolute; top: 50%; left: 1400px;
     transform: translateY(-50%); font-size: 50px;
     cursor: pointer;
