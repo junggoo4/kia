@@ -536,31 +536,48 @@
                 <li class="mor2_spec_btn1">제원</li>
                 <li class="mor2_spec_btn2">휠</li>
             </ul>
-            <div class="swiper-container">
+            <div class="swiper-container mor2_spec_1">
                 <div class="swiper-wrapper">
-                  <div class="swiper-slide"><img src="img1_m/mor_01.jpg" alt="morning_spec"></div>
-                  <div class="swiper-slide"><img src="img1_m/mor_03.jpg" alt="morning_spec"></div>
-                  <div class="swiper-slide"><img src="img1_m/mor_02.jpg" alt="morning_spec"></div>
+                    <div class="swiper-slide"><img src="img1_m/mor_01.jpg" alt="morning_spec"></div>
+                    <div class="swiper-slide"><img src="img1_m/mor_03.jpg" alt="morning_spec"></div>
+                    <div class="swiper-slide"><img src="img1_m/mor_02.jpg" alt="morning_spec"></div>
                 </div>
                 <!-- Add Pagination -->
-                <div class="swiper-pagination"></div>
+                <div class="swiper-pagination"></div>   
+            </div>
+
+            <div class="swiper-container mor2_spec_2">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div><img src="img2/morning/12_01.webp" alt="morning_spec"></div>
+                        <p>14인치 스틸 휠 휠 커버</p>
+                    </div>
+                    <div class="swiper-slide">
+                        <div><img src="img2/morning/12_02.webp" alt="morning_spec"></div>
+                        <p>14인치 알로이 휠</p>
+                    </div>
+                    <div class="swiper-slide">
+                        <div><img src="img2/morning/12_03.webp" alt="morning_spec"></div>
+                        <p>16인치 전면 가공 알로이 휠</p>
+                    </div>
+                </div>
+                <!-- Add Pagination -->
+                <div class="swiper-pagination"></div>   
             </div>
         </div>
     </div>
     <!-- Swiper JS -->
     <script src="js/swiper.min.js"></script>
-
     <!-- Initialize Swiper -->
     <script>
     var swiper = new Swiper('.swiper-container', {
         pagination: {
             el: '.swiper-pagination',
         },
+        observer: true, observeParents: true,
     });
     </script>
     
-    
-
     <div class="footer"></div>
 </body>
 </html>

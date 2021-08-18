@@ -7,6 +7,7 @@
     <title>KIA 차량 - 니로</title>
     <link rel="stylesheet" href="css/kia2.css">
     <link media="screen and (max-width:767px)" rel="stylesheet" href="css/kia_m2.css">
+    <link rel="stylesheet" href="css/swiper.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css"/>
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
     <script src="js/jquery-3.6.0.min.js"></script>
@@ -458,7 +459,7 @@
     </div>
 
     <div class="niro niro_2">
-        <!-- <div>
+        <div class="niro_2_pc">
             <ul class="niro_2_title">
                 <li>제원</li>
                 <li>휠</li>
@@ -494,9 +495,59 @@
             <div class="niro_2_next"><i class="fas fa-chevron-right"></i></div>
             <div class="niro_2_prev2"><i class="fas fa-chevron-left"></i></div>
             <div class="niro_2_next2"><i class="fas fa-chevron-right"></i></div>
-        </div> -->
+        </div>
+
+        <div class="niro_2_mob">
+            <ul class="niro_2_title">
+                <li>제원</li>
+                <li>휠</li>
+            </ul>
+            <ul class="niro_2_spec_btn">
+                <li class="niro_2_spec_btn1">제원</li>
+                <li class="niro_2_spec_btn2">휠</li>
+            </ul>
+            <div class="swiper-container niro_2_spec_1">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide"><img src="img1_m/sorento_01.webp" alt="niro_spec"></div>
+                    <div class="swiper-slide"><img src="img1_m/sorento_02.webp" alt="niro_spec"></div>
+                    <div class="swiper-slide"><img src="img1_m/sorento_03.webp" alt="niro_spec"></div>
+                </div>
+                <!-- Add Pagination -->
+                <div class="swiper-pagination"></div>   
+            </div>
+
+            <div class="swiper-container niro_2_spec_2">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div><img src="img2/niro/12_01.webp" alt="niro_spec"></div>
+                        <p>18인치 알로이 휠</p>
+                    </div>
+                    <div class="swiper-slide">
+                        <div><img src="img2/niro/12_02.webp" alt="niro_spec"></div>
+                        <p>16인치 에어로 휠</p>
+                    </div>
+                    <div class="swiper-slide">
+                        <div><img src="img2/niro/12_03.webp" alt="niro_spec"></div>
+                        <p>16인치 전면 가공 휠</p>
+                    </div>
+                </div>
+                <!-- Add Pagination -->
+                <div class="swiper-pagination"></div>   
+            </div>
+        </div>
     </div>
 
+    <!-- Swiper JS -->
+    <script src="js/swiper.min.js"></script>
+    <!-- Initialize Swiper -->
+    <script>
+    var swiper = new Swiper('.swiper-container', {
+        pagination: {
+            el: '.swiper-pagination',
+        },
+        observer: true, observeParents: true,
+    });
+    </script>
     <div class="footer"></div>
 </body>
 </html>

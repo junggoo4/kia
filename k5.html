@@ -7,6 +7,7 @@
     <title>KIA 차량 - K5</title>
     <link rel="stylesheet" href="css/kia2.css">
     <link media="screen and (max-width:767px)" rel="stylesheet" href="css/kia_m2.css">
+    <link rel="stylesheet" href="css/swiper.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css"/>
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
     <script src="js/jquery-3.6.0.min.js"></script>
@@ -430,8 +431,8 @@
         </article>
     </div>
 
-    <!-- <div class="k5 k5_2">
-        <div>
+    <div class="k5 k5_2">
+        <div class="k5_2_pc">
             <ul class="k5_2_title">
                 <li>제원</li>
                 <li>휠</li>
@@ -472,7 +473,61 @@
             <div class="k5_2_prev2"><i class="fas fa-chevron-left"></i></div>
             <div class="k5_2_next2"><i class="fas fa-chevron-right"></i></div>
         </div>
-    </div> -->
+
+        <div  class="k5_2_mob">
+            <ul class="k5_2_title">
+                <li>제원</li>
+                <li>휠</li>
+            </ul>
+            <ul class="k5_2_spec_btn">
+                <li class="k5_2_spec_btn1">제원</li>
+                <li class="k5_2_spec_btn2">휠</li>
+            </ul>
+            <div class="swiper-container k5_2_spec_1">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide"><img src="img1_m/K5_01.webp" alt="k5_spec"></div>
+                    <div class="swiper-slide"><img src="img1_m/K5_02.webp" alt="k5_spec"></div>
+                    <div class="swiper-slide"><img src="img1_m/K5_03.webp" alt="k5_spec"></div>
+                </div>
+                <!-- Add Pagination -->
+                <div class="swiper-pagination"></div>   
+            </div>
+
+            <div class="swiper-container k5_2_spec_2">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div><img src="img2/k5/09_01.webp" alt="k5_spec"></div>
+                        <p>16인치 알로이 휠</p>
+                    </div>
+                    <div class="swiper-slide">
+                        <div><img src="img2/k5/09_02.webp" alt="k5_spec"></div>
+                        <p>17인치 전면가공 휠</p>
+                    </div>
+                    <ldiv class="swiper-slide"i>
+                        <div><img src="img2/k5/09_03.webp" alt="k5_spec"></div>
+                        <p>18인치 전면가공 휠</p>
+                    </ldiv>
+                    <div class="swiper-slide">
+                        <div><img src="img2/k5/09_04.webp" alt="k5_spec"></div>
+                        <p>19인치 전면가공 휠<br>(1.6 가솔린 터보 전용)</p>
+                    </div>
+                </div>
+                <!-- Add Pagination -->
+                <div class="swiper-pagination"></div>   
+            </div>
+        </div>
+    </div>
+    <!-- Swiper JS -->
+    <script src="js/swiper.min.js"></script>
+    <!-- Initialize Swiper -->
+    <script>
+    var swiper = new Swiper('.swiper-container', {
+        pagination: {
+            el: '.swiper-pagination',
+        },
+        observer: true, observeParents: true,
+    });
+    </script>
 
     <div class="footer"></div>
 </body>

@@ -7,6 +7,7 @@
     <title>KIA 차량 - 모하비</title>
     <link rel="stylesheet" href="css/kia2.css">
     <link media="screen and (max-width:767px)" rel="stylesheet" href="css/kia_m2.css">
+    <link rel="stylesheet" href="css/swiper.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css"/>
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
     <script src="js/jquery-3.6.0.min.js"></script>
@@ -562,7 +563,7 @@
 
 
     <div class="mohave mohave_2">
-        <!-- <div>
+        <div class="mohave_2_pc">
             <ul class="mohave_2_title">
                 <li>제원</li>
                 <li>휠</li>
@@ -594,8 +595,54 @@
             <div class="mohave_2_next"><i class="fas fa-chevron-right"></i></div>
             <div class="mohave_2_prev2"><i class="fas fa-chevron-left"></i></div>
             <div class="mohave_2_next2"><i class="fas fa-chevron-right"></i></div>
-        </div> -->
+        </div>
+
+        <div class="mohave_2_mob">
+            <ul class="mohave_2_title">
+                <li>제원</li>
+                <li>휠</li>
+            </ul>
+            <ul class="mohave_2_spec_btn">
+                <li class="mohave_2_spec_btn1">제원</li>
+                <li class="mohave_2_spec_btn2">휠</li>
+            </ul>
+            <div class="swiper-container mohave_2_spec_1">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide"><img src="img1_m/mohave_01.webp" alt="mohave_spec"></div>
+                    <div class="swiper-slide"><img src="img1_m/mohave_02.webp" alt="mohave_spec"></div>
+                    <div class="swiper-slide"><img src="img1_m/mohave_03.webp" alt="mohave_spec"></div>
+                </div>
+                <!-- Add Pagination -->
+                <div class="swiper-pagination"></div>   
+            </div>
+
+            <div class="swiper-container mohave_2_spec_2">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div><img src="img2/mohave/12_01.webp" alt="mohave_spec"></div>
+                        <p>17인치 전면가공 휠</p>
+                    </div>
+                    <div class="swiper-slide">
+                        <div><img src="img2/mohave/12_02.webp" alt="mohave_spec"></div>
+                        <p>19인치 전면가공 휠</p>
+                    </div>
+                </div>
+                <!-- Add Pagination -->
+                <div class="swiper-pagination"></div>   
+            </div>
+        </div>
     </div>
+    <!-- Swiper JS -->
+    <script src="js/swiper.min.js"></script>
+    <!-- Initialize Swiper -->
+    <script>
+    var swiper = new Swiper('.swiper-container', {
+        pagination: {
+            el: '.swiper-pagination',
+        },
+        observer: true, observeParents: true,
+    });
+    </script>
 
     <div class="footer"></div>
 </body>
