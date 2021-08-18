@@ -374,7 +374,7 @@ $(function() {
     });
 
     // 모닝 - 제원 - (제원 / 휠) 버튼 클릭시 해당 화면 노출
-    $(".mor2_spec_btn1").on("click",function() {
+    $(".mor2_pc> .mor2_spec_btn> .mor2_spec_btn1").on("click",function() {
         $(".mor2_spec_2").hide();
         $(".mor2_spec_1").show();
         $(this).css({"background":"#05141f", "color":"white"});
@@ -393,7 +393,7 @@ $(function() {
             $(".mor2_next").hide();
         }
     });
-    $(".mor2_spec_btn2").on("click",function() {
+    $(".mor2_pc> .mor2_spec_btn>  .mor2_spec_btn2").on("click",function() {
         $(".mor2_spec_1").hide();
         $(".mor2_spec_2").show();
         $(this).css({"background":"#05141f", "color":"white"});
@@ -417,7 +417,7 @@ $(function() {
     let mor2_spec_pos = 500;
     let mor2_spec_count = 0;
     let mor2_spec_no = 0;
-    $(".mor2_next").on("click",function() {
+    $(".mor2_pc> .mor2_next").on("click",function() {
         if(mor2_spec_count < 2)
             mor2_spec_count++;
             mor2_spec_no = mor2_spec_count;
@@ -431,7 +431,7 @@ $(function() {
             $(".mor2_next").hide();
         }
     });
-    $(".mor2_prev").on("click",function() {
+    $(".mor2_pc> .mor2_prev").on("click",function() {
         if(mor2_spec_count > 0)
             mor2_spec_count--;
             mor2_spec_no = mor2_spec_count;
@@ -450,7 +450,7 @@ $(function() {
     let mor2_spec_pos1 = 500;
     let mor2_spec_count1 = 0;
     let mor2_spec_no1 = 0;
-    $(".mor2_next2").on("click",function() {
+    $(".mor2_pc> .mor2_next2").on("click",function() {
         if(mor2_spec_count1 < 2)
             mor2_spec_count1++;
             mor2_spec_no1 = mor2_spec_count1;
@@ -464,7 +464,7 @@ $(function() {
             $(".mor2_next2").hide();
         }
     });
-    $(".mor2_prev2").on("click",function() {
+    $(".mor2_pc> .mor2_prev2").on("click",function() {
         if(mor2_spec_count1 > 0)
             mor2_spec_count1--;
             mor2_spec_no1 = mor2_spec_count1;

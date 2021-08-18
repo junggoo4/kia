@@ -12,8 +12,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
     <script src="js/jquery-3.6.0.min.js"></script>
     <script src="js/kia2.js"></script>
-    <!-- Swiper JS -->
-    <script src="../dist/js/swiper.min.js"></script>
+
 </head>
 <body>
     <div class="header2"></div>
@@ -490,7 +489,7 @@
 
 
     <div class="morning morning_2">
-        <!-- <div>
+        <div class="mor2_pc">
             <ul class="mor2_title">
                 <li>제원</li>
                 <li>휠</li>
@@ -526,28 +525,41 @@
             <div class="mor2_next"><i class="fas fa-chevron-right"></i></div>
             <div class="mor2_prev2"><i class="fas fa-chevron-left"></i></div>
             <div class="mor2_next2"><i class="fas fa-chevron-right"></i></div>
-        </div> -->
+        </div>
 
-
-
-        <!-- <div class="swiper-container">
-            <div class="swiper-wrapper">
-              <div class="swiper-slide"><img src="img1_m/mor_01.jpg" alt="morning_spec"></div>
-              <div class="swiper-slide"><img src="img1_m/mor_03.jpg" alt="morning_spec"></div>
-              <div class="swiper-slide"><img src="img1_m/mor_02.jpg" alt="morning_spec"></div>
+        <div  class="mor2_mob">
+            <ul class="mor2_title">
+                <li>제원</li>
+                <li>휠</li>
+            </ul>
+            <ul class="mor2_spec_btn">
+                <li class="mor2_spec_btn1">제원</li>
+                <li class="mor2_spec_btn2">휠</li>
+            </ul>
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide"><img src="img1_m/mor_01.jpg" alt="morning_spec"></div>
+                  <div class="swiper-slide"><img src="img1_m/mor_03.jpg" alt="morning_spec"></div>
+                  <div class="swiper-slide"><img src="img1_m/mor_02.jpg" alt="morning_spec"></div>
+                </div>
+                <!-- Add Pagination -->
+                <div class="swiper-pagination"></div>
             </div>
-            <div class="swiper-pagination"></div>
-        </div> -->
+        </div>
     </div>
+    <!-- Swiper JS -->
+    <script src="js/swiper.min.js"></script>
 
     <!-- Initialize Swiper -->
-    <!-- <script>
+    <script>
     var swiper = new Swiper('.swiper-container', {
         pagination: {
-        el: '.swiper-pagination',
-            },
-        });
-    </script> -->
+            el: '.swiper-pagination',
+        },
+    });
+    </script>
+    
+    
 
     <div class="footer"></div>
 </body>

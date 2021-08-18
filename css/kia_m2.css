@@ -215,9 +215,9 @@ header> .topdown {display: none;}
     background: url(../img2/morning/01.webp) no-repeat center center/cover;
 }
 .morning_1> .at1> div> p:nth-child(1) {
-    position: absolute; top: 50px; left: 2.5%; width: 95%;
+    position: absolute; top: 50px; left: 7.5%; width: 85%;
     line-height: 3.5vh; text-align: center;
-    font-size: 3vh; font-weight: bold;
+    font-size: 5.5vw; font-weight: bold;
     color: white; text-shadow: 2px -2px 8px #05141f;
 }
 .morning_1> .at1> div> p:nth-child(2) {display: none;}
@@ -782,27 +782,28 @@ header> .topdown {display: none;}
 
 
 /* ((((( 모닝 제원 ))))) */
-/* .morning_2> div {
-    width: 100%; height: 450px;
+.morning_2> .mor2_pc {display: none;}
+.morning_2> .mor2_mob {
+    width: 100%; height: 450px; display: block;
     position: relative; top: 110px;
     background: none; overflow: hidden;
 }
-.morning_2> div> .mor2_title {
+.morning_2> .mor2_mob> .mor2_title {
     width: 120px; height: 40px;
     position: absolute; top: 20px; left: 20px;
 }
-.morning_2> div> .mor2_title> li {
+.morning_2> .mor2_mob> .mor2_title> li {
     position: absolute; top: 0; left: 0;
     font-size: 2.5vh; font-weight: bold;
     color: #05141f;
 }
-.morning_2> div> .mor2_title> li:nth-child(2) {display: none;}
+.morning_2> .mor2_mob> .mor2_title> li:nth-child(2) {display: none;}
 
-.morning_2> div> .mor2_spec_btn {
+.morning_2> .mor2_mob> .mor2_spec_btn {
     position: absolute; top: 60px; left: 20px;
     width: 150px; height: 30px; z-index: 40;
 }
-.morning_2> div> .mor2_spec_btn> li {
+.morning_2> .mor2_mob> .mor2_spec_btn> li {
     float: left; cursor: pointer;
     width: 70px; height: 100%;
     background: #05141f; color: white;
@@ -810,26 +811,21 @@ header> .topdown {display: none;}
     text-align: center; line-height: 30px;
     font-size: 2vh; font-weight: bold;
 }
-.morning_2> div> .mor2_spec_btn> li:nth-child(2) {
+.morning_2> .mor2_mob> .mor2_spec_btn> li:nth-child(2) {
     margin-left: 10px; 
     background: #ccc; color: black;
-} */
-
-/* 
-.morning_2 {
-    width: 100%; height: 450px;
-    position: relative; top: 110px;
-    background: none; overflow: hidden;
 }
-.morning_2> .swiper-container {
-    width: 90%; height: 272px; display: block; _overflow: hidden;
+
+
+.morning_2> .mor2_mob> .swiper-container {
+    width: 90%; height: 320px; display: block; overflow: hidden;
     position: absolute; top: 120px; left: 5%;
 }
-.morning_2> .swiper-container> .swiper-wrapper> .swiper-slide {
-    float: left;
+.morning_2> .mor2_mob> .swiper-container> .swiper-wrapper> .swiper-slide {
+    float: left; width: 100%; height: 272px;
 
     /* Center slide text vertically */
-    /* display: -webkit-box;
+    display: -webkit-box;
     display: -ms-flexbox;
     display: -webkit-flex;
     display: flex;
@@ -842,15 +838,19 @@ header> .topdown {display: none;}
     -webkit-align-items: center;
     align-items: center;
 }
-.morning_2> .swiper-container> .swiper-wrapper> .swiper-slide img {width: 100%;} */
+.morning_2> .mor2_mob> .swiper-container> .swiper-wrapper> .swiper-slide img {
+    width: 100%;
+}
+.morning_2> .mor2_mob> .swiper-container> .swiper-pagination {
+    height: 30px;
+}
 
 
-
-.morning_2> div> .mor2_spec_1,
-.morning_2> div> .mor2_prev,
-.morning_2> div> .mor2_next,
-.morning_2> div> .mor2_prev2,
-.morning_2> div> .mor2_next2 {display: none;}
+.morning_2> .mor2_pc> .mor2_spec_1,
+.morning_2> .mor2_pc> .mor2_prev,
+.morning_2> .mor2_pc> .mor2_next,
+.morning_2> .mor2_pc> .mor2_prev2,
+.morning_2> .mor2_pc> .mor2_next2 {display: none;}
 
 
 /* ((((( k5 특징 ))))) */ 
@@ -869,7 +869,7 @@ header> .topdown {display: none;}
 .k5_1> .at1> div> p:nth-child(1) {
     position: absolute; top: 50px; left: 2.5%; width: 95%;
     line-height: 3.5vh; text-align: center;
-    font-size: 3vh; font-weight: bold;
+    font-size: 5.5vw; font-weight: bold;
     color: white; text-shadow: 2px -2px 8px #05141f;
 }
 
@@ -1502,7 +1502,7 @@ header> .topdown {display: none;}
 .sorento_1> .at1> div> p:nth-child(1) {
     position: absolute; top: 50px; left: 2.5%; width: 95%;
     line-height: 3.5vh; text-align: center;
-    font-size: 3vh; font-weight: bold;
+    font-size: 5.5vw; font-weight: bold;
     color: white; text-shadow: 2px -2px 8px #05141f;
 }
 
@@ -2004,7 +2004,7 @@ header> .topdown {display: none;}
 .niro_1> .at1> div> p:nth-child(1) {
     position: absolute; top: 50px; left: 2.5%; width: 95%;
     line-height: 3.5vh; text-align: center;
-    font-size: 3vh; font-weight: bold;
+    font-size: 5.5vw; font-weight: bold;
     color: white; text-shadow: 2px -2px 8px #05141f;
 }
 .niro_1> .at1> ul {
@@ -4100,9 +4100,9 @@ header> .topdown {display: none;}
     background: url(../img2/bonggo3/01.webp) no-repeat center center/cover;
 }
 .bonggo3_1> .at1> div> p:nth-child(1) {
-    position: absolute; top: 50px; left: 2.5%; width: 95%;
+    position: absolute; top: 50px; left: 12.5%; width: 75%;
     line-height: 3.5vh; text-align: center;
-    font-size: 5.4vw; font-weight: bold;
+    font-size: 5.5vw; font-weight: bold;
     color: #05141f; text-shadow: 2px -2px 8px white;
 }
 
@@ -4488,9 +4488,9 @@ header> .topdown {display: none;}
     background: url(../img2/k8_taxi/01.webp) no-repeat center center/cover;
 }
 .k8_taxi_1> .at1> div> p:nth-child(1) {
-    position: absolute; top: 50px; left: 2.5%; width: 95%;
+    position: absolute; top: 50px; left: 5%; width: 90%;
     line-height: 3.5vh; text-align: center;
-    font-size: 5.5vw; font-weight: bold;
+    font-size: 5.2vw; font-weight: bold;
     color: white; text-shadow: 2px -2px 8px #05141f;
 }
 
@@ -4809,6 +4809,7 @@ header> .topdown {display: none;}
     transform: translateY(-50%); font-size: 50px;
     cursor: pointer;
 }
+/* ============================ 차량 끝 =============================== */
 
 
 /* ============================ footer 시작 =============================== */
