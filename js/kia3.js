@@ -52,6 +52,7 @@ $(function() {
         $(".mor_total").show();
         $(".menu2_1_bigBTN> li").css({"background":"none", "color":"#05141f"});
         $(".menu2_1_bigBTN> li:eq(1)").css({"background":"#05141f", "color":"white"});
+        top_func();
     });
 
     // 모닝 - 상세차종 선택 - 모델, 상세차종 선택
@@ -92,7 +93,7 @@ $(function() {
         $(".mor_color li:eq("+no+")").show();
     });
     // 모바일) 모닝 - 컬러 선택 
-     $(".chepter2_m> .mor_color_btn> li").on("click",function() {
+    $(".chepter2_m> .mor_color_btn> li").on("click",function() {
         no=$(this).index();
         $(".chepter2_m> .mor_color_btn> li").css("border","1px solid #ccc");
         $(this).css("border","3px solid red");
@@ -216,6 +217,18 @@ $(function() {
         $(".menu2_1_bigBTN> li").css({"background":"none", "color":"#05141f"});
         $(".menu2_1_bigBTN> li:eq(1)").css({"background":"#05141f", "color":"white"});
     });
+    // 모바일) K5 - 차종선택 - 차 이미지 클릭시 해당 상세차종 선택 화면으로 이동
+    $(".menu2_1_bm1_m> li:eq(1)").on("click",function() {
+        $(".menu2_1_bm").hide();
+        $(".car_k5").show();
+        $(".chepter1").show();
+        $(".car_total").show();
+        $(".car_control").hide();
+        $(".k_total").show();
+        $(".menu2_1_bigBTN> li").css({"background":"none", "color":"#05141f"});
+        $(".menu2_1_bigBTN> li:eq(1)").css({"background":"#05141f", "color":"white"});
+        top_func();
+    });
 
     // K5 - 상세차종 선택 - 모델, 상세차종 선택
     $(".k5_btn1_1").on("click",function() {
@@ -260,6 +273,14 @@ $(function() {
         $(this).css("border","3px solid red");
         $(".k5_color li").hide();
         $(".k5_color li:eq("+no+")").show();
+    });
+    // 모바일) K5 - 컬러 선택
+    $(".chepter2_m> .k5_color_btn> li").on("click",function() {
+        no=$(this).index();
+        $(".chepter2_m> .k5_color_btn> li").css("border","1px solid #ccc");
+        $(this).css("border","3px solid red");
+        $(".chepter2_m> .k5_color> li").hide();
+        $(".chepter2_m> .k5_color> li:eq("+no+")").show();
     });
 
     // K5 - 옵션 선택 
@@ -328,6 +349,7 @@ $(function() {
        if(k5_count < 0) {
             k5_count = 0;
        }
+       top_func();
     });
     $(".k5_next").on("click",function() {   
        if(k5_count == 0) {
@@ -358,6 +380,7 @@ $(function() {
        if(k5_count > 2) {
             k5_count = 3;
        }
+       top_func();
     });
 
 
@@ -372,6 +395,18 @@ $(function() {
         $(".ni_total").show();
         $(".menu2_1_bigBTN> li").css({"background":"none", "color":"#05141f"});
         $(".menu2_1_bigBTN> li:eq(1)").css({"background":"#05141f", "color":"white"});
+    });
+    // 모바일) 니로 - 차종선택 - 차 이미지 클릭시 해당 상세차종 선택 화면으로 이동
+    $(".menu2_1_bm1_m> li:eq(2)").on("click",function() {
+        $(".menu2_1_bm").hide();
+        $(".car_niro").show();
+        $(".chepter1").show();
+        $(".car_total").show();
+        $(".car_control").hide();
+        $(".ni_total").show();
+        $(".menu2_1_bigBTN> li").css({"background":"none", "color":"#05141f"});
+        $(".menu2_1_bigBTN> li:eq(1)").css({"background":"#05141f", "color":"white"});
+        top_func();
     });
 
     // 니로 - 상세차종 선택 - 모델, 상세차종 선택  
@@ -401,6 +436,14 @@ $(function() {
         $(this).css("border","3px solid red");
         $(".niro_color li").hide();
         $(".niro_color li:eq("+no+")").show();
+    });
+    // 모바일) 니로 - 컬러 선택
+    $(".chepter2_m> .niro_color_btn> li").on("click",function() {
+        no=$(this).index();
+        $(".chepter2_m> .niro_color_btn li").css("border","1px solid #ccc");
+        $(this).css("border","3px solid red");
+        $(".chepter2_m> .niro_color li").hide();
+        $(".chepter2_m> .niro_color li:eq("+no+")").show();
     });
 
     // 니로 - 구매 방법
@@ -459,6 +502,7 @@ $(function() {
         if(niro_count < 0) {
                 niro_count = 0;
         }
+        top_func();
     });
     $(".niro_next").on("click",function() {   
         if(niro_count == 0) {
@@ -489,6 +533,7 @@ $(function() {
         if(niro_count > 2) {
             niro_count = 3;
         }
+        top_func();
     });
 
 
@@ -503,6 +548,18 @@ $(function() {
         $(".sor_total").show();
         $(".menu2_1_bigBTN> li").css({"background":"none", "color":"#05141f"});
         $(".menu2_1_bigBTN> li:eq(1)").css({"background":"#05141f", "color":"white"});
+    });
+    // 모바일) 쏘렌토 하이브리드 - 차종선택 - 차 이미지 클릭시 해당 상세차종 선택 화면으로 이동
+    $(".menu2_1_bm1_m> li:eq(3)").on("click",function() {
+        $(".menu2_1_bm").hide();
+        $(".car_sorento").show();
+        $(".chepter1").show();
+        $(".car_total").show();
+        $(".car_control").hide();
+        $(".sor_total").show();
+        $(".menu2_1_bigBTN> li").css({"background":"none", "color":"#05141f"});
+        $(".menu2_1_bigBTN> li:eq(1)").css({"background":"#05141f", "color":"white"});
+        top_func();
     });
 
     // 쏘렌토 하이브리드 - 상세차종 선택 - 모델, 상세차종 선택  
@@ -541,6 +598,14 @@ $(function() {
         $(this).css("border","3px solid red");
         $(".sorento_color li").hide();
         $(".sorento_color li:eq("+no+")").show();
+    });
+    // 모바일) 쏘렌토 하이브리드 - 컬러 선택
+    $(".chepter2_m> .sorento_color_btn> li").on("click",function() {
+        no=$(this).index();
+        $(".chepter2_m> .sorento_color_btn li").css("border","1px solid #ccc");
+        $(this).css("border","3px solid red");
+        $(".chepter2_m> .sorento_color li").hide();
+        $(".chepter2_m> .sorento_color li:eq("+no+")").show();
     });
 
     // 쏘렌토 하이브리드 - 구매 방법
@@ -599,6 +664,7 @@ $(function() {
         if(sorento_count < 0) {
             sorento_count = 0;
         }
+        top_func();
     });
     $(".sorento_next").on("click",function() {   
         if(sorento_count == 0) {
@@ -629,6 +695,7 @@ $(function() {
         if(sorento_count > 2) {
             sorento_count = 3;
         }
+        top_func();
     });
 
 
@@ -643,6 +710,18 @@ $(function() {
         $(".sel_total").show();
         $(".menu2_1_bigBTN> li").css({"background":"none", "color":"#05141f"});
         $(".menu2_1_bigBTN> li:eq(1)").css({"background":"#05141f", "color":"white"});
+    });
+    // 모바일) 셀토스 - 차종선택 - 차 이미지 클릭시 해당 상세차종 선택 화면으로 이동
+    $(".menu2_1_bm1_m> li:eq(4)").on("click",function() {
+        $(".menu2_1_bm").hide();
+        $(".car_seltos").show();
+        $(".chepter1").show();
+        $(".car_total").show();
+        $(".car_control").hide();
+        $(".sel_total").show();
+        $(".menu2_1_bigBTN> li").css({"background":"none", "color":"#05141f"});
+        $(".menu2_1_bigBTN> li:eq(1)").css({"background":"#05141f", "color":"white"});
+        top_func();
     });
 
     // 셀토스 - 상세차종 선택 - 모델, 상세차종 선택  
@@ -681,6 +760,14 @@ $(function() {
         $(this).css("border","3px solid red");
         $(".seltos_color li").hide();
         $(".seltos_color li:eq("+no+")").show();
+    });
+    // 모바일) 셀토스 - 컬러 선택
+    $(".chepter2_m> .seltos_color_btn> li").on("click",function() {
+        no=$(this).index();
+        $(".chepter2_m> .seltos_color_btn li").css("border","1px solid #ccc");
+        $(this).css("border","3px solid red");
+        $(".chepter2_m> .seltos_color li").hide();
+        $(".chepter2_m> .seltos_color li:eq("+no+")").show();
     });
 
     // 셀토스 - 구매 방법
@@ -739,6 +826,7 @@ $(function() {
         if(seltos_count < 0) {
             seltos_count = 0;
         }
+        top_func();
     });
     $(".seltos_next").on("click",function() {   
         if(seltos_count == 0) {
@@ -769,6 +857,7 @@ $(function() {
         if(seltos_count > 2) {
             seltos_count = 3;
         }
+        top_func();
     });
 
 
@@ -783,6 +872,18 @@ $(function() {
         $(".mo_total").show();
         $(".menu2_1_bigBTN> li").css({"background":"none", "color":"#05141f"});
         $(".menu2_1_bigBTN> li:eq(1)").css({"background":"#05141f", "color":"white"});
+    });
+    // 모바일) 모하비 - 차종선택 - 차 이미지 클릭시 해당 상세차종 선택 화면으로 이동
+    $(".menu2_1_bm1_m> li:eq(5)").on("click",function() {
+        $(".menu2_1_bm").hide();
+        $(".car_mohave").show();
+        $(".chepter1").show();
+        $(".car_total").show();
+        $(".car_control").hide();
+        $(".mo_total").show();
+        $(".menu2_1_bigBTN> li").css({"background":"none", "color":"#05141f"});
+        $(".menu2_1_bigBTN> li:eq(1)").css({"background":"#05141f", "color":"white"});
+        top_func();
     });
 
     // 모하비 - 상세차종 선택 - 모델, 상세차종 선택
@@ -810,6 +911,14 @@ $(function() {
         $(this).css("border","3px solid red");
         $(".mohave_color li").hide();
         $(".mohave_color li:eq("+no+")").show();
+    });
+    // 모바일) 셀토스 - 컬러 선택
+    $(".chepter2_m> .mohave_color_btn> li").on("click",function() {
+        no=$(this).index();
+        $(".chepter2_m> .mohave_color_btn li").css("border","1px solid #ccc");
+        $(this).css("border","3px solid red");
+        $(".chepter2_m> .mohave_color li").hide();
+        $(".chepter2_m> .mohave_color li:eq("+no+")").show();
     });
 
     // 모하비 - 구매 방법
@@ -868,6 +977,7 @@ $(function() {
         if(mohave_count < 0) {
             mohave_count = 0;
         }
+        top_func();
     });
     $(".mohave_next").on("click",function() {   
         if(mohave_count == 0) {
@@ -898,6 +1008,7 @@ $(function() {
         if(mohave_count > 2) {
             mohave_count = 3;
         }
+        top_func();
     });
 
 
