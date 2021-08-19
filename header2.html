@@ -76,6 +76,11 @@
         $(".side_m").css({"top":"-120%", "transition":"all 0.5s"});
     });
 
+    $(".back").on("click",function() {
+        $(".back").hide();
+        $(".side_m").css({"top":"-120%", "transition":"all 0.5s"});
+    });
+
     // 모바일 햄버거 메뉴 - 메뉴 선택시 하부메뉴 노출
     $(".bm").hide();
     $(".title_m").on("click",function() {
