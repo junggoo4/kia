@@ -21,7 +21,11 @@ window.onload = function() {
         $("#sel4 option:eq("+i+")").html(opt.optionA[i]);
         $("#sel5 option:eq("+i+")").html(opt.optionA[i]);
     };
+};
 
+// 공통(새로고침시 무조건 스크롤 올리기)
+function top_func() {
+    $("html, body").animate({"scrollTop":0}, 500);
 };
 
 
@@ -29,6 +33,17 @@ $(function() {
     // 온라인 견적=================================================================
     // 모닝 - 차종선택 - 차 이미지 클릭시 해당 상세차종 선택 화면으로 이동
     $(".menu2_1_bm1_1> li:eq(0)").on("click",function() {
+        $(".menu2_1_bm").hide();
+        $(".car_morning").show();
+        $(".chepter1").show();
+        $(".car_total").show();
+        $(".car_control").hide();
+        $(".mor_total").show();
+        $(".menu2_1_bigBTN> li").css({"background":"none", "color":"#05141f"});
+        $(".menu2_1_bigBTN> li:eq(1)").css({"background":"#05141f", "color":"white"});
+    });
+    // 모바일) 모닝 - 차종선택 - 차 이미지 클릭시 해당 상세차종 선택 화면으로 이동
+    $(".menu2_1_bm1_m> li:eq(0)").on("click",function() {
         $(".menu2_1_bm").hide();
         $(".car_morning").show();
         $(".chepter1").show();
@@ -75,6 +90,14 @@ $(function() {
         $(this).css("border","3px solid red");
         $(".mor_color li").hide();
         $(".mor_color li:eq("+no+")").show();
+    });
+    // 모바일) 모닝 - 컬러 선택 
+     $(".chepter2_m> .mor_color_btn> li").on("click",function() {
+        no=$(this).index();
+        $(".chepter2_m> .mor_color_btn> li").css("border","1px solid #ccc");
+        $(this).css("border","3px solid red");
+        $(".chepter2_m> .mor_color> li").hide();
+        $(".chepter2_m> .mor_color> li:eq("+no+")").show();
     });
 
     // 모닝 - 옵션 선택 
@@ -146,6 +169,7 @@ $(function() {
         if(mor_count < 0) {
            mor_count = 0;
         }
+        top_func();
     });
     $(".mor_next").on("click",function() {   
         if(mor_count == 0) {
@@ -176,6 +200,7 @@ $(function() {
         if(mor_count > 2) {
             mor_count = 3;
         }
+        top_func();
     });
 
 

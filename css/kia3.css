@@ -239,9 +239,9 @@ header> div> .top_bg {
     width: 100%; height: 100%;
     position: absolute; top: 0; left: 0;
 }
-.menu2_1_bm2, .menu2_1_bm3, .menu2_1_bm4, .menu2_1_bm5 {display: none;}
 
 /* 온라인견적 - 차종 선택 */
+.oline_2> div> .menu2_1_bm> .menu2_1_bm1_m {display: none;}
 .oline_2> div> .menu2_1_bm {margin-top: 20px; height: 530px;}
 .oline_2> div> .menu2_1_bm> ul {width: 100%; height: 220px;}
 .oline_2> div> .menu2_1_bm> ul> li {
@@ -337,11 +337,12 @@ header> div> .top_bg {
     width: 100%; height: 100%;
     position: absolute; top: 0; left: 0;
 }
+.oline_2> div> .car> .chepter2> .chepter2_m {display: none;}
 .oline_2> div> .car> .chepter2> div {
     float: left; height: 100%;
 }
-.oline_2> div> .car> .chepter2> .chepter2_1 {width: 60%; height: 88%; border-right: 1px solid #ccc;}
-.oline_2> div> .car> .chepter2> .chepter2_2 {width: 40%;}
+.oline_2> div> .car> .chepter2> .chepter2_1 {display: block; width: 60%; height: 88%; border-right: 1px solid #ccc;}
+.oline_2> div> .car> .chepter2> .chepter2_2 {display: block; width: 40%;}
 
 .oline_2> div> .car> .chepter2> .chepter2_1> p:nth-child(1) {
     font-size: 35px; font-weight: bold;

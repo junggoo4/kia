@@ -377,8 +377,8 @@ $(function() {
     $(".mor2_spec_btn1").on("click",function() {
         $(".mor2_spec_2").hide();
         $(".mor2_spec_1").show();
-        $(".mor2_title> li:eq(1)").hide();
-        $(".mor2_title> li:eq(0)").show();
+        $(".mor2_title2").hide();
+        $(".mor2_title1").show();
         $(this).css({"background":"#05141f", "color":"white"});
         $(".mor2_spec_btn2").css({"background":"#ccc", "color":"black"});
         $(".mor2_prev2, .mor2_next2").hide();
@@ -398,8 +398,8 @@ $(function() {
     $(".mor2_spec_btn2").on("click",function() {
         $(".mor2_spec_1").hide();
         $(".mor2_spec_2").show();
-        $(".mor2_title> li:eq(0)").hide();
-        $(".mor2_title> li:eq(1)").show();
+        $(".mor2_title1").hide();
+        $(".mor2_title2").show();
         $(this).css({"background":"#05141f", "color":"white"});
         $(".mor2_spec_btn1").css({"background":"#ccc", "color":"black"});
         $(".mor2_prev, .mor2_next").hide();
@@ -678,6 +678,8 @@ $(function() {
     $(".k5_2_spec_btn1").on("click",function() {
         $(".k5_2_spec_2").hide();
         $(".k5_2_spec_1").show();
+        $(".k5_2_title2").hide();
+        $(".k5_2_title1").show();
         $(this).css({"background":"#05141f", "color":"white"});
         $(".k5_2_spec_btn2").css({"background":"#ccc", "color":"black"});
         $(".k5_2_prev2, .k5_2_next2").hide();
@@ -697,6 +699,8 @@ $(function() {
     $(".k5_2_spec_btn2").on("click",function() {
         $(".k5_2_spec_1").hide();
         $(".k5_2_spec_2").show();
+        $(".k5_2_title1").hide();
+        $(".k5_2_title2").show();
         $(this).css({"background":"#05141f", "color":"white"});
         $(".k5_2_spec_btn1").css({"background":"#ccc", "color":"black"});
         $(".k5_2_prev, .k5_2_next").hide();
@@ -923,6 +927,8 @@ $(function() {
     $(".sorento_2_spec_btn1").on("click",function() {
         $(".sorento_2_spec_2").hide();
         $(".sorento_2_spec_1").show();
+        $(".sorento_2_title2").hide();
+        $(".sorento_2_title1").show();
         $(this).css({"background":"#05141f", "color":"white"});
         $(".sorento_2_spec_btn2").css({"background":"#ccc", "color":"black"});
         $(".sorento_2_prev2, .sorento_2_next2").hide();
@@ -942,6 +948,8 @@ $(function() {
     $(".sorento_2_spec_btn2").on("click",function() {
         $(".sorento_2_spec_1").hide();
         $(".sorento_2_spec_2").show();
+        $(".sorento_2_title1").hide();
+        $(".sorento_2_title2").show();
         $(this).css({"background":"#05141f", "color":"white"});
         $(".sorento_2_spec_btn1").css({"background":"#ccc", "color":"black"});
         $(".sorento_2_prev, .sorento_2_next").hide();
@@ -1254,6 +1262,8 @@ $(function() {
     $(".niro_2_spec_btn1").on("click",function() {
         $(".niro_2_spec_2").hide();
         $(".niro_2_spec_1").show();
+        $(".niro_2_title2").hide();
+        $(".niro_2_title1").show();
         $(this).css({"background":"#05141f", "color":"white"});
         $(".niro_2_spec_btn2").css({"background":"#ccc", "color":"black"});
         $(".niro_2_prev2, .niro_2_next2").hide();
@@ -1273,6 +1283,8 @@ $(function() {
     $(".niro_2_spec_btn2").on("click",function() {
         $(".niro_2_spec_1").hide();
         $(".niro_2_spec_2").show();
+        $(".niro_2_title1").hide();
+        $(".niro_2_title2").show();
         $(this).css({"background":"#05141f", "color":"white"});
         $(".niro_2_spec_btn1").css({"background":"#ccc", "color":"black"});
         $(".niro_2_prev, .niro_2_next").hide();
@@ -1627,6 +1639,8 @@ $(function() {
     $(".seltos2_spec_btn1").on("click",function() {
         $(".seltos2_spec_2").hide();
         $(".seltos2_spec_1").show();
+        $(".seltos2_title2").hide();
+        $(".seltos2_title1").show();
         $(this).css({"background":"#05141f", "color":"white"});
         $(".seltos2_spec_btn2").css({"background":"#ccc", "color":"black"});
         $(".seltos2_prev2, .seltos2_next2").hide();
@@ -1646,6 +1660,8 @@ $(function() {
     $(".seltos2_spec_btn2").on("click",function() {
         $(".seltos2_spec_1").hide();
         $(".seltos2_spec_2").show();
+        $(".seltos2_title1").hide();
+        $(".seltos2_title2").show();
         $(this).css({"background":"#05141f", "color":"white"});
         $(".seltos2_spec_btn1").css({"background":"#ccc", "color":"black"});
         $(".seltos2_prev, .seltos2_next").hide();
@@ -2001,6 +2017,8 @@ $(function() {
     $(".mohave_2_spec_btn1").on("click",function() {
         $(".mohave_2_spec_2").hide();
         $(".mohave_2_spec_1").show();
+        $(".mohave_2_title2").hide();
+        $(".mohave_2_title1").show();
         $(this).css({"background":"#05141f", "color":"white"});
         $(".mohave_2_spec_btn2").css({"background":"#ccc", "color":"black"});
         $(".mohave_2_prev2, .mohave_2_next2").hide();
@@ -2020,6 +2038,8 @@ $(function() {
     $(".mohave_2_spec_btn2").on("click",function() {
         $(".mohave_2_spec_1").hide();
         $(".mohave_2_spec_2").show();
+        $(".mohave_2_title1").hide();
+        $(".mohave_2_title2").show();
         $(this).css({"background":"#05141f", "color":"white"});
         $(".mohave_2_spec_btn1").css({"background":"#ccc", "color":"black"});
         $(".mohave_2_prev, .mohave_2_next").hide();
@@ -2230,6 +2250,8 @@ $(function() {
     $(".bonggo3_2_spec_btn1").on("click",function() {
         $(".bonggo3_2_spec_2").hide();
         $(".bonggo3_2_spec_1").show();
+        $(".bonggo3_2_title2").hide();
+        $(".bonggo3_2_title1").show();
         $(this).css({"background":"#05141f", "color":"white"});
         $(".bonggo3_2_spec_btn2").css({"background":"#ccc", "color":"black"});
         if(bonggo3_2_spec_count == 0) {
@@ -2248,6 +2270,8 @@ $(function() {
     $(".bonggo3_2_spec_btn2").on("click",function() {
         $(".bonggo3_2_spec_1").hide();
         $(".bonggo3_2_spec_2").show();
+        $(".bonggo3_2_title1").hide();
+        $(".bonggo3_2_title2").show();
         $(this).css({"background":"#05141f", "color":"white"});
         $(".bonggo3_2_spec_btn1").css({"background":"#ccc", "color":"black"});
         $(".bonggo3_2_prev, .bonggo3_2_next").hide();
