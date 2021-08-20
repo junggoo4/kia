@@ -656,7 +656,7 @@ header> .topdown {display: none;}
 
 /* ============================ 카탈로그/가격표 시작 =============================== */
 /* 카탈로그/가격표 - title 및 상단 버튼 */
-.back {background: #f2f2f2;}
+.back_color0 {background: #f2f2f2;}
 
 .menu2_2_title {
     width: 100%; height: 80px;
@@ -989,19 +989,19 @@ header> .topdown {display: none;}
 
 /* 클릭시 내려오는 부분 - 상세보기 - 영업점 소개 / 영업직 사원 */
 .menu2_3_bm> ul> .sub_1 {
-    width: 100%; height: 460px;
+    width: 100%; height: 700px;
     border-top: 1px solid #ccc;
-    background: white; padding: 15px;
+    background: white; padding: 0;
     position: relative;
 }
 .menu2_3_bm> ul> .sub_1> ul:nth-child(1) {
-    width: 100%; height: 40px;
-    border: 1px solid #ccc;
+    width: 90%; height: 30px;  margin-left: 5%;
+    border: 1px solid #ccc; margin-top: 10px;
 }
 .menu2_3_bm> ul> .sub_1> ul:nth-child(1)> li {
     float: left; width: 50%; height: 100%;
-    text-align: center; line-height: 40px;
-    font-weight: bold; cursor: pointer;
+    text-align: center; line-height: 30px;
+    font-weight: bold; cursor: pointer; font-size: 3.5vw;
 }
 .menu2_3_bm> ul> .sub_1> ul:nth-child(1)> li:nth-child(1) {
     background: #05141f; color: white;
@@ -1010,18 +1010,19 @@ header> .topdown {display: none;}
 
 /* 상세보기 - 영업점소개 */
 .menu2_3_bm> ul> .sub_1> div:nth-child(2) {
-    width: 97%; height: 100%;
-    position: absolute; top: 75px;
+    width: 80%; height: 100%; padding: 16px;
+    position: absolute; top: 50px;
 }
-.menu2_3_bm> ul> .sub_1> div:nth-child(2) {width: 97%; height: 400px;}
+.menu2_3_bm> ul> .sub_1> div:nth-child(2) {width: 100%; height: 400px;}
 .menu2_3_bm> ul> .sub_1> div:nth-child(2)> p {font-size: 14px;}
 .menu2_3_bm> ul> .sub_1> div:nth-child(2)> ul:nth-child(4){
-    width: 100%; height: 295px;
-    margin-top: 16px; display: flex; justify-content: space-between;
+    width: 100%; height: 200px;
+    margin-top: 16px; display: block;
 }
 .menu2_3_bm> ul> .sub_1> div:nth-child(2)> ul:nth-child(4)> li {
-    float: left; width: 476px; height: 100%;
+    float: auto; width: 100%; height: 100%;
 }
+.menu2_3_bm> ul> .sub_1> div:nth-child(2)> ul:nth-child(4)> li:nth-child(2) {margin-top: 5px;}
 
 
 .menu2_3_bm> ul:nth-child(1)> .sub_1> div:nth-child(2)> ul:nth-child(4)> li:nth-child(1) {
@@ -1068,37 +1069,49 @@ header> .topdown {display: none;}
 
 /* 상세보기 - 영업직사원 */
 .menu2_3_bm> ul> .sub_1> div:nth-child(3) {
-    width: 100%; height: 385px;  overflow-y: scroll;
-    border: 1px solid #ccc; display: none;
+    width: 90%; height: 90%;  overflow-y: scroll;
+    display: none; margin-left: 5%; margin-top: 10px; border: none;
 }
 .menu2_3_bm> ul> .sub_1> div:nth-child(3)> ul {
-    width: 100%; height: 170px; 
-    padding: 10px;
+    width: 100%; height: 150px; 
+    padding: 10px; border: 1px solid #ccc;
 }
+.menu2_3_bm> ul:nth-child(1)> .sub_1> div:nth-child(3)> ul:nth-child(3) {height: 195px;}
+.menu2_3_bm> ul:nth-child(2)> .sub_1> div:nth-child(3)> ul:nth-child(1) {height: 170px;}
+.menu2_3_bm> ul:nth-child(3)> .sub_1> div:nth-child(3)> ul:nth-child(1) {height: 210px;}
+.menu2_3_bm> ul:nth-child(3)> .sub_1> div:nth-child(3)> ul:nth-child(3) {height: 170px;}
+.menu2_3_bm> ul:nth-child(4)> .sub_1> div:nth-child(3)> ul:nth-child(2) {height: 170px;}
+.menu2_3_bm> ul:nth-child(6)> .sub_1> div:nth-child(3)> ul:nth-child(1) {height: 170px;}
+.menu2_3_bm> ul:nth-child(6)> .sub_1> div:nth-child(3)> ul:nth-child(2),
+.menu2_3_bm> ul:nth-child(6)> .sub_1> div:nth-child(3)> ul:nth-child(3) {height: 190px;}
 .menu2_3_bm> ul> .sub_1> div:nth-child(3)> ul> li:nth-child(1) {
-    width: 150px; height: 100%;
+    width: 25%; height: 100%;
     float: left;
 }
 .menu2_3_bm> ul> .sub_1> div:nth-child(3)> ul> li img {
     width: 100%;
 }
 .menu2_3_bm> ul> .sub_1> div:nth-child(3)> ul> li:nth-child(2) {
-    width: 770px; height: 150px; padding: 7px;
-    margin-left: 160px;
+    width: 72%; height: 100%; padding: 0;
+    margin-left: 22vw;
 }
+.menu2_3_bm> ul> .sub_1> div:nth-child(3)> ul> li:nth-child(2)> p {font-size: 3.5vw;}
 .menu2_3_bm> ul> .sub_1> div:nth-child(3)> ul> li:nth-child(2)> p:nth-child(1) {
-    font-size: 22px; font-weight: bold;
+    font-size: 4.5vw; font-weight: bold;
 }
 .menu2_3_bm> ul> .sub_1> div:nth-child(3)> ul> li:nth-child(2)> p:nth-child(2) {
-    margin-top: 20px;
+    margin-top: 5px;
 }
 
 
 /* 클릭시 내려오는 부분 - 위치보기 */
 .menu2_3_bm> ul> .sub_2 {
-    width: 100%; height: 500px; display: none;
+    width: 100%; height: 200px; display: none;
     background: white; padding: 15px;
 }
+.menu2_3_bm> ul> .sub_2> div {height: 97%;}
+.menu2_3_bm> ul> .sub_2> div:nth-child(1) {display: none;}
+.menu2_3_bm> ul> .sub_2> div:nth-child(2) {display: block;}
 /* ============================ 영업망안내 끝 =============================== */
 
 
