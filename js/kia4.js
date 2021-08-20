@@ -155,7 +155,7 @@ $(function() {
         $(".at03_text").html(radi);
     });
 
-
+    // 시승 예약 - 시승 일정
     $(".day li").on("click",function(){
         no = $(this).index()+1;
         if(no==1)
@@ -191,7 +191,23 @@ $(function() {
         $(".at04_text2").html(date);
     });
 
-    
+    // 모바일) 시승 예약 - 시승 일정
+    $(".at04_ifr> ul> li").on("click",function() {
+        no = $(this).index();
+        $(".at04_ifr> ul> li").css({"background":"#f2f2f2","color":"black"});
+        $(this).css({"background":"#f0bc05"});
+
+        if(no==0)
+            date = "10:00";
+        else if(no==1)
+            date = "14:00";
+        else if(no==2)
+            date = "16:00";
+        final = date;
+        $(".at04_text2").html(date);
+    });
+
+    // 시승 예약 - 예약 완료
     $(".finish_btn").on("click",function(){
         $(".finish").show();
     });
@@ -203,4 +219,25 @@ function at02_che(js) {
     sel = js.options[js.selectedIndex].value;
     $(".at02_ifr> ul> li").hide();
     $(".at02_ifr> ul> li").eq(sel).show();
-}
+};
+
+// 시승 예약 - 시승 일정 select> option 클릭시 상단에 해당 날짜 노출
+function at04_che(js) {
+    no = js.options[js.selectedIndex].value;
+    if(no==0)
+        date = "2021.08.15(일)";
+    else if(no==1)
+        date = "2021.08.16(월)";
+    else if(no==2)
+        date = "2021.08.17(화)";
+    else if(no==3)
+        date = "2021.08.18(수)";
+    else if(no==4)
+        date = "2021.08.19(목)";
+    else if(no==5)
+        date = "2021.08.20(금)";
+    else if(no==6)
+        date = "2021.08.21(토)";
+    final = date;
+    $(".at04_text1").html(date);
+};

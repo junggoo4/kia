@@ -8,13 +8,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>KIA - 시승 예약</title>
     <link rel="stylesheet" href="css/kia4.css">
+    <link media="screen and (max-width:767px)" rel="stylesheet" href="css/kia_m4.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css"/>
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
     <script src="js/jquery-3.6.0.min.js"></script>
     <script src="js/kia4.js"></script>
 </head>
 
-<body class="back">
+<body class="back_color0">
     <div class="header2"></div>
 
     <div class="menu3_2_title">
@@ -259,6 +260,29 @@
                                 <p></p>
                             </div>
                         </li>
+                    </ul>
+                </div>
+            </div>
+            <!-- 모바일 -->
+            <div class="at04_bm_m">
+                <div>
+                    <label for="at04_sel">날짜</label>
+                    <select name="at04_bm_sel" id="at04_sel" onchange="at04_che(this)">
+                        <option>=== 날짜 선택 ===</option>
+                        <option value="0" class="sel sel1">2021-08-15</option>
+                        <option value="1" class="sel sel2">2021-08-16</option>
+                        <option value="2" class="sel sel3">2021-08-17</option>
+                        <option value="3" class="sel sel4">2021-08-18</option>
+                        <option value="4" class="sel sel5">2021-08-19</option>
+                        <option value="5" class="sel sel5">2021-08-20</option>
+                        <option value="6" class="sel sel5">2021-08-21</option>
+                    </select>
+                </div>
+                <div class="at04_ifr">
+                    <ul>
+                        <li>10:00</li>
+                        <li>14:00</li>
+                        <li>16:00</li>
                     </ul>
                 </div>
             </div>

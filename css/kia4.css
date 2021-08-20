@@ -564,6 +564,7 @@ header> div> .top_bg {
     color: #f0bc05; margin-left: 10px
 }
 
+.menu3_2_bm> .at04> .at04_bm_m {display: none;}
 .menu3_2_bm> .at04> .at04_bm {
     width: 100%; height: 260px; padding: 20px;
     border: 1px solid #ccc; position: relative; top: 0; left: 0;

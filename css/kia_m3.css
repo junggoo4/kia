@@ -938,7 +938,7 @@ header> .topdown {display: none;}
 .menu2_3_bm> ul> .search> div:nth-child(1) {
     width: 15vw; height: 67px;
     background: #37434c; color: white;
-    text-align: center; font-size: 3vw; font-weight: bold;
+    text-align: center; font-size: 2.7vw; font-weight: bold;
 }
 .menu2_3_bm> ul> .search> div:nth-child(1)> p:nth-child(1) {
     margin-top: 2.2vh; font-size: 5vw;
