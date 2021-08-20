@@ -388,7 +388,7 @@ header> .topdown {display: none;}
 }
 .menu3_2_bm> .at01> .at01_title> p {float: left;}
 .menu3_2_bm> .at01> .at01_title> p:nth-child(1) {text-indent: 10px; font-size: 4.5vw; font-weight: bold;}
-.menu3_2_bm> .at01> .at01_title> p:nth-child(2) {text-indent: 10px; font-size: 3.5vw;}
+.menu3_2_bm> .at01> .at01_title> p:nth-child(2) {text-indent: 3px; font-size: 3.5vw;}
 .menu3_2_bm> .at01> .at01_title> p:nth-child(3),
 .menu3_2_bm> .at02> .at02_title> p:nth-child(3),
 .menu3_2_bm> .at03> .at03_title> p:nth-child(3) {
@@ -420,7 +420,7 @@ header> .topdown {display: none;}
 }
 .menu3_2_bm> .at02> .at02_title> p {float: left;}
 .menu3_2_bm> .at02> .at02_title> p:nth-child(1) {text-indent: 10px; font-size: 4.5vw; font-weight: bold;}
-.menu3_2_bm> .at02> .at02_title> p:nth-child(2) {text-indent: 10px; font-size: 3.5vw;}
+.menu3_2_bm> .at02> .at02_title> p:nth-child(2) {text-indent: 3px; font-size: 3.5vw;}
 .menu3_2_bm> .at02> .at02_bm {
     width: 100%; height: 110vw;
     border: 1px solid #ccc; position: relative; top: 0; left: 0;
@@ -485,7 +485,7 @@ header> .topdown {display: none;}
 }
 .menu3_2_bm> .at03> .at03_title> p {float: left;}
 .menu3_2_bm> .at03> .at03_title> p:nth-child(1) {text-indent: 10px; font-size: 4.5vw; font-weight: bold;}
-.menu3_2_bm> .at03> .at03_title> p:nth-child(2) {text-indent: 10px; font-size: 3.5vw;}
+.menu3_2_bm> .at03> .at03_title> p:nth-child(2) {text-indent: 3px; font-size: 3.5vw;}
 .menu3_2_bm> .at03> .at03_bm {
     width: 100%; height: 170px;
     border: 1px solid #ccc; position: relative; top: 0; left: 0;
@@ -508,14 +508,14 @@ header> .topdown {display: none;}
 }
 .menu3_2_bm> .at04> .at04_title> p {float: left;}
 .menu3_2_bm> .at04> .at04_title> p:nth-child(1) {text-indent: 10px; font-size: 4.5vw; font-weight: bold;}
-.menu3_2_bm> .at04> .at04_title> p:nth-child(2) {text-indent: 10px; font-size: 3.5vw;}
+.menu3_2_bm> .at04> .at04_title> p:nth-child(2) {text-indent: 3px; font-size: 3.5vw;}
 .menu3_2_bm> .at04> .at04_title> p:nth-child(3) {
-    margin-left: 3.5vw; width: 23vw; color: #f0bc05;
-    text-align: right; font-size: 3.3vw; font-weight: bold;
+    margin-left: 2vw; width: 23vw; color: #f0bc05;
+    text-align: left; font-size: 3.3vw; font-weight: bold;
 }
 .menu3_2_bm> .at04> .at04_title> p:nth-child(4) {
     text-align: center; font-size: 3.3vw; font-weight: bold; 
-    color: #f0bc05; margin-left: 0; width: 12vw;
+    color: #f0bc05; margin-left: 1vw; width: 12vw;
 }
 
 .menu3_2_bm> .at04> .at04_bm {display: none;}
