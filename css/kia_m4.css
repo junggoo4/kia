@@ -392,7 +392,7 @@ header> .topdown {display: none;}
 .menu3_2_bm> .at01> .at01_title> p:nth-child(3),
 .menu3_2_bm> .at02> .at02_title> p:nth-child(3),
 .menu3_2_bm> .at03> .at03_title> p:nth-child(3) {
-    margin-left: 17px; width: 35vw; color: #f0bc05;
+    margin-left: 6vw; width: 35vw; color: #f0bc05;
     text-align: right; font-size: 3.8vw; font-weight: bold;
 }
 .menu3_2_bm> .at01> .at01_bm {
@@ -515,7 +515,7 @@ header> .topdown {display: none;}
 }
 .menu3_2_bm> .at04> .at04_title> p:nth-child(4) {
     text-align: center; font-size: 3.5vw; font-weight: bold; 
-    color: #f0bc05; margin-left: 2.5vw; width: 12vw;
+    color: #f0bc05; margin-left: 2.9vw; width: 12vw;
 }
 
 .menu3_2_bm> .at04> .at04_bm {display: none;}
