@@ -178,19 +178,17 @@
         if($(this).next().css("display")=="none") {
             $(this).next().slideDown();
             $(this).find(".plus").css("opacity","0");
+            $(".title> div> .minus").css("opacity","0");
             $(this).find(".minus").css("opacity","1");
         } else {
             $(".bm").slideUp();
             $(this).find(".plus").css("opacity","1");
             $(this).find(".minus").css("opacity","0");
+            $(".title> div> .minus").css("opacity","0");
         }
     });
     
 </script>
-
-
-
-
 
 <div class="login">
     <ul>
