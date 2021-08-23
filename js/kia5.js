@@ -211,20 +211,20 @@ $(function() {
         $(".rayout").hide();
         $(".rayout"+no).show();
         $(".event_bm_btn").show();
-        $(".top").show();
+        $(".top_btn").show();
         top_func();
     });
 
     $(".event_bm_btn").on("click",function() {
         $(".rayout").hide();
-        $(".top").hide();
+        $(".top_btn").hide();
         $(this).hide();
         $(".rayout1").show();
         top_func();
     });
 
     // Top버튼 클릭시 화면 상단으로 이동
-    $(".top").on("click",function() {
+    $(".top_btn").on("click",function() {
         $("html, body").stop().animate({"scrollTop":0},500);
     });
 
