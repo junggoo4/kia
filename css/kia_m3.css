@@ -203,7 +203,7 @@ header> .topdown {display: none;}
 .menu2_1_bigBTN> li> p {
     text-align: center; font-size: 3.7vw;
 }
-.menu2_1_bigBTN> li> p:nth-child(1) {font-size: 5vw;}
+.menu2_1_bigBTN> li> p:nth-child(1) {font-size: 5vw; margin-top: 11px;}
 
 /* 온라인견적 - 공통 */
 .oline_2 {
@@ -235,7 +235,7 @@ header> .topdown {display: none;}
     height: 35px; margin-top: -10px;
     text-align: center; line-height: 35px;
     font-size: 3.7vw; font-weight: bold;
-    border-radius: 0; transition: all 0.5s;
+    border-radius: 20px; transition: all 0.5s;
 }
 .oline_2> div> .menu2_1_bm> ul:nth-child(1)> li:nth-child(1)> p,
 .oline_2> div> .menu2_1_bm> ul:nth-child(1)> li:nth-child(2)> p,
