@@ -223,7 +223,7 @@ header> div> .top_bg {
 .menu2_1_bigBTN> li:nth-child(1) {background: #05141f; color: white;}
 .menu2_1_bigBTN> li:nth-child(5) {border-right: 1px solid #ccc;}
 .menu2_1_bigBTN> li> p {text-align: center;}
-.menu2_1_bigBTN> li> p:nth-child(1) {font-size: 35px; margin-top: 11px;}
+.menu2_1_bigBTN> li> p:nth-child(1) {font-size: 35px; margin-top: 18px;}
 
 /* 온라인견적 - 공통 */
 .oline_2 {
