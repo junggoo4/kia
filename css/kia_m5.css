@@ -255,7 +255,7 @@ header> .topdown {display: none;}
 .menu4_1_bm> .news_control> div:nth-child(6),
 .menu4_1_bm> .news_control> div:nth-child(7) {
     background: none; border: none;
-    font-size: 18px; color: #898989;
+    font-size: 28px; color: #898989;
 }
 .menu4_1_bm> .news_control> div:nth-child(2) {text-align: left;}
 .menu4_1_bm> .news_control> div:nth-child(3) {background: #05141f; color: white;}
@@ -527,7 +527,7 @@ header> .topdown {display: none;}
 .menu4_2_bm> .gong_control> div:nth-child(1),
 .menu4_2_bm> .gong_control> div:nth-child(4) {
     background: none; border: none;
-    font-size: 18px; color: #898989;
+    font-size: 28px; color: #898989;
 }
 
 /* 목록으로 버튼 */
