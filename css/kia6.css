@@ -71,7 +71,7 @@ header> div img {width: 100%;}
 }
 .join_box> div> ul {
     width: 100%; height: 140px;
-    border: 1px solid #ccc;
+    border: 1px solid #ccc; position: relative;
 }
 .join_box> div> ul:nth-child(2) {margin-top: 5px;}
 .join_box> div> ul> li {width: 100%;}
@@ -80,8 +80,10 @@ header> div img {width: 100%;}
     text-indent: 10px; line-height: 40px;
     font-size: 14px; font-weight: bold;
 }
-.join_box> div> ul:nth-child(1)> li:nth-child(1)> input {margin-left: 480px;}
-.join_box> div> ul:nth-child(2)> li:nth-child(1)> input {margin-left: 455px;}
+.join_box> div> ul:nth-child(1)> li:nth-child(1)> input,
+.join_box> div> ul:nth-child(2)> li:nth-child(1)> input {
+    margin-left: 0; position: absolute; top: 10%; right: 10px;
+}
 
 .join_box> div> ul> .member_terms1,
 .join_box> div> ul> .member_terms2 {
@@ -98,10 +100,10 @@ header> div img {width: 100%;}
 .join_box> div> .allcheck {
     width: 100%; height: 50px;
     margin-top: 15px; font-weight: bold;
-    text-indent: 10px; font-size: 14px;
+    text-indent: 10px; font-size: 14px; position: relative; top: 0;
 }
 .join_box> div> .allcheck> #terms3 {
-    margin-left: 560px;
+    position: absolute; top: 5%; right: 10px;
 }
 
 .join_textbox {
