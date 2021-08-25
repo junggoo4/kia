@@ -417,11 +417,11 @@ header> .topdown {display: none;}
 
 /* 목록으로 버튼 */
 .menu4_1_bm> .news_bm_btn {
-    width: 150px; height: 40px;
-    position: relative; top: 50px; left: 50%; margin-bottom: 50px;
+    width: 120px; height: 30px;
+    position: relative; top: 30px; left: 50%; margin-bottom: 50px;
     transform: translateX(-50%); background: #05141f; color: white;
-    border-radius: 20px; cursor: pointer;
-    text-align: center; line-height: 40px; font-weight: bold;
+    border-radius: 20px; cursor: pointer; font-size: 4vw;
+    text-align: center; line-height: 30px; font-weight: bold;
 }
 /* ============================= NEWS 끝 =============================== */
 
