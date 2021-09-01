@@ -1,4 +1,4 @@
-/* 메인화면 테블릿 스타일시트 */
+/* 메인화면 모바일-테블릿 스타일시트 */
 
 * {margin: 0; padding: 0; list-style: none; box-sizing: border-box;}
 a {text-decoration: none; color: #000;}
@@ -17,7 +17,7 @@ header {
 header> .head1_m {
     display: block;
     width: 100%; height: 100%;
-    position: relative; top: 0; left: 0; margin: auto;
+    position: relative;
 }
 header> .head1_m> li {
     float: left; height: 100%; color: white;
@@ -158,316 +158,265 @@ header> .head1 {display: none;}
 header> .topdown {display: none;}
 /* ============================ header 끝 =============================== */
 
-
 /* ============================ 메인화면 시작 =============================== */
 /* 메인 이미지 */
 .main_big_slide {
-    width: 100%; height: 60vw;
+    width: 100%; height: 151vw;
     position: relative; top: -60px; left: 0;
-    margin: auto;
+    margin: auto; overflow: hidden;
 }
-.main_big_slide> div {
-    width: 100%; height: 100%;
-    position: absolute; top: 0; left: 0; overflow: hidden;
+.main_big_slide> div:nth-child(1) {
+    width: 100%; 
+    position: absolute; top: 0; left: 0;
 }
 .main_big_slide> div> .main_bigimg {
-    width: 500%; height: 100%;
-    position: absolute; top: 0; left: 0;
+    width: 500%; overflow: hidden;
+    position: absolute; top: 0; left: 0; 
 }
 .main_big_slide> div> .main_bigimg> li {
     width: 20%; height: 100%;
-    float: left;
+    float: left; position: relative;
 }
 
-.main_big_slide> div> .main_bigimg> li> .bigtext_m {display: none;}
-.main_big_slide> div> .main_bigimg> li> .bigtext {
-    width: 100%; height: 60px; display: block;
-    position: relative; top: -42vw; left: 0; z-index: 50;
+.main_big_slide> div> .main_bigimg> li> .bigimg {display: none;}
+.main_big_slide> div> .main_bigimg> li> .bigimg_m {
+    display: block; margin-top: -80px;
 }
-.main_big_slide> div> .main_bigimg> li> .bigtext> p {
-    text-align: center; line-height: 30px;
-    width: 100%; height: 30px;
-    border: 0px solid white; color: white; 
-    font-size: 20px; text-shadow: 2px -2px 2px #05141f;
+.main_big_slide> div> .main_bigimg> li> .bigimg_m img {width: 100%;}
+
+
+.main_big_slide> div> .main_bigimg> li> .bigtext {display: none;}
+.main_big_slide> div> .main_bigimg> li> .bigtext_m {
+    width: 100%; display: block;
+    position: absolute; top: 25vw; left: 0; z-index: 50; 
 }
-.main_big_slide> div> .main_bigimg> li:nth-child(3)> .bigtext> p,
-.main_big_slide> div> .main_bigimg> li:nth-child(4)> .bigtext> p,
-.main_big_slide> div> .main_bigimg> li:nth-child(5)> .bigtext> p {
+.main_big_slide> div> .main_bigimg> li> .bigtext_m> p {
+    text-align: center; line-height: 3.5vh;
+    width: 100%; color: white; 
+    font-size: 24px; text-shadow: 2px -2px 2px #05141f;
+}
+.main_big_slide> div> .main_bigimg> li:nth-child(3)> .bigtext_m> p,
+.main_big_slide> div> .main_bigimg> li:nth-child(4)> .bigtext_m> p,
+.main_big_slide> div> .main_bigimg> li:nth-child(5)> .bigtext_m> p {
     color: #05141f; text-shadow: 2px -2px 2px #ccc;
 }
-.main_big_slide> div> .main_bigimg> li> .bigimg_m {display: none;}
-.main_big_slide> div> .main_bigimg> li> .bigimg {
-    width: 100%; height: auto;
-}
-.main_big_slide> div> .main_bigimg> li img {width: 100%; height: auto;}
 
 .main_big_slide> .back_color {
-    width: 100%; height: 200px;
+    width: 100%; height: 280px;
     background: -webkit-linear-gradient(top, rgba(5, 20, 31, 0.8) 0%,rgba(255,255,255,0) 100%);
     position: relative; top: 0; left: 0;
 }
 
-.main_big_slide> .m_bigimg_btn {display: none;}
-.main_big_slide> .bigimg_btn {
+.main_big_slide> .bigimg_btn {display: none;}
+.main_big_slide> .m_bigimg_btn {
     display: block;
-    position: absolute; top: 42vw; left: 50%;
+    position: absolute; top: 120vw; left: 50%;
     transform: translateX(-50%);
+    width: 150px; height: 12px;
+    display: flex; justify-content: space-around;
 }
-.main_big_slide> .bigimg_btn> li  {
+.main_big_slide> .m_bigimg_btn> li  {
     float: left;
-    width: 15px; height: 15px; 
+    width: 12px; height: 12px; 
     border: 1px solid #ccc;
     border-radius: 50%; background: white;
-    margin-left: 10px; margin-right: 10px;
     cursor: pointer; transition: all 0.5s; transform-origin: center;
 }
-.main_big_slide> .bigimg_btn> li:nth-child(1) {
-    background: #05141f; width: 70px; 
+.main_big_slide> .m_bigimg_btn> li:nth-child(1) {
+    background: #05141f; width: 50px; 
     border-radius: 10px; border: 1px solid white;
 }
 
-.main_big_slide> .bigimg_prev,
-.main_big_slide> .bigimg_next {display: none;}
+.main_big_slide> .bigimg_prev {display: none;}
+.main_big_slide> .bigimg_next {display: none;} 
 
 
 /* nav */
 nav {
-    width: 100%; height: 130px;
+    width: 100%; height: 27vw;
     position: absolute;
-    top: 46vw; left: 0; margin: auto;
+    top: 128vw; left: 0;
 }
 nav> ul {
-    width: 450px; height: 100%;
-    position: absolute; top: 0; left: 50%;
-    transform: translateX(-50%);
+    width: 95%; height: 100%;
+    position: relative; top: 0; left: 50%;
 }
 nav> ul> li {
     float: left;
-    width: 150px; height: 100%;
+    width: 33.33%; height: 100%;
     text-align: center; cursor: pointer;
-    background: white;
+    background: white; position: relative; top: 0; left: 0;
     box-shadow: 0px 10px 8px #ccc;
 }
-nav> ul> li:nth-child(1), 
-nav> ul> li:nth-child(2) {border-right: 1px solid #ccc;}
 nav> ul> li:hover {background: #05141f; transition: all 0.5s;}
 nav> ul> li:hover a {color: white;}
-nav> ul> li> a> p:first-child {font-size: 25px; margin-top: 33px;}
-nav> ul> li> a> p:last-child {font-size: 13px; margin-top: 7px;}
+nav> ul> li> a> p:first-child {
+    width: 50px; height: 30px; margin-top: 0;
+    font-size: 4.5vw; position: absolute; top: 30%; left: 50%;
+    transform: translateY(-50%); transform: translateX(-50%);
+}
+nav> ul> li> a> p:last-child {
+    width: 130px; height: 30px; margin-top: 0;
+    font-size: 15px; position: absolute; top: 57%; left: 50%;
+    transform: translateY(-50%); transform: translateX(-50%);
+}
+
 
 
 /* 메인화면 BEST KIA 슬라이드 이미지 */
 .main_img_slide {
-    width: 100%; height: 45vw;
+    width: 100%; height: 55vh;
     position: relative;
-    top: 0; left: 0; margin: auto;
+    top: 5vh; left: 0; margin: auto;
     overflow: hidden;
 }
 .main_img_slide> div:nth-child(1) {
-    width: 100%; height: 50px; margin-top: 30px;
+    width: 100%; height: 50px;
     text-align: center; line-height: 50px;
-    font-size: 30px; font-weight: bold;
+    font-size: 3.8vh; font-weight: bold;
 }
 .main_img_slide> .slide_img {
-    width: 100%; height: 45vw;
-    border: 0px solid black;
-    position: relative; top: -30px;
-    margin: 50px auto; overflow: hidden;
+    width: 100%; height: 335px;
+    position: relative; top: 0;
+    margin: 30px auto; overflow: hidden;
 }
-.main_img_slide> .slide_img> .m_slide_img_6 {display: none;}
-.main_img_slide> .slide_img> .slide_img_6 {
+
+.main_img_slide> .slide_img> .slide_img_6 {display: none;}
+.main_img_slide> .slide_img> .m_slide_img_6 {
     display: block;
-    width: 270%; height: 100%;
+    width: 600%; height: 210px;
     position: relative; top: 0; left: 0;
-    opacity: 1; transform: translate3d(-17.5vw, 0px, 0px);
+    opacity: 1; transform: translate3d(-16.5%, 0px, 0px);
+   
 }
-.main_img_slide> .slide_img> .slide_img_6> li {
+.main_img_slide> .slide_img> .m_slide_img_6> li {
     float: left; width: 10%;
 }
-.main_img_slide> .slide_img> .slide_img_6> li:nth-child(3)> a> .img {
-    transform: scale(1.3); transition: all 0.5s; opacity: 1;
+.main_img_slide> .slide_img> .m_slide_img_6> li> a> .img {
+    width: 95%; transition: all 0.5s; opacity: 0.3; overflow: hidden;
 }
-.main_img_slide> .slide_img> .slide_img_6> li:nth-child(1), 
-.main_img_slide> .slide_img> .slide_img_6> li:nth-child(5),
-.main_img_slide> .slide_img> .slide_img_6> li:nth-child(6) {
-    opacity: 0.3;
+.main_img_slide> .slide_img> .m_slide_img_6> li:nth-child(3)> a> .img {
+    transform: scale(1.5); transition: all 0.5s; opacity: 1;
 }
-.main_img_slide> .slide_img> .slide_img_6> li> a> .img {
-    width: 100%; overflow: hidden; transition: all 0.2s;
-}
-.main_img_slide> .slide_img> .slide_img_6> li> a> .img img {width: 100%;}
-.main_img_slide> .slide_img> .slide_img_6> li> a> .name {
-    font-size: 18px; font-weight: bold; text-align: center;
+.main_img_slide> .slide_img> .m_slide_img_6> li> a> .img img {width: 100%;}
+.main_img_slide> .slide_img> .m_slide_img_6> li> a> .name {
+    font-size: 17px; font-weight: bold; text-align: center;
     position: relative; top: 20px; left: 0; color: #05141f;
-    width: 100%;
+    width: 100%; opacity: 0; 
 }
-.main_img_slide> .slide_img> .slide_img_6> li> a> .text {
-    font-size: 13.5px; text-align: center;
-    position: relative; top: 20px; left: 5%;
-    color: #292929; width: 90%;
+.main_img_slide> .slide_img> .m_slide_img_6> li:nth-child(3)> a> .name {
+    opacity: 1;
 }
-.main_img_slide> .main_arrow {
-    width: 1903px; height: 50px;
-    position: relative; top: -370px; left: 0; 
-    margin: auto;
+.main_img_slide> .slide_img> .m_slide_img_6> li> a> .text {
+    font-size: 11.5px; text-align: center;
+    position: relative; top: 20px; left: -15%;
+    color: #292929; width: 130%; opacity: 0;
 }
-.main_img_slide> .main_arrow> li {
-    font-size: 32px; text-align: center;
-    float: left; width: 50px; height: 100%;
-    cursor: pointer;
+.main_img_slide> .slide_img> .m_slide_img_6> li:nth-child(3)> a> .text {
+    opacity: 1;
 }
-.main_img_slide> .main_arrow> .main_prev,
-.main_img_slide> .main_arrow> .main_next {display: none;}
+.main_img_slide> .main_arrow {display: none;}
 
 
 /* 메인화면 event kia 배너 */
 .main_event {
-    width: 100%; height: 400px;
-    position: relative; top: 50px; left: 0;
+    width: 100%; height: 450px;
+    position: relative; top: 5vw; left: 0;
     margin: auto;
 }
-.main_event> .event_kia {
-    width: 45vw; height: 100%;
-    position: absolute; top: 0; left: 4%;
-}
-.main_event> .event_kia> p:first-child {
-    width: 100%; 
-    font-size: 30px; font-weight: bold;
-}
-
-.main_event> .event_kia> .event_img_5 {
-    width: 100%; height: auto;
-    position: absolute; top: 50px; left: 0;
-}
-.main_event> .event_kia> .event_img_5> .event_img {
-    width: 100%; height: 210px;
-    position: absolute; top: 0; left: 0;
-    float: left; display: none;
-}
-.main_event> .event_kia> .event_img_5> .event_img> a> div {
-    width: 100%; height: 208px;
-    box-shadow: none; cursor: pointer;
-}
-.main_event> .event_kia> .event_img_5> .event_img> a> div img {width: 100%;}
-
-.main_event> .event_kia> .event_img_5> .event_img1> a> p {display: block;}
-.main_event> .event_kia> .event_img_5> .event_img> a> p:nth-child(2) {
-    margin-top: 0; margin-left: 10px; cursor: pointer;
-    font-size: 16px; font-weight: bold;
-    position: absolute; top: 28vw; left: 0;
-}
-.main_event> .event_kia> .event_img_5> .event_img> a> p:nth-child(3) {
-    margin-left: 10px; position: absolute; top: 31vw; left: 0;
-    font-size: 14px; color: #898989; 
-}
-
-.main_event> .event_kia> .event_prev {
-    width: 40px; height: 40px; 
-    position: absolute; top: 36%; left: 1%; 
-    border: none; background: none; color: lightslategrey;
-    font-size: 30px; text-align: center; cursor: pointer;
-}
-.main_event> .event_kia> .event_next {
-    width: 40px; height: 50px; 
-    position: absolute; top: 35%; right: 1%; 
-    border: none; background: none; color: lightslategrey;
-    font-size: 30px; text-align: center; cursor: pointer;
-}
+.main_event> .event_kia {display: none;}
 
 
 /* 메인화면 notice 공지사항 */
 .notice {
-    width: 45vw; height: 100%;
-    position: absolute; top: 0; left: 51%;
+    width: 90%; height: 360px;
+    position: absolute; top: 5vw; left: 5%;
 }
 .notice> p:nth-child(1) {
     width: 100%;
-    font-size: 30px; font-weight: bold;
+    font-size: 3vh; font-weight: bold;
 }
 .notice> .notice_box {
-    width: 100%; height: 520px;
-    position: absolute; top: 50px; left: 0; 
+    width: 100%; height: 320px;
+    position: absolute; top: 5vh; left: 0; 
 }
 .notice> .notice_box> li {
-    float: left; position: relative;
-    width: 50%; height: 130px;
+    float: left;
+    width: 100%; height: 80px;
+    padding: 20px 15px; cursor: pointer;
     border-top: 1px solid #ccc;
     border-left: 1px solid #ccc;
-    padding: 10px; cursor: pointer;
+    border-right: 1px solid #ccc;
 }
-.notice> .notice_box> li:nth-child(2),
-.notice> .notice_box> li:nth-child(4) {border-right: 1px solid #ccc;}
-.notice> .notice_box> li:nth-child(3),
+
+.notice> .notice_box> li:nth-child(3) {border-bottom: none;}
 .notice> .notice_box> li:nth-child(4) {border-bottom: 1px solid #ccc;}
-.notice> .notice_box> li:hover {background: #05141f;}
-.notice> .notice_box> li:hover a {color: white;}
-.notice> .notice_box> li> a> p:nth-child(1) {
-    font-size: 12px; font-weight: bold;
+.notice> .notice_box> li:hover a {
+    background: #05141f; color: white;
+}
+.notice> .notice_box> li>a>  p {float: left;}
+.notice> .notice_box> li>a>  p:nth-child(1) {
+    font-size: 1.8vh; font-weight: bold; width: 70%; height: 100%;
 }
 .notice> .notice_box> li> a> p:nth-child(2) {
-    margin-top: 0; float: left; font-size: 12px;
-    position: absolute; bottom: 10px;
+    height: 100%; line-height: 30px; float: auto;
+    margin-top: 0; margin-left: 0; float: left; 
+    font-size: 1.7vh; color: #898989; text-align: right;
+    width: 25%; position: relative; right: -10px; top: 0;
 }
-.notice> .notice_box> li> a> p:nth-child(3) {
-    display: none; display: none;
-    font-size: 30px; color: white;
-    margin-top: 78px; margin-left: 0;
-}
+.notice> .notice_box> li> a> p:nth-child(3) {display: none;}
 
 
 /* 메인화면 KIA NEWS 뉴스 */
 .main_news {
-    width: 100%; height: 50vw;
-    position: relative; top: 7vw; left: 0;
+    width: 90%; height: 60vh;
+    position: relative; top: 50px; left: 0;
     margin: auto; overflow: hidden;
 }
 .main_news> p:nth-child(1) {
-    width: 100%; 
-    font-size: 30px; font-weight: bold;
-    margin-left: 4%;
+    width: 100%; text-align: left;
+    font-size: 3vh; font-weight: bold; margin-left: 0;
 }
-
-.main_news> .news_btn {
-    width: 200px; height: 20px; display: none;
-    position: absolute; top: 30px; left: 0;
-}
+.main_news> .news_btn {display: none;}
 
 .main_news> .news_box {
-    width: 92%; height: 140px;
-    position: relative; top: 20px; left: -15px;
+    width: 104%; height: 37vw;
+    position: relative; top: 10px; left: -2%;
     margin: auto; overflow: hidden;
 }
 .main_news> .news_box> .news_img_6 {
-    width: 1500px; height: 100%;
+    width: 600%; overflow: hidden;
     position: absolute; top: 0; left: 0;
 }
 .main_news> .news_box> .news_img_6> li {
     float: left; cursor: pointer;
-    width: 250px; height: 100%; margin-left: 15px;
+    width: 12%; height: 100%; margin-left: 15px;
+    border: none;
 }
 .main_news> .news_box> .news_img_6> li img {
     width: 100%; border: 1px solid #ccc;
 }
 
 .main_news> .news_box2 {
-    width: 92%; height: 90px;
-    position: relative; top: 30px; left: -15px;
+    width: 98%; height: 90px;
+    position: relative; top: 15px; left: -2%;
     margin: auto; overflow: hidden;
 }
 .main_news> .news_box2> .news_text_6 {
-    width: 1500px; height: 100%;
+    width: 600%; height: 100%;
     position: absolute; top: 0; left: 0;
 }
 .main_news> .news_box2> .news_text_6> li {
-    float: left; width: 250px; height: 100%; 
+    float: left; width: 400px; height: 100%; 
     cursor: pointer; margin-left: 15px;
-} 
+}
+.main_news> .news_box2> .news_text_6> li:nth-child(2) {opacity: 0;}
 .main_news> .news_box2> .news_text_6> li> p:nth-child(1) {
-    font-size: 14px; color: #898989;
+    font-size: 1.7vh; color: #898989;
 }
 .main_news> .news_box2> .news_text_6> li> p:nth-child(2) {
-    font-size: 16px; font-weight: bold; 
-    margin-top: 5px;
+    font-size: 2vh; font-weight: bold; 
+    margin-top: 5px; 
 }
 /* ============================ 메인화면 끝 =============================== */
 
@@ -534,6 +483,9 @@ footer> div> .f_btn> p {
     cursor: pointer;
 }
 footer> div> .f_btn> p:nth-child(1) {margin-left: 0px;}
+footer> div> .f_btn> p:nth-child(3) {width: 55%;}
+footer> div> .f_btn> p:nth-child(4) {display: none;}
+footer> div> .f_btn> p:nth-child(5) {margin-left: -1px;}
 footer> div> .f_btn> p:hover {text-decoration: underline;}
 footer> div> .f_btn> p:nth-child(2):hover, 
 footer> div> .f_btn> p:nth-child(4):hover, 

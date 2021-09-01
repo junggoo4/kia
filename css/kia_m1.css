@@ -163,7 +163,7 @@ header> .topdown {display: none;}
 .main_big_slide {
     width: 100%; height: 170vw;
     position: relative; top: -60px; left: 0;
-    margin: auto; overflow: hidden;
+    margin: auto; overflow: hidden; 
 }
 .main_big_slide> div:nth-child(1) {
     width: 100%; 
@@ -233,7 +233,7 @@ header> .topdown {display: none;}
 
 /* nav */
 nav {
-    width: 100%; height: 130px;
+    width: 100%; height: 26vw;
     position: absolute;
     top: 127vw; left: 0;
 }
@@ -252,7 +252,7 @@ nav> ul> li:hover {background: #05141f; transition: all 0.5s;}
 nav> ul> li:hover a {color: white;}
 nav> ul> li> a> p:first-child {
     width: 50px; height: 30px; margin-top: 0;
-    font-size: 23px; position: absolute; top: 30%; left: 50%;
+    font-size: 23px; position: absolute; top: 23%; left: 50%;
     transform: translateY(-50%); transform: translateX(-50%);
 }
 nav> ul> li> a> p:last-child {
@@ -265,9 +265,9 @@ nav> ul> li> a> p:last-child {
 
 /* 메인화면 BEST KIA 슬라이드 이미지 */
 .main_img_slide {
-    width: 100%; height: 320px;
+    width: 100%; height: 280px;
     position: relative;
-    top: -5vh; left: 0; margin: auto;
+    top: -10vh; left: 0; margin: auto;
     overflow: hidden;
 }
 .main_img_slide> div:nth-child(1) {
@@ -277,7 +277,7 @@ nav> ul> li> a> p:last-child {
 }
 .main_img_slide> .slide_img {
     width: 100%; height: 250px;
-    position: relative; top: 10px;
+    position: relative; top: -20px;
     margin: 30px auto; overflow: hidden;
 }
 
@@ -321,7 +321,7 @@ nav> ul> li> a> p:last-child {
 /* 메인화면 event kia 배너 */
 .main_event {
     width: 100%; height: 350px;
-    position: relative; top: 0; left: 0;
+    position: relative; top: -10vw; left: 0;
     margin: auto;
 }
 .main_event> .event_kia {display: none;}
@@ -367,8 +367,8 @@ nav> ul> li> a> p:last-child {
 
 /* 메인화면 KIA NEWS 뉴스 */
 .main_news {
-    width: 90%; height: 350px;
-    position: relative; top: 10vh; left: 0;
+    width: 90%; height: 45vh;
+    position: relative; top: 5vw; left: 0;
     margin: auto; overflow: hidden;
 }
 .main_news> p:nth-child(1) {
@@ -378,7 +378,7 @@ nav> ul> li> a> p:last-child {
 .main_news> .news_btn {display: none;}
 
 .main_news> .news_box {
-    width: 104%; height: 24vh;
+    width: 104%; height: 37vw;
     position: relative; top: 3px; left: -4%;
     margin: auto; overflow: hidden;
 }
@@ -397,7 +397,7 @@ nav> ul> li> a> p:last-child {
 
 .main_news> .news_box2 {
     width: 104%; height: 90px;
-    position: relative; top: -10px; left: -4%;
+    position: relative; top: 15px; left: -4%;
     margin: auto; overflow: hidden;
 }
 .main_news> .news_box2> .news_text_6 {
