@@ -278,7 +278,7 @@ nav> ul> li> a> p:last-child {
 .main_img_slide> .slide_img {
     width: 100%; height: 250px;
     position: relative; top: 10px;
-    margin: 30px auto; overflow: auto;
+    margin: 30px auto; overflow: hidden;
 }
 
 .main_img_slide> .slide_img> .slide_img_6 {display: none;}
@@ -293,7 +293,7 @@ nav> ul> li> a> p:last-child {
     float: left; width: 10%;
 }
 .main_img_slide> .slide_img> .m_slide_img_6> li> a> .img {
-    width: 95%; transition: all 0.5s; opacity: 0.3; overflow: auto;
+    width: 95%; transition: all 0.5s; opacity: 0.3; overflow: hidden;
 }
 .main_img_slide> .slide_img> .m_slide_img_6> li:nth-child(3)> a> .img {
     transform: scale(1.5); transition: all 0.5s; opacity: 1;
