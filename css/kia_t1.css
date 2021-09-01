@@ -382,7 +382,7 @@ nav> ul> li> a> p:last-child {
 .main_news> .news_box {
     width: 104%; height: 37vw;
     position: relative; top: 10px; left: -2%;
-    margin: auto;
+    margin: auto; overflow: hidden;
 }
 .main_news> .news_box> .news_img_6 {
     width: 600%; overflow: hidden;

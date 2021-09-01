@@ -256,7 +256,7 @@ nav> ul> li> a> p:first-child {
     transform: translateY(-50%); transform: translateX(-50%);
 }
 nav> ul> li> a> p:last-child {
-    width: 200px; height: 30px; margin-top: 0;
+    width: 100px; height: 30px; margin-top: 0;
     font-size: 12px; position: absolute; top: 57%; left: 50%;
     transform: translateY(-50%); transform: translateX(-50%);
 }
@@ -380,7 +380,7 @@ nav> ul> li> a> p:last-child {
 .main_news> .news_box {
     width: 104%; height: 24vh;
     position: relative; top: 3px; left: -4%;
-    margin: auto;
+    margin: auto; overflow: hidden;
 }
 .main_news> .news_box> .news_img_6 {
     width: 600%; height: 154px; overflow: hidden;
