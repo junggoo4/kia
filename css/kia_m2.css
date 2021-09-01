@@ -778,7 +778,8 @@ header> .topdown {display: none;}
     transform: translateX(-50%);
 }
 .morning_1> .at10> div:nth-child(4)> div:nth-child(3) img {width: 100%;}
-.morning_1> .at10> div:nth-child(4)> .mor_at10_img {display: none;}
+.morning_1> .at10> div:nth-child(4)> .mor_at10_img,
+.morning_1> .at10> div:nth-child(4)> .mor_at10_img_t {display: none;}
 
 
 /* ((((( 모닝 제원 ))))) */

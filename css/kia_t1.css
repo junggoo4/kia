@@ -1,4 +1,4 @@
-/* 메인화면 모바일 스타일시트 */
+/* 메인화면 모바일-테블릿 스타일시트 */
 
 * {margin: 0; padding: 0; list-style: none; box-sizing: border-box;}
 a {text-decoration: none; color: #000;}
@@ -161,7 +161,7 @@ header> .topdown {display: none;}
 /* ============================ 메인화면 시작 =============================== */
 /* 메인 이미지 */
 .main_big_slide {
-    width: 100%; height: 170vw;
+    width: 100%; height: 151vw;
     position: relative; top: -60px; left: 0;
     margin: auto; overflow: hidden;
 }
@@ -193,7 +193,7 @@ header> .topdown {display: none;}
 .main_big_slide> div> .main_bigimg> li> .bigtext_m> p {
     text-align: center; line-height: 3.5vh;
     width: 100%; color: white; 
-    font-size: 18px; text-shadow: 2px -2px 2px #05141f;
+    font-size: 24px; text-shadow: 2px -2px 2px #05141f;
 }
 .main_big_slide> div> .main_bigimg> li:nth-child(3)> .bigtext_m> p,
 .main_big_slide> div> .main_bigimg> li:nth-child(4)> .bigtext_m> p,
@@ -233,9 +233,9 @@ header> .topdown {display: none;}
 
 /* nav */
 nav {
-    width: 100%; height: 130px;
+    width: 100%; height: 27vw;
     position: absolute;
-    top: 127vw; left: 0;
+    top: 128vw; left: 0;
 }
 nav> ul {
     width: 95%; height: 100%;
@@ -252,12 +252,12 @@ nav> ul> li:hover {background: #05141f; transition: all 0.5s;}
 nav> ul> li:hover a {color: white;}
 nav> ul> li> a> p:first-child {
     width: 50px; height: 30px; margin-top: 0;
-    font-size: 23px; position: absolute; top: 30%; left: 50%;
+    font-size: 4.5vw; position: absolute; top: 30%; left: 50%;
     transform: translateY(-50%); transform: translateX(-50%);
 }
 nav> ul> li> a> p:last-child {
     width: 200px; height: 30px; margin-top: 0;
-    font-size: 12px; position: absolute; top: 57%; left: 50%;
+    font-size: 15px; position: absolute; top: 57%; left: 50%;
     transform: translateY(-50%); transform: translateX(-50%);
 }
 
@@ -265,20 +265,20 @@ nav> ul> li> a> p:last-child {
 
 /* 메인화면 BEST KIA 슬라이드 이미지 */
 .main_img_slide {
-    width: 100%; height: 320px;
+    width: 100%; height: 55vh;
     position: relative;
-    top: -5vh; left: 0; margin: auto;
+    top: 5vh; left: 0; margin: auto;
     overflow: hidden;
 }
 .main_img_slide> div:nth-child(1) {
     width: 100%; height: 50px;
     text-align: center; line-height: 50px;
-    font-size: 26px; font-weight: bold;
+    font-size: 3.8vh; font-weight: bold;
 }
 .main_img_slide> .slide_img {
-    width: 100%; height: 250px;
+    width: 100%; height: 335px;
     position: relative; top: 10px;
-    margin: 30px auto; overflow: auto;
+    margin: 30px auto; overflow: hidden;
 }
 
 .main_img_slide> .slide_img> .slide_img_6 {display: none;}
@@ -293,7 +293,7 @@ nav> ul> li> a> p:last-child {
     float: left; width: 10%;
 }
 .main_img_slide> .slide_img> .m_slide_img_6> li> a> .img {
-    width: 95%; transition: all 0.5s; opacity: 0.3; overflow: auto;
+    width: 95%; transition: all 0.5s; opacity: 0.3; overflow: hidden;
 }
 .main_img_slide> .slide_img> .m_slide_img_6> li:nth-child(3)> a> .img {
     transform: scale(1.5); transition: all 0.5s; opacity: 1;
@@ -302,7 +302,7 @@ nav> ul> li> a> p:last-child {
 .main_img_slide> .slide_img> .m_slide_img_6> li> a> .name {
     font-size: 17px; font-weight: bold; text-align: center;
     position: relative; top: 20px; left: 0; color: #05141f;
-    width: 100%; opacity: 0;
+    width: 100%; opacity: 0; 
 }
 .main_img_slide> .slide_img> .m_slide_img_6> li:nth-child(3)> a> .name {
     opacity: 1;
@@ -320,8 +320,8 @@ nav> ul> li> a> p:last-child {
 
 /* 메인화면 event kia 배너 */
 .main_event {
-    width: 100%; height: 350px;
-    position: relative; top: 0; left: 0;
+    width: 100%; height: 450px;
+    position: relative; top: 5vw; left: 0;
     margin: auto;
 }
 .main_event> .event_kia {display: none;}
@@ -329,21 +329,21 @@ nav> ul> li> a> p:last-child {
 
 /* 메인화면 notice 공지사항 */
 .notice {
-    width: 90%;
-    position: absolute; top: 0; left: 5%;
+    width: 90%; height: 360px;
+    position: absolute; top: 5vw; left: 5%;
 }
 .notice> p:nth-child(1) {
     width: 100%;
-    font-size: 26px; font-weight: bold;
+    font-size: 3vh; font-weight: bold;
 }
 .notice> .notice_box {
     width: 100%; height: 320px;
-    position: absolute; top: 35px; left: 0; 
+    position: absolute; top: 5vh; left: 0; 
 }
 .notice> .notice_box> li {
     float: left;
     width: 100%; height: 80px;
-    padding: 20px 10px; cursor: pointer;
+    padding: 23px 15px; cursor: pointer;
     border-top: 1px solid #ccc;
     border-left: 1px solid #ccc;
     border-right: 1px solid #ccc;
@@ -354,36 +354,38 @@ nav> ul> li> a> p:last-child {
 .notice> .notice_box> li:hover a {
     background: #05141f; color: white;
 }
+.notice> .notice_box> li>a>  p {float: left;}
 .notice> .notice_box> li>a>  p:nth-child(1) {
-    font-size: 12.5px; font-weight: bold; width: 70%;
+    font-size: 2vh; font-weight: bold; width: 70%; height: 100%;
 }
 .notice> .notice_box> li> a> p:nth-child(2) {
-    margin-top: -10%; margin-left: 75%; float: auto; 
-    font-size: 11.5px; color: #898989; text-align: center;
-    width: 25%;
+    height: 100%; line-height: 30px; float: auto;
+    margin-top: 0; margin-left: 0; float: left; 
+    font-size: 1.7vh; color: #898989; text-align: right;
+    width: 25%; position: relative; right: -10px; top: 0;
 }
 .notice> .notice_box> li> a> p:nth-child(3) {display: none;}
 
 
 /* 메인화면 KIA NEWS 뉴스 */
 .main_news {
-    width: 90%; height: 350px;
-    position: relative; top: 10vh; left: 0;
+    width: 90%; height: 60vh;
+    position: relative; top: 50px; left: 0;
     margin: auto; overflow: hidden;
 }
 .main_news> p:nth-child(1) {
     width: 100%; text-align: left;
-    font-size: 26px; font-weight: bold; margin-left: 0;
+    font-size: 3vh; font-weight: bold; margin-left: 0;
 }
 .main_news> .news_btn {display: none;}
 
 .main_news> .news_box {
-    width: 104%; height: 24vh;
-    position: relative; top: 3px; left: -4%;
+    width: 104%; height: 37vw;
+    position: relative; top: 10px; left: -2%;
     margin: auto;
 }
 .main_news> .news_box> .news_img_6 {
-    width: 600%; height: 154px; overflow: hidden;
+    width: 600%; overflow: hidden;
     position: absolute; top: 0; left: 0;
 }
 .main_news> .news_box> .news_img_6> li {
@@ -397,7 +399,7 @@ nav> ul> li> a> p:last-child {
 
 .main_news> .news_box2 {
     width: 104%; height: 90px;
-    position: relative; top: -10px; left: -4%;
+    position: relative; top: 15px; left: -2%;
     margin: auto; overflow: hidden;
 }
 .main_news> .news_box2> .news_text_6 {
@@ -408,8 +410,9 @@ nav> ul> li> a> p:last-child {
     float: left; width: 400px; height: 100%; 
     cursor: pointer; margin-left: 15px;
 }
+.main_news> .news_box2> .news_text_6> li:nth-child(2) {opacity: 0;}
 .main_news> .news_box2> .news_text_6> li> p:nth-child(1) {
-    font-size: 1.8vh; color: #898989;
+    font-size: 1.7vh; color: #898989;
 }
 .main_news> .news_box2> .news_text_6> li> p:nth-child(2) {
     font-size: 2vh; font-weight: bold; 
@@ -475,12 +478,12 @@ footer> div> .f_btn {
 }
 footer> div> .f_btn> p {
     height: 100%; float: left;
-    color: #ccc; font-size: 3.7vw;
+    color: #ccc; font-size: 16px;
     line-height: 30px; margin-left: 5px;
     cursor: pointer;
 }
 footer> div> .f_btn> p:nth-child(1) {margin-left: 0px;}
-footer> div> .f_btn> p:nth-child(3) {width: 40%;}
+footer> div> .f_btn> p:nth-child(3) {width: 55%;}
 footer> div> .f_btn> p:nth-child(4) {display: none;}
 footer> div> .f_btn> p:nth-child(5) {margin-left: -1px;}
 footer> div> .f_btn> p:hover {text-decoration: underline;}
