@@ -261,6 +261,17 @@ function slide3() {
         $(".news_text_6 > li:first").appendTo(".news_text_6");
         $(".news_text_6").css("left", "+=415px");
     });
+
+    if(matchMedia("screen and (min-width:421px) and (max-width:767px)").matches){
+        $(".news_img_6").stop().animate({"left":"-=70%"}, 400, function() {
+            $(".news_img_6 > li:first").appendTo(".news_img_6");
+            $(".news_img_6").css("left", "+=70%");
+        });
+        $(".news_text_6").stop().animate({"left":"-=70%"}, 400, function() {
+            $(".news_text_6 > li:first").appendTo(".news_text_6");
+            $(".news_text_6").css("left", "+=70%");
+        });
+    }
 };
 
 

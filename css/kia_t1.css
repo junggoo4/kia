@@ -289,6 +289,16 @@ nav> ul> li> a> p:last-child {font-size: 13px; margin-top: 7px;}
 .main_img_slide> .slide_img> .slide_img_6> li:nth-child(1), 
 .main_img_slide> .slide_img> .slide_img_6> li:nth-child(5),
 .main_img_slide> .slide_img> .slide_img_6> li:nth-child(6) {
+    opacity: 1;
+}
+.main_img_slide> .slide_img> .slide_img_6> li:nth-child(1)> a> .img, 
+.main_img_slide> .slide_img> .slide_img_6> li:nth-child(5)> a> .img,
+.main_img_slide> .slide_img> .slide_img_6> li:nth-child(6)> a> .img {
+    opacity: 0.3;
+}
+.main_img_slide> .slide_img> .slide_img_6> li:nth-child(1)> a> p, 
+.main_img_slide> .slide_img> .slide_img_6> li:nth-child(5)> a> p,
+.main_img_slide> .slide_img> .slide_img_6> li:nth-child(6)> a> p {
     opacity: 0.3;
 }
 .main_img_slide> .slide_img> .slide_img_6> li> a> .img {

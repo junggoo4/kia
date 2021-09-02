@@ -367,7 +367,7 @@ nav> ul> li> a> p:last-child {
 
 /* 메인화면 KIA NEWS 뉴스 */
 .main_news {
-    width: 90%; height: 45vh;
+    width: 90%; height: 70vw;
     position: relative; top: 5vw; left: 0;
     margin: auto; overflow: hidden;
 }
