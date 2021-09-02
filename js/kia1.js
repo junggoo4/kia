@@ -230,6 +230,14 @@ function slide2() {
         $(".slide_img_6").stop().animate({"left":"-=210px"}, 300, function() {
             $(".slide_img_6> li:first").appendTo(".slide_img_6");
             $(".slide_img_6").css("left","+=210px");
+            $(".slide_img_6> li> a> .img").css({"opacity":"0.3","transform":"scale(1)"});
+            $(".slide_img_6> li> a> p").css({"opacity":"0.3","transform":"scale(1)"});
+            $(".slide_img_6> li:eq(1)> a> .img").css({"opacity":"1"});
+            $(".slide_img_6> li:eq(1)> a> p").css({"opacity":"1"});
+            $(".slide_img_6> li:eq(3)> a> .img").css({"opacity":"1"});
+            $(".slide_img_6> li:eq(3)> a> p").css({"opacity":"1"});
+            $(".slide_img_6> li:eq(2)> a> .img").css({"opacity":"1", "transform":"scale(1.3)", "transition":"all 0.5s"});
+            $(".slide_img_6> li:eq(2)> a> p").css({"opacity":"1"});
         });
     }
 };
