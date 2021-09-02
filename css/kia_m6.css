@@ -1,4 +1,4 @@
-/* 로그인, 회원가입 스타일시트 */
+/* 로그인, 회원가입 모바일 스타일시트 */
 
 * {margin: 0; padding: 0; list-style: none; box-sizing: border-box;}
 a {text-decoration: none; color: #000;}
@@ -59,7 +59,7 @@ header> div img {width: 100%;}
 }
 .sm_box> p {text-align: center;}
 .sm_box> p:nth-child(1) {font-size: 18px; font-weight: bold; line-height: 60px;}
-.sm_box> p:nth-child(2) {font-size: 3.2vw;}
+.sm_box> p:nth-child(2) {width: 90%; margin-left: 5%; font-size: 12px;}
 
 .join_box {
     width: 100%; height: 360px;
@@ -78,7 +78,7 @@ header> div img {width: 100%;}
 .join_box> div> ul> li:nth-child(1) {
     height: 40px; border-bottom: 1px solid #ccc;
     text-indent: 10px; line-height: 40px;
-    font-size: 3.5vw; font-weight: bold;
+    font-size: 12px; font-weight: bold;
 }
 .join_box> div> ul:nth-child(1)> li:nth-child(1)> input,
 .join_box> div> ul:nth-child(2)> li:nth-child(1)> input {
@@ -100,7 +100,7 @@ header> div img {width: 100%;}
 .join_box> div> .allcheck {
     width: 100%; height: 50px;
     font-weight: bold; margin-top: 0;
-    text-indent: 10px; font-size: 3.5vw; position: relative; top: 10px;
+    text-indent: 10px; font-size: 12px; position: relative; top: 10px;
 }
 .join_box> div> .allcheck> #terms3 {
     position: absolute; top: 5%; right: 5%;
@@ -146,5 +146,5 @@ header> div img {width: 100%;}
     width: 100%; height: 40px;
     background: #05141f; color: white;
     border: none; cursor: pointer;
-    margin-top: 80px; font-size: 3.8vw; font-weight: bold;
+    margin-top: 80px; font-size: 14px; font-weight: bold;
 }

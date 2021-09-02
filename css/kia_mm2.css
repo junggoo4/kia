@@ -1,4 +1,4 @@
-/* 차량 모바일 - 해당메뉴 화면 스타일시트 (header 포함) */
+/* 차량 모바일.테블릿 - 해당메뉴 화면 스타일시트 (header 포함) */
 
 * {margin: 0; padding: 0; list-style: none; box-sizing: border-box;}
 a {text-decoration: none; color: #000;}
@@ -183,9 +183,9 @@ header> .topdown {display: none;}
     font-size: 2.8vh; font-weight: bold;
 }
 .title_mob> ul:nth-child(2) {
-    width: 30%; height: 20px;
+    width: 130px; height: 20px;
     color: white; text-align: center; line-height: 20px;
-    margin-left: 68%; margin-top: 15px;
+    margin-left: 100%; margin-top: 0; position: relative; top: 15px; right: 140px;
 }
 .title_mob> ul:nth-child(2)> li {
     float: left; width: 50%; height: 100%;
@@ -215,9 +215,9 @@ header> .topdown {display: none;}
     background: url(../img2/morning/01.webp) no-repeat center center/cover;
 }
 .morning_1> .at1> div> p:nth-child(1) {
-    position: absolute; top: 50px; left: 7.5%; width: 85%;
-    line-height: 3.5vh; text-align: center;
-    font-size: 5.5vw; font-weight: bold;
+    position: absolute; top: 50px; left: 50%; width: 90%;
+    line-height: 3.5vh; text-align: center; transform: translateX(-50%);
+    font-size: 22px; font-weight: bold;
     color: white; text-shadow: 2px -2px 8px #05141f;
 }
 .morning_1> .at1> div> p:nth-child(2) {display: none;}
@@ -255,26 +255,26 @@ header> .topdown {display: none;}
     position: absolute; top: 50px; left: 0;
 }
 .morning_1> .at2> div> .mor_at2_color {
-    width: 100%;
+    width: 400px;
     position: absolute; top: 0; left: 55%;
     transform: translateX(-50%); display: none;
 }
 .morning_1> .at2> div> .mor_at2_color img {width: 100%;}
 
 .morning_1> .at2> .mor0 {
-    width: 78%; height: 7vw;
+    width: 310px; height: 30px;
     position: absolute; top: 260px; left: 50%;
     transform: translateX(-50%);
 }
 .morning_1> .at2> .mor0> li {
     float: left; cursor: pointer;
-    width: 7vw; height: 100%;
+    width: 30px; height: 100%;
     border: 1px solid #ccc;
     border-radius: 100%;
 }
 .morning_1> .at2> .mor0> li:first-child {
-    text-align: center; line-height: 7vw; width: 50px;
-    font-weight: bold; font-size: 13.5px; border: none;
+    text-align: center; line-height: 30px; width: 50px;
+    font-weight: bold; font-size: 16px; border: none;
 }
 .morning_1> .at2> .mor0> li:nth-child(2) {
     margin-left: 2vw;
@@ -306,34 +306,34 @@ header> .topdown {display: none;}
 }
 
 .morning_1> .at2> .mor_at2_name0 {
-    width: 100%; height: 30px;
-    position: absolute; top: 290px; left: 45%;
+    width: 150px; height: 30px;
+    position: absolute; top: 290px; left: 47%;
     transform: translateX(-50%);
 }
 .morning_1> .at2> .mor_at2_name0> li {
     width: 100%; height: 100%;
-    position: absolute; top: 0; left: 0; font-size: 3.8vw;
-    text-indent: 125px; line-height: 30px;
+    position: absolute; top: 0; left: 0; font-size: 16px;
+    text-indent: 0; line-height: 30px;
     color: #898989; display: none;
 }
 
 
 /* 모닝 - at3 */
-.morning_1> .at3 {height: 610px;}
+.morning_1> .at3 {height: 88vh;}
 .morning_1> .at3> .mor_at3_big {
     width: 100%;
     position: absolute; top: 0; left: 0;
 }
 .morning_1> .at3> .mor_at3_big1 {
-    width: 100%; height: 220px;
+    width: 100%; height: 41vh;
     background: url(../img2/morning/03_01.webp) no-repeat center center/cover;
 }
 .morning_1> .at3> .mor_at3_big2 {
-    width: 100%; height: 220px; display: none;
+    width: 100%; height: 41vh; display: none;
     background: url(../img2/morning/03_02.webp) no-repeat center center/cover;
 }
 .morning_1> .at3> .mor_at3_big3 {
-    width: 100%; height: 220px; display: none;
+    width: 100%; height: 41vh; display: none;
     background: url(../img2/morning/03_03.webp) no-repeat center center/cover;
 }
 
@@ -343,14 +343,14 @@ header> .topdown {display: none;}
     text-shadow: 2px -2px 8px white;
 }
 .morning_1> .at3> p:nth-child(5) {
-    position: absolute; top: 230px; left: 5%; width: 90%;
+    position: absolute; top: 43vh; left: 5%; width: 90%;
     height: 50px; line-height: 3.5vh;
     font-size: 2.3vh; font-weight: bold;
 }
 
 .morning_1> .at3> .mor_at3_btn1_box {
-    width: 45%; height: 40px;
-    position: absolute; top: 170px; left: 50%;
+    width: 180px; height: 40px;
+    position: absolute; top: 34vh; left: 50%;
     transform: translateX(-50%);
     display: flex;
     justify-content: space-evenly;
@@ -378,7 +378,7 @@ header> .topdown {display: none;}
 /* mobile 이미지 */
 .morning_1> .at3> div:nth-child(9) {
     width: 300px; height: 250px; display: block;
-    position: absolute; top: 340px; left: 50%;
+    position: absolute; top: 55vh; left: 50%;
     transform: translateX(-50%); overflow: hidden;
 }
 .morning_1> .at3> div:nth-child(9)> ul {
@@ -399,11 +399,11 @@ header> .topdown {display: none;}
     width: 100%; height: 30px; color: white;
     text-shadow: 2px -2px 10px #05141f;
     text-align: left; line-height: 15px;
-    font-size: 3.2vw; font-weight: bold; padding: 15px 10px;
+    font-size: 14px; font-weight: bold; padding: 15px 10px;
 }
 .morning_1> .at3> .mor_control3 {
     display: block;
-    position: absolute; top: 440px; left: 50%;
+    position: absolute; top: 515px; left: 50%;
     transform: translateX(-50%);
     width: 300px; height: 30px;
     display: flex; justify-content: space-between;
@@ -417,17 +417,17 @@ header> .topdown {display: none;}
 .morning_1> .at3> .mor_control3> li:nth-child(1) {color: #898989;}
 
 /* 모닝 - at4 */
-.morning_1> .at4 {height: 300px;}
+.morning_1> .at4 {height: 52vh;}
 .morning_1> .at4> .mor_at4_big {
     width: 100%;
     position: absolute; top: 0; left: 0;
 }
 .morning_1> .at4> .mor_at4_big1 {
-    width: 100%; height: 220px;
+    width: 100%; height: 41vh;
     background: url(../img2/morning/04_01.webp) no-repeat center center/cover;
 }
 .morning_1> .at4> .mor_at4_big2 {
-    width: 100%; height: 220px; display: none;
+    width: 100%; height: 41vh; display: none;
     background: url(../img2/morning/04_02.webp) no-repeat center center/cover;
 }
 
@@ -437,15 +437,15 @@ header> .topdown {display: none;}
     color: white;
 }
 .morning_1> .at4> p:nth-child(4) {
-    position: absolute; top: 230px; left: 5%; width: 90%;
+    position: absolute; top: 43vh; left: 5%; width: 90%;
     height: 50px; line-height: 3.5vh;
     font-size: 2.3vh; font-weight: bold; color: black;
     text-shadow: none;
 }
 
 .morning_1> .at4> .mor_at4_btn1_box {
-    width: 30%; height: 40px;
-    position: absolute; top: 170px; left: 50%;
+    width: 130px; height: 40px;
+    position: absolute; top: 34vh; left: 50%;
     transform: translateX(-50%);
     display: flex;
     justify-content: space-evenly;
@@ -465,11 +465,11 @@ header> .topdown {display: none;}
 }
 
 /* 모닝 - at5 */
-.morning_1> .at5 {height: 585px;}
+.morning_1> .at5 {height: 85vh;}
 .morning_1> .at5> .mor_at5_big {
-    width: 100%; height: 220px;
+    width: 100%; height: 41vh;
     position: absolute; top: 0; left: 0;
-    background: url(../img2/morning/05_01.webp) no-repeat center top/cover;
+    background: url(../img2/morning/05_01.webp) no-repeat center center/cover;
 }
 
 .morning_1> .at5> p:nth-child(2) {
@@ -478,7 +478,7 @@ header> .topdown {display: none;}
     text-shadow: 2px -2px 3px #05141f; color: white;
 }
 .morning_1> .at5> p:nth-child(3) {
-    position: absolute; top: 230px; left: 5%; width: 90%;
+    position: absolute; top: 43vh; left: 5%; width: 90%;
     height: 50px; line-height: 3.5vh;
     font-size: 2.3vh; font-weight: bold; color: black;
     text-shadow: none;
@@ -490,7 +490,7 @@ header> .topdown {display: none;}
 /* mobile 이미지 */
 .morning_1> .at5> div:nth-child(6) {
     width: 300px; height: 250px; display: block;
-    position: absolute; top: 320px; left: 50%;
+    position: absolute; top: 52vh; left: 50%;
     transform: translateX(-50%); overflow: hidden;
 }
 .morning_1> .at5> div:nth-child(6)> ul {
@@ -511,11 +511,11 @@ header> .topdown {display: none;}
     width: 100%; height: 30px; color: white;
     text-shadow: 2px -2px 10px #05141f;
     text-align: left; line-height: 15px;
-    font-size: 3.2vw; font-weight: bold; padding: 15px 10px;
+    font-size: 14px; font-weight: bold; padding: 15px 10px;
 }
 .morning_1> .at5> .mor_control5 {
     display: block;
-    position: absolute; top: 415px; left: 50%;
+    position: absolute; top: 490px; left: 50%;
     transform: translateX(-50%);
     width: 300px; height: 30px;
     display: flex; justify-content: space-between;
@@ -529,11 +529,11 @@ header> .topdown {display: none;}
 .morning_1> .at5> .mor_control5> li:nth-child(1) {color: #898989;}
 
 /* 모닝 - at6 */
-.morning_1> .at6 {height: 585px;}
+.morning_1> .at6 {height: 85vh;}
 .morning_1> .at6> .mor_at6_big {
-    width: 100%; height: 220px;
+    width: 100%; height: 41vh;
     position: absolute; top: 0; left: 0;
-    background: url(../img2/morning/06_01.webp) no-repeat center top/cover;
+    background: url(../img2/morning/06_01.webp) no-repeat center center/cover;
 }
 
 .morning_1> .at6> p:nth-child(2) {
@@ -542,7 +542,7 @@ header> .topdown {display: none;}
     text-shadow: 2px -2px 3px white; color: black;
 }
 .morning_1> .at6> p:nth-child(3) {
-    position: absolute; top: 230px; left: 5%; width: 90%;
+    position: absolute; top: 43vh; left: 5%; width: 90%;
     height: 50px; line-height: 3.5vh;
     font-size: 2.3vh; font-weight: bold; color: black;
     text-shadow: none;
@@ -555,7 +555,7 @@ header> .topdown {display: none;}
 /* mobile 이미지 */
 .morning_1> .at6> div:nth-child(7) {
     width: 300px; height: 250px; display: block;
-    position: absolute; top: 320px; left: 50%;
+    position: absolute; top: 52vh; left: 50%;
     transform: translateX(-50%); overflow: hidden;
 }
 .morning_1> .at6> div:nth-child(7)> ul {
@@ -576,11 +576,11 @@ header> .topdown {display: none;}
     width: 100%; height: 30px; color: white;
     text-shadow: 2px -2px 10px #05141f;
     text-align: left; line-height: 15px;
-    font-size: 3.2vw; font-weight: bold; padding: 15px 10px;
+    font-size: 14px; font-weight: bold; padding: 15px 10px;
 }
 .morning_1> .at6> .mor_control6 {
     display: block;
-    position: absolute; top: 415px; left: 50%;
+    position: absolute; top: 490px; left: 50%;
     transform: translateX(-50%);
     width: 300px; height: 30px;
     display: flex; justify-content: space-between;
@@ -594,11 +594,11 @@ header> .topdown {display: none;}
 .morning_1> .at6> .mor_control6> li:nth-child(1) {color: #898989;}
 
 /* 모닝 - at7 */
-.morning_1> .at7 {height: 585px;}
+.morning_1> .at7 {height: 85vh;}
 .morning_1> .at7> .mor_at7_big {
-    width: 100%; height: 220px;
+    width: 100%; height: 41vh;
     position: absolute; top: 0; left: 0;
-    background: url(../img2/morning/07_01.webp) no-repeat center top/cover;
+    background: url(../img2/morning/07_01.webp) no-repeat center center/cover;
 }
 
 .morning_1> .at7> p:nth-child(2) {
@@ -607,7 +607,7 @@ header> .topdown {display: none;}
     text-shadow: none; 
 }
 .morning_1> .at7> p:nth-child(3) {
-    position: absolute; top: 230px; left: 5%; width: 90%;
+    position: absolute; top: 43vh; left: 5%; width: 90%;
     height: 50px; line-height: 3.5vh;
     font-size: 2.3vh; font-weight: bold; color: black;
     text-shadow: none;
@@ -619,7 +619,7 @@ header> .topdown {display: none;}
 /* mobile 이미지 */
 .morning_1> .at7> div:nth-child(6) {
     width: 300px; height: 250px; display: block;
-    position: absolute; top: 320px; left: 50%;
+    position: absolute; top: 52vh; left: 50%;
     transform: translateX(-50%); overflow: hidden;
 }
 .morning_1> .at7> div:nth-child(6)> ul {
@@ -640,11 +640,11 @@ header> .topdown {display: none;}
     width: 100%; height: 30px; color: white;
     text-shadow: 2px -2px 10px #05141f;
     text-align: left; line-height: 15px;
-    font-size: 3.2vw; font-weight: bold; padding: 15px 10px;
+    font-size: 14px; font-weight: bold; padding: 15px 10px;
 }
 .morning_1> .at7> .mor_control7 {
     display: block;
-    position: absolute; top: 415px; left: 50%;
+    position: absolute; top: 490px; left: 50%;
     transform: translateX(-50%);
     width: 300px; height: 30px;
     display: flex; justify-content: space-between;
@@ -658,9 +658,9 @@ header> .topdown {display: none;}
 .morning_1> .at7> .mor_control7> li:nth-child(1) {color: #898989;}
 
 /* 모닝 - at8 */
-.morning_1> .at8 {height: 300px;}
+.morning_1> .at8 {height: 52vh ;}
 .morning_1> .at8> .mor_at8_big {
-    width: 100%; height: 220px;
+    width: 100%; height: 41vh;
     position: absolute; top: 0; left: 0;
     background: url(../img1_m/morning_at8_img.jpg) no-repeat center center/cover;
 }
@@ -671,18 +671,18 @@ header> .topdown {display: none;}
     color: white;
 }
 .morning_1> .at8> p:nth-child(3) {
-    position: absolute; top: 230px; left: 5%; width: 90%;
+    position: absolute; top: 43vh; left: 5%; width: 90%;
     height: 50px; line-height: 3.5vh;
     font-size: 2.3vh; font-weight: bold; color: black;
     text-shadow: none;
 }
 
 /* 모닝 - at9 */
-.morning_1> .at9 {height: 560px;}
+.morning_1> .at9 {height: 85vh;}
 .morning_1> .at9> .mor_at9_big {
-    width: 100%; height: 220px;
+    width: 100%; height: 41vh;
     position: absolute; top: 0; left: 0;
-    background: url(../img2/morning/09_01.webp) no-repeat center top/cover;
+    background: url(../img2/morning/09_01.webp) no-repeat center center/cover;
 }
 
 .morning_1> .at9> p:nth-child(2) {
@@ -691,7 +691,7 @@ header> .topdown {display: none;}
     color: white;
 }
 .morning_1> .at9> p:nth-child(3) {
-    position: absolute; top: 230px; left: 5%; width: 90%;
+    position: absolute; top: 43vh; left: 5%; width: 90%;
     height: 50px; line-height: 3.5vh;
     font-size: 2.3vh; font-weight: bold; color: black;
     text-shadow: none;
@@ -702,7 +702,7 @@ header> .topdown {display: none;}
 /* mobile 이미지 */
 .morning_1> .at9> div:nth-child(5) {
     width: 300px; height: 250px; display: block;
-    position: absolute; top: 290px; left: 50%;
+    position: absolute; top: 52vh; left: 50%;
     transform: translateX(-50%); overflow: hidden;
 }
 .morning_1> .at9> div:nth-child(5)> ul {
@@ -723,13 +723,13 @@ header> .topdown {display: none;}
     width: 100%; height: 30px; color: black;
     text-shadow: none;
     text-align: left; line-height: 15px;
-    font-size: 3.2vw; font-weight: bold; padding: 15px 10px;
+    font-size: 14px; font-weight: bold; padding: 15px 10px;
 }
 .morning_1> .at9> div:nth-child(5)> ul> .mor_at9_hov:nth-child(2)> .mor_at9_hov_on,
 .morning_1> .at9> div:nth-child(5)> ul> .mor_at9_hov:nth-child(3)> .mor_at9_hov_on {color: white;}
 .morning_1> .at9> .mor_control9 {
     display: block;
-    position: absolute; top: 390px; left: 50%;
+    position: absolute; top: 490px; left: 50%;
     transform: translateX(-50%);
     width: 300px; height: 30px;
     display: flex; justify-content: space-between;
@@ -818,11 +818,11 @@ header> .topdown {display: none;}
 }
 
 .morning_2> .mor2_mob> div:nth-child(3) {
-    width: 90%; height: 320px; display: block; overflow: hidden;
-    position: absolute; top: 120px; left: 5%; 
+    width: 370px; height: 330px; display: block; overflow: hidden;
+    position: absolute; top: 110px; left: 50%; transform: translateX(-50%);
 }
 .morning_2> .mor2_mob> div:nth-child(3)> .swiper-wrapper> .swiper-slide {
-    float: left; width: 100%; height: 272px;
+    float: left; width: 100%; height: 295px;
 
     /* Center slide text vertically */
     display: -webkit-box;
@@ -841,8 +841,8 @@ header> .topdown {display: none;}
 .morning_2> .mor2_mob> div:nth-child(3)> .swiper-wrapper> .swiper-slide img {width: 100%;}
 
 .morning_2> .mor2_mob> div:nth-child(4) {
-    width: 90%; height: 320px; display: block; overflow: hidden;
-    position: absolute; top: 120px; left: 5%;display: none;
+    width: 370px; height: 330px; display: block; overflow: hidden;
+    position: absolute; top: 110px; left: 50%; transform: translateX(-50%); display: none;
 }
 .morning_2> .mor2_mob> div:nth-child(4)> .swiper-wrapper> .swiper-slide {
     float: left; width: 100%; height: 272px;
@@ -852,7 +852,7 @@ header> .topdown {display: none;}
 }
 .morning_2> .mor2_mob> div:nth-child(4)> .swiper-wrapper> .swiper-slide> div img {width: 150%;}
 .morning_2> .mor2_mob> div:nth-child(4)> .swiper-wrapper> .swiper-slide> p {
-    width: 100%; height: 20px; font-size: 4vw;
+    width: 100%; height: 20px; font-size: 16px;
     text-align: center; line-height: 20px;
 }
 
@@ -877,12 +877,12 @@ header> .topdown {display: none;}
 .k5_1> .at1 {height: 720px;}
 .k5_1> .at1> div {
     width: 100%; height: 370px;
-    background: url(../img2/k5/01.webp) no-repeat -190px center/cover;
+    background: url(../img2/k5/01.webp) no-repeat center center/cover;
 }
 .k5_1> .at1> div> p:nth-child(1) {
-    position: absolute; top: 50px; left: 2.5%; width: 95%;
-    line-height: 3.5vh; text-align: center;
-    font-size: 5.5vw; font-weight: bold;
+    position: absolute; top: 50px; left: 50%; width: 90%;
+    line-height: 3.5vh; text-align: center; transform: translateX(-50%);
+    font-size: 22px; font-weight: bold;
     color: white; text-shadow: 2px -2px 8px #05141f;
 }
 
@@ -920,26 +920,26 @@ header> .topdown {display: none;}
     position: absolute; top: 50px; left: 0;
 }
 .k5_1> .at2> div> .k5_at2_color {
-    width: 100%;
+    width: 400px;
     position: absolute; top: 0; left: 50%;
     transform: translateX(-50%); display: none;
 }
 .k5_1> .at2> div> .k5_at2_color img {width: 100%;}
 
 .k5_1> .at2> .k50 {
-    width: 78%; height: 7vw;
+    width: 240px; height: 30px;
     position: absolute; top: 260px; left: 50%;
     transform: translateX(-50%);
 }
 .k5_1> .at2> .k50> li {
     float: left; cursor: pointer;
-    width: 7vw; height: 100%;
+    width: 30px; height: 100%;
     border: 1px solid #ccc;
     border-radius: 100%;
 }
 .k5_1> .at2> .k50> li:first-child {
-    text-align: center; line-height: 7vw; width: 50px;
-    font-weight: bold; font-size: 13.5px; border: none;
+    text-align: center; line-height: 30px; width: 50px;
+    font-weight: bold; font-size: 16px; border: none;
 }
 .k5_1> .at2> .k50> li:nth-child(2) {
     margin-left: 2vw;
@@ -963,34 +963,34 @@ header> .topdown {display: none;}
 }
 
 .k5_1> .at2> .k5_at2_name0 {
-    width: 100%; height: 30px;
-    position: absolute; top: 290px; left: 45%;
+    width: 150px; height: 30px;
+    position: absolute; top: 290px; left: 52%;
     transform: translateX(-50%);
 }
 .k5_1> .at2> .k5_at2_name0> li {
     width: 100%; height: 100%;
-    position: absolute; top: 0; left: 0; font-size: 3.8vw;
-    text-indent: 125px; line-height: 30px;
+    position: absolute; top: 0; left: 0; font-size: 16px;
+    text-indent: 0; line-height: 30px;
     color: #898989; display: none;
 }
 
 
 /* k5 - at3 */
-.k5_1> .at3 {height: 580px;}
+.k5_1> .at3 {height: 85vh;}
 .k5_1> .at3> .k5_at3_big {
     width: 100%;
     position: absolute; top: 0; left: 0;
 }
 .k5_1> .at3> .k5_at3_big1 {
-    width: 100%; height: 220px;
+    width: 100%; height: 41vh;
     background: url(../img2/k5/03_01.webp) no-repeat center center/cover;
 }
 .k5_1> .at3> .k5_at3_big2 {
-    width: 100%; height: 220px; display: none;
+    width: 100%; height: 41vh; display: none;
     background: url(../img2/k5/03_02.webp) no-repeat center center/cover;
 }
 .k5_1> .at3> .k5_at3_big3 {
-    width: 100%; height: 220px; display: none;
+    width: 100%; height: 41vh; display: none;
     background: url(../img2/k5/03_03.webp) no-repeat center center/cover;
 }
 
@@ -1000,19 +1000,19 @@ header> .topdown {display: none;}
     text-shadow: 2px -2px 8px white;
 }
 .k5_1> .at3> p:nth-child(5) {
-    position: absolute; top: 230px; left: 5%; width: 90%;
+    position: absolute; top: 43vh; left: 5%; width: 90%;
     height: 50px; line-height: 3.5vh; color: black;
     font-size: 2.3vh; font-weight: bold; text-shadow: none;
 }
 .k5_1> .at3> p:nth-child(6) {
-    position: absolute; top: 255px; left: 5%; width: 90%;
+    position: absolute; top: 46.5vh; left: 5%; width: 90%;
     height: 50px; line-height: 3.5vh; color: black;
     font-size: 2.3vh; font-weight: bold; text-shadow: none;
 }
 
 .k5_1> .at3> .k5_at3_btn1_box {
-    width: 45%; height: 40px;
-    position: absolute; top: 170px; left: 50%;
+    width: 180px; height: 40px;
+    position: absolute; top: 34vh; left: 50%;
     transform: translateX(-50%);
     display: flex;
     justify-content: space-evenly;
@@ -1039,7 +1039,7 @@ header> .topdown {display: none;}
 /* mobile 이미지 */
 .k5_1> .at3> div:nth-child(9) {
     width: 300px; height: 250px; display: block;
-    position: absolute; top: 315px; left: 50%;
+    position: absolute; top: 52vh; left: 50%;
     transform: translateX(-50%); overflow: hidden;
 }
 .k5_1> .at3> div:nth-child(9)> ul {
@@ -1060,11 +1060,11 @@ header> .topdown {display: none;}
     width: 100%; height: 30px; color: white;
     text-shadow: 2px -2px 10px #05141f;
     text-align: left; line-height: 15px;
-    font-size: 3.2vw; font-weight: bold; padding: 15px 10px;
+    font-size: 14px; font-weight: bold; padding: 15px 10px;
 }
 .k5_1> .at3> .k5_control3 {
     display: block;
-    position: absolute; top: 410px; left: 50%;
+    position: absolute; top: 490px; left: 50%;
     transform: translateX(-50%);
     width: 300px; height: 30px;
     display: flex; justify-content: space-between;
@@ -1079,21 +1079,17 @@ header> .topdown {display: none;}
 
 
 /* k5 - at4 */
-.k5_1> .at4 {height: 580px;}
-.k5_1> .at4> .k5_at4_big {
-    width: 100%;
-    position: absolute; top: 0; left: 0;
-}
+.k5_1> .at4 {height: 85vh;}
 .k5_1> .at4> .k5_at4_big1 {
-    width: 100%; height: 220px;
+    width: 100%; height: 41vh;
     background: url(../img2/k5/04_01.webp) no-repeat center center/cover;
 }
 .k5_1> .at4> .k5_at4_big2 {
-    width: 100%; height: 220px; display: none;
+    width: 100%; height: 41vh; display: none;
     background: url(../img2/k5/04_02.webp) no-repeat center center/cover;
 }
 .k5_1> .at4> .k5_at4_big3 {
-    width: 100%; height: 220px; display: none;
+    width: 100%; height: 41vh; display: none;
     background: url(../img2/k5/04_03.webp) no-repeat center center/cover;
 }
 
@@ -1103,21 +1099,21 @@ header> .topdown {display: none;}
     color: white;
 }
 .k5_1> .at4> p:nth-child(5) {
-    position: absolute; top: 230px; left: 5%; width: 90%;
+    position: absolute; top: 43vh; left: 5%; width: 90%;
     height: 50px; line-height: 3.5vh;
     font-size: 2.3vh; font-weight: bold; color: black;
     text-shadow: none;
 }
 .k5_1> .at4> p:nth-child(6) {
-    position: absolute; top: 255px; left: 5%; width: 90%;
+    position: absolute; top: 46.5vh; left: 5%; width: 90%;
     height: 50px; line-height: 3.5vh;
     font-size: 2.3vh; font-weight: bold; color: black;
     text-shadow: none;
 }
 
 .k5_1> .at4> .k5_at4_btn1_box {
-    width: 45%; height: 40px;
-    position: absolute; top: 170px; left: 50%;
+    width: 180px; height: 40px;
+    position: absolute; top: 34vh; left: 50%;
     transform: translateX(-50%);
     display: flex;
     justify-content: space-evenly;
@@ -1146,7 +1142,7 @@ header> .topdown {display: none;}
 /* mobile 이미지 */
 .k5_1> .at4> div:nth-child(11) {
     width: 300px; height: 250px; display: block;
-    position: absolute; top: 315px; left: 50%;
+    position: absolute; top: 52vh; left: 50%;
     transform: translateX(-50%); overflow: hidden;
 }
 .k5_1> .at4> div:nth-child(11)> ul {
@@ -1167,11 +1163,11 @@ header> .topdown {display: none;}
     width: 100%; height: 30px; color: white;
     text-shadow: 2px -2px 10px #05141f;
     text-align: left; line-height: 15px;
-    font-size: 3.2vw; font-weight: bold; padding: 15px 10px;
+    font-size: 14px; font-weight: bold; padding: 15px 10px;
 }
 .k5_1> .at4> .k5_control4 {
     display: block;
-    position: absolute; top: 410px; left: 50%;
+    position: absolute; top: 490px; left: 50%;
     transform: translateX(-50%);
     width: 300px; height: 30px;
     display: flex; justify-content: space-between;
@@ -1187,21 +1183,21 @@ header> .topdown {display: none;}
 
 
 /* k5 - at5 */
-.k5_1> .at5 {height: 605px;}
+.k5_1> .at5 {height: 88vh;}
 .k5_1> .at5> .k5_at5_big {
     width: 100%;
     position: absolute; top: 0; left: 0;
 }
 .k5_1> .at5> .k5_at5_big1 {
-    width: 100%; height: 220px;
+    width: 100%; height: 41vh;
     background: url(../img2/k5/05_01.webp) no-repeat center center/cover;
 }
 .k5_1> .at5> .k5_at5_big2 {
-    width: 100%; height: 220px; display: none;
+    width: 100%; height: 41vh; display: none;
     background: url(../img2/k5/05_02.webp) no-repeat center center/cover;
 }
 .k5_1> .at5> .k5_at5_big3 {
-    width: 100%; height: 220px; display: none;
+    width: 100%; height: 41vh; display: none;
     background: url(../img2/k5/05_03.webp) no-repeat center center/cover;
 }
 
@@ -1211,19 +1207,19 @@ header> .topdown {display: none;}
     text-shadow: 2px -2px 8px white;
 }
 .k5_1> .at5> p:nth-child(5) {
-    position: absolute; top: 230px; left: 5%; width: 90%;
+    position: absolute; top: 43vh; left: 5%; width: 90%;
     height: 50px; line-height: 3.5vh; color: black;
     font-size: 2.3vh; font-weight: bold; text-shadow: none;
 }
 .k5_1> .at5> p:nth-child(6) {
-    position: absolute; top: 255px; left: 5%; width: 90%;
+    position: absolute; top: 46.5vh; left: 5%; width: 90%;
     height: 50px; line-height: 3.5vh; color: black;
     font-size: 2.3vh; font-weight: bold; text-shadow: none;
 }
 
 .k5_1> .at5> .k5_at5_btn1_box {
-    width: 45%; height: 40px;
-    position: absolute; top: 170px; left: 50%;
+    width: 180px; height: 40px;
+    position: absolute; top: 34vh; left: 50%;
     transform: translateX(-50%);
     display: flex;
     justify-content: space-evenly;
@@ -1251,7 +1247,7 @@ header> .topdown {display: none;}
 /* mobile 이미지 */
 .k5_1> .at5> div:nth-child(10) {
     width: 300px; height: 250px; display: block;
-    position: absolute; top: 340px; left: 50%;
+    position: absolute; top: 55vh; left: 50%;
     transform: translateX(-50%); overflow: hidden;
 }
 .k5_1> .at5> div:nth-child(10)> ul {
@@ -1272,11 +1268,11 @@ header> .topdown {display: none;}
     width: 100%; height: 30px; color: white;
     text-shadow: 2px -2px 10px #05141f;
     text-align: left; line-height: 15px;
-    font-size: 3.2vw; font-weight: bold; padding: 15px 10px;
+    font-size: 14px; font-weight: bold; padding: 15px 10px;
 }
 .k5_1> .at5> .k5_control5 {
     display: block;
-    position: absolute; top: 440px; left: 50%;
+    position: absolute; top: 515px; left: 50%;
     transform: translateX(-50%);
     width: 300px; height: 30px;
     display: flex; justify-content: space-between;
@@ -1291,9 +1287,9 @@ header> .topdown {display: none;}
 
 
 /* k5 - at6 */
-.k5_1> .at6 {height: 605px;}
+.k5_1> .at6 {height: 88vh;}
 .k5_1> .at6> .k5_at6_big {
-    width: 100%; height: 220px;
+    width: 100%; height: 41vh;
     position: absolute; top: 0; left: 0;
     background: url(../img2/k5/06_01.webp) no-repeat center top/cover;
 }
@@ -1304,13 +1300,13 @@ header> .topdown {display: none;}
     text-shadow: 2px -2px 3px #05141f; color: white;
 }
 .k5_1> .at6> p:nth-child(3) {
-    position: absolute; top: 230px; left: 5%; width: 90%;
+    position: absolute; top: 43vh; left: 5%; width: 90%;
     height: 50px; line-height: 3.5vh;
     font-size: 2.3vh; font-weight: bold; color: black;
     text-shadow: none;
 }
 .k5_1> .at6> p:nth-child(4) {
-    position: absolute; top: 255px; left: 5%; width: 90%;
+    position: absolute; top: 46.5vh; left: 5%; width: 90%;
     height: 50px; line-height: 3.5vh;
     font-size: 2.3vh; font-weight: bold; color: black;
     text-shadow: none;
@@ -1322,7 +1318,7 @@ header> .topdown {display: none;}
 /* mobile 이미지 */
 .k5_1> .at6> div:nth-child(7) {
     width: 300px; height: 250px; display: block;
-    position: absolute; top: 340px; left: 50%;
+    position: absolute; top: 55vh; left: 50%;
     transform: translateX(-50%); overflow: hidden;
 }
 .k5_1> .at6> div:nth-child(7)> ul {
@@ -1343,11 +1339,11 @@ header> .topdown {display: none;}
     width: 100%; height: 30px; color: white;
     text-shadow: 2px -2px 10px #05141f;
     text-align: left; line-height: 15px;
-    font-size: 3.2vw; font-weight: bold; padding: 15px 10px;
+    font-size: 14px; font-weight: bold; padding: 15px 10px;
 }
 .k5_1> .at6> .k5_control6 {
     display: block;
-    position: absolute; top: 440px; left: 50%;
+    position: absolute; top: 515px; left: 50%;
     transform: translateX(-50%);
     width: 300px; height: 30px;
     display: flex; justify-content: space-between;
@@ -1435,11 +1431,11 @@ header> .topdown {display: none;}
 }
 
 .k5_2> .k5_2_mob> div:nth-child(3) {
-    width: 90%; height: 320px; display: block; overflow: hidden;
-    position: absolute; top: 120px; left: 5%;
+    width: 600px; height: 330px; display: block; overflow: hidden;
+    position: absolute; top: 110px; left: 50%; transform: translateX(-50%);
 }
 .k5_2> .k5_2_mob> div:nth-child(3)> .swiper-wrapper> .swiper-slide {
-    float: left; width: 100%; height: 272px;
+    float: left; width: 100%; height: 295px;
 
     /* Center slide text vertically */
     display: -webkit-box;
@@ -1455,21 +1451,21 @@ header> .topdown {display: none;}
     -webkit-align-items: center;
     align-items: center;
 }
-.k5_2> .k5_2_mob> div:nth-child(3)> .swiper-wrapper> .swiper-slide img {width: 90%;}
+.k5_2> .k5_2_mob> div:nth-child(3)> .swiper-wrapper> .swiper-slide img {width: 50%;}
 
 .k5_2> .k5_2_mob> div:nth-child(4) {
-    width: 90%; height: 320px; display: block; overflow: hidden;
-    position: absolute; top: 120px; left: 50%; display: none;
+    width: 370px; height: 330px; display: block; overflow: hidden;
+    position: absolute; top: 100px; left: 50%; transform: translateX(-50%); display: none;
 }
 .k5_2> .k5_2_mob> div:nth-child(4)> .swiper-wrapper> .swiper-slide {
     float: left; width: 100%; height: 272px;
 }
 .k5_2> .k5_2_mob> div:nth-child(4)> .swiper-wrapper> .swiper-slide> div {
-    width: 50%; margin-top: 10px; margin-left: 25%;
+    width: 60%; margin-top: 10px; margin-left: 50%; transform: translateX(-50%);
 }
-.k5_2> .k5_2_mob> div:nth-child(4)> .swiper-wrapper> .swiper-slide> div img {width: 110%;}
+.k5_2> .k5_2_mob> div:nth-child(4)> .swiper-wrapper> .swiper-slide> div img {width: 100%;}
 .k5_2> .k5_2_mob> div:nth-child(4)> .swiper-wrapper> .swiper-slide> p {
-    width: 100%; height: 20px; font-size: 4vw;
+    width: 100%; height: 20px; font-size: 16px;
     text-align: center; line-height: 20px;
 }
 
@@ -1497,9 +1493,9 @@ header> .topdown {display: none;}
     background: url(../img2/sorento/01.webp) no-repeat center center/cover;
 }
 .sorento_1> .at1> div> p:nth-child(1) {
-    position: absolute; top: 50px; left: 2.5%; width: 95%;
-    line-height: 3.5vh; text-align: center;
-    font-size: 5.5vw; font-weight: bold;
+    position: absolute; top: 50px; left: 50%; width: 90%;
+    line-height: 3.5vh; text-align: center; transform: translateX(-50%);
+    font-size: 22px; font-weight: bold;
     color: white; text-shadow: 2px -2px 8px #05141f;
 }
 
@@ -1537,26 +1533,26 @@ header> .topdown {display: none;}
     position: absolute; top: 50px; left: 0;
 }
 .sorento_1> .at2> div> .sorento_at2_color {
-    width: 100%; height: 45vw;
-    position: absolute; top: 15px; left: 60%;
+    width: 400px;
+    position: absolute; top: 0; left: 50%;
     transform: translateX(-50%); display: none;
 }
-.sorento_1> .at2> div> .sorento_at2_color img {height: 100%;}
+.sorento_1> .at2> div> .sorento_at2_color img {width: 100%; height: auto;}
 
 .sorento_1> .at2> .sorento0 {
-    width: 78%; height: 7vw;
+    width: 240px; height: 30px;
     position: absolute; top: 260px; left: 50%;
     transform: translateX(-50%);
 }
 .sorento_1> .at2> .sorento0> li {
     float: left; cursor: pointer;
-    width: 7vw; height: 100%;
+    width: 30px; height: 100%;
     border: 1px solid #ccc;
     border-radius: 100%;
 }
 .sorento_1> .at2> .sorento0> li:first-child {
-    text-align: center; line-height: 7vw; width: 50px;
-    font-weight: bold; font-size: 13.5px; border: none;
+    text-align: center; line-height: 30px; width: 50px;
+    font-weight: bold; font-size: 16px; border: none;
 }
 .sorento_1> .at2> .sorento0> li:nth-child(2) {
     margin-left: 2vw;
@@ -1580,22 +1576,22 @@ header> .topdown {display: none;}
 }
 
 .sorento_1> .at2> .sorento_at2_name0 {
-    width: 100%; height: 30px;
-    position: absolute; top: 290px; left: 45%;
+    width: 150px; height: 30px;
+    position: absolute; top: 290px; left: 52%;
     transform: translateX(-50%);
 }
 .sorento_1> .at2> .sorento_at2_name0> li {
     width: 100%; height: 100%;
-    position: absolute; top: 0; left: 0; font-size: 3.8vw;
-    text-indent: 125px; line-height: 30px;
+    position: absolute; top: 0; left: 0; font-size: 16px;
+    text-indent: 0; line-height: 30px;
     color: #898989; display: none;
 }
 
 
 /* sorento - at3 */
-.sorento_1> .at3 {height: 605px;}
+.sorento_1> .at3 {height: 88vh;}
 .sorento_1> .at3> .sorento_at3_big {
-    width: 100%; height: 220px;
+    width: 100%; height: 41vh;
     position: absolute; top: 0; left: 0;
     background: url(../img2/sorento/03_01.webp) no-repeat center top/cover;
 }
@@ -1605,13 +1601,13 @@ header> .topdown {display: none;}
     text-shadow: 2px -2px 3px #05141f; color: white;
 }
 .sorento_1> .at3> p:nth-child(3) {
-    position: absolute; top: 230px; left: 5%; width: 90%;
+    position: absolute; top: 43vh; left: 5%; width: 90%;
     height: 50px; line-height: 3.5vh;
     font-size: 2.3vh; font-weight: bold; color: black;
     text-shadow: none;
 }
 .sorento_1> .at3> p:nth-child(4) {
-    position: absolute; top: 255px; left: 5%; width: 90%;
+    position: absolute; top: 46.5vh; left: 5%; width: 90%;
     height: 50px; line-height: 3.5vh;
     font-size: 2.3vh; font-weight: bold; color: black;
     text-shadow: none;
@@ -1622,7 +1618,7 @@ header> .topdown {display: none;}
 /* mobile 이미지 */
 .sorento_1> .at3> div:nth-child(6) {
     width: 300px; height: 250px; display: block;
-    position: absolute; top: 340px; left: 50%;
+    position: absolute; top: 55vh; left: 50%;
     transform: translateX(-50%); overflow: hidden;
 }
 .sorento_1> .at3> div:nth-child(6)> ul {
@@ -1643,11 +1639,11 @@ header> .topdown {display: none;}
     width: 100%; height: 30px; color: white;
     text-shadow: 2px -2px 10px #05141f;
     text-align: left; line-height: 15px;
-    font-size: 3.2vw; font-weight: bold; padding: 15px 10px;
+    font-size: 14px; font-weight: bold; padding: 15px 10px;
 }
 .sorento_1> .at3> .sorento_control3 {
     display: block;
-    position: absolute; top: 440px; left: 50%;
+    position: absolute; top: 515px; left: 50%;
     transform: translateX(-50%);
     width: 300px; height: 30px;
     display: flex; justify-content: space-between;
@@ -1662,11 +1658,11 @@ header> .topdown {display: none;}
 
 
 /* sorento - at4 */
-.sorento_1> .at4 {height: 605px;}
+.sorento_1> .at4 {height: 88vh;}
 .sorento_1> .at4> .sorento_at4_big {
-    width: 100%; height: 220px;
+    width: 100%; height: 41vh;
     position: absolute; top: 0; left: 0;
-    background: url(../img2/sorento/04_01.webp) no-repeat center top/cover;
+    background: url(../img2/sorento/04_01.webp) no-repeat center center/cover;
 }
 .sorento_1> .at4> p:nth-child(2) {
     position: absolute; top: 20px; left: 20px;
@@ -1674,13 +1670,13 @@ header> .topdown {display: none;}
     text-shadow: 2px -2px 3px #05141f; color: white;
 }
 .sorento_1> .at4> p:nth-child(3) {
-    position: absolute; top: 230px; left: 5%; width: 90%;
+    position: absolute; top: 43vh; left: 5%; width: 90%;
     height: 50px; line-height: 3.5vh;
     font-size: 2.3vh; font-weight: bold; color: black;
     text-shadow: none;
 }
 .sorento_1> .at4> p:nth-child(4) {
-    position: absolute; top: 255px; left: 5%; width: 90%;
+    position: absolute; top: 46.5vh; left: 5%; width: 90%;
     height: 50px; line-height: 3.5vh;
     font-size: 2.3vh; font-weight: bold; color: black;
     text-shadow: none;
@@ -1695,7 +1691,7 @@ header> .topdown {display: none;}
 /* mobile 이미지 */
 .sorento_1> .at4> div:nth-child(11) {
     width: 300px; height: 250px; display: block;
-    position: absolute; top: 340px; left: 50%;
+    position: absolute; top: 55vh; left: 50%;
     transform: translateX(-50%); overflow: hidden;
 }
 .sorento_1> .at4> div:nth-child(11)> ul {
@@ -1716,11 +1712,11 @@ header> .topdown {display: none;}
     width: 100%; height: 30px; color: white;
     text-shadow: 2px -2px 10px #05141f;
     text-align: left; line-height: 15px;
-    font-size: 3.2vw; font-weight: bold; padding: 15px 10px;
+    font-size: 14px; font-weight: bold; padding: 15px 10px;
 }
 .sorento_1> .at4> .sorento_control4 {
     display: block;
-    position: absolute; top: 440px; left: 50%;
+    position: absolute; top: 515px; left: 50%;
     transform: translateX(-50%);
     width: 300px; height: 30px;
     display: flex; justify-content: space-between;
@@ -1735,9 +1731,9 @@ header> .topdown {display: none;}
 
 
 /* sorento - at5 */
-.sorento_1> .at5 {height: 605px;}
+.sorento_1> .at5 {height: 88vh;}
 .sorento_1> .at5> .sorento_at5_big {
-    width: 100%; height: 220px;
+    width: 100%; height: 41vh;
     position: absolute; top: 0; left: 0;
     background: url(../img2/sorento/05_01.webp) no-repeat center center/cover;
 }
@@ -1747,13 +1743,13 @@ header> .topdown {display: none;}
     text-shadow: 2px -2px 3px white; color: black;
 }
 .sorento_1> .at5> p:nth-child(3) {
-    position: absolute; top: 230px; left: 5%; width: 90%;
+    position: absolute; top: 43vh; left: 5%; width: 90%;
     height: 50px; line-height: 3.5vh;
     font-size: 2.3vh; font-weight: bold; color: black;
     text-shadow: none; 
 }
 .sorento_1> .at5> p:nth-child(4) {
-    position: absolute; top: 255px; left: 5%; width: 90%;
+    position: absolute; top: 46.5vh; left: 5%; width: 90%;
     height: 50px; line-height: 3.5vh;
     font-size: 2.3vh; font-weight: bold; color: black;
     text-shadow: none;
@@ -1765,7 +1761,7 @@ header> .topdown {display: none;}
 /* mobile 이미지 */
 .sorento_1> .at5> div:nth-child(7) {
     width: 300px; height: 250px; display: block;
-    position: absolute; top: 340px; left: 50%;
+    position: absolute; top: 55vh; left: 50%;
     transform: translateX(-50%); overflow: hidden;
 }
 .sorento_1> .at5> div:nth-child(7)> ul {
@@ -1786,11 +1782,11 @@ header> .topdown {display: none;}
     width: 100%; height: 30px; color: white;
     text-shadow: 2px -2px 10px #05141f;
     text-align: left; line-height: 15px;
-    font-size: 3.2vw; font-weight: bold; padding: 15px 10px;
+    font-size: 14px; font-weight: bold; padding: 15px 10px;
 }
 .sorento_1> .at5> .sorento_control5 {
     display: block;
-    position: absolute; top: 440px; left: 50%;
+    position: absolute; top: 515px; left: 50%;
     transform: translateX(-50%);
     width: 300px; height: 30px;
     display: flex; justify-content: space-between;
@@ -1805,9 +1801,9 @@ header> .topdown {display: none;}
 
 
 /* sorento - at6 */
-.sorento_1> .at6 {height: 330px;}
+.sorento_1> .at6 {height: 55vh;}
 .sorento_1> .at6> .sorento_at6_big {
-    width: 100%; height: 220px;
+    width: 100%; height: 41vh;
     position: absolute; top: 0; left: 0;
     background: url(../img2/sorento/06_01.webp) no-repeat center center/cover;
 }
@@ -1817,13 +1813,13 @@ header> .topdown {display: none;}
     text-shadow: 2px -2px 3px #05141f; color: white;
 }
 .sorento_1> .at6> p:nth-child(3) {
-    position: absolute; top: 230px; left: 5%; width: 90%;
+    position: absolute; top: 43vh; left: 5%; width: 90%;
     height: 50px; line-height: 3.5vh;
     font-size: 2.3vh; font-weight: bold; color: black;
     text-shadow: none; 
 }
 .sorento_1> .at6> p:nth-child(4) {
-    position: absolute; top: 255px; left: 5%; width: 90%;
+    position: absolute; top: 46.5vh; left: 5%; width: 90%;
     height: 50px; line-height: 3.5vh;
     font-size: 2.3vh; font-weight: bold; color: black;
     text-shadow: none;
@@ -1905,11 +1901,11 @@ header> .topdown {display: none;}
 }
 
 .sorento_2> .sorento_2_mob> div:nth-child(3) {
-    width: 90%; height: 320px; display: block; overflow: hidden;
-    position: absolute; top: 120px; left: 5%; 
+    width: 420px; height: 340px; display: block; overflow: hidden;
+    position: absolute; top: 100px; left: 50%; transform: translateX(-50%); 
 }
 .sorento_2> .sorento_2_mob> div:nth-child(3)> .swiper-wrapper> .swiper-slide {
-    float: left; width: 100%; height: 272px;
+    float: left; width: 100%; height: 310px;
 
     /* Center slide text vertically */
     display: -webkit-box;
@@ -1925,21 +1921,21 @@ header> .topdown {display: none;}
     -webkit-align-items: center;
     align-items: center;
 }
-.sorento_2> .sorento_2_mob> div:nth-child(3)> .swiper-wrapper> .swiper-slide img {width: 100%;}
+.sorento_2> .sorento_2_mob> div:nth-child(3)> .swiper-wrapper> .swiper-slide img {height: 100%;}
 
 .sorento_2> .sorento_2_mob> div:nth-child(4) {
-    width: 90%; height: 320px; display: block; overflow: hidden;
-    position: absolute; top: 120px; left: 5%;display: none;
+    width: 370px; height: 330px; display: block; overflow: hidden;
+    position: absolute; top: 110px; left: 50%; transform: translateX(-50%); display: none;
 }
 .sorento_2> .sorento_2_mob> div:nth-child(4)> .swiper-wrapper> .swiper-slide {
     float: left; width: 100%; height: 272px;
 }
 .sorento_2> .sorento_2_mob> div:nth-child(4)> .swiper-wrapper> .swiper-slide> div {
-    width: 80%; margin-top: 10px; margin-left: 7%;
+    width: 340px; margin-top: 0; margin-left: 0%;
 }
 .sorento_2> .sorento_2_mob> div:nth-child(4)> .swiper-wrapper> .swiper-slide> div img {width: 150%;}
 .sorento_2> .sorento_2_mob> div:nth-child(4)> .swiper-wrapper> .swiper-slide> p {
-    width: 100%; height: 20px; font-size: 4vw;
+    width: 100%; height: 20px; font-size: 16px;
     text-align: center; line-height: 20px;
 }
 
@@ -1967,9 +1963,9 @@ header> .topdown {display: none;}
     background: url(../img2/niro/01.webp) no-repeat center center/cover;
 }
 .niro_1> .at1> div> p:nth-child(1) {
-    position: absolute; top: 50px; left: 2.5%; width: 95%;
+    position: absolute; top: 50px; left: 5%; width: 90%;
     line-height: 3.5vh; text-align: center;
-    font-size: 5.5vw; font-weight: bold;
+    font-size: 22px; font-weight: bold;
     color: white; text-shadow: 2px -2px 8px #05141f;
 }
 .niro_1> .at1> ul {
@@ -2001,30 +1997,30 @@ header> .topdown {display: none;}
     font-size: 2.5vh; font-weight: bold;
 }
 .niro_1> .at2> div {
-    width: 100%; height: 400px;
-    position: absolute; top: 100px; left: 0;
+    width: 100%; height: 300px;
+    position: absolute; top: 70px; left: 0;
 }
 .niro_1> .at2> div> .niro_at2_color {
-    width: 100%;
-    position: absolute; top: -30px; left: 50%;
+    width: 400px;
+    position: absolute; top: -30px; left: 43%;
     transform: translateX(-50%); display: none;
 }
-.niro_1> .at2> div> .niro_at2_color img {width: 100%;}
+.niro_1> .at2> div> .niro_at2_color img {width: 120%;}
 
 .niro_1> .at2> .niro0 {
-    width: 78%; height: 7vw;
+    width: 310px; height: 30px;
     position: absolute; top: 260px; left: 50%;
     transform: translateX(-50%);
 }
 .niro_1> .at2> .niro0> li {
     float: left; cursor: pointer;
-    width: 7vw; height: 100%;
+    width: 30px; height: 100%;
     border: 1px solid #ccc;
     border-radius: 100%;
 }
 .niro_1> .at2> .niro0> li:first-child {
-    text-align: center; line-height: 7vw; width: 50px;
-    font-weight: bold; font-size: 13.5px; border: none;
+    text-align: center; line-height: 30px; width: 50px;
+    font-weight: bold; font-size: 16px; border: none;
 }
 .niro_1> .at2> .niro0> li:nth-child(2) {
     margin-left: 2vw;
@@ -2052,21 +2048,21 @@ header> .topdown {display: none;}
 }
 
 .niro_1> .at2> .niro_at2_name0 {
-    width: 100%; height: 30px;
-    position: absolute; top: 290px; left: 45%;
+    width: 150px; height: 30px;
+    position: absolute; top: 290px; left: 47%;
     transform: translateX(-50%);
 }
 .niro_1> .at2> .niro_at2_name0> li {
     width: 100%; height: 100%;
-    position: absolute; top: 0; left: 0; font-size: 3.8vw;
-    text-indent: 125px; line-height: 30px;
+    position: absolute; top: 0; left: 0; font-size: 16px;
+    text-indent: 0; line-height: 30px;
     color: #898989; display: none;
 }
 
 /* 니로 - at3 */
-.niro_1> .at3 {height: 565px;}
+.niro_1> .at3 {height: 82.5vh;}
 .niro_1> .at3> .niro_at3_big {
-    width: 100%; height: 220px;
+    width: 100%; height: 41vh;
     position: absolute; top: 0; left: 0;
     background: url(../img2/niro/03_01.webp) no-repeat center center/cover;
 }
@@ -2076,7 +2072,7 @@ header> .topdown {display: none;}
     text-shadow: 2px -2px 3px white; color: black;
 }
 .niro_1> .at3> p:nth-child(3) {
-    position: absolute; top: 230px; left: 5%; width: 90%;
+    position: absolute; top: 43vh; left: 5%; width: 90%;
     height: 50px; line-height: 3.5vh;
     font-size: 2.3vh; font-weight: bold; color: black;
     text-shadow: none;
@@ -2086,7 +2082,7 @@ header> .topdown {display: none;}
 /* mobile 이미지 */
 .niro_1> .at3> div:nth-child(5) {
     width: 300px; height: 250px; display: block;
-    position: absolute; top: 300px; left: 50%;
+    position: absolute; top: 49vh; left: 50%;
     transform: translateX(-50%); overflow: hidden;
 }
 .niro_1> .at3> div:nth-child(5)> ul {
@@ -2107,11 +2103,11 @@ header> .topdown {display: none;}
     width: 100%; height: 30px; color: white;
     text-shadow: 2px -2px 10px #05141f;
     text-align: left; line-height: 15px;
-    font-size: 3.2vw; font-weight: bold; padding: 15px 10px;
+    font-size: 14px; font-weight: bold; padding: 15px 10px;
 }
 .niro_1> .at3> .niro_control3 {
     display: block;
-    position: absolute; top: 400px; left: 50%;
+    position: absolute; top: 470px; left: 50%;
     transform: translateX(-50%);
     width: 300px; height: 30px;
     display: flex; justify-content: space-between;
@@ -2125,9 +2121,9 @@ header> .topdown {display: none;}
 .niro_1> .at3> .niro_control3> li:nth-child(1) {color: #898989;}
 
 /* 니로 - at4 */
-.niro_1> .at4 {height: 565px;}
+.niro_1> .at4 {height: 82.5vh;}
 .niro_1> .at4> .niro_at4_big {
-    width: 100%; height: 220px;
+    width: 100%; height: 41vh;
     position: absolute; top: 0; left: 0;
     background: url(../img2/niro/04_01.webp) no-repeat center center/cover;
 }
@@ -2137,7 +2133,7 @@ header> .topdown {display: none;}
     text-shadow: 2px -2px 3px #05141f; color: white;
 }
 .niro_1> .at4> p:nth-child(3) {
-    position: absolute; top: 230px; left: 5%; width: 90%;
+    position: absolute; top: 43vh; left: 5%; width: 90%;
     height: 50px; line-height: 3.5vh;
     font-size: 2.3vh; font-weight: bold; color: black;
     text-shadow: none;
@@ -2148,7 +2144,7 @@ header> .topdown {display: none;}
 /* mobile 이미지 */
 .niro_1> .at4> div:nth-child(6) {
     width: 300px; height: 250px; display: block;
-    position: absolute; top: 300px; left: 50%;
+    position: absolute; top: 49vh; left: 50%;
     transform: translateX(-50%); overflow: hidden;
 }
 .niro_1> .at4> div:nth-child(6)> ul {
@@ -2172,11 +2168,11 @@ header> .topdown {display: none;}
     width: 100%; height: 30px; color: white;
     text-shadow: 2px -2px 10px #05141f;
     text-align: left; line-height: 15px;
-    font-size: 3.2vw; font-weight: bold; padding: 15px 10px;
+    font-size: 14px; font-weight: bold; padding: 15px 10px;
 }
 .niro_1> .at4> .niro_control4 {
     display: block;
-    position: absolute; top: 400px; left: 50%;
+    position: absolute; top: 470px; left: 50%;
     transform: translateX(-50%);
     width: 300px; height: 30px;
     display: flex; justify-content: space-between;
@@ -2190,9 +2186,9 @@ header> .topdown {display: none;}
 .niro_1> .at4> .niro_control4> li:nth-child(1) {color: #898989;}
 
 /* 니로 - at5 */
-.niro_1> .at5 {height: 565px;}
+.niro_1> .at5 {height: 82.5vh;}
 .niro_1> .at5> .niro_at5_big {
-    width: 100%; height: 220px;
+    width: 100%; height: 41vh;
     position: absolute; top: 0; left: 0;
     background: url(../img2/niro/05_01.webp) no-repeat center center/cover;
 }
@@ -2202,7 +2198,7 @@ header> .topdown {display: none;}
     text-shadow: 2px -2px 3px #05141f; color: white;
 }
 .niro_1> .at5> p:nth-child(3) {
-    position: absolute; top: 230px; left: 5%; width: 90%;
+    position: absolute; top: 43vh; left: 5%; width: 90%;
     height: 50px; line-height: 3.5vh;
     font-size: 2.3vh; font-weight: bold; color: black;
     text-shadow: none;
@@ -2213,7 +2209,7 @@ header> .topdown {display: none;}
 /* mobile 이미지 */
 .niro_1> .at5> div:nth-child(6) {
     width: 300px; height: 250px; display: block;
-    position: absolute; top: 300px; left: 50%;
+    position: absolute; top: 49vh; left: 50%;
     transform: translateX(-50%); overflow: hidden;
 }
 .niro_1> .at5> div:nth-child(6)> ul {
@@ -2234,11 +2230,11 @@ header> .topdown {display: none;}
     width: 100%; height: 30px; color: white;
     text-shadow: 2px -2px 10px #05141f;
     text-align: left; line-height: 15px;
-    font-size: 3.2vw; font-weight: bold; padding: 15px 10px;
+    font-size: 14px; font-weight: bold; padding: 15px 10px;
 }
 .niro_1> .at5> .niro_control5 {
     display: block;
-    position: absolute; top: 400px; left: 50%;
+    position: absolute; top: 470px; left: 50%;
     transform: translateX(-50%);
     width: 300px; height: 30px;
     display: flex; justify-content: space-between;
@@ -2252,9 +2248,9 @@ header> .topdown {display: none;}
 .niro_1> .at5> .niro_control5> li:nth-child(1) {color: #898989;}
 
 /* 니로 - at6 */
-.niro_1> .at6 {height: 605px;}
+.niro_1> .at6 {height: 88vh;}
 .niro_1> .at6> .niro_at6_big {
-    width: 100%; height: 220px;
+    width: 100%; height: 41vh;
     position: absolute; top: 0; left: 0;
     background: url(../img2/niro/06_01.webp) no-repeat center center/cover;
 }
@@ -2264,13 +2260,13 @@ header> .topdown {display: none;}
     text-shadow: 2px -2px 3px white; color: black;
 }
 .niro_1> .at6> p:nth-child(3) {
-    position: absolute; top: 230px; left: 5%; width: 90%;
+    position: absolute; top: 43vh; left: 5%; width: 90%;
     height: 50px; line-height: 3.5vh;
     font-size: 2.3vh; font-weight: bold; color: black;
     text-shadow: none;
 }
 .niro_1> .at6> p:nth-child(4) {
-    position: absolute; top: 255px; left: 5%; width: 90%;
+    position: absolute; top: 46.5vh; left: 5%; width: 90%;
     height: 50px; line-height: 3.5vh;
     font-size: 2.3vh; font-weight: bold; color: black;
     text-shadow: none;
@@ -2280,7 +2276,7 @@ header> .topdown {display: none;}
 /* mobile 이미지 */
 .niro_1> .at6> div:nth-child(6) {
     width: 300px; height: 250px; display: block;
-    position: absolute; top: 340px; left: 50%;
+    position: absolute; top: 55vh; left: 50%;
     transform: translateX(-50%); overflow: hidden;
 }
 .niro_1> .at6> div:nth-child(6)> ul {
@@ -2301,11 +2297,11 @@ header> .topdown {display: none;}
     width: 100%; height: 30px; color: white;
     text-shadow: 2px -2px 10px #05141f;
     text-align: left; line-height: 15px;
-    font-size: 3.2vw; font-weight: bold; padding: 15px 10px;
+    font-size: 14px; font-weight: bold; padding: 15px 10px;
 }
 .niro_1> .at6> .niro_control6 {
     display: block;
-    position: absolute; top: 440px; left: 50%;
+    position: absolute; top: 515px; left: 50%;
     transform: translateX(-50%);
     width: 300px; height: 30px;
     display: flex; justify-content: space-between;
@@ -2319,9 +2315,9 @@ header> .topdown {display: none;}
 .niro_1> .at6> .niro_control6> li:nth-child(1) {color: #898989;}
 
 /* 니로 - at7 */
-.niro_1> .at7 {height: 300px;}
+.niro_1> .at7 {height: 52vh;}
 .niro_1> .at7> .niro_at7_big {
-    width: 100%; height: 220px;
+    width: 100%; height: 41vh;
     position: absolute; top: 0; left: 0;
     background: url(../img2/niro/07.webp) no-repeat center center/cover;
 }
@@ -2331,16 +2327,16 @@ header> .topdown {display: none;}
     text-shadow: 2px -2px 3px #05141f; color: white;
 }
 .niro_1> .at7> p:nth-child(3) {
-    position: absolute; top: 230px; left: 5%; width: 90%;
+    position: absolute; top: 43vh; left: 5%; width: 90%;
     height: 50px; line-height: 3.5vh;
     font-size: 2.3vh; font-weight: bold; color: black;
     text-shadow: none;
 }
 
 /* 니로 - at8 */
-.niro_1> .at8 {height: 565px;}
+.niro_1> .at8 {height: 82.5vh;}
 .niro_1> .at8> .niro_at8_big {
-    width: 100%; height: 220px;
+    width: 100%; height: 41vh;
     position: absolute; top: 0; left: 0;
     background: url(../img2/niro/08_01.webp) no-repeat center center/cover;
 }
@@ -2350,7 +2346,7 @@ header> .topdown {display: none;}
     text-shadow: 2px -2px 3px #05141f; color: white;
 }
 .niro_1> .at8> p:nth-child(3) {
-    position: absolute; top: 230px; left: 5%; width: 90%;
+    position: absolute; top: 43vh; left: 5%; width: 90%;
     height: 50px; line-height: 3.5vh;
     font-size: 2.3vh; font-weight: bold; color: black;
     text-shadow: none;
@@ -2360,7 +2356,7 @@ header> .topdown {display: none;}
 /* mobile 이미지 */
 .niro_1> .at8> div:nth-child(5) {
     width: 300px; height: 250px; display: block;
-    position: absolute; top: 300px; left: 50%;
+    position: absolute; top: 49vh; left: 50%;
     transform: translateX(-50%); overflow: hidden;
 }
 .niro_1> .at8> div:nth-child(5)> ul {
@@ -2381,11 +2377,11 @@ header> .topdown {display: none;}
     width: 100%; height: 30px; color: black;
     text-shadow: 2px -2px 10px white;
     text-align: left; line-height: 15px;
-    font-size: 3.2vw; font-weight: bold; padding: 15px 10px;
+    font-size: 14px; font-weight: bold; padding: 15px 10px;
 }
 .niro_1> .at8> .niro_control8 {
     display: block;
-    position: absolute; top: 400px; left: 50%;
+    position: absolute; top: 470px; left: 50%;
     transform: translateX(-50%);
     width: 300px; height: 30px;
     display: flex; justify-content: space-between;
@@ -2399,9 +2395,9 @@ header> .topdown {display: none;}
 .niro_1> .at8> .niro_control8> li:nth-child(1) {color: #898989;}
 
 /* 니로 - at9 */
-.niro_1> .at9 {height: 585px;}
+.niro_1> .at9 {height: 85vh;}
 .niro_1> .at9> .niro_at9_big {
-    width: 100%; height: 220px;
+    width: 100%; height: 41vh;
     position: absolute; top: 0; left: 0;
     background: url(../img2/niro/09_01.webp) no-repeat center center/cover;
 }
@@ -2411,13 +2407,13 @@ header> .topdown {display: none;}
     text-shadow: 2px -2px 3px #05141f; color: white;
 }
 .niro_1> .at9> p:nth-child(3) {
-    position: absolute; top: 230px; left: 5%; width: 90%;
+    position: absolute; top: 43vh; left: 5%; width: 90%;
     height: 50px; line-height: 3.5vh;
     font-size: 2.3vh; font-weight: bold; color: black;
     text-shadow: none;
 }
 .niro_1> .at9> p:nth-child(4) {
-    position: absolute; top: 255px; left: 5%; width: 90%;
+    position: absolute; top: 46.5vh; left: 5%; width: 90%;
     height: 50px; line-height: 3.5vh;
     font-size: 2.3vh; font-weight: bold; color: black;
     text-shadow: none;
@@ -2428,7 +2424,7 @@ header> .topdown {display: none;}
 /* mobile 이미지 */
 .niro_1> .at9> div:nth-child(7) {
     width: 300px; height: 250px; display: block;
-    position: absolute; top: 320px; left: 50%;
+    position: absolute; top: 52vh; left: 50%;
     transform: translateX(-50%); overflow: hidden;
 }
 .niro_1> .at9> div:nth-child(7)> ul {
@@ -2449,11 +2445,11 @@ header> .topdown {display: none;}
     width: 100%; height: 30px; color: white;
     text-shadow: 2px -2px 10px #05141f;
     text-align: left; line-height: 15px;
-    font-size: 3.2vw; font-weight: bold; padding: 15px 10px;
+    font-size: 14px; font-weight: bold; padding: 15px 10px;
 }
 .niro_1> .at9> .niro_control9 {
     display: block;
-    position: absolute; top: 420px; left: 50%;
+    position: absolute; top: 490px; left: 50%;
     transform: translateX(-50%);
     width: 300px; height: 30px;
     display: flex; justify-content: space-between;
@@ -2541,11 +2537,11 @@ header> .topdown {display: none;}
 }
 
 .niro_2> .niro_2_mob> div:nth-child(3) {
-    width: 90%; height: 320px; display: block; overflow: hidden;
-    position: absolute; top: 120px; left: 5%; 
+    width: 370px; height: 330px; display: block; overflow: hidden;
+    position: absolute; top: 110px; left: 50%; transform: translateX(-50%);
 }
 .niro_2> .niro_2_mob> div:nth-child(3)> .swiper-wrapper> .swiper-slide {
-    float: left; width: 100%; height: 272px;
+    float: left; width: 100%; height: 295px; left: 50%; transform: translateX(-50%);
 
     /* Center slide text vertically */
     display: -webkit-box;
@@ -2564,18 +2560,18 @@ header> .topdown {display: none;}
 .niro_2> .niro_2_mob> div:nth-child(3)> .swiper-wrapper> .swiper-slide img {width: 100%;}
 
 .niro_2> .niro_2_mob> div:nth-child(4) {
-    width: 90%; height: 320px; display: block; overflow: hidden;
-    position: absolute; top: 120px; left: 5%;display: none;
+    width: 370px; height: 330px; display: block; overflow: hidden;
+    position: absolute; top: 110px; left: 50%; transform: translateX(-50%); display: none;
 }
 .niro_2> .niro_2_mob> div:nth-child(4)> .swiper-wrapper> .swiper-slide {
     float: left; width: 100%; height: 272px;
 }
 .niro_2> .niro_2_mob> div:nth-child(4)> .swiper-wrapper> .swiper-slide> div {
-    width: 50%; margin-top: 10px; margin-left: 25%;
+    width: 85%; margin-top: 0; margin-left: 58%; transform: translateX(-50%);
 }
-.niro_2> .niro_2_mob> div:nth-child(4)> .swiper-wrapper> .swiper-slide> div img {width: 110%;}
+.niro_2> .niro_2_mob> div:nth-child(4)> .swiper-wrapper> .swiper-slide> div img {width: 80%;}
 .niro_2> .niro_2_mob> div:nth-child(4)> .swiper-wrapper> .swiper-slide> p {
-    width: 100%; height: 20px; font-size: 4vw;
+    width: 370px; height: 20px; font-size: 16px;
     text-align: center; line-height: 20px;
 }
 
@@ -2604,9 +2600,9 @@ header> .topdown {display: none;}
     background: url(../img2/seltos/01.webp) no-repeat center center/cover;
 }
 .seltos_1> .at1> div> p:nth-child(1) {
-    position: absolute; top: 50px; left: 2.5%; width: 95%;
+    position: absolute; top: 50px; left: 5%; width: 90%;
     line-height: 3.5vh; text-align: center;
-    font-size: 5vw; font-weight: bold;
+    font-size: 22px; font-weight: bold;
     color: white; text-shadow: 2px -2px 8px #05141f;
 }
 .seltos_1> .at1> ul {
@@ -2638,30 +2634,30 @@ header> .topdown {display: none;}
     font-size: 2.5vh; font-weight: bold;
 }
 .seltos_1> .at2> div {
-    width: 100%; height: 400px;
-    position: absolute; top: 100px; left: 0;
+    width: 100%; height: 300px;
+    position: absolute; top: 50px; left: 0;
 }
 .seltos_1> .at2> div> .seltos_at2_color {
-    width: 100%;
+    width: 550px;
     position: absolute; top: -30px; left: 50%;
     transform: translateX(-50%); display: none;
 }
 .seltos_1> .at2> div> .seltos_at2_color img {width: 100%;}
 
 .seltos_1> .at2> .seltos0 {
-    width: 78%; height: 7vw;
+    width: 310px; height: 30px;
     position: absolute; top: 260px; left: 50%;
     transform: translateX(-50%);
 }
 .seltos_1> .at2> .seltos0> li {
     float: left; cursor: pointer;
-    width: 7vw; height: 100%;
+    width: 30px; height: 100%;
     border: 1px solid #ccc;
     border-radius: 100%;
 }
 .seltos_1> .at2> .seltos0> li:first-child {
-    text-align: center; line-height: 7vw; width: 50px;
-    font-weight: bold; font-size: 13.5px; border: none;
+    text-align: center; line-height: 30px; width: 50px;
+    font-weight: bold; font-size: 16px; border: none;
 }
 .seltos_1> .at2> .seltos0> li:nth-child(2) {
     margin-left: 2vw;
@@ -2689,21 +2685,21 @@ header> .topdown {display: none;}
 }
 
 .seltos_1> .at2> .seltos_at2_name0 {
-    width: 100%; height: 30px;
-    position: absolute; top: 290px; left: 45%;
+    width: 150px; height: 30px;
+    position: absolute; top: 290px; left: 47%;
     transform: translateX(-50%);
 }
 .seltos_1> .at2> .seltos_at2_name0> li {
     width: 100%; height: 100%;
-    position: absolute; top: 0; left: 0; font-size: 3.8vw;
-    text-indent: 125px; line-height: 30px;
+    position: absolute; top: 0; left: 0; font-size: 16px;
+    text-indent: 0; line-height: 30px;
     color: #898989; display: none;
 }
 
 /* 셀토스 - at3 */
-.seltos_1> .at3 {height: 565px;}
+.seltos_1> .at3 {height: 82.5vh;}
 .seltos_1> .at3> .seltos_at3_big {
-    width: 100%; height: 220px;
+    width: 100%; height: 41vh;
     position: absolute; top: 0; left: 0;
     background: url(../img2/seltos/03_01.webp) no-repeat center center/cover;
 }
@@ -2713,7 +2709,7 @@ header> .topdown {display: none;}
     text-shadow: 2px -2px 3px white; color: black;
 }
 .seltos_1> .at3> p:nth-child(3) {
-    position: absolute; top: 230px; left: 5%; width: 90%;
+    position: absolute; top: 43vh; left: 5%; width: 90%;
     height: 50px; line-height: 3.5vh;
     font-size: 2.3vh; font-weight: bold; color: black;
     text-shadow: none;
@@ -2723,7 +2719,7 @@ header> .topdown {display: none;}
 /* mobile 이미지 */
 .seltos_1> .at3> div:nth-child(5) {
     width: 300px; height: 250px; display: block;
-    position: absolute; top: 300px; left: 50%;
+    position: absolute; top: 49vh; left: 50%;
     transform: translateX(-50%); overflow: hidden;
 }
 .seltos_1> .at3> div:nth-child(5)> ul {
@@ -2744,11 +2740,11 @@ header> .topdown {display: none;}
     width: 100%; height: 30px; color: white;
     text-shadow: 2px -2px 10px #05141f;
     text-align: left; line-height: 15px;
-    font-size: 3.2vw; font-weight: bold; padding: 15px 10px;
+    font-size: 14px; font-weight: bold; padding: 15px 10px;
 }
 .seltos_1> .at3> .seltos_control3 {
     display: block;
-    position: absolute; top: 400px; left: 50%;
+    position: absolute; top: 470px; left: 50%;
     transform: translateX(-50%);
     width: 300px; height: 30px;
     display: flex; justify-content: space-between;
@@ -2762,21 +2758,21 @@ header> .topdown {display: none;}
 .seltos_1> .at3> .seltos_control3> li:nth-child(1) {color: #898989;}
 
 /* 셀토스 - at4 */
-.seltos_1> .at4 {height: 587px;}
+.seltos_1> .at4 {height: 85vh;}
 .seltos_1> .at4> .seltos_at4_big {
     width: 100%;
     position: absolute; top: 0; left: 0;
 }
 .seltos_1> .at4> .seltos_at4_big1 {
-    width: 100%; height: 220px;
+    width: 100%; height: 41vh;
     background: url(../img2/seltos/04_01.webp) no-repeat center center/cover;
 }
 .seltos_1> .at4> .seltos_at4_big2 {
-    width: 100%; height: 220px; display: none;
+    width: 100%; height: 41vh; display: none;
     background: url(../img2/seltos/04_02.webp) no-repeat center center/cover;
 }
 .seltos_1> .at4> .seltos_at4_big3 {
-    width: 100%; height: 220px; display: none;
+    width: 100%; height: 41vh; display: none;
     background: url(../img2/seltos/04_03.webp) no-repeat center center/cover;
 }
 .seltos_1> .at4> p:nth-child(4) {
@@ -2785,13 +2781,13 @@ header> .topdown {display: none;}
     text-shadow: 2px -2px 8px white;
 }
 .seltos_1> .at4> p:nth-child(5) {
-    position: absolute; top: 230px; left: 5%; width: 90%;
+    position: absolute; top: 43vh; left: 5%; width: 90%;
     height: 50px; line-height: 3.5vh; color: black;
     font-size: 2.3vh; font-weight: bold; text-shadow: none;
 }
 .seltos_1> .at4> .seltos_at4_btn1_box {
-    width: 45%; height: 40px;
-    position: absolute; top: 170px; left: 50%;
+    width: 180px; height: 40px;
+    position: absolute; top: 34vh; left: 50%;
     transform: translateX(-50%);
     display: flex;
     justify-content: space-evenly;
@@ -2818,7 +2814,7 @@ header> .topdown {display: none;}
 /* mobile 이미지 */
 .seltos_1> .at4> div:nth-child(9) {
     width: 300px; height: 250px; display: block;
-    position: absolute; top: 320px; left: 50%;
+    position: absolute; top: 52vh; left: 50%;
     transform: translateX(-50%); overflow: hidden;
 }
 .seltos_1> .at4> div:nth-child(9)> ul {
@@ -2839,11 +2835,11 @@ header> .topdown {display: none;}
     width: 100%; height: 30px; color: white;
     text-shadow: 2px -2px 10px #05141f;
     text-align: left; line-height: 15px;
-    font-size: 3.2vw; font-weight: bold; padding: 15px 10px;
+    font-size: 14px; font-weight: bold; padding: 15px 10px;
 }
 .seltos_1> .at4> .seltos_control4 {
     display: block;
-    position: absolute; top: 420px; left: 50%;
+    position: absolute; top: 490px; left: 50%;
     transform: translateX(-50%);
     width: 300px; height: 30px;
     display: flex; justify-content: space-between;
@@ -2857,9 +2853,9 @@ header> .topdown {display: none;}
 .seltos_1> .at4> .seltos_control4> li:nth-child(1) {color: #898989;}
 
 /* 셀토스 - at5 */
-.seltos_1> .at5 {height: 587px;}
+.seltos_1> .at5 {height: 85vh;}
 .seltos_1> .at5> .seltos_at5_big {
-    width: 100%; height: 220px;
+    width: 100%; height: 41vh;
     position: absolute; top: 0; left: 0;
     background: url(../img2/seltos/05_01.webp) no-repeat center center/cover;
 }
@@ -2869,7 +2865,7 @@ header> .topdown {display: none;}
     text-shadow: 2px -2px 3px #05141f; color: white;
 }
 .seltos_1> .at5> p:nth-child(3) {
-    position: absolute; top: 230px; left: 5%; width: 90%;
+    position: absolute; top: 43vh; left: 5%; width: 90%;
     height: 50px; line-height: 3.5vh;
     font-size: 2.3vh; font-weight: bold; color: black;
     text-shadow: none;
@@ -2880,7 +2876,7 @@ header> .topdown {display: none;}
 /* mobile 이미지 */
 .seltos_1> .at5> div:nth-child(6) {
     width: 300px; height: 250px; display: block;
-    position: absolute; top: 320px; left: 50%;
+    position: absolute; top: 52vh; left: 50%;
     transform: translateX(-50%); overflow: hidden;
 }
 .seltos_1> .at5> div:nth-child(6)> ul {
@@ -2901,11 +2897,11 @@ header> .topdown {display: none;}
     width: 100%; height: 30px; color: white;
     text-shadow: 2px -2px 10px #05141f;
     text-align: left; line-height: 15px;
-    font-size: 3.2vw; font-weight: bold; padding: 15px 10px;
+    font-size: 14px; font-weight: bold; padding: 15px 10px;
 }
 .seltos_1> .at5> .seltos_control5 {
     display: block;
-    position: absolute; top: 420px; left: 50%;
+    position: absolute; top: 490px; left: 50%;
     transform: translateX(-50%);
     width: 300px; height: 30px;
     display: flex; justify-content: space-between;
@@ -2919,9 +2915,9 @@ header> .topdown {display: none;}
 .seltos_1> .at5> .seltos_control5> li:nth-child(1) {color: #898989;}
 
 /* 셀토스 - at6 */
-.seltos_1> .at6 {height: 587px;}
+.seltos_1> .at6 {height: 85vh;}
 .seltos_1> .at6> .seltos_at6_big {
-    width: 100%; height: 220px;
+    width: 100%; height: 41vh;
     position: absolute; top: 0; left: 0;
     background: url(../img2/seltos/06_01.webp) no-repeat center center/cover;
 }
@@ -2931,7 +2927,7 @@ header> .topdown {display: none;}
     text-shadow: 2px -2px 3px white; color: black;
 }
 .seltos_1> .at6> p:nth-child(3) {
-    position: absolute; top: 230px; left: 5%; width: 90%;
+    position: absolute; top: 43vh; left: 5%; width: 90%;
     height: 50px; line-height: 3.5vh;
     font-size: 2.3vh; font-weight: bold; color: black;
     text-shadow: none;
@@ -2942,7 +2938,7 @@ header> .topdown {display: none;}
 /* mobile 이미지 */
 .seltos_1> .at6> div:nth-child(6) {
     width: 300px; height: 250px; display: block;
-    position: absolute; top: 320px; left: 50%;
+    position: absolute; top: 52vh; left: 50%;
     transform: translateX(-50%); overflow: hidden;
 }
 .seltos_1> .at6> div:nth-child(6)> ul {
@@ -2963,11 +2959,11 @@ header> .topdown {display: none;}
     width: 100%; height: 30px; color: white;
     text-shadow: 2px -2px 10px #05141f;
     text-align: left; line-height: 15px;
-    font-size: 3.2vw; font-weight: bold; padding: 15px 10px;
+    font-size: 14px; font-weight: bold; padding: 15px 10px;
 }
 .seltos_1> .at6> .seltos_control6 {
     display: block;
-    position: absolute; top: 420px; left: 50%;
+    position: absolute; top: 490px; left: 50%;
     transform: translateX(-50%);
     width: 300px; height: 30px;
     display: flex; justify-content: space-between;
@@ -2981,9 +2977,9 @@ header> .topdown {display: none;}
 .seltos_1> .at6> .seltos_control6> li:nth-child(1) {color: #898989;}
 
 /* 셀토스 - at7 */
-.seltos_1> .at7 {height: 565px;}
+.seltos_1> .at7 {height: 82.5vh;}
 .seltos_1> .at7> .seltos_at7_big {
-    width: 100%; height: 220px;
+    width: 100%; height: 41vh;
     position: absolute; top: 0; left: 0;
     background: url(../img2/seltos/07_01.webp) no-repeat center center/cover;
 }
@@ -2993,7 +2989,7 @@ header> .topdown {display: none;}
     text-shadow: 2px -2px 3px #05141f; color: white;
 }
 .seltos_1> .at7> p:nth-child(3) {
-    position: absolute; top: 230px; left: 5%; width: 90%;
+    position: absolute; top: 43vh; left: 5%; width: 90%;
     height: 50px; line-height: 3.5vh;
     font-size: 2.3vh; font-weight: bold; color: black;
     text-shadow: none;
@@ -3003,7 +2999,7 @@ header> .topdown {display: none;}
 /* mobile 이미지 */
 .seltos_1> .at7> div:nth-child(5) {
     width: 300px; height: 250px; display: block;
-    position: absolute; top: 300px; left: 50%;
+    position: absolute; top: 49vh; left: 50%;
     transform: translateX(-50%); overflow: hidden;
 }
 .seltos_1> .at7> div:nth-child(5)> ul {
@@ -3024,11 +3020,11 @@ header> .topdown {display: none;}
     width: 100%; height: 30px; color: white;
     text-shadow: 2px -2px 10px #05141f;
     text-align: left; line-height: 15px;
-    font-size: 3.2vw; font-weight: bold; padding: 15px 10px;
+    font-size: 14px; font-weight: bold; padding: 15px 10px;
 }
 .seltos_1> .at7> .seltos_control7 {
     display: block;
-    position: absolute; top: 400px; left: 50%;
+    position: absolute; top: 470px; left: 50%;
     transform: translateX(-50%);
     width: 300px; height: 30px;
     display: flex; justify-content: space-between;
@@ -3042,9 +3038,9 @@ header> .topdown {display: none;}
 .seltos_1> .at7> .seltos_control7> li:nth-child(1) {color: #898989;}
 
 /* 셀토스 - at8 */
-.seltos_1> .at8 {height: 605px;}
+.seltos_1> .at8 {height: 88vh;}
 .seltos_1> .at8> .seltos_at8_big {
-    width: 100%; height: 220px;
+    width: 100%; height: 41vh;
     position: absolute; top: 0; left: 0;
     background: url(../img2/seltos/08_01.webp) no-repeat center center/cover;
 }
@@ -3054,13 +3050,13 @@ header> .topdown {display: none;}
     text-shadow: 2px -2px 3px white; color: black;
 }
 .seltos_1> .at8> p:nth-child(3) {
-    position: absolute; top: 230px; left: 5%; width: 90%;
+    position: absolute; top: 43vh; left: 5%; width: 90%;
     height: 50px; line-height: 3.5vh;
     font-size: 2.3vh; font-weight: bold; color: black;
     text-shadow: none;
 }
 .seltos_1> .at8> p:nth-child(4) {
-    position: absolute; top: 255px; left: 5%; width: 90%;
+    position: absolute; top: 46.5vh; left: 5%; width: 90%;
     height: 50px; line-height: 3.5vh;
     font-size: 2.3vh; font-weight: bold; color: black;
     text-shadow: none;
@@ -3070,7 +3066,7 @@ header> .topdown {display: none;}
 /* mobile 이미지 */
 .seltos_1> .at8> div:nth-child(6) {
     width: 300px; height: 250px; display: block;
-    position: absolute; top: 340px; left: 50%;
+    position: absolute; top: 55vh; left: 50%;
     transform: translateX(-50%); overflow: hidden;
 }
 .seltos_1> .at8> div:nth-child(6)> ul {
@@ -3091,11 +3087,11 @@ header> .topdown {display: none;}
     width: 100%; height: 30px; color: white;
     text-shadow: 2px -2px 10px #05141f;
     text-align: left; line-height: 15px;
-    font-size: 3.2vw; font-weight: bold; padding: 15px 10px;
+    font-size: 14px; font-weight: bold; padding: 15px 10px;
 }
 .seltos_1> .at8> .seltos_control8 {
     display: block;
-    position: absolute; top: 440px; left: 50%;
+    position: absolute; top: 515px; left: 50%;
     transform: translateX(-50%);
     width: 300px; height: 30px;
     display: flex; justify-content: space-between;
@@ -3109,9 +3105,9 @@ header> .topdown {display: none;}
 .seltos_1> .at8> .seltos_control8> li:nth-child(1) {color: #898989;}
 
 /* 셀토스 - at9 */
-.seltos_1> .at9 {height: 565px;}
+.seltos_1> .at9 {height: 82.5vh;}
 .seltos_1> .at9> .seltos_at9_big {
-    width: 100%; height: 220px;
+    width: 100%; height: 41vh;
     position: absolute; top: 0; left: 0;
     background: url(../img2/seltos/09_01.webp) no-repeat center center/cover;
 }
@@ -3121,7 +3117,7 @@ header> .topdown {display: none;}
     text-shadow: 2px -2px 3px white; color: black;
 }
 .seltos_1> .at9> p:nth-child(3) {
-    position: absolute; top: 230px; left: 5%; width: 90%;
+    position: absolute; top: 43vh; left: 5%; width: 90%;
     height: 50px; line-height: 3.5vh;
     font-size: 2.3vh; font-weight: bold; color: black;
     text-shadow: none;
@@ -3134,7 +3130,7 @@ header> .topdown {display: none;}
 /* mobile 이미지 */
 .seltos_1> .at9> div:nth-child(9) {
     width: 300px; height: 250px; display: block;
-    position: absolute; top: 300px; left: 50%;
+    position: absolute; top: 49vh; left: 50%;
     transform: translateX(-50%); overflow: hidden;
 }
 .seltos_1> .at9> div:nth-child(9)> ul {
@@ -3155,11 +3151,11 @@ header> .topdown {display: none;}
     width: 100%; height: 30px; color: white;
     text-shadow: 2px -2px 10px #05141f;
     text-align: left; line-height: 15px;
-    font-size: 3.2vw; font-weight: bold; padding: 15px 10px;
+    font-size: 14px; font-weight: bold; padding: 15px 10px;
 }
 .seltos_1> .at9> .seltos_control9 {
     display: block;
-    position: absolute; top: 400px; left: 50%;
+    position: absolute; top: 470px; left: 50%;
     transform: translateX(-50%);
     width: 300px; height: 30px;
     display: flex; justify-content: space-between;
@@ -3248,11 +3244,11 @@ header> .topdown {display: none;}
 
 
 .seltos_2> .seltos2_mob> div:nth-child(3) {
-    width: 90%; height: 320px; display: block; overflow: hidden;
-    position: absolute; top: 120px; left: 5%;
+    width: 670px; height: 330px; display: block; overflow: hidden;
+    position: absolute; top: 110px; left: 50%; transform: translateX(-50%);
 }
 .seltos_2> .seltos2_mob> div:nth-child(3)> .swiper-wrapper> .swiper-slide {
-    float: left; width: 100%; height: 272px;
+    float: left; width: 50%; height: 295px;
 
     /* Center slide text vertically */
     display: -webkit-box;
@@ -3268,21 +3264,21 @@ header> .topdown {display: none;}
     -webkit-align-items: center;
     align-items: center;
 }
-.seltos_2> .seltos2_mob> div:nth-child(3)> .swiper-wrapper> .swiper-slide img {width: 90%;}
+.seltos_2> .seltos2_mob> div:nth-child(3)> .swiper-wrapper> .swiper-slide img {width: 50%;}
 
 .seltos_2> .seltos2_mob> div:nth-child(4) {
-    width: 90%; height: 320px; display: block; overflow: hidden;
-    position: absolute; top: 120px; left: 5%;display: none;
+    width: 370px; height: 330px; display: block; overflow: hidden;
+    position: absolute; top: 100px; left: 50%; transform: translateX(-50%); display: none;
 }
 .seltos_2> .seltos2_mob> div:nth-child(4)> .swiper-wrapper> .swiper-slide {
     float: left; width: 100%; height: 272px;
 }
 .seltos_2> .seltos2_mob> div:nth-child(4)> .swiper-wrapper> .swiper-slide> div {
-    width: 80%; margin-top: 10px; margin-left: 7%;
+    width: 100%; margin-top: 0; margin-left: 0;
 }
-.seltos_2> .seltos2_mob> div:nth-child(4)> .swiper-wrapper> .swiper-slide> div img {width: 150%;}
+.seltos_2> .seltos2_mob> div:nth-child(4)> .swiper-wrapper> .swiper-slide> div img {width: 140%;}
 .seltos_2> .seltos2_mob> div:nth-child(4)> .swiper-wrapper> .swiper-slide> p {
-    width: 100%; height: 20px; font-size: 4vw;
+    width: 370px; height: 20px; font-size: 16px;
     text-align: center; line-height: 20px;
 }
 
@@ -3312,7 +3308,7 @@ header> .topdown {display: none;}
 .mohave_1> .at1> div> p:nth-child(1) {
     position: absolute; top: 50px; left: 2.5%; width: 95%;
     line-height: 3.5vh; text-align: center;
-    font-size: 5.5vw; font-weight: bold;
+    font-size: 22px; font-weight: bold;
     color: white; text-shadow: 2px -2px 8px #05141f;
 }
 
@@ -3347,29 +3343,29 @@ header> .topdown {display: none;}
 }
 .mohave_1> .at2> div {
     width: 100%; height: 300px;
-    position: absolute; top: 50px; left: 0;
+    position: absolute; top: 30px; left: 0;
 }
 .mohave_1> .at2> div> .mohave_at2_color {
-    width: 100%; height: 45vw;
+    width: 450px; height: 45vw;
     position: absolute; top: 15px; left: 50%;
     transform: translateX(-50%); display: none;
 }
 .mohave_1> .at2> div> .mohave_at2_color img {width: 100%;}
 
 .mohave_1> .at2> .mohave0 {
-    width: 78%; height: 7vw;
+    width: 310px; height: 30px;
     position: absolute; top: 260px; left: 50%;
     transform: translateX(-50%);
 }
 .mohave_1> .at2> .mohave0> li {
     float: left; cursor: pointer;
-    width: 7vw; height: 100%;
+    width: 30px; height: 100%;
     border: 1px solid #ccc;
     border-radius: 100%;
 }
 .mohave_1> .at2> .mohave0> li:first-child {
-    text-align: center; line-height: 7vw; width: 50px;
-    font-weight: bold; font-size: 13.5px; border: none;
+    text-align: center; line-height: 30px; width: 50px;
+    font-weight: bold; font-size: 16px; border: none;
 }
 .mohave_1> .at2> .mohave0> li:nth-child(2) {
     margin-left: 2vw;
@@ -3393,22 +3389,22 @@ header> .topdown {display: none;}
 }
 
 .mohave_1> .at2> .mohave_at2_name0 {
-    width: 100%; height: 30px;
-    position: absolute; top: 290px; left: 45%;
+    width: 150px; height: 30px;
+    position: absolute; top: 290px; left: 47%;
     transform: translateX(-50%);
 }
 .mohave_1> .at2> .mohave_at2_name0> li {
     width: 100%; height: 100%;
-    position: absolute; top: 0; left: 0; font-size: 3.8vw;
-    text-indent: 125px; line-height: 30px;
+    position: absolute; top: 0; left: 0; font-size: 16px;
+    text-indent: 0; line-height: 30px;
     color: #898989; display: none;
 }
 
 
 /* 모하비 - at3 */
-.mohave_1> .at3 {height: 565px;}
+.mohave_1> .at3 {height: 82.5vh;}
 .mohave_1> .at3> .mohave_at3_big {
-    width: 100%; height: 220px;
+    width: 100%; height: 41vh;
     position: absolute; top: 0; left: 0;
     background: url(../img2/mohave/03_01.webp) no-repeat center center/cover;
 }
@@ -3419,7 +3415,7 @@ header> .topdown {display: none;}
     text-shadow: 2px -2px 3px #05141f; color: white;
 }
 .mohave_1> .at3> p:nth-child(3) {
-    position: absolute; top: 230px; left: 5%; width: 90%;
+    position: absolute; top: 43vh; left: 5%; width: 90%;
     height: 50px; line-height: 3.5vh;
     font-size: 2.3vh; font-weight: bold; color: black;
     text-shadow: none;
@@ -3429,7 +3425,7 @@ header> .topdown {display: none;}
 /* mobile 이미지 */
 .mohave_1> .at3> div:nth-child(5) {
     width: 300px; height: 250px; display: block;
-    position: absolute; top: 300px; left: 50%;
+    position: absolute; top: 49vh; left: 50%;
     transform: translateX(-50%); overflow: hidden;
 }
 .mohave_1> .at3> div:nth-child(5)> ul {
@@ -3450,11 +3446,11 @@ header> .topdown {display: none;}
     width: 100%; height: 30px; color: white;
     text-shadow: 2px -2px 10px #05141f;
     text-align: left; line-height: 15px;
-    font-size: 3.2vw; font-weight: bold; padding: 15px 10px;
+    font-size: 14px; font-weight: bold; padding: 15px 10px;
 }
 .mohave_1> .at3> .mohave_control3 {
     display: block;
-    position: absolute; top: 400px; left: 50%;
+    position: absolute; top: 470px; left: 50%;
     transform: translateX(-50%);
     width: 300px; height: 30px;
     display: flex; justify-content: space-between;
@@ -3469,21 +3465,21 @@ header> .topdown {display: none;}
 
 
 /* 모하비 - at4 */
-.mohave_1> .at4 {height: 565px;}
+.mohave_1> .at4 {height: 82.5vh;}
 .mohave_1> .at4> .mohave_at4_big {
     width: 100%;
     position: absolute; top: 0; left: 0;
 }
 .mohave_1> .at4> .mohave_at4_big1 {
-    width: 100%; height: 220px;
+    width: 100%; height: 41vh;
     background: url(../img2/mohave/04_01.webp) no-repeat center center/cover;
 }
 .mohave_1> .at4> .mohave_at4_big2 {
-    width: 100%; height: 220px; display: none;
+    width: 100%; height: 41vh; display: none;
     background: url(../img2/mohave/04_02.webp) no-repeat center center/cover;
 }
 .mohave_1> .at4> .mohave_at4_big3 {
-    width: 100%; height: 220px; display: none;
+    width: 100%; height: 41vh; display: none;
     background: url(../img2/mohave/04_03.webp) no-repeat center center/cover;
 }
 
@@ -3493,14 +3489,14 @@ header> .topdown {display: none;}
     text-shadow: 2px -2px 8px white;
 }
 .mohave_1> .at4> p:nth-child(5) {
-    position: absolute; top: 230px; left: 5%; width: 90%;
+    position: absolute; top: 43vh; left: 5%; width: 90%;
     height: 50px; line-height: 3.5vh; color: black;
     font-size: 2.3vh; font-weight: bold; text-shadow: none;
 }
 
 .mohave_1> .at4> .mohave_at4_btn1_box {
-    width: 45%; height: 40px;
-    position: absolute; top: 170px; left: 50%;
+    width: 180px; height: 40px;
+    position: absolute; top: 34vh; left: 50%;
     transform: translateX(-50%);
     display: flex;
     justify-content: space-evenly;
@@ -3527,7 +3523,7 @@ header> .topdown {display: none;}
 /* mobile 이미지 */
 .mohave_1> .at4> div:nth-child(9) {
     width: 300px; height: 250px; display: block;
-    position: absolute; top: 300px; left: 50%;
+    position: absolute; top: 49vh; left: 50%;
     transform: translateX(-50%); overflow: hidden;
 }
 .mohave_1> .at4> div:nth-child(9)> ul {
@@ -3548,11 +3544,11 @@ header> .topdown {display: none;}
     width: 100%; height: 30px; color: white;
     text-shadow: 2px -2px 10px #05141f;
     text-align: left; line-height: 15px;
-    font-size: 3.2vw; font-weight: bold; padding: 15px 10px;
+    font-size: 14px; font-weight: bold; padding: 15px 10px;
 }
 .mohave_1> .at4> .mohave_control4 {
     display: block;
-    position: absolute; top: 400px; left: 50%;
+    position: absolute; top: 470px; left: 50%;
     transform: translateX(-50%);
     width: 300px; height: 30px;
     display: flex; justify-content: space-between;
@@ -3567,9 +3563,9 @@ header> .topdown {display: none;}
 
 
 /* 모하비 - at5 */
-.mohave_1> .at5 {height: 565px;}
+.mohave_1> .at5 {height: 82.5vh;}
 .mohave_1> .at5> .mohave_at5_big {
-    width: 100%; height: 220px;
+    width: 100%; height: 41vh;
     position: absolute; top: 0; left: 0;
     background: url(../img2/mohave/05_01.webp) no-repeat center center/cover;
 }
@@ -3579,7 +3575,7 @@ header> .topdown {display: none;}
     text-shadow: 2px -2px 3px #05141f; color: white;
 }
 .mohave_1> .at5> p:nth-child(3) {
-    position: absolute; top: 230px; left: 5%; width: 90%;
+    position: absolute; top: 43vh; left: 5%; width: 90%;
     height: 50px; line-height: 3.5vh;
     font-size: 2.3vh; font-weight: bold; color: black;
     text-shadow: none;
@@ -3590,7 +3586,7 @@ header> .topdown {display: none;}
 /* mobile 이미지 */
 .mohave_1> .at5> div:nth-child(6) {
     width: 300px; height: 250px; display: block;
-    position: absolute; top: 300px; left: 50%;
+    position: absolute; top: 49vh; left: 50%;
     transform: translateX(-50%); overflow: hidden;
 }
 .mohave_1> .at5> div:nth-child(6)> ul {
@@ -3611,11 +3607,11 @@ header> .topdown {display: none;}
     width: 100%; height: 30px; color: white;
     text-shadow: 2px -2px 10px #05141f;
     text-align: left; line-height: 15px;
-    font-size: 3.2vw; font-weight: bold; padding: 15px 10px;
+    font-size: 14px; font-weight: bold; padding: 15px 10px;
 }
 .mohave_1> .at5> .mohave_control5 {
     display: block;
-    position: absolute; top: 400px; left: 50%;
+    position: absolute; top: 470px; left: 50%;
     transform: translateX(-50%);
     width: 300px; height: 30px;
     display: flex; justify-content: space-between;
@@ -3630,9 +3626,9 @@ header> .topdown {display: none;}
 
 
 /* 모하비 - at6 */
-.mohave_1> .at6 {height: 565px;}
+.mohave_1> .at6 {height: 82.5vh;}
 .mohave_1> .at6> .mohave_at6_big {
-    width: 100%; height: 220px;
+    width: 100%; height: 41vh;
     position: absolute; top: 0; left: 0;
     background: url(../img2/mohave/06_01.webp) no-repeat center center/cover;
 }
@@ -3643,7 +3639,7 @@ header> .topdown {display: none;}
     text-shadow: 2px -2px 3px white; color: black;
 }
 .mohave_1> .at6> p:nth-child(3) {
-    position: absolute; top: 230px; left: 5%; width: 90%;
+    position: absolute; top: 43vh; left: 5%; width: 90%;
     height: 50px; line-height: 3.5vh;
     font-size: 2.3vh; font-weight: bold; color: black;
     text-shadow: none;
@@ -3654,7 +3650,7 @@ header> .topdown {display: none;}
 /* mobile 이미지 */
 .mohave_1> .at6> div:nth-child(6) {
     width: 300px; height: 250px; display: block;
-    position: absolute; top: 300px; left: 50%;
+    position: absolute; top: 49vh; left: 50%;
     transform: translateX(-50%); overflow: hidden;
 }
 .mohave_1> .at6> div:nth-child(6)> ul {
@@ -3675,11 +3671,11 @@ header> .topdown {display: none;}
     width: 100%; height: 30px; color: white;
     text-shadow: 2px -2px 10px #05141f;
     text-align: left; line-height: 15px;
-    font-size: 3.2vw; font-weight: bold; padding: 15px 10px;
+    font-size: 14px; font-weight: bold; padding: 15px 10px;
 }
 .mohave_1> .at6> .mohave_control6 {
     display: block;
-    position: absolute; top: 400px; left: 50%;
+    position: absolute; top: 470px; left: 50%;
     transform: translateX(-50%);
     width: 300px; height: 30px;
     display: flex; justify-content: space-between;
@@ -3694,9 +3690,9 @@ header> .topdown {display: none;}
 
 
 /* 모하비 - at7 */
-.mohave_1> .at7 {height: 565px;}
+.mohave_1> .at7 {height: 82.5vh;}
 .mohave_1> .at7> .mohave_at7_big {
-    width: 100%; height: 220px;
+    width: 100%; height: 41vh;
     position: absolute; top: 0; left: 0;
     background: url(../img2/mohave/07_01.webp) no-repeat center center/cover;
 }
@@ -3707,7 +3703,7 @@ header> .topdown {display: none;}
     text-shadow: 2px -2px 3px #05141f; color: white;
 }
 .mohave_1> .at7> p:nth-child(3) {
-    position: absolute; top: 230px; left: 5%; width: 90%;
+    position: absolute; top: 43vh; left: 5%; width: 90%;
     height: 50px; line-height: 3.5vh;
     font-size: 2.3vh; font-weight: bold; color: black;
     text-shadow: none;
@@ -3719,7 +3715,7 @@ header> .topdown {display: none;}
 /* mobile 이미지 */
 .mohave_1> .at7> div:nth-child(7) {
     width: 300px; height: 250px; display: block;
-    position: absolute; top: 300px; left: 50%;
+    position: absolute; top: 49vh; left: 50%;
     transform: translateX(-50%); overflow: hidden;
 }
 .mohave_1> .at7> div:nth-child(7)> ul {
@@ -3740,11 +3736,11 @@ header> .topdown {display: none;}
     width: 100%; height: 30px; color: white;
     text-shadow: 2px -2px 10px #05141f;
     text-align: left; line-height: 15px;
-    font-size: 3.2vw; font-weight: bold; padding: 15px 10px;
+    font-size: 14px; font-weight: bold; padding: 15px 10px;
 }
 .mohave_1> .at7> .mohave_control7 {
     display: block;
-    position: absolute; top: 400px; left: 50%;
+    position: absolute; top: 470px; left: 50%;
     transform: translateX(-50%);
     width: 300px; height: 30px;
     display: flex; justify-content: space-between;
@@ -3759,9 +3755,9 @@ header> .topdown {display: none;}
 
 
 /* 모하비 - at8 */
-.mohave_1> .at8 {height: 825px;}
+.mohave_1> .at8 {height: 130vh;}
 .mohave_1> .at8> .mohave_at8_big {
-    width: 100%; height: 220px;
+    width: 100%; height: 41vh;
     position: absolute; top: 0; left: 0;
     background: url(../img2/mohave/08_01.webp) no-repeat center top/cover;
 }
@@ -3771,18 +3767,18 @@ header> .topdown {display: none;}
     text-shadow: 2px -2px 3px #05141f; color: white;
 }
 .mohave_1> .at8> p:nth-child(3) {
-    position: absolute; top: 230px; left: 5%; width: 90%;
+    position: absolute; top: 43vh; left: 5%; width: 90%;
     height: 50px; line-height: 3.5vh;
     font-size: 2.3vh; font-weight: bold; color: black;
     text-shadow: none;
 }
 .mohave_1> .at8> .mohave_at8_big2 {
-    width: 100%; height: 220px;
-    position: absolute; top: 265px; left: 0;
+    width: 100%; height: 41vh;
+    position: absolute; top: 48vh; left: 0;
     background: url(../img2/mohave/08_02.webp) no-repeat center center/cover;
 }
 .mohave_1> .at8> p:nth-child(6) {
-    position: absolute; top: 495px; left: 5%; width: 90%;
+    position: absolute; top: 91vh; left: 5%; width: 90%;
     height: 50px; line-height: 3.5vh;
     font-size: 2.3vh; font-weight: bold; color: black;
     text-shadow: none;
@@ -3792,7 +3788,7 @@ header> .topdown {display: none;}
 /* mobile 이미지 */
 .mohave_1> .at8> div:nth-child(8) {
     width: 300px; height: 250px; display: block;
-    position: absolute; top: 560px; left: 50%;
+    position: absolute; top: 97vh; left: 50%;
     transform: translateX(-50%); overflow: hidden;
 }
 .mohave_1> .at8> div:nth-child(8)> ul {
@@ -3813,11 +3809,11 @@ header> .topdown {display: none;}
     width: 100%; height: 30px; color: white;
     text-shadow: 2px -2px 10px #05141f;
     text-align: left; line-height: 15px;
-    font-size: 3.2vw; font-weight: bold; padding: 15px 10px;
+    font-size: 14px; font-weight: bold; padding: 15px 10px; z-index: 5000;
 }
 .mohave_1> .at8> .mohave_control8 {
     display: block;
-    position: absolute; top: 655px; left: 50%;
+    position: absolute; top: 840px; left: 50%;
     transform: translateX(-50%);
     width: 300px; height: 30px;
     display: flex; justify-content: space-between;
@@ -3832,9 +3828,9 @@ header> .topdown {display: none;}
 
 
 /* 모하비 - at9 */
-.mohave_1> .at9 {height: 565px;}
+.mohave_1> .at9 {height: 82.5vh;}
 .mohave_1> .at9> .mohave_at9_big {
-    width: 100%; height: 220px;
+    width: 100%; height: 41vh;
     position: absolute; top: 0; left: 0;
     background: url(../img2/mohave/09_01.webp) no-repeat center center/cover;
 }
@@ -3844,7 +3840,7 @@ header> .topdown {display: none;}
     text-shadow: 2px -2px 3px white; color: black;
 }
 .mohave_1> .at9> p:nth-child(3) {
-    position: absolute; top: 230px; left: 5%; width: 90%;
+    position: absolute; top: 43vh; left: 5%; width: 90%;
     height: 50px; line-height: 3.5vh;
     font-size: 2.3vh; font-weight: bold; color: black;
     text-shadow: none;
@@ -3854,7 +3850,7 @@ header> .topdown {display: none;}
 /* mobile 이미지 */
 .mohave_1> .at9> div:nth-child(5) {
     width: 300px; height: 250px; display: block;
-    position: absolute; top: 300px; left: 50%;
+    position: absolute; top: 49vh; left: 50%;
     transform: translateX(-50%); overflow: hidden;
 }
 .mohave_1> .at9> div:nth-child(5)> ul {
@@ -3875,11 +3871,11 @@ header> .topdown {display: none;}
     width: 100%; height: 30px; color: white;
     text-shadow: 2px -2px 10px #05141f;
     text-align: left; line-height: 15px;
-    font-size: 3.2vw; font-weight: bold; padding: 15px 10px;
+    font-size: 14px; font-weight: bold; padding: 15px 10px;
 }
 .mohave_1> .at9> .mohave_control9 {
     display: block;
-    position: absolute; top: 400px; left: 50%;
+    position: absolute; top: 470px; left: 50%;
     transform: translateX(-50%);
     width: 300px; height: 30px;
     display: flex; justify-content: space-between;
@@ -3968,11 +3964,11 @@ header> .topdown {display: none;}
 
 
 .mohave_2> .mohave_2_mob> div:nth-child(3) {
-    width: 90%; height: 320px; display: block; overflow: hidden;
-    position: absolute; top: 120px; left: 5%; 
+    width: 370px; height: 330px; display: block; overflow: hidden;
+    position: absolute; top: 110px; left: 50%; transform: translateX(-50%);
 }
 .mohave_2> .mohave_2_mob> div:nth-child(3)> .swiper-wrapper> .swiper-slide {
-    float: left; width: 100%; height: 272px;
+    float: left; width: 100%; height: 295px; left: 50%; transform: translateX(-50%);
 
     /* Center slide text vertically */
     display: -webkit-box;
@@ -3991,18 +3987,18 @@ header> .topdown {display: none;}
 .mohave_2> .mohave_2_mob> div:nth-child(3)> .swiper-wrapper> .swiper-slide img {width: 100%;}
 
 .mohave_2> .mohave_2_mob> div:nth-child(4) {
-    width: 90%; height: 320px; display: block; overflow: hidden;
-    position: absolute; top: 120px; left: 5%;display: none;
+    width: 370px; height: 365px; display: block; overflow: hidden;
+    position: absolute; top: 75px; left: 50%; transform: translateX(-50%); display: none;
 }
 .mohave_2> .mohave_2_mob> div:nth-child(4)> .swiper-wrapper> .swiper-slide {
     float: left; width: 100%; height: 272px;
 }
 .mohave_2> .mohave_2_mob> div:nth-child(4)> .swiper-wrapper> .swiper-slide> div {
-    width: 80%; margin-top: 10px; margin-left: 7%;
+    width: 100%; margin-top: 0; margin-left: 45%; transform: translateX(-50%);
 }
 .mohave_2> .mohave_2_mob> div:nth-child(4)> .swiper-wrapper> .swiper-slide> div img {width: 150%;}
 .mohave_2> .mohave_2_mob> div:nth-child(4)> .swiper-wrapper> .swiper-slide> p {
-    width: 100%; height: 20px; font-size: 4vw;
+    width: 370px; height: 20px; font-size: 16px;
     text-align: center; line-height: 20px;
 }
 
@@ -4031,9 +4027,9 @@ header> .topdown {display: none;}
     background: url(../img2/bonggo3/01.webp) no-repeat center center/cover;
 }
 .bonggo3_1> .at1> div> p:nth-child(1) {
-    position: absolute; top: 50px; left: 12.5%; width: 75%;
+    position: absolute; top: 50px; left: 5%; width: 90%;
     line-height: 3.5vh; text-align: center;
-    font-size: 5.5vw; font-weight: bold;
+    font-size: 22px; font-weight: bold;
     color: #05141f; text-shadow: 2px -2px 8px white;
 }
 
@@ -4060,22 +4056,22 @@ header> .topdown {display: none;}
 }
 
 /* bonggo3 - at2 */
-.bonggo3_1> .at2 {width: 100%; height: 310px; background: rgba(5, 20, 30, 0.6);}
+.bonggo3_1> .at2 {width: 100%; height: 325px; background: rgba(5, 20, 30, 0.6);}
 .bonggo3_1> .at2> p {
     position: absolute; top: 20px; left: 20px;
     font-size: 2.5vh; font-weight: bold; color: white;
 }
 .bonggo3_1> .at2> div {
-    width: 90%; height: 190px;
+    width: 400px; height: 215px;
     position: relative; top: 80px; left: 50%;
     transform: translateX(-50%);
 }
 .bonggo3_1> .at2> div> iframe {width: 100%; height: 100%;}
 
 /* bonggo3 - at3 */
-.bonggo3_1> .at3 {height: 605px;}
+.bonggo3_1> .at3 {height: 88vh;}
 .bonggo3_1> .at3> .bonggo3_at3_big {
-    width: 100%; height: 220px;
+    width: 100%; height: 41vh;
     position: absolute; top: 0; left: 0;
     background: url(../img2/bonggo3/03_01.webp) no-repeat center center/cover;
 }
@@ -4086,13 +4082,13 @@ header> .topdown {display: none;}
     text-shadow: 2px -2px 3px #05141f; color: white;
 }
 .bonggo3_1> .at3> p:nth-child(3) {
-    position: absolute; top: 230px; left: 5%; width: 90%;
+    position: absolute; top: 43vh; left: 5%; width: 90%;
     height: 50px; line-height: 3.5vh;
     font-size: 2.3vh; font-weight: bold; color: black;
     text-shadow: none;
 }
 .bonggo3_1> .at3> p:nth-child(4) {
-    position: absolute; top: 255px; left: 5%; width: 90%;
+    position: absolute; top: 46.5vh; left: 5%; width: 90%;
     height: 50px; line-height: 3.5vh;
     font-size: 2.3vh; font-weight: bold; color: black;
     text-shadow: none;
@@ -4102,7 +4098,7 @@ header> .topdown {display: none;}
 /* mobile 이미지 */
 .bonggo3_1> .at3> div:nth-child(6) {
     width: 300px; height: 250px; display: block;
-    position: absolute; top: 340px; left: 50%;
+    position: absolute; top: 55vh; left: 50%;
     transform: translateX(-50%); overflow: hidden;
 }
 .bonggo3_1> .at3> div:nth-child(6)> ul {
@@ -4123,11 +4119,11 @@ header> .topdown {display: none;}
     width: 100%; height: 30px; color: white;
     text-shadow: 2px -2px 10px #05141f;
     text-align: left; line-height: 15px;
-    font-size: 3.2vw; font-weight: bold; padding: 15px 10px;
+    font-size: 14px; font-weight: bold; padding: 15px 10px;
 }
 .bonggo3_1> .at3> .bonggo3_control3 {
     display: block;
-    position: absolute; top: 440px; left: 50%;
+    position: absolute; top: 515px; left: 50%;
     transform: translateX(-50%);
     width: 300px; height: 30px;
     display: flex; justify-content: space-between;
@@ -4142,9 +4138,9 @@ header> .topdown {display: none;}
 
 
 /* bonggo3 - at4 */
-.bonggo3_1> .at4 {height: 605px;}
+.bonggo3_1> .at4 {height: 88vh;}
 .bonggo3_1> .at4> .bonggo3_at4_big {
-    width: 100%; height: 220px;
+    width: 100%; height: 41vh;
     position: absolute; top: 0; left: 0;
     background: url(../img2/bonggo3/04_01.webp) no-repeat center center/cover;
 }
@@ -4155,13 +4151,13 @@ header> .topdown {display: none;}
     text-shadow: 2px -2px 3px #05141f; color: white;
 }
 .bonggo3_1> .at4> p:nth-child(3) {
-    position: absolute; top: 230px; left: 5%; width: 90%;
+    position: absolute; top: 43vh; left: 5%; width: 90%;
     height: 50px; line-height: 3.5vh;
     font-size: 2.3vh; font-weight: bold; color: black;
     text-shadow: none;
 }
 .bonggo3_1> .at4> p:nth-child(4) {
-    position: absolute; top: 255px; left: 5%; width: 90%;
+    position: absolute; top: 46.5vh; left: 5%; width: 90%;
     height: 50px; line-height: 3.5vh;
     font-size: 2.3vh; font-weight: bold; color: black;
     text-shadow: none;
@@ -4173,7 +4169,7 @@ header> .topdown {display: none;}
 /* mobile 이미지 */
 .bonggo3_1> .at4> div:nth-child(7) {
     width: 300px; height: 250px; display: block;
-    position: absolute; top: 340px; left: 50%;
+    position: absolute; top: 55vh; left: 50%;
     transform: translateX(-50%); overflow: hidden;
 }
 .bonggo3_1> .at4> div:nth-child(7)> ul {
@@ -4194,11 +4190,11 @@ header> .topdown {display: none;}
     width: 100%; height: 30px; color: white;
     text-shadow: 2px -2px 10px #05141f;
     text-align: left; line-height: 15px;
-    font-size: 3.2vw; font-weight: bold; padding: 15px 10px;
+    font-size: 14px; font-weight: bold; padding: 15px 10px;
 }
 .bonggo3_1> .at4> .bonggo3_control4 {
     display: block;
-    position: absolute; top: 440px; left: 50%;
+    position: absolute; top: 515px; left: 50%;
     transform: translateX(-50%);
     width: 300px; height: 30px;
     display: flex; justify-content: space-between;
@@ -4212,9 +4208,9 @@ header> .topdown {display: none;}
 .bonggo3_1> .at4> .bonggo3_control4> li:nth-child(1) {color: #898989;}
 
 /* bonggo3 - at5 */
-.bonggo3_1> .at5 {height: 605px;}
+.bonggo3_1> .at5 {height: 88vh;}
 .bonggo3_1> .at5> .bonggo3_at5_big {
-    width: 100%; height: 220px;
+    width: 100%; height: 41vh;
     position: absolute; top: 0; left: 0;
     background: url(../img2/bonggo3/05_01.webp) no-repeat center center/cover;
 }
@@ -4225,13 +4221,13 @@ header> .topdown {display: none;}
     text-shadow: 2px -2px 3px #05141f; color: white;
 }
 .bonggo3_1> .at5> p:nth-child(3) {
-    position: absolute; top: 230px; left: 5%; width: 90%;
+    position: absolute; top: 43vh; left: 5%; width: 90%;
     height: 50px; line-height: 3.5vh;
     font-size: 2.3vh; font-weight: bold; color: black;
     text-shadow: none;
 }
 .bonggo3_1> .at5> p:nth-child(4) {
-    position: absolute; top: 255px; left: 5%; width: 90%;
+    position: absolute; top: 46.5vh; left: 5%; width: 90%;
     height: 50px; line-height: 3.5vh;
     font-size: 2.3vh; font-weight: bold; color: black;
     text-shadow: none;
@@ -4243,7 +4239,7 @@ header> .topdown {display: none;}
 /* mobile 이미지 */
 .bonggo3_1> .at5> div:nth-child(7) {
     width: 300px; height: 250px; display: block;
-    position: absolute; top: 340px; left: 50%;
+    position: absolute; top: 55vh; left: 50%;
     transform: translateX(-50%); overflow: hidden;
 }
 .bonggo3_1> .at5> div:nth-child(7)> ul {
@@ -4264,11 +4260,11 @@ header> .topdown {display: none;}
     width: 100%; height: 30px; color: white;
     text-shadow: 2px -2px 10px #05141f;
     text-align: left; line-height: 15px;
-    font-size: 3.2vw; font-weight: bold; padding: 15px 10px;
+    font-size: 14px; font-weight: bold; padding: 15px 10px;
 }
 .bonggo3_1> .at5> .bonggo3_control5 {
     display: block;
-    position: absolute; top: 440px; left: 50%;
+    position: absolute; top: 515px; left: 50%;
     transform: translateX(-50%);
     width: 300px; height: 30px;
     display: flex; justify-content: space-between;
@@ -4359,11 +4355,11 @@ header> .topdown {display: none;}
 
 
 .bonggo3_2> .bonggo3_mob> div:nth-child(3) {
-    width: 90%; height: 320px; display: block; overflow: hidden;
-    position: absolute; top: 120px; left: 5%; 
+    width: 420px; height: 340px; display: block; overflow: hidden;
+    position: absolute; top: 100px; left: 50%; transform: translateX(-50%); 
 }
 .bonggo3_2> .bonggo3_mob> div:nth-child(3)> .swiper-wrapper> .swiper-slide {
-    float: left; width: 100%; height: 272px;
+    float: left; width: 100%; height: 310px;
 
     /* Center slide text vertically */
     display: -webkit-box;
@@ -4382,18 +4378,18 @@ header> .topdown {display: none;}
 .bonggo3_2> .bonggo3_mob> div:nth-child(3)> .swiper-wrapper> .swiper-slide img {width: 100%;}
 
 .bonggo3_2> .bonggo3_mob> div:nth-child(4) {
-    width: 90%; height: 320px; display: block; overflow: hidden;
-    position: absolute; top: 120px; left: 5%;display: none;
+    width: 370px; height: 330px; display: block; overflow: hidden;
+    position: absolute; top: 110px; left: 50%; transform: translateX(-50%); display: none;
 }
 .bonggo3_2> .bonggo3_mob> div:nth-child(4)> .swiper-wrapper> .swiper-slide {
     float: left; width: 100%; height: 272px;
 }
 .bonggo3_2> .bonggo3_mob> div:nth-child(4)> .swiper-wrapper> .swiper-slide> div {
-    width: 80%; margin-top: 10px; margin-left: 7%;
+    width: 340px; margin-top: 0; margin-left: 0%;
 }
 .bonggo3_2> .bonggo3_mob> div:nth-child(4)> .swiper-wrapper> .swiper-slide> div img {width: 150%;}
 .bonggo3_2> .bonggo3_mob> div:nth-child(4)> .swiper-wrapper> .swiper-slide> p {
-    width: 100%; height: 20px; font-size: 4vw;
+    width: 100%; height: 20px; font-size: 16px;
     text-align: center; line-height: 20px;
 }
 
@@ -4422,7 +4418,7 @@ header> .topdown {display: none;}
 .k8_taxi_1> .at1> div> p:nth-child(1) {
     position: absolute; top: 50px; left: 5%; width: 90%;
     line-height: 3.5vh; text-align: center;
-    font-size: 5.2vw; font-weight: bold;
+    font-size: 22px; font-weight: bold;
     color: white; text-shadow: 2px -2px 8px #05141f;
 }
 
@@ -4449,9 +4445,9 @@ header> .topdown {display: none;}
 }
 
 /* k8_taxi - at2 */
-.k8_taxi_1> .at2 {height: 300px;}
+.k8_taxi_1> .at2 {height: 52vh;}
 .k8_taxi_1> .at2> .k8_taxi_at2_big {
-    width: 100%; height: 220px;
+    width: 100%; height: 41vh;
     position: absolute; top: 0; left: 0;
     background: url(../img2/k8_taxi/02.webp) no-repeat center center/cover;
 }
@@ -4462,16 +4458,16 @@ header> .topdown {display: none;}
     text-shadow: 2px -2px 3px #05141f; color: white;
 }
 .k8_taxi_1> .at2> p:nth-child(3) {
-    position: absolute; top: 230px; left: 5%; width: 90%;
+    position: absolute; top: 43vh; left: 5%; width: 90%;
     height: 50px; line-height: 3.5vh;
     font-size: 2.3vh; font-weight: bold; color: black;
     text-shadow: none;
 }
 
 /* k8_taxi - at3 */
-.k8_taxi_1> .at3 {height: 565px;}
+.k8_taxi_1> .at3 {height: 82.5vh;}
 .k8_taxi_1> .at3> .k8_taxi_at3_big {
-    width: 100%; height: 220px;
+    width: 100%; height: 41vh;
     position: absolute; top: 0; left: 0;
     background: url(../img2/k8_taxi/03_01.webp) no-repeat center center/cover;
 }
@@ -4482,7 +4478,7 @@ header> .topdown {display: none;}
     text-shadow: 2px -2px 3px #05141f; color: white;
 }
 .k8_taxi_1> .at3> p:nth-child(3) {
-    position: absolute; top: 230px; left: 5%; width: 90%;
+    position: absolute; top: 43vh; left: 5%; width: 90%;
     height: 50px; line-height: 3.5vh;
     font-size: 2.3vh; font-weight: bold; color: black;
     text-shadow: none;
@@ -4492,7 +4488,7 @@ header> .topdown {display: none;}
 /* mobile 이미지 */
 .k8_taxi_1> .at3> div:nth-child(5) {
     width: 300px; height: 250px; display: block;
-    position: absolute; top: 300px; left: 50%;
+    position: absolute; top: 49vh; left: 50%;
     transform: translateX(-50%); overflow: hidden;
 }
 .k8_taxi_1> .at3> div:nth-child(5)> ul {
@@ -4513,11 +4509,11 @@ header> .topdown {display: none;}
     width: 100%; height: 30px; color: white;
     text-shadow: 2px -2px 10px #05141f;
     text-align: left; line-height: 15px;
-    font-size: 3.2vw; font-weight: bold; padding: 15px 10px;
+    font-size: 14px; font-weight: bold; padding: 15px 10px;
 }
 .k8_taxi_1> .at3> .k8_taxi_control3 {
     display: block;
-    position: absolute; top: 400px; left: 50%;
+    position: absolute; top: 470px; left: 50%;
     transform: translateX(-50%);
     width: 300px; height: 30px;
     display: flex; justify-content: space-between;
@@ -4532,9 +4528,9 @@ header> .topdown {display: none;}
 
 
 /* k8_taxi - at4 */
-.k8_taxi_1> .at4 {height: 565px;}
+.k8_taxi_1> .at4 {height: 82.5vh;}
 .k8_taxi_1> .at4> .k8_taxi_at4_big {
-    width: 100%; height: 220px;
+    width: 100%; height: 41vh;
     position: absolute; top: 0; left: 0;
     background: url(../img2/k8_taxi/04_01.webp) no-repeat center center/cover;
 }
@@ -4545,7 +4541,7 @@ header> .topdown {display: none;}
     text-shadow: 2px -2px 3px #05141f; color: white;
 }
 .k8_taxi_1> .at4> p:nth-child(3) {
-    position: absolute; top: 230px; left: 5%; width: 90%;
+    position: absolute; top: 43vh; left: 5%; width: 90%;
     height: 50px; line-height: 3.5vh;
     font-size: 2.3vh; font-weight: bold; color: black;
     text-shadow: none;
@@ -4556,7 +4552,7 @@ header> .topdown {display: none;}
 /* mobile 이미지 */
 .k8_taxi_1> .at4> div:nth-child(5) {
     width: 300px; height: 250px; display: block;
-    position: absolute; top: 300px; left: 50%;
+    position: absolute; top: 49vh; left: 50%;
     transform: translateX(-50%); overflow: hidden;
 }
 .k8_taxi_1> .at4> div:nth-child(5)> ul {
@@ -4577,11 +4573,11 @@ header> .topdown {display: none;}
     width: 100%; height: 30px; color: white;
     text-shadow: 2px -2px 10px #05141f;
     text-align: left; line-height: 15px;
-    font-size: 3.2vw; font-weight: bold; padding: 15px 10px;
+    font-size: 14px; font-weight: bold; padding: 15px 10px;
 }
 .k8_taxi_1> .at4> .k8_taxi_control4 {
     display: block;
-    position: absolute; top: 400px; left: 50%;
+    position: absolute; top: 470px; left: 50%;
     transform: translateX(-50%);
     width: 300px; height: 30px;
     display: flex; justify-content: space-between;
@@ -4596,9 +4592,9 @@ header> .topdown {display: none;}
 
 
 /* k8_taxi - at5 */
-.k8_taxi_1> .at5 {height: 565px;}
+.k8_taxi_1> .at5 {height: 82.5vh;}
 .k8_taxi_1> .at5> .k8_taxi_at5_big {
-    width: 100%; height: 220px;
+    width: 100%; height: 41vh;
     position: absolute; top: 0; left: 0;
     background: url(../img2/k8_taxi/05_01.webp) no-repeat center center/cover;
 }
@@ -4609,7 +4605,7 @@ header> .topdown {display: none;}
     text-shadow: 2px -2px 3px #05141f; color: white;
 }
 .k8_taxi_1> .at5> p:nth-child(3) {
-    position: absolute; top: 230px; left: 5%; width: 90%;
+    position: absolute; top: 43vh; left: 5%; width: 90%;
     height: 50px; line-height: 3.5vh;
     font-size: 2.3vh; font-weight: bold; color: black;
     text-shadow: none;
@@ -4619,7 +4615,7 @@ header> .topdown {display: none;}
 /* mobile 이미지 */
 .k8_taxi_1> .at5> div:nth-child(5) {
     width: 300px; height: 250px; display: block;
-    position: absolute; top: 300px; left: 50%;
+    position: absolute; top: 49vh; left: 50%;
     transform: translateX(-50%); overflow: hidden;
 }
 .k8_taxi_1> .at5> div:nth-child(5)> ul {
@@ -4640,11 +4636,11 @@ header> .topdown {display: none;}
     width: 100%; height: 30px; color: white;
     text-shadow: 2px -2px 10px #05141f;
     text-align: left; line-height: 15px;
-    font-size: 3.2vw; font-weight: bold; padding: 15px 10px;
+    font-size: 14px; font-weight: bold; padding: 15px 10px;
 }
 .k8_taxi_1> .at5> .k8_taxi_control5 {
     display: block;
-    position: absolute; top: 400px; left: 50%;
+    position: absolute; top: 470px; left: 50%;
     transform: translateX(-50%);
     width: 300px; height: 30px;
     display: flex; justify-content: space-between;
@@ -4717,11 +4713,11 @@ header> .topdown {display: none;}
 
 
 .k8_taxi_2> .k8_taxi_2_mob> .swiper-container {
-    width: 90%; height: 320px; display: block; overflow: hidden;
-    position: absolute; top: 120px; left: 5%; 
+    width: 370px; height: 330px; display: block; overflow: hidden;
+    position: absolute; top: 110px; left: 50%; transform: translateX(-50%);
 }
 .k8_taxi_2> .k8_taxi_2_mob> .swiper-container> .swiper-wrapper> .swiper-slide {
-    float: left; width: 100%; height: 272px;
+    float: left; width: 100%; height: 295px; left: 50%; transform: translateX(-50%);
 
     /* Center slide text vertically */
     display: -webkit-box;
@@ -4803,12 +4799,12 @@ footer> div> .f_btn {
 }
 footer> div> .f_btn> p {
     height: 100%; float: left;
-    color: #ccc; font-size: 3.7vw;
+    color: #ccc; font-size: 16px;
     line-height: 30px; margin-left: 5px;
     cursor: pointer;
 }
 footer> div> .f_btn> p:nth-child(1) {margin-left: 0px;}
-footer> div> .f_btn> p:nth-child(3) {width: 40%;}
+footer> div> .f_btn> p:nth-child(3) {width: 55%;}
 footer> div> .f_btn> p:nth-child(4) {display: none;}
 footer> div> .f_btn> p:nth-child(5) {margin-left: -1px;}
 footer> div> .f_btn> p:hover {text-decoration: underline;}
