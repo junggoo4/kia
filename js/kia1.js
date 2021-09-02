@@ -226,6 +226,12 @@ function slide2() {
         $(".slide_img_6> li:first").appendTo(".slide_img_6");
         $(".slide_img_6").css("left","+=510px");
     });
+    if(matchMedia("screen and (max-width: 1023px)").matches){
+        $(".slide_img_6").stop().animate({"left":"-=210px"}, 300, function() {
+            $(".slide_img_6> li:first").appendTo(".slide_img_6");
+            $(".slide_img_6").css("left","+=210px");
+        });
+    }
 };
 
 

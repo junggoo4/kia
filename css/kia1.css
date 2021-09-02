@@ -322,7 +322,7 @@ nav> ul> li> a> p:last-child {margin-top: 10px;}
 .main_img_slide> .slide_img> .m_slide_img_6 {display: none;}
 .main_img_slide> .slide_img> .slide_img_6 {
     display: block;
-    width: 3060px; height: 100%;
+    width: 600%; height: 100%;
     position: relative; top: 0; left: 0;
     opacity: 1; transform: translate3d(-300px, 0px, 0px);
 }
