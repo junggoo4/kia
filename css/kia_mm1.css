@@ -359,7 +359,7 @@ nav> ul> li> a> p:last-child {
     font-size: 1.8vh; font-weight: bold; width: 70%; height: 100%;
 }
 .notice> .notice_box> li> a> p:nth-child(2) {
-    height: 100%; line-height: 30px; float: auto;
+    height: 100%; line-height: 30px; float: none;
     margin-top: 0; margin-left: 0; float: left; 
     font-size: 1.7vh; color: #898989; text-align: right;
     width: 25%; position: relative; right: -10px; top: 0;
