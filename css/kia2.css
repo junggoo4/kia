@@ -1554,6 +1554,7 @@ header> div> .top_bg {
     position: absolute; top: 70px; left: 50%;
     transform: translateX(-50%);
 }
+.k5_1> .at7> div:nth-child(4)> .k5_at7_img_t,
 .k5_1> .at7> div:nth-child(4)> .k5_at7_img_m {display: none;}
 
 /* ((((( k5 제원 ))))) */
