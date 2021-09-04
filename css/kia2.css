@@ -877,11 +877,11 @@ header> div> .top_bg {
     position: absolute; bottom: 0; left: 0;
     background: #ccc;
 }
-.morning_1> .at10> div:nth-child(4)> div:nth-child(3) {
+.morning_1> .at10> div:nth-child(4)> div:nth-child(2) {
     position: absolute; top: 70px; left: 50%;
     transform: translateX(-50%);
 }
-.morning_1> .at10> div:nth-child(4)> .mor_at10_img,
+.morning_1> .at10> div:nth-child(4)> .mor_at10_img_t,
 .morning_1> .at10> div:nth-child(4)> .mor_at10_img_m {display: none;}
 
 /* ((((( 모닝 제원 ))))) */
@@ -2071,6 +2071,7 @@ header> div> .top_bg {
     position: absolute; top: 70px; left: 50%;
     transform: translateX(-50%);
 }
+.sorento_1> .at7> div:nth-child(4)> .sorento_at7_img_t,
 .sorento_1> .at7> div:nth-child(4)> .sorento_at7_img_m {display: none;}
 
 
@@ -2705,6 +2706,7 @@ header> div> .top_bg {
     position: absolute; top: 70px; left: 50%;
     transform: translateX(-50%);
 }
+.niro_1> .at10> div:nth-child(4)> .niro_at10_img_t,
 .niro_1> .at10> div:nth-child(4)> .niro_at10_img_m {display: none;}
 
 
@@ -3454,6 +3456,7 @@ header> div> .top_bg {
     position: absolute; top: 70px; left: 50%;
     transform: translateX(-50%);
 }
+.seltos_1> .at10> div:nth-child(4)> .seltos_at10_img_t,
 .seltos_1> .at10> div:nth-child(4)> .seltos_at10_img_m {display: none;}
 
 /* ((((( 셀토스 제원 ))))) */
@@ -4188,10 +4191,11 @@ header> div> .top_bg {
     position: absolute; top: 70px; left: 50%;
     transform: translateX(-50%);
 }
+.mohave_1> .at10> div:nth-child(4)> .mohave_at10_img_t,
 .mohave_1> .at10> div:nth-child(4)> .mohave_at10_img_m {display: none;}
 
 
-/* ((((( mohave 제원 ))))) */
+/* ((((( 모하비 제원 ))))) */
 .mohave_2> .mohave_2_mob {display: none;}
 .mohave_2> .mohave_2_pc {
     width: 100%; height: 700px;
@@ -4593,6 +4597,7 @@ header> div> .top_bg {
     position: absolute; top: 70px; left: 50%;
     transform: translateX(-50%);
 }
+.bonggo3_1> .at6> div:nth-child(4)> .bonggo3_at6_img_t,
 .bonggo3_1> .at6> div:nth-child(4)> .bonggo3_at6_img_m {display: none;}
 
 
@@ -4928,6 +4933,7 @@ header> div> .top_bg {
     position: absolute; top: 70px; left: 50%;
     transform: translateX(-50%);
 }
+.k8_taxi_1> .at6> div:nth-child(4)> .k8_taxi_at6_img_t,
 .k8_taxi_1> .at6> div:nth-child(4)> .k8_taxi_at6_img_m {display: none;}
 
 
