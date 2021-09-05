@@ -73,13 +73,13 @@ $(function() {
         $(".morning_total"+no).show();
 
         if(no==1)
-            price = "11,750,000";
+            price = "11,750,000원";
         else if(no==2)
-            price = "12,050,000";
+            price = "12,050,000원";
         else if(no==3)
-            price = "13,550,000";
+            price = "13,550,000원";
         else if(no==4)
-            price = "15,200,000";
+            price = "15,200,000원";
         final = price;
         $(".final").html(price);
     });

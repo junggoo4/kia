@@ -8,212 +8,185 @@ body {font-family: 'Roboto', sans-serif;}
 
 /* ============================ header 시작 =============================== */
 /* login */
-.login {
-    width: 100%; height: 30px;
-    background: #05141f;
-    position: fixed; z-index: 200;
-}
-.login> ul {
-    width: 1400px; height: 100%;
-    position: relative; top: 0; left: 0;
-    margin: auto; 
-}
-.login> ul> li {
-    float: left;
-    width: 60px; height: 100%;
-    text-align: center; line-height: 30px;
-    color: #ccc; font-size: 13px; font-weight: bold;
-    cursor: pointer;
-}
-.login> ul> li:nth-child(1) {width: 80px; margin-left: 1260px;}
-.login> ul> li> a {color: white;}
-.login> ul> li> p {float: left; height: 100%;}
-.login> ul> li> p> a {color: white;}
-.login> ul> li> p:nth-child(1) {width: 60px;}
-.login> ul> li> p:nth-child(2) {width: 10px; font-weight: 400;}
+.login {display: none;}
 
 /* header */
 header {
-    width: 100%; height: 80px; 
+    width: 100%; height: 60px; 
     border-bottom: 1px solid #f2f2f2;
-    position: fixed; top: 30px; z-index: 200;
-}
-header> .head1_m {display: none;}
-header> .head1 {
-    width: 100%; height: 80px;
-    position: relative; top: 0; left: 0;
-    transition: all 0.5s;
+    position: fixed; top: 0; left: 0; z-index: 150;
     background: white;
 }
-header> .head1> ul {
-    width: 1400px; height: 100%;
-    position: relative; top: 0; left: 0;
-    margin: auto;
+header> .head1_m {
+    display: block;
+    width: 100%; height: 60px;
+    position: fixed; top: 0; left: 0; z-index: 100;
 }
-header> .head1> ul> li {
-    float: left; height: 30px;
-    text-align: center; line-height: 30px;
-    margin-top: 25px; color: #05141f;
-    font-weight: bold; font-size: 17px;
-    cursor: pointer;
+header> .head1_m> li {
+    float: left; height: 60px; color: #05141f;
+    text-align: center; line-height: 60px;
+    position: absolute; cursor: pointer;
 }
-header> .head1> ul> li:nth-child(1) {
+
+header> .head1_m> li:nth-child(1) {width: 50px; top: 0; left: 10px; font-size: 20px;}
+header> .head1_m> .logo_m {
+    width: 85px; height: 30px;
+    top: 17px; left: 50%; transform: translateX(-50%);
+}
+header> .head1_m> .logo_m img {width: 100%;}
+header> .head1_m> li:nth-child(3) {
+    width: 50px; right: 10px;
+    font-weight: bold; font-size: 24px;
+}
+
+
+/* 햄버거 메뉴 */
+header> .back {
+    width: 100%; height: 100%;
+    position: fixed; background: rgba(5, 20, 31, 0.8);
+    top: 0; left: 0; display: none;
+}
+header> .side_m {
+    width: 100%; z-index: 200;
+    background: white; display: block;
+    position: fixed; top: -120%; left: 0;
+}
+header> .side_m> .whi {
+    width: 100%;
+}
+
+
+/* 상단 로고, x버튼 */
+header> .side_m> .whi> ul:nth-child(1) {
+    width: 100%; height: 60px;
+    border-bottom: 2px solid #ccc;
+}
+header> .side_m> .whi> ul:nth-child(1)> li {
+    float: left; text-align: center;
+}
+header> .side_m> .whi> ul:nth-child(1)> li:nth-child(1) {
+    width: 85px; height: 30px;
+    margin-top: 17px; margin-left: 20px;
+}
+header> .side_m> .whi> ul:nth-child(1)> li:nth-child(1) img {width: 100%;}
+header> .side_m> .whi> ul:nth-child(1)> li:nth-child(2) {
+    width: 30px; height: 60px; line-height: 60px;
+    position: absolute; top: 0; right: 20px;
+    font-size: 18px; cursor: pointer;
+}
+
+
+/* 트리메뉴 */
+header> .side_m> .whi> .menu_m {
+    width: 100%;
+    position: absolute; top: 60px; left: 0;
+}
+header> .side_m> .whi> .menu_m> li {
+    width: 100%;
+}
+header> .side_m> .whi> .menu_m> li> .title_m {
+    width: 100%; height: 50px; background: white;
+    border-bottom: 1px solid #ccc;
+    position: relative;
+}
+header> .side_m> .whi> .menu_m> li> .title_m:hover p {text-decoration: underline;}
+header> .side_m> .whi> .menu_m> li> .title_m> p:nth-child(1) {
+    height: 100%; color: #05141f;
+    text-indent: 20px; line-height: 50px;
+    font-size: 15px; font-weight: bold; cursor: pointer;
+}
+header> .side_m> .whi> .menu_m> li> .title_m> div {
+    width: 25px; height: 25px;
+    border-radius: 100%; cursor: pointer;
+    position: absolute; top: 11px; right: 20px;
+    background: #9ba1a5;
+}
+header> .side_m> .whi> .menu_m> li> .title_m> div> p {
     position: absolute; top: 0; left: 0;
-    width: 120px; margin-top: 22px;
+    width: 25px; height: 25px; color: white;
+    text-align: center; line-height: 25px;
+    font-size: 13px;
 }
-header> .head1> ul> li:nth-child(1):hover {border: none;}
-header> .head1> ul> li:nth-child(1) img {position: absolute; top: 0; left: 0; width: 100%;}
-header> .head1> ul> li:nth-child(2) {margin-left: 1070px;}
-header> .head1> ul> li:nth-child(3) {margin-left: 30px;}
-header> .head1> ul> li:nth-child(4) {margin-left: 30px;}
-header> .head1> ul> li:nth-child(5) {margin-left: 30px;}
-
-/* 탑다운 메뉴 */
-header> .side_m {display: none;}
-header> .topdown {
-    display: none;
-    position: relative; top: 0; left: 0;
-}
-header> .topdown1 {
-    width: 1400px; height: 250px;
-    position: relative; top: 0; left: 0;
-    margin: auto; background: white;
+header> .side_m> .whi> .menu_m> li> .title_m> div> p:nth-child(2) {
+    top: -3.5px; font-size: 9px; opacity: 0;
 }
 
-header> .topdown1> .car_category {
-    width: 100%; height: 55px; 
+
+/* 트리메뉴 클릭시 상세메뉴 */
+header> .side_m> .whi> .menu_m> li> .bm {
+    width: 100%; height: 70px;
     border-bottom: 1px solid #ccc;
-}
-header> .topdown1> .car_category> li {
-    float: left; height: 100%;
-    text-align: center; line-height: 55px;
-    margin-left: 15px; margin-right: 15px;
-    border: 0px solid red;
-}
-header> .topdown1> .car_category> li> input {
-    width: 19px; height: 19px; position: relative; top: 3px;
-    background-color: #05141f; cursor: pointer;
-}
-header> .topdown1> .car_category> li> label {
-    font-size: 16px; color: #05141f; cursor: pointer;
-}
-
-
-header> .topdown1> .category0 {
-    position: absolute; top: 55px; left: 0;
-    border: 0px solid red; display: none;
-    width: 100%; height: 195px;
-}
-header> .topdown1> .category1_menu {display: block;}
-header> .topdown1> .category0> div {
-    float: left; cursor: pointer;
-    width: 270px; height: 100%; 
-} 
-header> .topdown1> .category0> div> a> div {width: 80%; margin-left: 10%; margin-top: 5px;}
-header> .topdown1> .category0> div> a> div img {width: 100%;}
-header> .topdown1> .category0> div> a> p {
-    width: 100%; height: 40px; color: #05141f;
-    text-align: center; line-height: 40px;
-    font-weight: bold; font-size: 18px;
-}
-
-/* ======== topdown2 ======== */
-header> .topdown2 {
-    width: 1400px; height: 150px;
-    position: relative; top: 0; left: 0;
-    margin: auto;
-}
-header> .topdown2> ul {
-    width: 265px; height: 150px;
-    position: absolute; top: 0; right: 0px; 
     background: white;
 }
-header> .topdown2> ul> li {
-    width: 100%; height: 50px;
-    text-indent: 20px; line-height: 50px;
+header> .side_m> .whi> .menu_m> li:nth-child(1)> .bm {height: 140px;}
+header> .side_m> .whi> .menu_m> li:nth-child(3)> .bm {height: 35px;}
+header> .side_m> .whi> .menu_m> li> .bm> ul {
+    width: 100%; 
+}
+header> .side_m> .whi> .menu_m> li> .bm> ul> li {
+    float: left; width: 50%; height: 35px; border-bottom: 1px solid #ccc;
+    text-align: center; line-height: 35px; color: #05141f;
+    font-size: 13px; font-weight: bold; cursor: pointer; 
+    background: #f7f8f8;
+}
+header> .side_m> .whi> .menu_m> li> .bm> ul> li:nth-child(1),
+header> .side_m> .whi> .menu_m> li> .bm> ul> li:nth-child(3),
+header> .side_m> .whi> .menu_m> li> .bm> ul> li:nth-child(5),
+header> .side_m> .whi> .menu_m> li> .bm> ul> li:nth-child(7) {
+    border-right: 1px solid #ccc;
+}
+
+
+/* 하단 로그인, 회원가입 */
+header> .side_m> .whi> .menu_m> .login_m {
+    width: 100%; height: 40px;
+    background: #9ba1a5;
     border-bottom: 1px solid #ccc;
-    cursor: pointer; color: #05141f; 
-    font-weight: bold; font-size: 15px;
 }
-header> .topdown2> ul> li:hover {text-decoration: underline;}
+header> .side_m> .whi> .menu_m> .login_m> li {
+    float: left; width: 50%; height: 100%; cursor: pointer;
+}
+header> .side_m> .whi> .menu_m> .login_m> li:nth-child(1) {border-right: 1px solid #ccc;}
+header> .side_m> .whi> .menu_m> .login_m> li:hover p {text-decoration: underline;}
+header> .side_m> .whi> .menu_m> .login_m> li> a> p {
+    float: left; line-height: 40px;  color: white;
+    font-size: 13px; font-weight: bold;
+}
+header> .side_m> .whi> .menu_m> .login_m> li> a> p:nth-child(1) {text-indent: 10px;}
+header> .side_m> .whi> .menu_m> .login_m> li> a> p:nth-child(2) {margin-left: 5px;}
 
 
-/* ======== topdown3 ======== */
-header> .topdown3 {
-    width: 1400px; height: 100px;
-    position: relative; top: 0; left: 0;
-    margin: auto;
-}
-header> .topdown3> ul {
-    width: 265px; height: 100px;
-    position: absolute; top: 0; right: 0px; 
-    background: white;
-}
-header> .topdown3> ul> li {
-    width: 100%; height: 50px;
-    text-indent: 20px; line-height: 50px;
-    border-bottom: 1px solid #ccc;
-    cursor: pointer; color: #05141f; 
-    font-weight: bold; font-size: 15px;
-}
-header> .topdown3> ul> li:hover {text-decoration: underline;}
-
-
-/* ======== topdown4 ======== */
-header> .topdown4 {
-    width: 1400px; height: 150px;
-    position: relative; top: 0; left: 0;
-    margin: auto;
-}
-header> .topdown4> ul {
-    width: 265px; height: 150px;
-    position: absolute; top: 0; right: 0px; 
-    background: white;
-}
-header> .topdown4> ul> li {
-    width: 100%; height: 50px;
-    text-indent: 20px; line-height: 50px;
-    border-bottom: 1px solid #ccc;
-    cursor: pointer; color: #05141f; 
-    font-weight: bold; font-size: 15px;
-}
-header> .topdown4> ul> li:hover {text-decoration: underline;}
-
-
-header> div> .top_bg {
-    width: 100%; height: 100%; z-index: -1;
-    position: fixed; top: 110px; left: 0;
-    background: rgba(5, 20, 31, 0.8); display: none;
-}
-
+/* pc버전 안 보이게 처리 */
+header> .head1 {display: none;}
+header> .topdown {display: none;}
 /* ============================ header 끝 =============================== */
 
 /* ============================ 온라인 견적 시작 =============================== */
 /* 온라인견적 - title 및 상단 버튼 */
 .menu2_1_title {
-    width: 1903px; height: 120px;
-    position: relative; top: 110px;
+    width: 100%; height: 120px;
+    position: relative; top: 60px;
     background: #f2f2f2;
 }
 .menu2_1_title> div {
-    width: 1000px; height: 100%;
+    width: 768px; height: 100%;
     position: relative; top: 0; left: 0;
     margin: auto;
 }
 .menu2_1_title> div> p {
     width: 100%; height: 100%;
-    line-height: 120px;
-    font-size: 30px; font-weight: bold; 
+    line-height: 120px; text-indent: 30px;
+    font-size: 28px; font-weight: bold; 
 }
 
 .oline_1 {
-    width: 1903px; height: 100px;
+    width: 100%; height: 100px;
     border-bottom: 1px solid #ccc;
     border-top: 1px solid #ccc;
-    position: relative; top: 110px; left: 0;
+    position: relative; top: 60px; left: 0;
 }
 .menu2_1_bigBTN {
-    width: 1000px; height: 100px;
+    width: 768px; height: 100px;
     position: relative; top: 0; left: 0;
     margin: auto;
 }
@@ -225,15 +198,16 @@ header> div> .top_bg {
 .menu2_1_bigBTN> li:nth-child(1) {background: #05141f; color: white;}
 .menu2_1_bigBTN> li:nth-child(5) {border-right: 1px solid #ccc;}
 .menu2_1_bigBTN> li> p {text-align: center;}
-.menu2_1_bigBTN> li> p:nth-child(1) {font-size: 35px; margin-top: 18px;}
+.menu2_1_bigBTN> li> p:nth-child(1) {font-size: 30px; margin-top: 18px;}
+.menu2_1_bigBTN> li> p:nth-child(2) {font-size: 15px;}
 
 /* 온라인견적 - 공통 */
 .oline_2 {
-    width: 1903px; height: 530px;
-    position: relative; top: 120px; left: 0; margin: auto;
+    width: 100%; height: 530px;
+    position: relative; top: 70px; left: 0; margin: auto;
 }
 .oline_2> div {
-    width: 1000px; height: 100%;
+    width: 768px; height: 100%;
     position: relative; top: 0; left: 0;
     margin: auto;
 }
@@ -285,10 +259,10 @@ header> div> .top_bg {
 
 
 .oline_2> div> .car> .chepter1> .chepter1_1> p:nth-child(1) {
-    font-size: 35px; font-weight: bold;
+    font-size: 30px; font-weight: bold; margin-left: 30px;
 }
 .oline_2> div> .car> .chepter1> .chepter1_1> div:nth-child(2) {
-    width: 80%; height: 275px; position: relative; left: 10%;
+    width: 80%; height: 275px; position: relative; left: 10%; top: 35px;
 }
 .oline_2> div> .car> .chepter1> .chepter1_1> div:nth-child(2) img {width: 100%;}
 .oline_2> div> .car> .chepter1> .chepter1_1> p:nth-child(3) {
@@ -301,18 +275,18 @@ header> div> .top_bg {
     float: left; height: 100%;
     line-height: 40px; font-weight: bold;
 }
-.oline_2> div> .car> .chepter1> .chepter1_1> ul:nth-child(4)> li:nth-child(1) {width: 100px; font-size: 20px;}
+.oline_2> div> .car> .chepter1> .chepter1_1> ul:nth-child(4)> li:nth-child(1) {width: 100px; font-size: 18px; text-indent: 30px;}
 .oline_2> div> .car> .chepter1> .chepter1_1> ul:nth-child(4)> li:nth-child(2),
 .oline_2> div> .car> .chepter1> .chepter1_1> ul:nth-child(4)> li:nth-child(3),
 .oline_2> div> .car> .chepter1> .chepter1_1> ul:nth-child(4)> li:nth-child(4) {
-    width: 150px; text-align: center;
+    width: 105px; text-align: center; font-size: 13px;
     border: 1px solid #05141f; margin-right: 10px; cursor: pointer;
 }
 .oline_2> div> .car> .chepter1> .chepter1_1> ul:nth-child(4)> li:nth-child(2) {background: #05141f; color: white;}
 
 
 .oline_2> div> .car> .chepter1> .chepter1_2> p:nth-child(1) {
-    font-size: 20px; font-weight: bold;
+    font-size: 18px; font-weight: bold;
     text-indent: 38px;
 }
 .oline_2> div> .car> .chepter1> .chepter1_2> ul {
@@ -326,10 +300,10 @@ header> div> .top_bg {
 .oline_2> div> .car> .chepter1> .chepter1_2> ul> li:first-child {
     background: #05141f; color: white;
 }
-.oline_2> div> .car> .chepter1> .chepter1_2> ul> li> p:nth-child(1) {font-size: 15px;}
+.oline_2> div> .car> .chepter1> .chepter1_2> ul> li> p:nth-child(1) {font-size: 14px;}
 .oline_2> div> .car> .chepter1> .chepter1_2> ul> li> p:nth-child(2) {
-    margin: 25px 165px;
-    font-size: 18px; font-weight: bold;
+    margin: 25px 95px;
+    font-size: 17px; font-weight: bold;
     width: 130px; text-align: right;
 }
 
@@ -347,7 +321,7 @@ header> div> .top_bg {
 .oline_2> div> .car> .chepter2> .chepter2_2 {display: block; width: 40%;}
 
 .oline_2> div> .car> .chepter2> .chepter2_1> p:nth-child(1) {
-    font-size: 35px; font-weight: bold;
+    font-size: 30px; font-weight: bold; margin-left: 30px;
 }
 .oline_2> div> .car> .chepter2> .chepter2_1> ul:nth-child(2) {
     width: 100%; height: 275px; position: relative; left: 0; top: 20px;
@@ -355,7 +329,8 @@ header> div> .top_bg {
 .oline_2> div> .car> .chepter2> .chepter2_1> ul:nth-child(2)> li {
     position: absolute; top: 0; left: 0; display: none;
 }
-.oline_2> div> .car> .chepter2> .chepter2_1> ul:nth-child(2)> li img {width: 110%;}
+.oline_2> div> .car> .chepter2> .chepter2_1> .sorento_color> li {width: 80%;}
+.oline_2> div> .car> .chepter2> .chepter2_1> ul:nth-child(2)> li img {width: 110%; margin-top: 10px;}
 .oline_2> div> .car> .chepter2> .chepter2_1> .k5_color> li img,
 .oline_2> div> .car> .chepter2> .chepter2_1> .niro_color> li img,
 .oline_2> div> .car> .chepter2> .chepter2_1> .seltos_color> li img, 
@@ -363,7 +338,7 @@ header> div> .top_bg {
     margin-left: -40px;
 }
 .oline_2> div> .car> .chepter2> .chepter2_1> .sorento_color> li img {
-    margin-left: 30px;
+    margin-left: 0;
 }
 
 .oline_2> div> .car> .chepter2> .chepter2_1> p:nth-child(3) {
@@ -375,7 +350,7 @@ header> div> .top_bg {
     text-indent: 38px;
 }
 .oline_2> div> .car> .chepter2> .chepter2_2> ul:nth-child(2) {
-    width: 95%; height: 400px; margin: 20px 10%;
+    width: 80%; height: 400px; margin: 20px 10%;
 }
 .oline_2> div> .car> .chepter2> .chepter2_2> ul:nth-child(2)> li {
     width: 45%; height: 50px; cursor: pointer;
@@ -433,20 +408,20 @@ header> div> .top_bg {
 }
 .oline_2> div> .car> .chepter3> .chep_mob {display: none;}
 .oline_2> div> .car> .chepter3> p:nth-child(1) {
-    font-size: 35px; font-weight: bold;
+    font-size: 30px; font-weight: bold; margin-left: 30px;
 }
 .oline_2> div> .car> .chepter3> span:nth-child(2) {
     font-size: 20px; font-weight: bold;
-    text-indent: 38px;
+    text-indent: 38px; margin-left: 30px;
 }
 .oline_2> div> .car> .chepter3> span:nth-child(3) {font-size: 15px;}
 .oline_2> div> .car> .chepter3> ul:nth-child(4) {
-    width: 100%; height: 300px; margin-top: 20px;
+    width: 92%; height: 300px; margin-top: 20px; margin-left: 4%;
     display: flex;
     justify-content: space-between;
 }
 .oline_2> div> .car> .chepter3> ul:nth-child(4)> li {
-    float: left; width: 325px; height: 100px;
+    float: left; width: 225px; height: 100px;
     border: 1px solid #05141f; cursor: pointer;
     padding: 15px;
 }
@@ -457,18 +432,19 @@ header> div> .top_bg {
     font-size: 15px;
 }
 .oline_2> div> .car> .chepter3> ul:nth-child(4)> li> p:nth-child(2) {
-    margin: 25px 165px;
+    margin: 25px 68px;
     font-size: 18px; font-weight: bold;
     width: 130px; text-align: right;
 }
+.oline_2> div> .car_niro> .chepter3> ul:nth-child(4)> li:nth-child(3)> p:nth-child(2) {margin-top: 5px;}
 
 .oline_2> div> .car> .chepter3> ul:nth-child(5) {
-    width: 100%; height: 300px; margin-top: -187px;
-    display: flex;
+    width: 92%; height: 300px; margin-top: -187px;
+    display: flex; margin-left: 4%;
     justify-content: space-between;
 }
 .oline_2> div> .car> .chepter3> ul:nth-child(5)> li {
-    float: left; width: 325px; height: 100px;
+    float: left; width: 225px; height: 100px;
     border: 1px solid #05141f; cursor: pointer;
     padding: 15px;
 }
@@ -479,18 +455,18 @@ header> div> .top_bg {
     font-size: 15px;
 }
 .oline_2> div> .car> .chepter3> ul:nth-child(5)> li> p:nth-child(2) {
-    margin: 25px 165px;
+    margin: 25px 68px;
     font-size: 18px; font-weight: bold;
     width: 130px; text-align: right;
 }
 
 .oline_2> div> .car> .chepter3> ul:nth-child(6) {
-    width: 100%; height: 300px; margin-top: -187px;
-    display: flex;
+    width: 92%; height: 300px; margin-top: -187px;
+    display: flex; margin-left: 4%;
     justify-content: space-between;
 }
 .oline_2> div> .car> .chepter3> ul:nth-child(6)> li {
-    float: left; width: 325px; height: 100px;
+    float: left; width: 225px; height: 100px;
     border: 1px solid #05141f; cursor: pointer;
     padding: 15px;
 }
@@ -501,7 +477,7 @@ header> div> .top_bg {
     font-size: 15px;
 }
 .oline_2> div> .car> .chepter3> ul:nth-child(6)> li> p:nth-child(2) {
-    margin: 25px 165px;
+    margin: 25px 68px;
     font-size: 18px; font-weight: bold;
     width: 130px; text-align: right;
 }
@@ -512,7 +488,7 @@ header> div> .top_bg {
     position: absolute; top: 0; left: 0;
 }
 .oline_2> div> .car> .chepter4> p:nth-child(1) {
-    font-size: 35px; font-weight: bold;
+    font-size: 30px; font-weight: bold; margin-left: 30px;
 }
 .oline_2> div> .car> .chepter4> div {
     float: left;
@@ -524,10 +500,10 @@ header> div> .top_bg {
     width: 52.5%;
 }
 .oline_2> div> .car> .chepter4> .chepter4_1> p:nth-child(1) {
-    font-size: 20px; font-weight: bold;
+    font-size: 18px; font-weight: bold; margin-left: 30px;
 }
 .oline_2> div> .car> .chepter4> .chepter4_1> ul:nth-child(2) {
-    width: 72%; height: 50px; margin-top: 15px;
+    width: 80%; height: 50px; margin-top: 15px; margin-left: 30px;
     display: flex;
     justify-content: space-between;
 }
@@ -535,21 +511,21 @@ header> div> .top_bg {
     float: left; width: 49%; height: 100%;
     border: 1px solid #05141f; cursor: pointer;
     text-align: center; line-height: 50px;
-    color: #05141f;
+    color: #05141f; font-size: 15px;
 }
 .oline_2> div> .car> .chepter4> .chepter4_1> ul:nth-child(2)> li:nth-child(1) {
     background: #05141f; color: white;
 }
 .oline_2> div> .car> .chepter4> .chepter4_1> p:nth-child(3) {
-    font-size: 20px; font-weight: bold; margin-top: 30px; display: none;
+    font-size: 18px; font-weight: bold; margin-top: 30px; display: none; margin-left: 30px;
 }
 .oline_2> div> .car> .chepter4> .chepter4_1> ul:nth-child(4) {
-    width: 75%; height: 50px; margin-top: 15px;
+    width: 80%; height: 50px; margin-top: 15px; margin-left: 30px;
     display: flex;  display: none;
     justify-content: space-between;
 }
 .oline_2> div> .car> .chepter4> .chepter4_1> ul:nth-child(4)> li {
-    float: left; width: 30.5%; height: 100%;
+    float: left; width: 31%; height: 100%; font-size: 15px;
     border: 1px solid #05141f; cursor: pointer;
     text-align: center; line-height: 50px;
     color: #05141f; margin-right: 2%;
@@ -560,10 +536,10 @@ header> div> .top_bg {
 
 .oline_2> div> .car> .chepter4> .chepter4_2 {padding: 20px 20px; margin-left: 20px;}
 .oline_2> div> .car> .chepter4> .chepter4_2> p:nth-child(1) {
-    font-size: 20px; font-weight: bold;
+    font-size: 18px; font-weight: bold;
 }
 .oline_2> div> .car> .chepter4> .chepter4_2> ul:nth-child(2) {
-    width: 80%; height: 50px; margin-top: 15px;
+    width: 90%; height: 50px; margin-top: 15px;
     display: flex;
     justify-content: space-between;
 }
@@ -578,11 +554,11 @@ header> div> .top_bg {
 }
 
 .oline_2> div> .car> .chepter4> .chepter4_2> p:nth-child(3) {
-    font-size: 20px; font-weight: bold; margin-top: 30px;
+    font-size: 18px; font-weight: bold; margin-top: 30px;
 }
 .oline_2> div> .car> .chepter4> .chepter4_2> div:nth-child(4) {
-    width: 39%; height: 45px; margin-top: 15px;
-    border: 1px solid black;
+    width: 44%; height: 45px; margin-top: 15px;
+    border: 1px solid black; font-size: 15px;
 }
 .oline_2> div> .car> .chepter4> .chepter4_2> div:nth-child(4)> select {
     width: 100%; height: 100%; border: none; font-size: 16px;
@@ -600,26 +576,26 @@ header> div> .top_bg {
     position: fixed; top: 0; left: 0; z-index: 200;
 }
 .oline_2> div> .car> .chepter5> div {
-    width: 700px; height: 600px;
+    width: 500px; height: 540px;
     background: white; padding: 30px;
-    position: relative; top: 180px; left: 50%;
-    transform: translateX(-50%);
+    position: relative; top: 100px; left: 50%;
+    transform: translateX(-50%); 
 }
 .oline_2> div> .car> .chepter5> div> p:nth-child(1) {
-    font-size: 30px; font-weight: bold;
+    font-size: 25px; font-weight: bold;
 }
 .oline_2> div> .car> .chepter5> div> div:nth-child(2) {width: 85%; margin-left: 7.5%;}
 .oline_2> div> .car> .chepter5> div> div:nth-child(2) img {width: 100%;}
 
 .oline_2> div> .car> .chepter5> div> div:nth-child(3) {
-    width: 100%; height: 50px; font-size: 24px; font-weight: bold;
-    text-align: center; line-height: 50px;
+    width: 100%; height: 50px; font-size: 25px; font-weight: bold;
+    text-align: center; line-height: 30px;
 }
 .oline_2> div> .car> .chepter5> div> div:nth-child(3)> span:nth-child(2) {
     color: red;
 }
 .oline_2> div> .car> .chepter5> div> div:nth-child(4) {
-    width: 60%; height: 70px; 
+    width: 100%; height: 70px; 
     line-height: 70px; margin-top: 55px;
     background: #f2f2f2; text-indent: 30px;
 }
@@ -628,22 +604,22 @@ header> div> .top_bg {
     font-size: 18px; font-weight: bold;
 }
 .oline_2> div> .car> .chepter5> div> div:nth-child(4)> p:nth-child(2) {
-    width: 250px;
+    width: 310px;
     text-align: right; font-size: 23px; font-weight: bold;
-    color: red; 
+    color: red;
 }
 .oline_2> div> .car> .chepter5> div> ul:nth-child(5) {
-    width: 240px; height: 45px;
-    margin-top: -45px; margin-left: 402px;
+    width: 100%; height: 45px;
+    margin-top: 10px; margin-left: 0;
      
 }
 .oline_2> div> .car> .chepter5> div> ul:nth-child(5)> li {
-    float: left; width: 48%; height: 100%;
+    float: left; width: 49%; height: 100%;
     border: 1px solid #ccc; cursor: pointer;
-    text-align: center; line-height: 45px;
+    text-align: center; line-height: 45px; font-size: 15px;
 }
 .oline_2> div> .car> .chepter5> div> ul:nth-child(5)> li:nth-child(2) {
-    margin-left: 4%;
+    margin-left: 2%;
 }
 .oline_2> div> .car> .chepter5> div> ul:nth-child(5)> li:hover {
     background: #05141f; color: white;
@@ -657,7 +633,7 @@ header> div> .top_bg {
     position: relative; top: -20px; left: 0;
 }
 .oline_2> .car_total> .car_control {
-    width: 1000px; height: 100%;
+    width: 768px; height: 100%;
     position: absolute; top: 0; left: 50%;
     transform: translateX(-50%);
 }
@@ -679,13 +655,13 @@ header> div> .top_bg {
     font-size: 25px; font-weight: bold; width: 180px; display: none;
 }
 .oline_2> .car_total> .car_control> li:last-child {
-    left: 920px;
+    left: 690px;
     animation: next_ani 1.5s linear infinite;
 }
 @keyframes next_ani {
-    0% {left: 920px;}
-    50% {left: 900px;}
-    0% {left: 920px;}
+    0% {left: 670px;}
+    50% {left: 690px;}
+    0% {left: 670px;}
 }
 /* ============================ 온라인 견적 끝 =============================== */
 
@@ -694,37 +670,37 @@ header> div> .top_bg {
 .back_color0 {background: #f2f2f2;}
 
 .menu2_2_title {
-    width: 1903px; height: 120px;
-    position: relative; top: 110px;
-    background: #f2f2f2;
+    width: 100%; height: 120px;
+    position: relative; top: 60px;
+    background: #f2f2f2; 
 }
 .menu2_2_title> div {
-    width: 1000px; height: 100%;
+    width: 768px; height: 100%;
     position: relative; top: 0; left: 0;
-    margin: auto;
+    margin: auto; overflow: hidden;
 }
 .menu2_2_title> div> p:nth-child(1) {
     width: 100%; height: 100%;
-    line-height: 120px;
-    font-size: 30px; font-weight: bold; 
+    line-height: 120px; margin-left: 30px;
+    font-size: 28px; font-weight: bold; 
 }
 .menu2_2_title> div> p:nth-child(2) {
-    margin-top: -65px; margin-left: 260px;
+    margin-top: -65px; margin-left: 270px; font-size: 15px;
 }
 
 .menu2_2_bm {
-    width: 1903px; height: 1200px;
-    position: relative; top: 110px; left: 0;
-    margin: auto;
+    width: 768px; height: 1200px;
+    position: relative; top: 60px; left: 0;
+    margin: auto; overflow: hidden;
 }
 
 /* 승용 */
 .menu2_2_bm> p:nth-child(1) {
-    width: 1000px; height: 40px;
-    line-height: 40px; margin-left: 50%; transform: translateX(-50%);
+    width: 95%; height: 40px;
+    line-height: 40px; margin-left: 50%; transform: translateX(-50%)
 }
 .menu2_2_bm> ul:nth-child(2) {
-    width: 1000px; height: 230px; margin-left: 50%; transform: translateX(-50%);
+    width: 95%; height: 230px; margin-left: 50%; transform: translateX(-50%)
 }
 .menu2_2_bm> ul:nth-child(2)> li {
     float: left; background: white;
@@ -733,7 +709,7 @@ header> div> .top_bg {
 }
 .menu2_2_bm> ul:nth-child(2)> li:nth-child(1)> div,
 .menu2_2_bm> ul:nth-child(2)> li:nth-child(2)> div {
-    width: 90%; margin-left: 5%; margin-top: 10px;
+    width: 90%; margin-left: 5%;
 }
 .menu2_2_bm> ul:nth-child(2)> li> div img {width: 100%;}
 .menu2_2_bm> ul:nth-child(2)> li:nth-child(1)> p,
@@ -747,9 +723,9 @@ header> div> .top_bg {
 }
 .menu2_2_bm> ul:nth-child(2)> li:nth-child(1)> ul> li,
 .menu2_2_bm> ul:nth-child(2)> li:nth-child(2)> ul> li {
-    float: left; width: 80px; height: 100%;
+    float: auto; width: 80%; height: 100%;
     border: 1px solid #05141f; font-size: 14px;
-    text-align: center; line-height: 30px;
+    text-align: center; line-height: 30px; margin-left: 10%;
     border-radius: 20px; cursor: pointer; color: #05141f;
 }
 .menu2_2_bm> ul:nth-child(2)> li:nth-child(1)> ul> li:hover,
@@ -758,21 +734,21 @@ header> div> .top_bg {
 }
 .menu2_2_bm> ul:nth-child(2)> li:nth-child(1)> ul> li:nth-child(1),
 .menu2_2_bm> ul:nth-child(2)> li:nth-child(2)> ul> li:nth-child(1)  {
-    margin-right: 10px; margin-left: 40px;
+    margin-right: 0; margin-left: 10%; margin-bottom: 7px;
 }
 
 .menu2_2_bm> ul:nth-child(2)> li:nth-child(3) img,
 .menu2_2_bm> ul:nth-child(2)> li:nth-child(4) img {
-    margin: 100px 80px;
+    margin: 100px 45px;
 }
 
 /* 친환경 */
 .menu2_2_bm> p:nth-child(3) {
-    width: 1000px; height: 40px;
-    line-height: 40px; margin-left: 50%; transform: translateX(-50%);
+    width: 95%; height: 40px;
+    line-height: 40px; margin-left: 50%; transform: translateX(-50%)
 }
 .menu2_2_bm> ul:nth-child(4) {
-    width: 1000px; height: 230px; margin-left: 50%; transform: translateX(-50%);
+    width: 95%; height: 230px; margin-left: 50%; transform: translateX(-50%)
 }
 .menu2_2_bm> ul:nth-child(4)> li {
     float: left; background: white;
@@ -781,7 +757,7 @@ header> div> .top_bg {
 }
 .menu2_2_bm> ul:nth-child(4)> li:nth-child(1)> div,
 .menu2_2_bm> ul:nth-child(4)> li:nth-child(2)> div {
-    width: 90%; margin-left: 5%; margin-top: 10px;
+    width: 90%; margin-left: 5%;
 }
 .menu2_2_bm> ul:nth-child(4)> li> div img {width: 100%;}
 .menu2_2_bm> ul:nth-child(4)> li:nth-child(1)> p,
@@ -795,9 +771,9 @@ header> div> .top_bg {
 }
 .menu2_2_bm> ul:nth-child(4)> li:nth-child(1)> ul> li,
 .menu2_2_bm> ul:nth-child(4)> li:nth-child(2)> ul> li {
-    float: left; width: 80px; height: 100%;
+    float: auto; width: 80%; height: 100%;
     border: 1px solid #05141f; font-size: 14px;
-    text-align: center; line-height: 30px;
+    text-align: center; line-height: 30px; margin-left: 10%;
     border-radius: 20px; cursor: pointer; color: #05141f;
 }
 .menu2_2_bm> ul:nth-child(4)> li:nth-child(1)> ul> li:hover,
@@ -806,21 +782,21 @@ header> div> .top_bg {
 }
 .menu2_2_bm> ul:nth-child(4)> li:nth-child(1)> ul> li:nth-child(1),
 .menu2_2_bm> ul:nth-child(4)> li:nth-child(2)> ul> li:nth-child(1)  {
-    margin-right: 10px; margin-left: 40px;
+    margin-right: 0; margin-left: 10%; margin-bottom: 7px;
 }
 
 .menu2_2_bm> ul:nth-child(4)> li:nth-child(3) img,
 .menu2_2_bm> ul:nth-child(4)> li:nth-child(4) img {
-    margin: 100px 80px;
+    margin: 100px 45px;
 }
 
 /* RV */
 .menu2_2_bm> p:nth-child(5) {
-    width: 1000px; height: 40px;
-    line-height: 40px; margin-left: 50%; transform: translateX(-50%);
+    width: 95%; height: 40px;
+    line-height: 40px; margin-left: 50%; transform: translateX(-50%)
 }
 .menu2_2_bm> ul:nth-child(6) {
-    width: 1000px; height: 230px; margin-left: 50%; transform: translateX(-50%);
+    width: 95%; height: 230px; margin-left: 50%; transform: translateX(-50%)
 }
 .menu2_2_bm> ul:nth-child(6)> li {
     float: left; background: white;
@@ -829,7 +805,7 @@ header> div> .top_bg {
 }
 .menu2_2_bm> ul:nth-child(6)> li:nth-child(1)> div,
 .menu2_2_bm> ul:nth-child(6)> li:nth-child(2)> div {
-    width: 90%; margin-left: 5%; margin-top: 10px;
+    width: 90%; margin-left: 5%;
 }
 .menu2_2_bm> ul:nth-child(6)> li> div img {width: 100%;}
 .menu2_2_bm> ul:nth-child(6)> li:nth-child(1)> p,
@@ -843,9 +819,9 @@ header> div> .top_bg {
 }
 .menu2_2_bm> ul:nth-child(6)> li:nth-child(1)> ul> li,
 .menu2_2_bm> ul:nth-child(6)> li:nth-child(2)> ul> li {
-    float: left; width: 80px; height: 100%;
+    float: auto; width: 80%; height: 100%;
     border: 1px solid #05141f; font-size: 14px;
-    text-align: center; line-height: 30px;
+    text-align: center; line-height: 30px; margin-left: 10%;
     border-radius: 20px; cursor: pointer; color: #05141f;
 }
 .menu2_2_bm> ul:nth-child(6)> li:nth-child(1)> ul> li:hover,
@@ -854,21 +830,21 @@ header> div> .top_bg {
 }
 .menu2_2_bm> ul:nth-child(6)> li:nth-child(1)> ul> li:nth-child(1),
 .menu2_2_bm> ul:nth-child(6)> li:nth-child(2)> ul> li:nth-child(1)  {
-    margin-right: 10px; margin-left: 40px;
+    margin-right: 0; margin-left: 10%; margin-bottom: 7px;
 }
 
 .menu2_2_bm> ul:nth-child(6)> li:nth-child(3) img,
 .menu2_2_bm> ul:nth-child(6)> li:nth-child(4) img {
-    margin: 100px 80px;
+    margin: 100px 45px;
 }
 
 /* 택시/버스/상용 */
 .menu2_2_bm> p:nth-child(7) {
-    width: 1000px; height: 40px;
-    line-height: 40px; margin-left: 50%; transform: translateX(-50%);
+    width: 95%; height: 40px;
+    line-height: 40px; margin-left: 50%; transform: translateX(-50%)
 }
 .menu2_2_bm> ul:nth-child(8) {
-    width: 1000px; height: 230px; margin-left: 50%; transform: translateX(-50%);
+    width: 95%; height: 230px; margin-left: 50%; transform: translateX(-50%)
 }
 .menu2_2_bm> ul:nth-child(8)> li {
     float: left; background: white;
@@ -891,9 +867,9 @@ header> div> .top_bg {
 }
 .menu2_2_bm> ul:nth-child(8)> li:nth-child(1)> ul> li,
 .menu2_2_bm> ul:nth-child(8)> li:nth-child(2)> ul> li {
-    float: left; width: 80px; height: 100%;
+    float: auto; width: 80%; height: 100%;
     border: 1px solid #05141f; font-size: 14px;
-    text-align: center; line-height: 30px;
+    text-align: center; line-height: 30px; margin-left: 10%;
     border-radius: 20px; cursor: pointer; color: #05141f;
 }
 .menu2_2_bm> ul:nth-child(8)> li:nth-child(1)> ul> li:hover,
@@ -902,12 +878,12 @@ header> div> .top_bg {
 }
 .menu2_2_bm> ul:nth-child(8)> li:nth-child(1)> ul> li:nth-child(1),
 .menu2_2_bm> ul:nth-child(8)> li:nth-child(2)> ul> li:nth-child(1)  {
-    margin-right: 10px; margin-left: 40px;
+    margin-right: 0; margin-left: 10%; margin-bottom: 7px;
 }
 
 .menu2_2_bm> ul:nth-child(8)> li:nth-child(3) img,
 .menu2_2_bm> ul:nth-child(8)> li:nth-child(4) img {
-    margin: 100px 80px;
+    margin: 100px 45px;
 }
 /* ============================ 카탈로그/가격표 끝 =============================== */
 
@@ -1113,18 +1089,18 @@ header> div> .top_bg {
 
 /* ============================ footer 시작 =============================== */
 footer {
-    width: 1903px; height: 700px;
+    width: 100%; height: 700px;
     background: #05141f;
-    position: relative; top: 160px; left: 0;
-    padding: 60px; margin: auto;
+    position: relative; top: 110px; left: 0;
+    padding: 30px; overflow: hidden;
 }
 footer> div {
-    width: 1200px; height: 100%;
+    width: 100%; height: 100%;
     position: relative; top: 0; left: 0;
     margin: auto;
 }
 footer> div> .menu {
-    width: 200px; height: 420px;
+    width: 100%; height: 420px;
     border: 0px solid white;
     position: absolute; top: 0; left: 0;
 }
@@ -1143,43 +1119,9 @@ footer> div> .menu> li:nth-child(1) {
 footer> div> .menu> li:nth-child(1) img {height: 100%;}
 footer> div> .menu> li:nth-child(2) {margin-top: 20px;}
 
-footer> div> .car {
-    width: 200px; height: 420px;
-    border: 0px solid white;
-    position: absolute; top: 80px; left: 700px;
-}
-footer> div> .car> li {
-    width: 100%; height: 30px;
-    font-size: 15px; 
-    text-align: left; line-height: 20px;
-    cursor: pointer;
-}
-footer> div> .car> li> a {color: #898989;}
-footer> div> .car> li:hover {text-decoration: underline;}
-footer> div> .car> li:first-child {
-    font-weight: bold; color: white;
-    text-decoration: none; cursor: default;
-}
+footer> div> .car {display: none;}
 
-footer> div> .award {
-    width: 250px; height: 420px;
-    position: absolute; top: 80px; left: 890px;
-}
-footer> div> .award> li {
-    width: 100%; height: 50px;
-    font-size: 15px; color: #898989;
-    text-align: left; line-height: 20px;
-}
-footer> div> .award> li:nth-child(1) {height: 30px;}
-footer> div> .award> li:first-child {font-weight: bold; color: white;}
-footer> div> .award> li> div {float: left;}
-footer> div> .award> li> p {
-    width: 250px; height: 15px;
-    margin-left: 50px; font-size: 14px;
-    text-indent: 8px; line-height: 15px;
-    letter-spacing: -1px;
-} 
-footer> div> .award> li:nth-child(7)> p {line-height: 30px;}
+footer> div> .award {display: none;}
 
 footer> div> .sns {
     width: 170px; height: 50px;
@@ -1197,33 +1139,26 @@ footer> div> .sns> li:nth-child(3) {margin-left: 10px;}
 footer> div> .sns> li:hover {color: lightslategrey;}
 
 footer> div> .f_btn {
-    width: 500px; height: 30px;
+    width: 100%; height: 30px;
     position: absolute; top: 510px; left: 0;
 }
 footer> div> .f_btn> p {
     height: 100%; float: left;
-    color: #ccc; font-size: 13px;
+    color: #ccc; font-size: 16px;
     line-height: 30px; margin-left: 5px;
     cursor: pointer;
 }
-footer> div> .f_btn> p:nth-child(1) {
-    margin-left: 0px;
-}
-footer> div> .f_btn> p:hover {text-decoration: underline;}
+footer> div> .f_btn> p:nth-child(1) {margin-left: 0px;}
 footer> div> .f_btn> p:nth-child(2):hover, 
 footer> div> .f_btn> p:nth-child(4):hover, 
 footer> div> .f_btn> p:nth-child(6):hover, 
 footer> div> .f_btn> p:nth-child(8):hover {text-decoration: none;}
 
-footer> div> .f_text {
-    height: 30px;
-    position: absolute; top: 540px; left: 0;
-    color: #ccc; font-size: 13px;
-}
+footer> div> .f_text {display: none;}
 
 footer> div> .f_corp {
     height: 30px;
-    position: absolute; top: 540px; left: 970px;
+    position: absolute; top: 600px; left: 0;
     color: #ccc; font-size: 13px;
 }
 /* ============================ footer 끝 =============================== */
