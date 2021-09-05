@@ -976,7 +976,7 @@ header> .topdown {display: none;}
 } 
 .menu2_3_bm> ul> .search> div:nth-child(3)> p:nth-child(1),
 .menu2_3_bm> ul> .search> div:nth-child(4)> p:nth-child(1) {
-    border: 1px solid black; font-size: 4svw;
+    border: 1px solid black; font-size: 4vw;
     width: 8vw; height: 8vw; border-radius: 100%;
     background: #05141f; color: white;
     text-align: center; line-height: 8vw;
