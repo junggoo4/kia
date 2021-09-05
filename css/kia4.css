@@ -185,11 +185,13 @@ header> div> .top_bg {
     position: fixed; top: 110px; left: 0;
     background: rgba(5, 20, 31, 0.8); display: none;
 }
+/* ============================ header 끝 =============================== */
+
 
 /* ======================= 국내 사업장 안내 시작 ========================= */
 .back_color0 {background: #f2f2f2;}
 .menu3_1_title {
-    width: 100%; height: 120px;
+    width: 1903px; height: 120px;
     position: relative; top: 110px;
     background: #f2f2f2;
 }
@@ -209,25 +211,26 @@ header> div> .top_bg {
 
 
 .menu3_1_bm {
-    width: 1000px;
-    border-top: 3px solid #05141f;
+    width: 1903px;
     position: relative; top: 110px; left: 0; margin: auto;
 }
 .menu3_1_bm> .map {
-    width: 900px; height: 440px;
+    width: 900px; height: 440px; margin-left: 451.5px;
     border: 1px solid #ccc;
     background: url(../img4/map_1.webp) no-repeat center top;
+    border-top: 3px solid #05141f;
 }
 
 .menu3_1_bm> nav {
     width: 100px; height: 440px;
-    position: absolute; top: 0; right: 0;
+    position: absolute; top: 0; left: 1351.5px;
     background: white;
     border-right: 1px solid #ccc;
+    border-top: 3px solid #05141f;
 }
 .menu3_1_bm> nav> ul {width: 100%; height: 100%;}
 .menu3_1_bm> nav> ul> li {
-    width: 100%; height: 88px;
+    width: 100%; height: 87.4px;
     text-align: center; cursor: pointer;
     border-bottom: 1px solid #ccc; padding: 10px;
 }
@@ -245,7 +248,7 @@ header> div> .top_bg {
 }
 
 .menu3_1_bm> .img_map {
-    position: absolute; top: 35px; left: 368px;
+    position: absolute; top: 35px; left: 820px;
 }
 .menu3_1_bm> .img_map> li {
     position: absolute; top: 0; left: 0;
@@ -254,7 +257,7 @@ header> div> .top_bg {
 
 .menu3_1_bm> .navi {
     width: 330px; height: 30px;
-    position: absolute; top: 400px; left: 10px;
+    position: absolute; top: 400px; left: 470px;
 }
 .menu3_1_bm> .navi> li {float: left; margin-right: 10px;}
 
@@ -277,8 +280,8 @@ header> div> .top_bg {
 
 
 .at1 {
-    width: 100%; height: 400px;
-    margin-top: 30px;
+    width: 1000px; height: 400px;
+    margin-top: 30px; margin: 20px auto;
 }
 .at1> ul {width: 100%; height: 400px;}
 .at1> ul> li {
@@ -307,8 +310,8 @@ header> div> .top_bg {
 
 
 .at2 {
-    width: 100%; height: 400px;
-    margin-top: 30px;
+    width: 1000px; height: 400px;
+    margin: 10px auto;
 }
 .at2> ul {width: 100%; height: 400px;}
 .at2> ul> li {
@@ -337,8 +340,8 @@ header> div> .top_bg {
 
 
 .at3 {
-    width: 100%; height: 300px;
-    margin-top: 30px;
+    width: 1000px; height: 300px;
+    margin: 20px auto;
 }
 .at3> ul {width: 100%; height: 300px;}
 .at3> ul> li {
@@ -367,13 +370,13 @@ header> div> .top_bg {
 
 
 .at4 {
-    width: 100%; height: 690px;
-    margin-top: 30px;
+    width: 1000px; height: 690px;
+    margin: 20px auto;
 }
 .at4> ul {width: 100%; height: 150px;}
 .at4> ul:nth-child(2),
 .at4> ul:nth-child(3),
-.at4> ul:nth-child(4) {margin-top: 30px;}
+.at4> ul:nth-child(4) {margin-top: 10px;}
 .at4> ul> li {
     float: left;
     width: 313.33px; height: 100%;
@@ -391,7 +394,7 @@ header> div> .top_bg {
 
 .menu3_1_bm> .top {
     width: 70px; height: 40px; cursor: pointer;
-    margin-top: 20px; margin-left: 930px;
+    margin-top: 20px; margin-left: 1380px;
     background: #05141f; color: white;
     border-radius: 20px; text-align: center; line-height: 40px;
 }
@@ -638,17 +641,15 @@ header> div> .top_bg {
     background: #05141f;
 }
 .menu3_2_bm> .finish> div> p:nth-child(2)> a {color: white;}
-
-
-
 /* =========================== 시승 예약 끝 =============================== */
+
 
 /* ============================ footer 시작 =============================== */
 footer {
-    width: 100%; height: 700px;
+    width: 1903px; height: 700px;
     background: #05141f;
     position: relative; top: 160px; left: 0;
-    padding: 60px;
+    padding: 60px; margin: auto;
 }
 footer> div {
     width: 1200px; height: 100%;

@@ -1,4 +1,4 @@
-/* 체험센터 모바일 - 해당메뉴 화면 스타일시트 (header,footer 포함) */
+/* 체험센터 테블릿.모바일 - 해당메뉴 화면 스타일시트 (header,footer 포함) */
 
 * {margin: 0; padding: 0; list-style: none; box-sizing: border-box;}
 a {text-decoration: none; color: #000;}
@@ -13,16 +13,14 @@ body {font-family: 'Roboto', sans-serif;}
 /* header */
 header {
     width: 100%; height: 60px; 
+    border-bottom: 1px solid #f2f2f2;
     position: fixed; top: 0; left: 0; z-index: 150;
-    border-bottom: 1px solid #ccc;
     background: white;
 }
 header> .head1_m {
     display: block;
     width: 100%; height: 60px;
     position: fixed; top: 0; left: 0; z-index: 100;
-    border-bottom: 1px solid #ccc;
-    ;
 }
 header> .head1_m> li {
     float: left; height: 60px; color: #05141f;
@@ -163,6 +161,7 @@ header> .head1 {display: none;}
 header> .topdown {display: none;}
 /* ============================ header 끝 =============================== */
 
+
 /* ======================= 국내 사업장 안내 시작 ========================= */
 .back_color0 {background: #f2f2f2;}
 .menu3_1_title {
@@ -178,25 +177,25 @@ header> .topdown {display: none;}
 .menu3_1_title> div> p:nth-child(1) {
     width: 100%; height: 100%;
     line-height: 80px;
-    font-size: 5vw; font-weight: bold; 
+    font-size: 20px; font-weight: bold; 
 }
 .menu3_1_title> div> p:nth-child(2) {
     width: 100%; height: 30px;
     line-height: 15px; margin-top: 0; margin-left: 0;
-    font-size: 3.4vw;
+    font-size: 16px;
 }
 
 
 .menu3_1_bm {
     width: 95%;
-    border-top: 3px solid #05141f;
-    position: relative; top: 110px; left: 0; margin: auto;
+    position: relative; top: 110px; left: 0;
+    margin: auto; padding: 0;
 }
 .menu3_1_bm> .map {display: none;}
 
 .menu3_1_bm> nav {
-    width: 100%; height: 70px;
-    position: absolute; top: 0; left: 0;
+    width: 396px; height: 70px;
+    position: relative; top: 0; left: 0; margin: auto;
     background: white;
     border-right: 1px solid #ccc;
 }
@@ -211,12 +210,12 @@ header> .topdown {display: none;}
     width: 30px; height: 30px;
     background: #898989; color: white;
     text-align: center; line-height: 30px;
-    border-radius: 100%; font-size: 3.5vw;
+    border-radius: 100%; font-size: 15px;
     margin-left: 50%; transform: translateX(-50%);
 }
 .menu3_1_bm> nav> ul> li:nth-child(1)> p:nth-child(1) {background: #05141f;}
 .menu3_1_bm> nav> ul> li> p:nth-child(2) {
-    font-size: 3.2vw; font-weight: bold;
+    font-size: 14px; font-weight: bold;
     margin-top: 7px;
 }
 
@@ -224,17 +223,17 @@ header> .topdown {display: none;}
 .menu3_1_bm> .navi {display: none;}
 
 .at1 {
-    width: 100%; height: 600px;
-    margin-top: 80px;
+    width: 100%; height: 612px;
+    margin-top: 20px;
 }
 .at1> ul {width: 100%; height: 600px;}
 .at1> ul> li {
     float: none;
-    width: 100%; height: 50%;
-    background: white;
+    width: 396px; height: 300px;
+    background: white; margin: auto;
     border-top: 7px solid #39c3d7;
 }
-.at1> ul> li:nth-child(2) {margin-left: 0; margin-top: 10px;}
+.at1> ul> li:nth-child(2) {margin-left: auto; margin-top: 10px;}
 .at1> ul> li> div:nth-child(1) {
     width: 100%; height: 66%;
 }
@@ -244,27 +243,27 @@ header> .topdown {display: none;}
     width: 100%; height: 34%; padding: 10px 15px;
 }
 .at1> ul> li> div:nth-child(2)> p {
-    font-size: 4.2vw; font-weight: bold;
+    font-size: 18px; font-weight: bold;
 }
 .at1> ul> li> div:nth-child(2)> span {
-    font-size: 3.5vw;
+    font-size: 14px;
 }
 .at1> ul> li> div:nth-child(2)> span:nth-child(4),
 .at1> ul> li> div:nth-child(2)> span:nth-child(8) {color: #ccc;}
 
 
 .at2 {
-    width: 100%; height: 600px;
-    margin-top: 80px;
+    width: 100%; height: 612px;
+    margin-top: 20px;
 }
 .at2> ul {width: 100%; height: 600px;}
 .at2> ul> li {
     float: none;
-    width: 100%; height: 50%;
-    background: white;
+    width: 396px; height: 300px;
+    background: white; margin: auto;
     border-top: 7px solid #f0bc05;
 }
-.at2> ul> li:nth-child(2) {margin-left: 0; margin-top: 10px;}
+.at2> ul> li:nth-child(2) {margin-left: auto; margin-top: 10px;}
 .at2> ul> li> div:nth-child(1) {width: 100%; height: 66%;}
 .at2> ul> li> div:nth-child(1) img {width: 100%; height: 100%;}
 
@@ -272,28 +271,28 @@ header> .topdown {display: none;}
     width: 100%; height: 34%; padding: 10px 15px;
 }
 .at2> ul> li> div:nth-child(2)> p {
-    font-size: 4.2vw; font-weight: bold;
+    font-size: 18px; font-weight: bold;
 }
 .at2> ul> li> div:nth-child(2)> span {
-    font-size: 3.5vw;
+    font-size: 14px;
 }
 .at2> ul> li> div:nth-child(2)> span:nth-child(4),
 .at2> ul> li> div:nth-child(2)> span:nth-child(8) {color: #ccc;}
 
 
 .at3 {
-    width: 100%; height: 900px;
-    margin-top: 80px;
+    width: 100%; height: 920px;
+    margin-top: 20px;
 }
 .at3> ul {width: 100%; height: 600px;}
 .at3> ul> li {
     float: none;
-    width: 100%; height: 50%;
-    background: white;
+    width: 396px; height: 300px;
+    background: white; margin: auto;
     border-top: 7px solid #57e261;
 }
 .at3> ul> li:nth-child(2),
-.at3> ul> li:nth-child(3) {margin-left: 0; margin-top: 10px;}
+.at3> ul> li:nth-child(3) {margin-left: auto; margin-top: 10px;}
 
 .at3> ul> li> div:nth-child(1) {width: 100%; height: 66%;}
 .at3> ul> li> div:nth-child(1) img {width: 100%; height: 100%;}
@@ -302,35 +301,36 @@ header> .topdown {display: none;}
     width: 100%; height: 34%; padding: 10px 15px;
 }
 .at3> ul> li> div:nth-child(2)> p {
-    font-size: 4.2vw; font-weight: bold;
+    font-size: 18px; font-weight: bold;
 }
 .at3> ul> li> div:nth-child(2)> span {
-    font-size: 3.5vw;
+    font-size: 14px;
 }
 .at3> ul> li> div:nth-child(2)> span:nth-child(4),
 .at3> ul> li> div:nth-child(2)> span:nth-child(8) {color: #ccc;}
 
 
 .at4 {
-    width: 100%; height: 1470px;
-    margin-top: 80px;
+    width: 100%; height: 1600px;
+    margin-top: 20px;
 }
-.at4> ul {width: 100%; height: 140px;}
+.at4> ul {width: 100%; height: 470px;}
 .at4> ul:nth-child(2),
 .at4> ul:nth-child(3),
-.at4> ul:nth-child(4) {margin-top: 310px;}
+.at4> ul:nth-child(4) {margin-top: 10px;}
+.at4> ul:nth-child(4) {height: 490px; }
 .at4> ul> li {
     float: none;
-    width: 100%; height: 100%;
-    background: white; padding: 15px;
+    width: 396px; height: 150px;
+    background: white; margin: auto;
     border-top: 7px solid #f85938;
     margin-bottom: 10px;
 }
 .at4> ul> li:nth-child(2),
-.at4> ul> li:nth-child(3) {margin-left: 0;}
+.at4> ul> li:nth-child(3) {margin-left: auto;}
 
-.at4> ul> li> p {font-size: 4.5vw; font-weight: bold;}
-.at4> ul> li> span {font-size: 3.5vw;}
+.at4> ul> li> p {font-size: 18px; font-weight: bold;}
+.at4> ul> li> span {font-size: 14px;}
 .at4> ul> li> span:nth-child(4),
 .at4> ul> li> span:nth-child(8),
 .at4> ul> li> span:nth-child(12) {color: #ccc;}
@@ -565,16 +565,14 @@ header> .topdown {display: none;}
     background: #05141f;
 }
 .menu3_2_bm> .finish> div> p:nth-child(2)> a {color: white;}
-
-
-
 /* =========================== 시승 예약 끝 =============================== */
+
 
 /* ============================ footer 시작 =============================== */
 footer {
     width: 100%; height: 700px;
     background: #05141f;
-    position: relative; bottom: 0; left: 0;
+    position: relative; top: 110px; left: 0;
     padding: 30px; overflow: hidden;
 }
 footer> div {
@@ -627,12 +625,12 @@ footer> div> .f_btn {
 }
 footer> div> .f_btn> p {
     height: 100%; float: left;
-    color: #ccc; font-size: 3.7vw;
+    color: #ccc; font-size: 16px;
     line-height: 30px; margin-left: 5px;
     cursor: pointer;
 }
 footer> div> .f_btn> p:nth-child(1) {margin-left: 0px;}
-footer> div> .f_btn> p:nth-child(3) {width: 40%;}
+footer> div> .f_btn> p:nth-child(3) {width: 55%;}
 footer> div> .f_btn> p:nth-child(4) {display: none;}
 footer> div> .f_btn> p:nth-child(5) {margin-left: -1px;}
 footer> div> .f_btn> p:hover {text-decoration: underline;}
