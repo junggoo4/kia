@@ -443,11 +443,11 @@ header> .topdown {display: none;}
 .menu4_2_title> div> p:nth-child(1) {
     width: 100%; height: 100%;
     line-height: 80px;
-    font-size: 5vw; font-weight: bold; 
+    font-size: 20px; font-weight: bold;
 }
 
 .menu4_2_bm {
-    width: 90%;
+    width: 90%; height: auto;
     position: relative; top: 60px; left: 0;
     margin: auto;
 }
@@ -471,7 +471,7 @@ header> .topdown {display: none;}
 .menu4_2_bm> .rayout2> ul:hover li:nth-child(1) {text-decoration: underline;}
 .menu4_2_bm> .rayout1> ul> li, 
 .menu4_2_bm> .rayout2> ul> li {
-    width: 100%; font-size: 3.8vw; font-weight: bold;
+    width: 100%; font-size: 15px; font-weight: bold;
 }
 .menu4_2_bm> .rayout1> ul> li:nth-child(1),
 .menu4_2_bm> .rayout2> ul> li:nth-child(1) {
@@ -487,7 +487,7 @@ header> .topdown {display: none;}
 }
 .menu4_2_bm> .rayout1> ul> li> span,
 .menu4_2_bm> .rayout2> ul> li> span {
-    font-size: 3.3vw; font-weight: 500; line-height: 40px;
+    font-size: 14px; font-weight: 500; line-height: 40px;
 }
 .menu4_2_bm> .rayout1> ul> li> span:nth-child(2) {color: #898989;}
 
@@ -498,33 +498,33 @@ header> .topdown {display: none;}
     border-bottom: 1px solid #ccc; position: relative;
 }
 .menu4_2_bm> .rayout> .gong_title> p {
-    font-size: 4vw; font-weight: bold;
+    font-size: 18px; font-weight: bold;
 }
 .menu4_2_bm> .rayout> .gong_title> p:nth-child(2) {
     position: absolute; bottom: 5px;
 }
 .menu4_2_bm> .rayout> .gong_title> p> span {
-    font-size: 3.5vw; line-height: 35px; 
+    font-size: 15px; line-height: 35px; 
     font-weight: 500;
 }
 .menu4_2_bm> .rayout> .gong_title> p> span:nth-child(2) {color: #898989;}
 .menu4_2_bm> .rayout> .gong_bm {width: 100%; padding: 30px;}
-.menu4_2_bm> .rayout> .gong_bm> p {font-size: 3.7vw; line-height: 22px;}
+.menu4_2_bm> .rayout> .gong_bm> p {font-size: 15px; line-height: 22px;}
 .menu4_2_bm> .rayout> .gong_bm img {width: 100%;}
 
 /* 리스트 이동 버튼 */
 .menu4_2_bm> .gong_control {
-    width: 50%; height: 4.5vh;
+    width: 180px; height: 10vh;
     position: absolute; top: 580px; left: 50%;
     transform: translateX(-50%);
     display: flex;
     justify-content: space-around;
 }
 .menu4_2_bm> .gong_control> div {
-    float: left; width: 4.5vh; height: 100%;
+    float: left; width: 4.5vh; height: 4.5vh;
     border: 1px solid #05141f; background: white;
     text-align: center; line-height: 4.5vh;
-    cursor: pointer; font-size: 4vw;
+    cursor: pointer; font-size: 15px;
 }
 .menu4_2_bm> .gong_control> div:nth-child(2) {background: #05141f; color: white;}
 .menu4_2_bm> .gong_control> div:nth-child(1),
@@ -538,7 +538,7 @@ header> .topdown {display: none;}
     width: 120px; height: 30px;
     position: relative; top: 30px; left: 50%; margin-bottom: 50px;
     transform: translateX(-50%); background: #05141f; color: white;
-    border-radius: 20px; cursor: pointer; font-size: 4vw;
+    border-radius: 20px; cursor: pointer; font-size: 15px;
     text-align: center; line-height: 30px; font-weight: bold;
 }
 /* ============================ 공지사항 끝 ============================== */
@@ -649,7 +649,7 @@ article .txt i {
 footer {
     width: 100%; height: 700px;
     background: #05141f;
-    position: relative; top: 110px; left: 0;
+    position: relative; bottom: 0; left: 0;
     padding: 30px; overflow: hidden;
 }
 footer> div {

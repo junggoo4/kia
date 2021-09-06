@@ -510,7 +510,7 @@ header> .topdown {display: none;}
 
 /* 리스트 이동 버튼 */
 .menu4_2_bm> .gong_control {
-    width: 50%; height: 4.5vh;
+    width: 180px; height: 4.5vh;
     position: absolute; top: 580px; left: 50%;
     transform: translateX(-50%);
     display: flex;

@@ -199,7 +199,7 @@ header> .topdown {display: none;}
 }
 .menu4_1_bm> .news_list> ul:nth-child(2) {margin-top: 20px;}
 .menu4_1_bm> .news_list> ul> li {
-    float: left; background: white;
+    float: left;
     width: 32%; height: 100%;
     border: 1px solid #ccc;
     position: relative; cursor: pointer;
@@ -423,30 +423,27 @@ header> .topdown {display: none;}
 .back {background: #f2f2f2;}
 .menu4_2_title {
     width: 100%; height: 120px;
-    position: relative; top: 110px;
+    position: relative; top: 60px;
 }
 .menu4_2_title> div {
-    width: 1000px; height: 100%;
+    width: 768px; height: 100%;
     position: relative; top: 0; left: 0;
     margin: auto;
 }
 .menu4_2_title> div> p:nth-child(1) {
     width: 100%; height: 100%;
-    line-height: 120px;
-    font-size: 30px; font-weight: bold; 
-}
-.menu4_2_title> div> p:nth-child(2) {
-    margin-top: -65px; margin-left: 140px;
+    line-height: 120px; text-indent: 20px;
+    font-size: 28px; font-weight: bold;
 }
 
 .menu4_2_bm {
-    width: 1000px;
-    position: relative; top: 110px; left: 0;
-    margin: auto;
+    width: 740px;
+    position: relative; top: 60px; left: 0;
+    margin: auto; overflow: hidden;
 }
 .menu4_2_bm> .rayout {
-    width: 100%;
-    position: relative; top: 0; left: 0;
+    width: 95%;
+    position: relative; top: 0; left: 0; margin: auto;
     background: white; display: none;
 }
 .menu4_2_bm> .rayout1 {height: 560px; display: block;}
@@ -463,7 +460,7 @@ header> .topdown {display: none;}
 .menu4_2_bm> .rayout2> ul:hover li:nth-child(1) {text-decoration: underline;}
 .menu4_2_bm> .rayout1> ul> li, 
 .menu4_2_bm> .rayout2> ul> li {
-    width: 100%; font-size: 18px; font-weight: bold;
+    width: 100%; font-size: 16px; font-weight: bold;
 }
 .menu4_2_bm> .rayout1> ul> li> span,
 .menu4_2_bm> .rayout2> ul> li> span {
@@ -474,14 +471,14 @@ header> .topdown {display: none;}
 /* 게시물 공통 */
 .menu4_2_bm> .rayout {width: 100%;}
 .menu4_2_bm> .rayout> .gong_title {
-    width: 100%; height: 90px; padding: 18px 20px;
+    width: 100%; height: 100px; padding: 18px 20px;
     border-bottom: 1px solid #ccc;
 }
 .menu4_2_bm> .rayout> .gong_title> p {
-    font-size: 20px; font-weight: bold;
+    font-size: 17px; font-weight: bold;
 }
 .menu4_2_bm> .rayout> .gong_title> p> span {
-    font-size: 14px; line-height: 35px; 
+    font-size: 13px; line-height: 35px; 
     font-weight: 500;
 }
 .menu4_2_bm> .rayout> .gong_title> p> span:nth-child(2) {color: #898989;}
