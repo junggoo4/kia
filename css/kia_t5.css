@@ -520,25 +520,22 @@ header> .topdown {display: none;}
 /* ============================ 이벤트 시작 =============================== */
 .menu4_3_title {
     width: 100%; height: 120px;
-    position: relative; top: 110px;
+    position: relative; top: 60px;
 }
 .menu4_3_title> div {
-    width: 1000px; height: 100%;
+    width: 768px; height: 100%;
     position: relative; top: 0; left: 0;
     margin: auto;
 }
 .menu4_3_title> div> p:nth-child(1) {
     width: 100%; height: 100%;
-    line-height: 120px;
-    font-size: 30px; font-weight: bold; 
-}
-.menu4_3_title> div> p:nth-child(2) {
-    margin-top: -65px; margin-left: 140px;
+    line-height: 120px; text-indent: 20px;
+    font-size: 28px; font-weight: bold;  
 }
 
 .menu4_3_bm {
-    width: 1000px;
-    position: relative; top: 110px; left: 0;
+    width: 740px;
+    position: relative; top: 60px; left: 0; margin: auto;
     margin: auto;
 }
 .menu4_3_bm> .rayout {
@@ -547,11 +544,11 @@ header> .topdown {display: none;}
     display: none;
 }
 .menu4_3_bm> .rayout1 {
-    height: 700px;
+    height: 500px;
     position: relative; top: 0; left: 0;
 }
 .menu4_3_bm> .rayout1> article {
-    float: left; width: 32%; height: 220px;
+    float: left; width: 32%; height: 160px;
     transition: all 0.5s;
     margin-bottom: 1.2%; color: white;
     background: rgba(5, 20, 31, 0.4);
@@ -571,14 +568,18 @@ header> .topdown {display: none;}
 
 /* 리스트 - 텍스트 영역 */
 article .txt {
-    color: #fff; padding: 30px 30px; transition: all 1s; 
+    color: #fff; padding: 15px; transition: all 1s; 
 }
 article> .txt> p {
-    font-weight: bold; font-size: 18px; 
+    font-weight: bold; font-size: 16px; 
+}
+article> .txt> p:nth-child(3) {
+    position: absolute; bottom: 20px; left: 15px;
 }
 article> .txt> p> span {
-    font-size: 13px;
+    font-size: 12px;
 }
+article> .txt> p> span:nth-child(2) {display: none;}
 article .txt i {
     font-size: 180px; color: #b2effc; opacity: 0;
     position: absolute; bottom: -30px; right: -200px;
@@ -614,8 +615,8 @@ article:hover .txt i {right: 0; opacity: 0.5;}
 /* 탑 버튼 */
 .menu4_3_bm> .top_btn {
     width: 70px; height: 40px; cursor: pointer;
-    margin-left: 930px;
-    background: #05141f; color: white; display: none;
+    margin-left: 0; display: none; opacity: 0;
+    background: #05141f; color: white;
     border-radius: 20px; text-align: center; line-height: 40px;
 }
 /* ============================= 이벤트 끝 =============================== */

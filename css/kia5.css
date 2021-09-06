@@ -546,7 +546,7 @@ header> div> .top_bg {
 
 /* ============================ 이벤트 시작 =============================== */
 .menu4_3_title {
-    width: 100%; height: 120px;
+    width: 1903px; height: 120px;
     position: relative; top: 110px;
 }
 .menu4_3_title> div {
@@ -564,14 +564,14 @@ header> div> .top_bg {
 }
 
 .menu4_3_bm {
-    width: 1000px;
+    width: 1903px;
     position: relative; top: 110px; left: 0;
     margin: auto;
 }
 .menu4_3_bm> .rayout {
-    width: 100%;
+    width: 1000px;
     position: relative; top: 0; left: 0;
-    display: none;
+    display: none; margin: auto;
 }
 .menu4_3_bm> .rayout1 {
     height: 700px;
@@ -641,7 +641,7 @@ article:hover .txt i {right: 0; opacity: 0.5;}
 /* 탑 버튼 */
 .menu4_3_bm> .top_btn {
     width: 70px; height: 40px; cursor: pointer;
-    margin-left: 930px;
+    margin-left: 1370px;
     background: #05141f; color: white; display: none;
     border-radius: 20px; text-align: center; line-height: 40px;
 }
