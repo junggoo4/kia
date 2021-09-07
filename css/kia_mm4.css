@@ -259,7 +259,7 @@ header> .topdown {display: none;}
 .at2> ul {width: 100%; height: auto;}
 .at2> ul> li {
     float: none;
-    width: 95vw; height: auto;
+    width: 100%; height: auto;
     background: white; margin: auto;
     border-top: 7px solid #f0bc05;
 }
@@ -287,7 +287,7 @@ header> .topdown {display: none;}
 .at3> ul {width: 100%; height: auto;}
 .at3> ul> li {
     float: none;
-    width: 95vw; height: auto;
+    width: 100%; height: auto;
     background: white; margin: auto;
     border-top: 7px solid #57e261;
 }

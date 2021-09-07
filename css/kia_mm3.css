@@ -278,7 +278,7 @@ header> .topdown {display: none;}
     border: 1px solid #05141f; font-size: 15px; text-align: center;
     background: white;
 }
-.oline_2> div> .car_k5> .chepter1> .chepter1_m> ul:nth-child(4)> li {width: 32%;}
+.oline_2> div> .car_k5> .chepter1> .chepter1_m> ul:nth-child(4)> li {width: 30%;}
 .oline_2> div> .car> .chepter1> .chepter1_m> ul:nth-child(4)> li:nth-child(1) {
     width: 100%; font-weight: bold; text-align: left; border: none; font-size: 20px; 
 }

@@ -192,7 +192,7 @@ header> div> .top_bg {
 .back_color0 {background: #f2f2f2;}
 .menu4_1_title {
     width: 1903px; height: 120px;
-    position: relative; top: 110px;
+    position: relative; top: 110px; margin: auto;
 }
 .menu4_1_title> div {
     width: 1000px; height: 100%;
@@ -448,7 +448,7 @@ header> div> .top_bg {
 .back {background: #f2f2f2;}
 .menu4_2_title {
     width: 1903px; height: 120px;
-    position: relative; top: 110px;
+    position: relative; top: 110px; margin: auto;
 }
 .menu4_2_title> div {
     width: 1000px; height: 100%;
@@ -547,7 +547,7 @@ header> div> .top_bg {
 /* ============================ 이벤트 시작 =============================== */
 .menu4_3_title {
     width: 1903px; height: 120px;
-    position: relative; top: 110px;
+    position: relative; top: 110px; margin: auto;
 }
 .menu4_3_title> div {
     width: 1000px; height: 100%;

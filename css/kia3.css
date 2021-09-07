@@ -192,7 +192,7 @@ header> div> .top_bg {
 .menu2_1_title {
     width: 1903px; height: 120px;
     position: relative; top: 110px;
-    background: #f2f2f2;
+    background: #f2f2f2; margin: auto;
 }
 .menu2_1_title> div {
     width: 1000px; height: 100%;
@@ -209,7 +209,7 @@ header> div> .top_bg {
     width: 1903px; height: 100px;
     border-bottom: 1px solid #ccc;
     border-top: 1px solid #ccc;
-    position: relative; top: 110px; left: 0;
+    position: relative; top: 110px; left: 0; margin: auto;
 }
 .menu2_1_bigBTN {
     width: 1000px; height: 100px;
@@ -695,7 +695,7 @@ header> div> .top_bg {
 .menu2_2_title {
     width: 1903px; height: 120px;
     position: relative; top: 110px;
-    background: #f2f2f2;
+    background: #f2f2f2; margin: auto;
 }
 .menu2_2_title> div {
     width: 1000px; height: 100%;
@@ -915,7 +915,7 @@ header> div> .top_bg {
 .menu2_3_title {
     width: 1903px; height: 120px;
     position: relative; top: 110px;
-    background: #f2f2f2;
+    background: #f2f2f2; margin: auto;
 }
 .menu2_3_title> div {
     width: 1000px; height: 100%;
