@@ -100,15 +100,31 @@ $(function() {
     
     // 메인화면 BEST KIA - 이미지 < > 버튼 클릭시 슬라이드
     $(".main_next").on("click",function() {
-        $(".slide_img_6").stop().animate({"left":"-=510px"}, 300, function() {
+        $(".slide_img_6").stop().animate({"left":"-=25%"}, 300, function() {
             $(".slide_img_6> li:first").appendTo(".slide_img_6");
-            $(".slide_img_6").css({"left":"+=510px"});
+            $(".slide_img_6").css({"left":"+=25%"});
+            $(".slide_img_6> li> a> .img").css({"opacity":"0.3","transform":"scale(1)"});
+            $(".slide_img_6> li> a> p").css({"opacity":"0.3","transform":"scale(1)"});
+            $(".slide_img_6> li:eq(1)> a> .img").css({"opacity":"1"});
+            $(".slide_img_6> li:eq(1)> a> p").css({"opacity":"1"});
+            $(".slide_img_6> li:eq(3)> a> .img").css({"opacity":"1"});
+            $(".slide_img_6> li:eq(3)> a> p").css({"opacity":"1"});
+            $(".slide_img_6> li:eq(2)> a> .img").css({"opacity":"1", "transform":"scale(1.4)", "transition":"all 0.5s"});
+            $(".slide_img_6> li:eq(2)> a> p").css({"opacity":"1"});
         });
     });
     $(".main_prev").on("click",function() {
-        $(".slide_img_6").stop().animate({"left":"+=510px"}, 300, function() {
+        $(".slide_img_6").stop().animate({"left":"+=25%"}, 300, function() {
             $(".slide_img_6> li:last").prependTo(".slide_img_6");
-            $(".slide_img_6").css("left","-=510px");
+            $(".slide_img_6").css("left","-=25%");
+            $(".slide_img_6> li> a> .img").css({"opacity":"0.3","transform":"scale(1)"});
+            $(".slide_img_6> li> a> p").css({"opacity":"0.3","transform":"scale(1)"});
+            $(".slide_img_6> li:eq(1)> a> .img").css({"opacity":"1"});
+            $(".slide_img_6> li:eq(1)> a> p").css({"opacity":"1"});
+            $(".slide_img_6> li:eq(3)> a> .img").css({"opacity":"1"});
+            $(".slide_img_6> li:eq(3)> a> p").css({"opacity":"1"});
+            $(".slide_img_6> li:eq(2)> a> .img").css({"opacity":"1", "transform":"scale(1.4)", "transition":"all 0.5s"});
+            $(".slide_img_6> li:eq(2)> a> p").css({"opacity":"1"});
         });
     });
 
@@ -222,21 +238,21 @@ function slide1() {
 
 // 메인화면 BEST KIA - 이미지 슬라이드
 function slide2() { 
-    $(".slide_img_6").stop().animate({"left":"-=510px"}, 300, function() {
+    $(".slide_img_6").stop().animate({"left":"-=25%"}, 300, function() {
         $(".slide_img_6> li:first").appendTo(".slide_img_6");
-        $(".slide_img_6").css("left","+=510px");
+        $(".slide_img_6").css("left","+=25%");
     });
     if(matchMedia("screen and (min-width: 1024px)").matches){
-        $(".slide_img_6").stop().animate({"left":"-=510px"}, 300, function() {
+        $(".slide_img_6").stop().animate({"left":"-=25%"}, 300, function() {
             $(".slide_img_6> li:first").appendTo(".slide_img_6");
-            $(".slide_img_6").css("left","+=510px");
+            $(".slide_img_6").css("left","+=25%");
             $(".slide_img_6> li> a> .img").css({"opacity":"0.3","transform":"scale(1)"});
             $(".slide_img_6> li> a> p").css({"opacity":"0.3","transform":"scale(1)"});
             $(".slide_img_6> li:eq(1)> a> .img").css({"opacity":"1"});
             $(".slide_img_6> li:eq(1)> a> p").css({"opacity":"1"});
             $(".slide_img_6> li:eq(3)> a> .img").css({"opacity":"1"});
             $(".slide_img_6> li:eq(3)> a> p").css({"opacity":"1"});
-            $(".slide_img_6> li:eq(2)> a> .img").css({"opacity":"1", "transform":"scale(1.3)", "transition":"all 0.5s"});
+            $(".slide_img_6> li:eq(2)> a> .img").css({"opacity":"1", "transform":"scale(1.4)", "transition":"all 0.5s"});
             $(".slide_img_6> li:eq(2)> a> p").css({"opacity":"1"});
         });
     };

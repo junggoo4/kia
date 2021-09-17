@@ -427,7 +427,7 @@ nav> ul> li> a> p:last-child {font-size: 13px; margin-top: 7px;}
 /* 메인화면 KIA NEWS 뉴스 */
 .main_news {
     width: 100%; height: 50vw;
-    position: relative; top: 7vw; left: 0;
+    position: relative; top: 15vw; left: 0;
     margin: auto; overflow: hidden;
 }
 .main_news> p:nth-child(1) {
